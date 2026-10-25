@@ -1,0 +1,71 @@
+# =============================================================================
+# Git Ignore Configuration for Institutional RAG Source Template
+# =============================================================================
+
+# Environment variables & local secrets
+.env
+.env.*
+!.env.example
+
+# Python runtime bytecode & cache
+__pycache__/
+*.py[cod]
+*.class
+*.so
+.Python
+
+# Virtual environments
+.venv/
+venv/
+env/
+ENV/
+env.bak/
+venv.bak/
+
+# Operating system artifacts
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# IDE & developer workspaces
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# Generated local ChromaDB vector databases
+chroma_db/
+**/chroma_db/
+
+# Disposable canonical chunk caches & lexical caches
+*.canonical_chunks_cache*.json
+.*_cache*.json
+.canonical_chunks_cache.json
+**/.canonical_chunks_cache.json
+**/.canonical_chunks_cache*.json
+
+# Test directories, caches, and artifacts (this template is source-only)
+tests/
+tests_frontend/
+tests_reusable/
+test_outputs/
+test_debug/
+test_deubug/
+.pytest_cache/
+.ruff_cache/
+.coverage
+htmlcov/
+*.log
+retrieval_probe_output.txt
+
+# Local backups and temporary scratch dumps
+backend_snapshot/
+*.bak
+*.backup*
+scratch/
+.docker/

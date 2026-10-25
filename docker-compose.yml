@@ -1,0 +1,20 @@
+version: '3.8'
+
+services:
+  assistant:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: rag-source-template-assistant
+    ports:
+      - "8501:8501"
+    environment:
+      - INSTITUTION_ID=iitj
+      - OLLAMA_BASE_URL=http://host.docker.internal:11434
+      - QUERY_LLM_MODEL=qwen2.5:3b
+      - ANSWER_LLM_MODEL=qwen2.5:3b
+      - LLM_TEMPERATURE=0
+    volumes:
+      - ./data:/app/data
+      - ./chroma_db:/app/chroma_db
+    restart: unless-stopped

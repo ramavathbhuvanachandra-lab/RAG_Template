@@ -1,0 +1,167 @@
+{
+    "version": 1,
+    "dimensions": {
+        "program": {
+            "btech": [
+                "B.Tech.",
+                "B.Tech",
+                "BTech",
+                "Bachelor of Technology"
+            ],
+            "mtech": [
+                "M.Tech.",
+                "M.Tech",
+                "MTech",
+                "Master of Technology",
+                "Masters Tech"
+            ],
+            "msc": [
+                "M.Sc.",
+                "M.Sc",
+                "MSc",
+                "Master of Science"
+            ],
+            "phd": [
+                "Ph.D.",
+                "Ph.D",
+                "PhD",
+                "Doctoral",
+                "Doctorate"
+            ],
+            "mba": [
+                "MBA",
+                "M.B.A.",
+                "Master of Business Administration",
+                "Management and Entrepreneurship",
+                "School of Management and Entrepreneurship",
+                "management_and_entrepreneurship",
+                "schools/management_and_entrepreneurship",
+                "SME"
+            ],
+            "ms_by_research": [
+                "M.S. by Research",
+                "MS by Research",
+                "Master of Science by Research"
+            ],
+            "bds": [
+                "BDS",
+                "B.D.S.",
+                "Bachelor of Dental Surgery"
+            ],
+            "mbbs": [
+                "MBBS",
+                "M.B.B.S.",
+                "Bachelor of Medicine"
+            ],
+            "barch": [
+                "B.Arch",
+                "B.Arch.",
+                "Bachelor of Architecture"
+            ],
+            "mpharm": [
+                "M.Pharm",
+                "M.Pharm.",
+                "Master of Pharmacy"
+            ],
+            "bpharm": [
+                "B.Pharm",
+                "B.Pharm.",
+                "Bachelor of Pharmacy"
+            ],
+            "diploma": [
+                "Diploma"
+            ]
+        },
+        "admission_route": {
+            "jee": [
+                "JEE",
+                "JEE Advanced"
+            ],
+            "josaa": [
+                "JoSAA",
+                "JOSAA"
+            ],
+            "gate": [
+                "GATE"
+            ],
+            "idrp": [
+                "IDRP"
+            ]
+        },
+        "student_status": {
+            "regular": [
+                "regular",
+                "full-time",
+                "full time"
+            ],
+            "part_time": [
+                "part-time",
+                "part time"
+            ],
+            "sponsored": [
+                "sponsored",
+                "sponsor"
+            ],
+            "external": [
+                "external"
+            ]
+        },
+        "department": {
+            "electrical_engineering": [
+                "Electrical Engineering",
+                "electrical_engineering",
+                "departments/electrical_engineering"
+            ],
+            "computer_science": [
+                "Computer Science and Engineering",
+                "computer_science_and_engineering",
+                "departments/computer_science_and_engineering",
+                "Computer Science",
+                "CSE"
+            ],
+            "mechanical_engineering": [
+                "Mechanical Engineering",
+                "mechanical_engineering",
+                "departments/mechanical_engineering"
+            ],
+            "chemical_engineering": [
+                "Chemical Engineering",
+                "chemical_engineering",
+                "departments/chemical_engineering"
+            ],
+            "civil_engineering": [
+                "Civil and Infrastructure Engineering",
+                "civil_and_infrastructure_engineering",
+                "departments/civil_and_infrastructure_engineering",
+                "Civil Engineering"
+            ],
+            "materials_engineering": [
+                "Materials Engineering",
+                "materials_engineering",
+                "departments/materials_engineering"
+            ],
+            "bioscience_and_bioengineering": [
+                "Bioscience and Bioengineering",
+                "bioscience_and_bioengineering",
+                "departments/bioscience_and_bioengineering",
+                "BSBE"
+            ],
+            "chemistry": [
+                "Department of Chemistry",
+                "departments/chemistry"
+            ],
+            "physics": [
+                "Department of Physics",
+                "departments/physics"
+            ],
+            "mathematics": [
+                "Department of Mathematics",
+                "departments/mathematics"
+            ],
+            "economics": [
+                "Department of Economics",
+                "departments/economics"
+            ]
+        }
+    }
+}
