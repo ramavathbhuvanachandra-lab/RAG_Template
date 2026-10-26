@@ -483,14 +483,19 @@ def handle_chat_turn(
             is_explicit_refusal_text = any(re.search(pattern, ans_lower) for pattern in refusal_regexes)
 
             # A full refusal either has short length (<=55 words) with an abstention pattern,
-            # or starts with an explicit refusal statement.
+            # or starts with an explicit refusal statement. A substantive answer that addresses
+            # documented aspects and notes a missing sub-detail is not a full refusal.
             is_full_refusal = False
             if is_explicit_refusal_text or ("no official" in ans_lower and "available" in ans_lower):
-                if ans_word_count <= 55 or ans_lower.startswith((
+                is_substantive_start = ans_lower.startswith((
+                    "yes", "sure", "both", "candidates", "to secure", "srgi",
+                    "the s. r. group", "s. r. group", "s.r. group", "at s. r.", "at srgi"
+                ))
+                if not is_substantive_start and (ans_word_count <= 55 or ans_lower.startswith((
                     "i'm sorry", "i cannot", "the available official", "could you please",
                     "the provided evidence does not contain", "based on the provided evidence, there is no",
                     "the provided documents do not contain", "information regarding"
-                )):
+                ))):
                     is_full_refusal = True
 
             if is_full_refusal:

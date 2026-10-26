@@ -427,13 +427,13 @@ def _extract_named_entities(text: str) -> list[tuple[int, str]]:
             if words_set and not words_set.issubset(_CATEGORY_WORDS) and name.casefold() not in {"iit jodhpur", "iit", "jodhpur", "srgi", "sr group", "sr group of institutions", "lucknow"}:
                 found.append((match.start("name"), name))
 
-    for match in _PREPOSITION_ENTITY_RE.finditer(text):
         name = _clean(match.group("name"))
         words = name.split()
         while words and (words[0].lower().rstrip(".,;:") in _STOPWORDS or not words[0][0].isupper()):
             words.pop(0)
-        name = " ".join(words)
-        # Do not treat a generic lowercase continuation as an entity.
+        name = " ".join(words).rstrip(".,;:!?-")
+        if re.search(r"[.!?]\s+[A-Z]", name):
+            name = re.split(r"[.!?]\s+", name)[0].strip()
         if name and re.search(r"[A-Z]", name):
             words_set = {w.lower().rstrip(".,;:") for w in name.split()}
             if words_set and not words_set.issubset(_CATEGORY_WORDS) and name.casefold() not in {"iit jodhpur", "iit", "jodhpur", "srgi", "sr group", "sr group of institutions", "lucknow"}:
@@ -821,8 +821,12 @@ def resolve_conversation(
         ) and not bool(
             re.search(r"\b(?:document|curriculum|table|structure|department|overview|elective|group|general\s+information)\b", original, re.I)
         )
+        orig_degrees = [v for _, v in _extract_degree_candidates(original)]
+        orig_topic = _topic_from_text(original)
         return {
             **_safe_fallback(original),
+            "active_entity": orig_degrees[-1] if orig_degrees else "",
+            "active_topic": orig_topic or "",
             "unanchored_reference": "true" if is_standalone_deictic else "false",
         }
 
@@ -866,6 +870,40 @@ def resolve_conversation(
             "resolution_source": "explicit_correction",
             "resolution_confidence": "1.0",
             "resolution_reason": "user_explicit_correction",
+        }
+
+    # Explicit return to a previous topic/degree (e.g., "Okay, back to CSE—how many seats are there?", "Returning to CSE, what is the intake?")
+    back_match = re.search(
+        r"\b(?:back\s+to|returning\s+to|coming\s+back\s+to|switching\s+back\s+to)\s+([A-Za-z0-9.&'()/\-]+(?:\s+[A-Za-z0-9.&'()/\-]+)?)\b",
+        original,
+        flags=re.I,
+    )
+    if back_match:
+        target_raw = back_match.group(1).strip().rstrip(".,;:-—")
+        corr_degrees = [v for _, v in _extract_degree_candidates(target_raw)]
+        target_entity = corr_degrees[0] if corr_degrees else target_raw
+        sub_q = re.sub(
+            r"^(?:okay[,\s]+)?(?:back\s+to|returning\s+to|coming\s+back\s+to|switching\s+back\s+to)\s+[A-Za-z0-9.&'()/\-]+[—\-,\s]*",
+            "",
+            original,
+            flags=re.I,
+        ).strip()
+        topic = _topic_from_text(sub_q) or "information"
+        clean_sub = sub_q.rstrip("?. ")
+        if re.search(r"\b(?:seats?|intake|how\s+many\s+seats)\b", sub_q, re.I):
+            resolved = f"How many seats are there in {target_entity}?"
+        elif clean_sub:
+            resolved = f"{clean_sub} for {target_entity}?"
+        else:
+            resolved = f"Tell me about {target_entity}."
+        return {
+            "resolved_question": resolved,
+            "mode": "follow_up",
+            "active_topic": topic,
+            "active_entity": target_entity,
+            "resolution_source": "explicit_return_to_topic",
+            "resolution_confidence": "1.0",
+            "resolution_reason": "user_returned_to_topic",
         }
 
     # Check if the assistant recently requested clarification (e.g. asking which programme/department/topic)

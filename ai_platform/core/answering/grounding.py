@@ -113,6 +113,10 @@ _DURATION_RE = re.compile(
     r"(?:day|days|week|weeks|month|months|year|years|semester|semesters)\b",
     re.I,
 )
+_CLOCK_TIME_RE = re.compile(
+    r"\b(?:[01]?\d|2[0-3]):[0-5]\d(?:\s*(?:am|pm|a\.m\.|p\.m\.))?\b|\b(?:1[0-2]|[1-9])\s*(?:am|pm|a\.m\.|p\.m\.)\b",
+    re.I,
+)
 
 
 def _money_normalized(markers: Iterable[str]) -> tuple[str, ...]:
@@ -133,6 +137,17 @@ def _money_normalized(markers: Iterable[str]) -> tuple[str, ...]:
             result.append(value)
 
     return tuple(result)
+
+
+def _time_signature(value: str) -> str:
+    v = value.lower().replace(" ", "").replace(".", "")
+    m = re.match(r"^(\d{1,2})(?::(\d{2}))?(am|pm)?$", v)
+    if m:
+        h = int(m.group(1))
+        minute = m.group(2) or "00"
+        ampm = m.group(3) or ""
+        return f"{h}:{minute}{ampm}"
+    return v
 
 
 def _markers(text: str) -> dict[str, tuple[str, ...]]:
@@ -177,6 +192,12 @@ def _markers(text: str) -> dict[str, tuple[str, ...]]:
             dict.fromkeys(
                 _lower(x)
                 for x in _DURATION_RE.findall(normalized)
+            )
+        ),
+        "times": tuple(
+            dict.fromkeys(
+                _lower(x)
+                for x in _CLOCK_TIME_RE.findall(normalized)
             )
         ),
     }
@@ -264,6 +285,7 @@ def _unsupported_numeric_markers(
         "ratios",
         "years",
         "academic_years",
+        "times",
     ):
         evidence_exact = set(
             evidence_markers[category]
@@ -278,6 +300,15 @@ def _unsupported_numeric_markers(
             }
             question_numeric = {
                 _academic_year_signature(value)
+                for value in question_exact
+            }
+        elif category == "times":
+            evidence_numeric = {
+                _time_signature(value)
+                for value in evidence_exact
+            }
+            question_numeric = {
+                _time_signature(value)
                 for value in question_exact
             }
         else:
@@ -296,6 +327,8 @@ def _unsupported_numeric_markers(
 
             if category == "academic_years":
                 signature = _academic_year_signature(value)
+            elif category == "times":
+                signature = _time_signature(value)
             else:
                 signature = _numeric_signature(value)
 
@@ -520,9 +553,13 @@ def _check_polarity_inversion_of_qualifier(
         return []
 
     # If the sentence is describing the applicant's personal qualification status
-    # (e.g. "Since you have not qualified GATE", "you do not have a GATE score"),
+    # (e.g. "Since you have not qualified GATE", "Since you haven't qualified GATE", "you do not have a GATE score"),
     # it is not an institutional claim that GATE itself is denied as a valid route.
-    if re.search(r"\b(?:you|candidate|applicant|student)\b.*?\b(?:have|has|did)\s+not\s+(?:qualif\w+|have)\b|\b(?:without|not\s+having)\s+(?:a\s+)?(?:gate|qualifying)", sentence, re.I):
+    if re.search(
+        r"\b(?:you|candidate|applicant|student)\b.*?\b(?:have|has|did|haven't|hasn't|didn't|do|does|don't|doesn't)(?:\s+not)?\s+(?:qualif\w+|have|hold)\b|\b(?:without|not\s+having|lacking|not\s+qualified)\s+(?:a\s+)?(?:gate|qualifying)",
+        sentence,
+        re.I,
+    ):
         return []
 
     issues: list[GroundingIssue] = []
@@ -835,9 +872,15 @@ def _check_sentence(
         sentence,
         _PERSONAL_ELIGIBILITY_PATTERNS,
     ):
-        # Policy eligibility is not the same as a personal eligibility
-        # conclusion.
-        if not _PERSONAL_EVIDENCE_PATTERN.search(
+        # Policy eligibility is not the same as a personal eligibility conclusion.
+        # Do not flag negative eligibility assessments or threshold explanations where the model
+        # clarifies that a candidate does not meet the minimum mark or explains category-specific thresholds.
+        is_negative_or_threshold_explanation = bool(re.search(
+            r"\b(?:not\s+(?:eligible|qualified|admitted|accepted)|ineligible|cannot\s+be\s+admitted|do\s+not\s+meet|does\s+not\s+meet|below\s+the\s+minimum|threshold)\b",
+            sentence,
+            re.I,
+        ))
+        if not is_negative_or_threshold_explanation and not _PERSONAL_EVIDENCE_PATTERN.search(
             evidence
         ):
             issues.append(
@@ -978,17 +1021,13 @@ def assess_answer_grounding(
         question=question,
     )
 
-    if unsupported:
+    for marker in unsupported:
         issues.append(
             GroundingIssue(
                 "unsupported_numeric_value",
-                answer,
+                marker,
                 evidence,
-                (
-                    "The answer contains one or more "
-                    "numeric values that are not present "
-                    "in the supplied evidence."
-                ),
+                f"The value '{marker}' appears in the answer but is not supported by the evidence or question context.",
             )
         )
 

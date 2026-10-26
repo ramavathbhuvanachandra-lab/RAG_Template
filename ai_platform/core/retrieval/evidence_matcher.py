@@ -468,15 +468,20 @@ def _detect_qualification_level(text: str) -> str | None:
         return "postgraduate"
     if re.search(r"\b(?:eligible\s+for|eligibility\s+(?:for|of|in)|admission\s+(?:to|in|for)|apply\s+(?:for|to)|stud(?:y|ying)|pursu(?:e|ing))\s+(?:ph\.?d|phd|doctorate|doctoral)\b", t):
         return "doctoral"
-    if re.search(r"\b(?:eligible\s+for|eligibility\s+(?:for|of|in)|admission\s+(?:to|in|for)|apply\s+(?:for|to)|stud(?:y|ying)|pursu(?:e|ing))\s+(?:b\.?tech|btech|b\.?voc|bvoc|b\.?pharm|bpharm|undergraduate|bachelor)\b", t):
+    if re.search(r"\b(?:eligible\s+for|eligibility\s+(?:for|of|in)|admission\s+(?:to|in|for)|apply\s+(?:for|to)|stud(?:y|ying)|pursu(?:e|ing))\s+(?:b\.?tech|btech|b\.?voc|bvoc|b\.?pharm|bpharm|undergraduate|bachelor|cse|ece|eee|ee|me|ce|it|ai\s*&\s*ml|data\s+science)\b", t):
         return "undergraduate"
     if re.search(r"\b(?:eligible\s+for|eligibility\s+(?:for|of|in)|admission\s+(?:to|in|for)|apply\s+(?:for|to)|stud(?:y|ying)|pursu(?:e|ing))\s+(?:d\.?pharm|dpharm|diploma)\b", t):
         return "diploma"
 
-    if any(k in t for k in ("m.tech", "mtech", "master", "postgraduate", "gate", "cat", "mat", "after graduation", "after b.tech", "after btech", "after bsc", "after bca")):
+    # Undergraduate engineering and entrance indicators (including high-school qualifications and JEE Main)
+    if any(k in t for k in ("10+2", "class 12", "12th", "pcm", "pcb", "intermediate", "senior secondary", "after 12th", "b.tech", "btech", "b.voc", "bvoc", "b.pharm", "bpharm", "undergraduate", "bachelor", "cse", "ece", "eee", "ee", "jee main", "jeemain")):
+        if not any(k in t for k in ("m.tech", "mtech", "mba", "mca", "postgraduate", "master of technology")):
+            return "undergraduate"
+
+    if re.search(r"\b(?:admission|apply|eligible|eligibility|entrance)\s+after\s+graduation\b", t):
         return "postgraduate"
-    if any(k in t for k in ("10+2", "class 12", "12th", "pcm", "pcb", "intermediate", "senior secondary", "after 12th", "b.tech", "btech", "b.voc", "bvoc", "b.pharm", "bpharm", "undergraduate", "bachelor")):
-        return "undergraduate"
+    if any(k in t for k in ("m.tech", "mtech", "master", "postgraduate", "gate", "cat", "mat", "after b.tech", "after btech", "after bsc", "after bca")):
+        return "postgraduate"
     if any(k in t for k in ("diploma", "d.pharm", "dpharm", "dhp", "after 10th", "polytechnic")):
         return "diploma"
     if any(k in t for k in ("ph.d", "phd", "doctorate", "doctoral")):
@@ -491,6 +496,10 @@ def _detect_candidate_level(candidate: RetrievalCandidate) -> str | None:
     subcat = str(meta.get("subcategory") or "").casefold()
     title = str(meta.get("title") or "").casefold()
     text = _candidate_text(candidate).casefold()[:400]
+
+    # If the chunk spans both UG (10+2) and PG (graduation/bachelor), it is a general multi-level document
+    if ("10+2" in text or "intermediate" in text) and ("graduation" in text or "bachelor" in text or "gate" in text):
+        return None
 
     if "postgraduate" in subcat or "mtech" in src or "m.tech" in title or "master of technology" in text or "bachelor's degree in relevant engineering" in text or "gate-qualified" in text:
         return "postgraduate"
@@ -521,7 +530,7 @@ def _check_conflict(frame: SemanticQueryFrame, candidate: RetrievalCandidate) ->
     cand_meta = getattr(cand_doc, "metadata", {}) if cand_doc and hasattr(cand_doc, "metadata") else {}
     doc_type = str(cand_meta.get("document_type") or "").casefold()
     cand_subcat = str(cand_meta.get("subcategory") or "").casefold()
-    if doc_type in {"dataset", "directory"} or cand_subcat in {"institutional_overview", "heritage_and_trust", "leadership_messages", "general_regulations"}:
+    if doc_type in {"dataset", "directory"} or cand_subcat in {"institutional_overview", "heritage_and_trust", "leadership_messages", "general_regulations", "admissions_and_aid"}:
         return False, ""
 
     if q_level and c_level and q_level != c_level:

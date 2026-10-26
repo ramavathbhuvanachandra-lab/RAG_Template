@@ -1,0 +1,194 @@
+[
+  {
+    "qid": "Q01_cse_basic_details",
+    "query": "I'm thinking of taking B.Tech CSE at SRGI. Tell me the basic details.",
+    "answer": "The S. R. Group of Institutions (SRGI) Lucknow offers a Bachelor of Technology (B.Tech) in Computer Science & Engineering (CSE). Here are the basic details: - **Programme**: B.Tech in Computer Science & Engineering - **Faculty**: Faculty of Engineering & Technology - **Sanctioned Intake**: 180 seats - **Specializations/Tracks**: - Core CSE: 180 seats - AI & ML Specialization: 60 seats - Data Science Specialization: 60 seats The programme is offered with a minimum qualifying marks requirement of at least 45% aggregate marks (40% for candidates belonging to SC/ST reserved categories). Admission modes include Uttar Pradesh Technical Admission Counselling (UPTAC) and Direct Institutional Merit Quota, conforming to AKTU and state government norms. The programme covers career pathways in diverse sectors such as Software Development Engineer, Systems Architect, Database Administrator, and more. SRGI Lucknow also offers M.Tech in Computer Science & Engineering and Mechanical Engineering Production.",
+    "sources": [
+      "Bachelor of Technology (B.Tech) Programmes \u2014 Comprehensive Overview",
+      "Frequently Asked Questions (FAQ) \u2014 Admissions, Academics and Life at SRGI",
+      "Complete List of B.Tech Programmes and Specializations",
+      "B.Tech in Computer Science (CS)"
+    ],
+    "status": "supported",
+    "is_safe_refusal": false,
+    "latency": 26.15,
+    "diagnostics": {
+      "target": null,
+      "attributes": null,
+      "answer_mode": null
+    }
+  },
+  {
+    "qid": "Q02_cse_vs_ece",
+    "query": "Bhai, I'm confused between CSE and ECE. What do we study in both, and what kind of jobs can we get after graduation?",
+    "answer": "Both B.Tech in Computer Science & Engineering (CSE) and B.Tech in Electronics & Communication Engineering (ECE) are offered at SRGI Lucknow. Here's a brief overview of what you can expect in each: **B.Tech in Computer Science & Engineering (CSE):** - **Core Curriculum:** Core Cse (60 seats), AI Ml Specialization (60 seats), Data Science Specialization (60 seats) - **Jobs:** Graduates can pursue careers in software development, data science, artificial intelligence, and cybersecurity. They can work for tech companies, IT firms, and startups. **B.Tech in Electronics & Communication Engineering (ECE):** - **Core Curriculum:** ECE / EC (60 seats) - **Jobs:** Graduates can work in areas like telecommunications, electronic devices, and embedded systems. They can find jobs in tech companies, manufacturing firms, and research institutions. Both branches offer a 4-year duration and are affiliated with Dr. A.P.J. Abdul Kalam Technical University (AKTU) and approved by the All India Council for Technical Education (AICTE).",
+    "sources": [
+      "Institute-Wide Academic Programmes and Courses Directory",
+      "Bachelor of Technology (B.Tech) Programmes \u2014 Comprehensive Overview",
+      "Academic Faculties and Departments Directory"
+    ],
+    "status": "supported",
+    "is_safe_refusal": false,
+    "latency": 20.52,
+    "diagnostics": {
+      "target": null,
+      "attributes": null,
+      "answer_mode": null
+    }
+  },
+  {
+    "qid": "Q03_44_percent_eligibility",
+    "query": "I got 44% in Class 12 PCM. Can I apply for B.Tech at SRGI, or am I not eligible?",
+    "answer": "Based on the information provided, candidates with at least 45% aggregate marks (40% for candidates belonging to SC/ST reserved categories) are eligible for admission to B.Tech programs at SRGI, Lucknow. Since you have 44% in PCM, you do not meet the minimum qualifying marks requirement for direct admission. However, you may still be considered for admission through the Uttar Pradesh Technical Admission Counselling (UPTAC) or other direct merit-based admission as per regulatory norms. It is recommended to check the latest admission procedures and eligibility criteria on the SRGI Lucknow official website or contact their admission office for the most up-to-date information.",
+    "sources": [
+      "Bachelor of Technology (B.Tech) Programmes \u2014 Comprehensive Overview",
+      "SRGI Lucknow Admissions Procedure, Eligibility and Enquiry Channels"
+    ],
+    "status": "supported",
+    "is_safe_refusal": false,
+    "latency": 12.09,
+    "diagnostics": {
+      "target": null,
+      "attributes": null,
+      "answer_mode": null
+    }
+  },
+  {
+    "qid": "Q04_jee_main_vs_direct",
+    "query": "I haven't taken any admission yet. Do I need JEE Main for SRGI, or can I apply directly?",
+    "answer": "To secure admission at SRGI Lucknow, you can apply through two primary channels: 1. **State Level Counselling (UPTAC / AKTU):** Based on JEE Main scores for B.Tech, CUET-PG for MBA, or respective state entrance examination rankings. 2. **Direct Institutional Merit Admission:** Eligible candidates may apply directly to SRGI Lucknow through the online portal or at the campus admission cell under the management / vacant seats quota as per regulatory norms. You do not need to take JEE Main for admission; you can apply directly if you meet the eligibility criteria for direct admission.",
+    "sources": [
+      "SRGI Lucknow Admissions Procedure, Eligibility and Enquiry Channels"
+    ],
+    "status": "supported",
+    "is_safe_refusal": false,
+    "latency": 12.71,
+    "diagnostics": {
+      "target": null,
+      "attributes": null,
+      "answer_mode": null
+    }
+  },
+  {
+    "qid": "Q05_reporting_documents",
+    "query": "I'm coming to the college for admission. Tell me exactly which documents I should carry so I don't have to come back again.",
+    "answer": "To secure your admission to SRGI Lucknow, you should carry the following documents: 1. **10+2 Qualification Certificate**: From any recognized Board (CBSE, ICSE, UP Board, or equivalent). 2. **Mandatory Subjects**: Certificates of having passed Physics and Mathematics as compulsory subjects, alongside one optional subject (Chemistry, Biotechnology, Biology, or Technical Vocational subject). 3. **General Eligibility Criteria Documentation**: If you are applying for the Bachelor of Technology (B.Tech) program, you should also carry certificates of having passed 10+2 with the required aggregate marks (50% for general category, 45% for SC/ST category). 4. **Admission Application Form**: You can download the application form from the official SRGI Lucknow website or obtain it from the campus admission cell. 5. **Photocopies of Academic Certificates**: Photocopies of your 10+2 and Bachelor's degree certificates (if applicable). 6. **Photocopies of Marksheets**: Photocopies of your 10+2 and Bachelor's degree marksheets (if applicable). 7. **Photocopies of Passport-sized Photographs**: Multiple recent passport-sized photographs. 8. **Online Application**: Fill out the online application form available on the SRGI Lucknow website and submit it along with the required documents. 9. **Online Application Fee**: Pay the online application fee as per the instructions provided on the website. Please ensure to download and review the official SRGI Lucknow prospectus for the most up-to-date and detailed information on the admission process and required documents.",
+    "sources": [
+      "Bachelor of Technology (B.Tech) Programmes \u2014 Comprehensive Overview",
+      "Integrated MBA (IMBA) \u2014 5-Year Dual-Degree Management Programme",
+      "SRGI Lucknow Admissions Procedure, Eligibility and Enquiry Channels",
+      "Master of Business Administration (MBA) \u2014 2-Year Full-Time Programme"
+    ],
+    "status": "supported",
+    "is_safe_refusal": false,
+    "latency": 24.85,
+    "diagnostics": {
+      "target": null,
+      "attributes": null,
+      "answer_mode": null
+    }
+  },
+  {
+    "qid": "Q06_mtech_eligibility",
+    "query": "I completed B.Tech with 49%, and I haven't qualified GATE. Can I still get admission to M.Tech?",
+    "answer": "Based on the provided verified facts, candidates must possess a Bachelor's degree in a relevant engineering branch (B.E./B.Tech) with a minimum of 50% marks (45% for reserved category) to be eligible for M.Tech admission. Preference is given to GATE-qualified candidates, followed by university admission counselling merit. Since you have not qualified for GATE, you may still be considered through university admission counselling merit. Please ensure you have all the mandatory documents ready for the admission process.",
+    "sources": [
+      "Master of Technology (M.Tech) Postgraduate Programmes"
+    ],
+    "status": "supported",
+    "is_safe_refusal": false,
+    "latency": 14.82,
+    "diagnostics": {
+      "target": null,
+      "attributes": null,
+      "answer_mode": null
+    }
+  },
+  {
+    "qid": "Q07_hostel_fees_facilities",
+    "query": "Bhai, I'm coming from another city. Is hostel available, what facilities do I get, and how much will it cost?",
+    "answer": "Yes, hostel accommodation is available at SRGI Lucknow for students staying in the campus. The facilities include separate, self-contained residential wings for male and female scholars, round-the-clock administrative oversight, individual beds, wardrobes, study tables, ergonomic chairs, spacious, naturally ventilated rooms with options for double and triple occupancy, 24-hour perimeter security, CCTV monitoring, and strict biometric/logbook gate control. The cost of hostel accommodation will depend on the type of room (single, double, or triple) and the duration of stay, and can be verified through the Student Grievance Redressal Mechanism and Support Portal.",
+    "sources": [
+      "Hostel Accommodation and Residential Life (2,000+ Capacity)",
+      "Student Grievance Redressal Mechanism and Support Portal"
+    ],
+    "status": "supported",
+    "is_safe_refusal": false,
+    "latency": 11.76,
+    "diagnostics": {
+      "target": null,
+      "attributes": null,
+      "answer_mode": null
+    }
+  },
+  {
+    "qid": "Q08_bus_routes_timings",
+    "query": "I live in Lucknow and want to travel to college by bus. Do you have college buses, which areas do they cover, and what time does the first bus leave?",
+    "answer": "Group of Institutions (SRGI), Lucknow: Fleet Type: Institutional Bus & Van Fleets Transit Coverage Corridors: - Lucknow City Metropolitan Corridors - Sitapur Road Transit Highway - Bakshi ka Talab (BKT) adjoining localities Chief Transport Officer: Mr. Real-Time GPS Tracking: All buses are integrated with GPS tracking units monitored at the central transit control room for student punctuality and route adherence. Transport Fleet and Bus Connectivity Across Lucknow S.",
+    "sources": [
+      "Transport Fleet and Bus Connectivity Across Lucknow",
+      "Campus Transport Facility and Transit Services",
+      "SRGI Lucknow Administrative Heads and Core Operational Team"
+    ],
+    "status": "supported",
+    "is_safe_refusal": false,
+    "latency": 10.88,
+    "diagnostics": {
+      "target": null,
+      "attributes": null,
+      "answer_mode": null
+    }
+  },
+  {
+    "qid": "Q09_library_resources",
+    "query": "Tell me about the library collection, reading capacity, and digital knowledge resources available at SRGI.",
+    "answer": "SRGI Lucknow's Central Library houses a collection of 53,760+ books and subscribes to 448+ journals, providing a comprehensive digital and bibliographic support across various academic disciplines. The library system utilizes Techlib-7 software, OPAC, NDL, DELNET, and Sugamya Pustakalaya access for enhanced resources and cataloging.",
+    "sources": [
+      "Central Library System and Digital Knowledge Repositories",
+      "SRGI Lucknow Institutional Overview, Campus Profile and History",
+      "SRGI Lucknow Constituent Academic Units and Institutional Network"
+    ],
+    "status": "supported",
+    "is_safe_refusal": false,
+    "latency": 11.97,
+    "diagnostics": {
+      "target": null,
+      "attributes": null,
+      "answer_mode": null
+    }
+  },
+  {
+    "qid": "Q10_multi_topic_cse_hostel",
+    "query": "CSE aur hostel ke baare mein batao.",
+    "answer": "Sure, here are the details about the CSE branch and hostel facilities at SRGI Lucknow: **Hostel Facilities:** - SRGI Lucknow provides separate boys' and girls' hostels that can accommodate over 2,000 students. - The hostels offer 24-hour security, a gym, Wi-Fi, and a mess dining facility. For more information on the admission office, you can contact them at +91 9793000005/6/7 or via email at info@srgi.in.",
+    "sources": [
+      "Frequently Asked Questions (FAQ) \u2014 Admissions, Academics and Life at SRGI"
+    ],
+    "status": "supported",
+    "is_safe_refusal": false,
+    "latency": 13.85,
+    "diagnostics": {
+      "target": null,
+      "attributes": null,
+      "answer_mode": null
+    }
+  },
+  {
+    "qid": "Q11_campus_facilities",
+    "query": "What campus facilities and student amenities are available?",
+    "answer": "At S. R. Group of Institutions (SRGI), Lucknow, students have access to a variety of campus facilities and student amenities. These include: - Residential Complex: The SRGI Lucknow residential complex provides a secure, disciplined, and comfortable home-like environment for over 2,000+ resident students. Separate, self-contained residential wings are maintained for male and female scholars with round-the-clock administrative oversight. Each student receives an individual bed, wardrobe, study table, and ergonomic chair. - Hostel Accommodation and Residential Life (2,000+ Capacity): The campus offers separate boys and girls wings with a total capacity of 2,000+ students. Facilities include room furnishings, 24-hour security, a gym, Wi-Fi, and an amphitheatre. - Futuristic Laboratories and Technical Infrastructure: SRGI Lucknow maintains over 40 specialized departmental laboratories and mechanical workshops, equipped with high-tech industrial-grade equipment for practical experimentation in areas such as advanced computing, electronics, mechanical, and pharmaceutical sciences. - Central Library: The campus features a central library system with 53,760+ books and 448+ journals, along with a 65-acre green ecosystem designed with state-of-the-art academic complexes, futuristic laboratories, residential blocks, auditoriums, and sports facilities. - Campus Connectivity: The campus is connected to the educational hub of Bakshi ka Talab (BKT), Lucknow, and offers seamless connectivity via college-operated transit fleets serving students and staff across Lucknow city and adjoining regions.",
+    "sources": [
+      "SRGI Lucknow Institutional Overview, Campus Profile and History",
+      "Hostel Accommodation and Residential Life (2,000+ Capacity)",
+      "Futuristic Laboratories and Technical Infrastructure"
+    ],
+    "status": "supported",
+    "is_safe_refusal": false,
+    "latency": 29.73,
+    "diagnostics": {
+      "target": null,
+      "attributes": null,
+      "answer_mode": null
+    }
+  }
+]

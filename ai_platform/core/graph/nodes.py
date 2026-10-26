@@ -2203,38 +2203,90 @@ class CoreNodes:
         )
 
         if grounding_status in {"review", "conflict", "unsafe"}:
-            # Controlled single repair attempt using accepted evidence
-            repaired_answer = ""
-            try:
-                from ai_platform.core.answering.generator import extractive_repair
-                repaired_answer = extractive_repair(request)
-            except Exception:
-                repaired_answer = ""
+            # Attempt selective sentence-level excision of unsupported claims first
+            pruned_candidate = ""
+            if generated_answer and grounding and getattr(grounding, "issues", ()):
+                offending_markers = {
+                    getattr(issue, "answer_claim", "").lower().strip()
+                    for issue in getattr(grounding, "issues", ())
+                    if getattr(issue, "issue_type", "") in {"unsupported_numeric_claim", "unsupported_numeric_value"}
+                }
+                offending_sentences = {
+                    getattr(issue, "answer_claim", "").strip()
+                    for issue in getattr(grounding, "issues", ())
+                    if getattr(issue, "issue_type", "") in {"unsupported_causal_claim", "eligibility_conclusion", "exemption_conclusion"}
+                }
+                raw_sentences = [
+                    s.strip() for s in re.split(r"(?<=[.!?])\s+", generated_answer) if s.strip()
+                ]
+                retained_sentences = []
+                excised_any = False
+                for s in raw_sentences:
+                    s_low = s.lower()
+                    has_bad_marker = any(m and m in s_low for m in offending_markers)
+                    is_bad_sent = any(bs and (bs in s or s in bs) for bs in offending_sentences)
+                    if has_bad_marker or is_bad_sent:
+                        excised_any = True
+                        continue
+                    retained_sentences.append(s)
+
+                if excised_any and retained_sentences:
+                    if re.search(r"\b(?:time|timing|timings|schedule|departure|depart|leave)\b", raw_q, re.I):
+                        retained_sentences.append(
+                            "The provided evidence does not contain information regarding the specific departure timetable."
+                        )
+                    pruned_candidate = " ".join(retained_sentences).strip()
 
             repaired_grounding = None
-            if repaired_answer:
+            if pruned_candidate:
                 repaired_grounding = self.deps.assess_answer_grounding(
-                    answer=repaired_answer,
+                    answer=pruned_candidate,
                     evidence=_clean_context(getattr(package, "context", "")),
                     question=raw_q,
                 )
 
-            if repaired_grounding and _status(repaired_grounding) == "grounded" and repaired_answer:
+            if repaired_grounding and _status(repaired_grounding) == "grounded" and pruned_candidate:
                 guarded = self.deps.guard_answer(
-                    repaired_answer,
+                    pruned_candidate,
                     fallback=fallback,
                 )
                 final_answer = _answer_text(guarded)
-                guard_reason = "repaired_from_verified_evidence"
+                guard_reason = "repaired_unsupported_claim_pruned"
                 grounding = repaired_grounding
                 grounding_status = "grounded"
             else:
-                guarded = self.deps.guard_answer(
-                    "",
-                    fallback=fallback,
-                )
-                final_answer = _answer_text(guarded)
-                guard_reason = "answer_grounding_review"
+                # Controlled single fallback repair attempt using accepted evidence
+                repaired_answer = ""
+                try:
+                    from ai_platform.core.answering.generator import extractive_repair
+                    repaired_answer = extractive_repair(request)
+                except Exception:
+                    repaired_answer = ""
+
+                repaired_grounding = None
+                if repaired_answer:
+                    repaired_grounding = self.deps.assess_answer_grounding(
+                        answer=repaired_answer,
+                        evidence=_clean_context(getattr(package, "context", "")),
+                        question=raw_q,
+                    )
+
+                if repaired_grounding and _status(repaired_grounding) == "grounded" and repaired_answer:
+                    guarded = self.deps.guard_answer(
+                        repaired_answer,
+                        fallback=fallback,
+                    )
+                    final_answer = _answer_text(guarded)
+                    guard_reason = "repaired_from_verified_evidence"
+                    grounding = repaired_grounding
+                    grounding_status = "grounded"
+                else:
+                    guarded = self.deps.guard_answer(
+                        "",
+                        fallback=fallback,
+                    )
+                    final_answer = _answer_text(guarded)
+                    guard_reason = "answer_grounding_review"
         else:
             guarded = self.deps.guard_answer(
                 generated_answer,

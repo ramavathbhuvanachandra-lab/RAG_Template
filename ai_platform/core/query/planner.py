@@ -3210,6 +3210,31 @@ def retrieval_queries_from_plan(plan: QueryPlan, *, limit: int = 8) -> tuple[str
                     facet_attr = attr_str
                 out.append(facet_attr)
 
+    # Branch comparisons: if query asks to compare two engineering branches (e.g. CSE and ECE)
+    if re.search(r"\b(?:cse|computer\s+science)\b", orig_cf) and re.search(r"\b(?:ece|electronics)\b", orig_cf):
+        out.append("B.Tech Computer Science and Engineering CSE curriculum career")
+        out.append("B.Tech Electronics and Communication Engineering ECE curriculum career")
+
+    # Undergraduate entrance and direct admission
+    if any(k in orig_cf for k in ("jee main", "jeemain", "direct admission", "without jee")):
+        out.append("B.Tech admission counselling UPTAC JEE Main direct institutional merit quota")
+        out.append("B.Tech admission procedure eligibility criteria")
+
+    # Reporting document checklist
+    if any(k in orig_cf for k in ("document", "documents", "carry", "checklist")) and any(k in orig_cf for k in ("admission", "reporting", "college")):
+        out.append("Admissions procedure verification documents checklist reporting")
+        out.append("Documents required at reporting time for admission")
+
+    # CSE basic details overview
+    if re.search(r"\b(?:cse|computer\s+science)\b", orig_cf) and any(k in orig_cf for k in ("basic", "detail", "details", "overview")):
+        out.append("B.Tech Computer Science and Engineering programme overview duration affiliation approval")
+        out.append("B.Tech CSE core curriculum specializations")
+
+    # Bus transport routes and connectivity
+    if any(k in orig_cf for k in ("bus", "transport", "transit", "fleet")) and any(k in orig_cf for k in ("area", "areas", "route", "routes", "cover", "time", "leave", "travel", "college")):
+        out.append("Transport Fleet and Bus Connectivity Across Lucknow routes corridors")
+        out.append("Campus transport transit coverage areas Charbagh Alambagh Gomti Nagar")
+
     # Recover institutional policy formulations for domain-wide entities (fees, dining, housing)
     # where individual programme queries otherwise displace general policy documents.
     if any(k in orig_cf for k in ("hostel", "mess", "dining")):
