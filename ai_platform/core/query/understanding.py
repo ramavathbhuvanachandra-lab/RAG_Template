@@ -482,16 +482,22 @@ def _apply_deterministic_backstop(
     target = _canonicalize_composite_target(target or "", original_query) or None
 
     explicit_context_target = _extract_explicit_target_from_context(original_query)
-    if (
-        explicit_context_target
-        and (
+    if explicit_context_target:
+        # If user explicitly specifies a prospective target program (e.g. "eligible for M.Tech"),
+        # that prospective program takes precedence over prior qualification degrees (e.g. "completed B.Tech").
+        is_prior_degree_overlap = bool(
+            target
+            and target.casefold() != explicit_context_target.casefold()
+            and re.search(r"\b(?:completed|passed|having|holding|after)\s+" + re.escape(target), original_query, re.I)
+        )
+        if (
             not target
+            or is_prior_degree_overlap
             or target.casefold() in generic_targets
             or target.casefold().startswith("admission ")
             or target.casefold().startswith("application ")
-        )
-    ):
-        target = explicit_context_target
+        ):
+            target = explicit_context_target
 
     # A direct process/application wording outranks a broad model label such
     # as ``application``.
@@ -774,6 +780,18 @@ def _extract_explicit_target_from_context(
     """
     normalized = normalize_text(query)
 
+    # First check prospective program target: "eligible for M.Tech", "admission to MCA", etc.
+    prospective_match = re.search(
+        r"\b(?:eligible\s+for|eligibility\s+(?:for|of|in)|admission\s+(?:to|in|for)|apply\s+(?:for|to)|stud(?:y|ying)|pursu(?:e|ing))\s+(?P<value>[A-Za-z0-9][A-Za-z0-9.&'()/\-]*(?:\s+[A-Za-z0-9][A-Za-z0-9.&'()/\-]*){0,4})",
+        normalized,
+        flags=re.IGNORECASE,
+    )
+    if prospective_match:
+        val = clean_item(prospective_match.group("value"))
+        val = re.sub(r"\s+(?:at|in)\s+(?:srgi|the\s+institute|the\s+college|the\s+university|college|campus)[.?!]*$", "", val, flags=re.I).strip()
+        if val and val.casefold() not in {"students", "student", "admission", "admissions", "application", "institute", "college", "university"}:
+            return val
+
     match = re.search(
         r"\b(?:for|of|in)\s+(?P<value>[A-Za-z0-9][A-Za-z0-9.&'()/\-]*(?:\s+[A-Za-z0-9][A-Za-z0-9.&'()/\-]*){0,5})\s*[?!.,:;]*$",
         normalized,
@@ -786,6 +804,7 @@ def _extract_explicit_target_from_context(
     if not value:
         return ""
 
+    value = re.sub(r"\s+(?:at|in)\s+(?:srgi|the\s+institute|the\s+college|the\s+university|college|campus)[.?!]*$", "", value, flags=re.I).strip()
     if value.casefold() in {
         "students",
         "student",

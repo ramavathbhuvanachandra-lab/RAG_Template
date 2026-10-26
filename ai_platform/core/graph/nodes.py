@@ -1334,7 +1334,7 @@ class CoreNodes:
             "resolution_reason": state.get("resolution_reason"),
         }
         exec_res = run_hybrid_query_understanding(
-            question=_clean(state.get("question") or question),
+            question=question,
             resolved_question=question,
             chat_history=tuple(state.get("chat_history", ())),
             conversation_result=conv_result,
@@ -1347,7 +1347,7 @@ class CoreNodes:
         query = plan_to_query(plan)
         query_frame = plan_to_frame(plan)
         pipeline_stop = exec_res.pipeline_stop
-        retrieval_queries = () if pipeline_stop else retrieval_queries_from_plan(plan, limit=5)
+        retrieval_queries = () if pipeline_stop else retrieval_queries_from_plan(plan, limit=8)
 
         t_lsqc0 = time.perf_counter()
         lossless_query = None
@@ -1377,6 +1377,7 @@ class CoreNodes:
             else (f"This is not an institutional request. I can only assist with academic, administrative, and campus information regarding {display_name}." if pipeline_stop else None)
         )
 
+        resolved_q = plan.resolved_query or exec_res.resolved_question or question
         qu_diag = {
             "selected_route": exec_res.selected_route,
             "initial_route": exec_res.initial_route,
@@ -1388,11 +1389,13 @@ class CoreNodes:
             "operation_timings_ms": {k: v * 1000.0 for k, v in exec_res.operation_timings.items()},
             "pipeline_stop": pipeline_stop,
             "stop_reason": exec_res.stop_reason or "",
-            "resolved_question": question,
+            "resolved_question": resolved_q,
             "original_question": _clean(state.get("question") or question),
         }
 
         return {
+            "question": question,
+            "resolved_question": resolved_q,
             "query_plan": plan,
             "query": query,
             "query_frame": query_frame,
@@ -1489,7 +1492,7 @@ class CoreNodes:
             _sequence(state.get("retrieval_queries"))
         ) or (primary,)
 
-        queries = _distinct_queries(queries, limit=5)
+        queries = _distinct_queries(queries, limit=10)
 
         retrieval_results: list[Sequence[Any]] = []
         retrieval_channels: list[str] = []
@@ -1954,16 +1957,20 @@ class CoreNodes:
 
         # Adaptive evidence sizing: complete-list and multi-attribute requests receive full budget (22),
         # while focused single-topic requests are budgeted to prevent context flooding and reduce prefill latency.
-        frame = state.get("query_frame")
         q_text = str(state.get("question", "")).casefold()
+        frame = state.get("query_frame")
         is_catalogue = any(m in q_text for m in ("all ", "departments", "branches", "programmes", "programs", "every "))
-        is_multi = bool(state.get("is_multi_intent", False) or getattr(frame, "is_multi_part", False))
+        is_multi = bool(
+            state.get("is_multi_intent", False)
+            or getattr(frame, "is_multi_part", False)
+            or len(getattr(frame, "facets", ())) >= 2
+        )
         is_list = bool(getattr(frame, "is_list_question", False))
 
         if is_catalogue:
             adaptive_max_units = 22
         elif is_multi or is_list:
-            adaptive_max_units = 14
+            adaptive_max_units = 16
         else:
             adaptive_max_units = 10
 
@@ -2187,6 +2194,7 @@ class CoreNodes:
         grounding = self.deps.assess_answer_grounding(
             answer=generated_answer,
             evidence=_clean_context(getattr(package, "context", "")),
+            question=raw_q,
         )
 
         grounding_status = _status(
@@ -2208,6 +2216,7 @@ class CoreNodes:
                 repaired_grounding = self.deps.assess_answer_grounding(
                     answer=repaired_answer,
                     evidence=_clean_context(getattr(package, "context", "")),
+                    question=raw_q,
                 )
 
             if repaired_grounding and _status(repaired_grounding) == "grounded" and repaired_answer:

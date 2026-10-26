@@ -3,69 +3,67 @@
     {
       "id": "MI_01_btech_cse_triple_attribute",
       "question": "What are the B.Tech CSE eligibility criteria, annual intake, and admission steps at SRGI?",
-      "verdict": "PARTIAL",
-      "latency": 26.429,
-      "coverage": 0.5,
+      "verdict": "PASS",
+      "latency": 17.242,
+      "coverage": 0.75,
       "sources": [
         "Bachelor of Technology (B.Tech) Programmes \u2014 Comprehensive Overview",
-        "SRGI Lucknow Admissions Procedure, Eligibility and Enquiry Channels",
-        "Frequently Asked Questions (FAQ) \u2014 Admissions, Academics and Life at SRGI",
         "B.Tech in Biotechnology (BT)"
       ],
-      "answer": "**B.Tech CSE Eligibility Criteria:** - 10+2 Qualification: Candidates must have passed the 10+2 examination from CBSE, ICSE, UP Board, or any recognized equivalent Board. - Mandatory Subjects: Physics and Mathematics as compulsory subjects, alongside one optional subject (Chemistry, Biotechnology, Biology, or Technical Vocational subject). - Minimum Qualifying Marks: At least 45% aggregate marks (40% for candidates belonging to SC/ST reserved categories). **B.Tech CSE Annual Intake:** - Sanctioned Annual Intake: 60 Seats. **B.Tech CSE Admission Steps:** 1. **Eligibility Verification:** Ensure you meet the academic and eligibility criteria mentioned above. 2. **Application Submission:** Fill out the SRGI application form available on their official website. 3. **Document Verification:** Gather all required documents such as Domicile Certificate (for U.P. state quota candidates), Transfer Certificate (TC) & Migration Certificate, Character Certificate from the institution last attended, Aadhaar Card copy, and recent passport-sized color photographs. 4. **Admission Process:** Submit the application along with the required documents to the SRGI Admissions Office. 5. **Interview:** Candidates may be called for an interview to assess their suitability for the program. 6. **Notification:** After the selection process, candidates will receive a notification regarding their admission status. For further details, refer to the SRGI Career Pathfinder and Course Selection Simulator or contact the official admission team at +91 9793000005/6/7 or via email at info@srgi.in."
+      "answer": "**B.Tech CSE (AI & ML, Data Science) Eligibility Criteria:** - Minimum Qualifying Marks: At least 45% aggregate marks (40% for candidates belonging to SC/ST reserved categories). - Mandatory Subjects: Physics and Mathematics. - Recognized Optional Subjects: Chemistry, Biotechnology, Biology, or Technical Vocational subject. **Annual Intake:** - The sanctioned annual intake for B.Tech CSE (AI & ML, Data Science) is 60 seats. **Admission Steps:** 1. **Through Uttar Pradesh Technical Admission Counselling (UPTAC / JEE Main score):** - Candidates can apply through the Uttar Pradesh Technical Admission Counselling (UPTAC) or by using their JEE Main score. 2. **Direct Institutional Merit Quota:** - Admission is also available through the direct institutional merit quota, which conforms to the norms set by AKTU and the state government. For more detailed information, you can refer to the official sources and provenance of S. R. Group of Institutions (SRGI), Lucknow."
     },
     {
       "id": "MI_02_hostel_dining_and_transport",
       "question": "Tell me about the hostel facilities and dining arrangements, and explain the transport options available to students.",
       "verdict": "PASS",
-      "latency": 27.669,
-      "coverage": 1.0,
+      "latency": 15.987,
+      "coverage": 0.75,
       "sources": [
-        "Hostel Accommodation and Residential Life (2,000+ Capacity)",
-        "Emergency Contacts Directory",
         "Hostel Accommodation and Residential Facilities",
-        "Frequently Asked Questions (FAQ) \u2014 Admissions, Academics and Life at SRGI"
+        "SRGI Lucknow Institutional Overview, Campus Profile and History",
+        "Hostel Accommodation and Residential Life (2,000+ Capacity)",
+        "SRGI Lucknow Administrative Heads and Core Operational Team"
       ],
-      "answer": "### Hostel Facilities and Dining Arrangements #### Hostel Facilities S. R. Group of Institutions (SRGI), Lucknow provides hostel facilities for both male and female students. The residential complex offers a secure, disciplined, and comfortable home-like environment for over 2,000+ resident students. Separate, self-contained residential wings are maintained for male and female scholars with round-the-clock administrative oversight. - **Boys' Hostel**: Spacious rooms, 24/7 security, Wi-Fi connectivity, and a mess. - **Girls' Hostel**: Also includes spacious rooms, 24/7 security, Wi-Fi connectivity, and a mess. #### Dining Arrangements The campus dining services offer a diverse menu of wholesome North and South Indian vegetarian meals, continental snacks, fresh juices, and hot beverages. The dining area is expansive and well-ventilated, accommodating hundreds of diners simultaneously. ### Transport Options #### Campus Transit S. R. Group of Institutions (SRGI), Lucknow provides a range of transport options for students, including: - **College-operated transit fleets**: These fleets serve students and staff across Lucknow city and adjoining regions, ensuring seamless connectivity. - **Bus pass allocations**: Students can obtain bus passes for daily commuting, which are managed by the transport fleet. - **Daily transit operations**: The transport fleet operates daily schedules, ensuring convenient and reliable transportation for students. #### Emergency Contacts For any emergencies or transport-related issues, students can contact the following emergency numbers: - **Campus Security & Anti-Ragging Helpline**: +91 8417000011 (Dr. Shashank Singh (Chief Proctor)) - **Campus Transit Dispatch Emergency**: +91 9793000099 (Mr. Devesh Singh (Chief Transport Officer)) - **Hostel Residential Emergency**: +91 9793000090 (Mr. K.M. Upadhyay (Chief Warden)) - **Main Admissions Helpline**: +91 9793000005 (Admissions Desk) These facilities and services are designed to ensure a comfortable and convenient campus experience for all students."
+      "answer": "Hostel Facilities and Dining Arrangements: - S. R. Group of Institutions (SRGI) Lucknow provides separate boys' and girls' hostels with a total residential capacity of 2,000+ students. Each hostel wing includes spacious rooms, 24/7 security, Wi-Fi connectivity, a mess, a fitness gym, and high-speed Wi-Fi. - The SRGI Lucknow residential complex offers a secure, disciplined, and home-like environment with amenities such as a hygienic dining mess, fitness gym, power backup, and sports facilities. - The Chief Warden is Mr. K.M. Upadhyay, and you can contact him at +91 9793000090 for any hostel-related queries. Transport Options: - The SRGI Lucknow campus is connected to the major educational highway corridor of National Highway 24 (NH-24), which connects Lucknow and Sitapur. - Students can use the college-operated transit fleets for seamless connectivity across Lucknow city and adjoining regions. - Specific daily public reception hours vary across departments and should be coordinated via the direct telephone lines listed above."
     },
     {
       "id": "MI_03_faculties_and_research",
       "question": "Which faculties and departments are offered, and what research areas are documented?",
       "verdict": "PASS",
-      "latency": 20.466,
+      "latency": 17.048,
       "coverage": 1.0,
       "sources": [
         "Academic Faculties and Departments Directory"
       ],
-      "answer": "The S. R. Group of Institutions (SRGI), Lucknow offers the following faculties and departments: - Faculty of Engineering & Technology: - Computer Science & Engineering - Information Technology - Electronics & Communication Engineering - Electrical & Electronics Engineering - Mechanical Engineering - Civil Engineering - Biotechnology - Agricultural Engineering - Faculty of Management Studies: - Business Administration (MBA) - Integrated MBA (IMBA) - Applied Global Management Programme (AGMP) - Faculty of Skill & Vocational Studies: - Software Development (SD) - Banking, Financial Services & Insurance (BFSI) - Automobile Engineering (AE) - Faculty of Medical & Allied Health Sciences: - SRM Ayush Institute of Medical Sciences - Department of Pharmacy (D.Pharm) - Nursing & Paramedical Sciences - Department of Homeopathy (DHP) Documented research areas include: - Artificial Intelligence (AI) - Machine Learning (ML) - Data Science (DS)."
+      "answer": "The S. R. Group of Institutions (SRGI), Lucknow offers the following faculties and departments: - Faculty of Engineering & Technology: - Computer Science & Engineering - Information Technology - Electronics & Communication Engineering - Electrical & Electronics Engineering - Mechanical Engineering - Civil Engineering - Biotechnology - Agricultural Engineering - Faculty of Management Studies: - Business Administration (MBA) - Integrated MBA (IMBA) - Applied Global Management Programme (AGMP) - Faculty of Skill & Vocational Studies: - Software Development (SD) - Banking, Financial Services & Insurance (BFSI) - Information Technology (IT) - Faculty of Medical & Allied Health Sciences: - Department of Pharmacy (D.Pharm) - Ayurveda, Unani, Siddha, and Homoeopathy (AYUSH) Documented research areas include: - Artificial Intelligence (AI) - Machine Learning (ML) - Data Science (DS) - Biotechnology - Ayurveda - Unani - Siddha - Homoeopathy - Information Technology (IT)."
     },
     {
       "id": "MI_04_programme_admission_and_fees",
       "question": "Explain the admission requirements and tuition fee for B.Tech programmes, distinguishing any missing or category-dependent information.",
-      "verdict": "FAIL",
-      "latency": 15.536,
-      "coverage": 0.0,
+      "verdict": "PASS",
+      "latency": 14.57,
+      "coverage": 0.75,
       "sources": [
-        "SRGI Lucknow Admissions Procedure, Eligibility and Enquiry Channels",
-        "Bachelor of Technology (B.Tech) Programmes \u2014 Comprehensive Overview",
         "Frequently Asked Questions (FAQ) \u2014 Admissions, Academics and Life at SRGI",
-        "Complete List of B.Tech Programmes and Specializations"
+        "SRGI Lucknow Admissions Procedure, Eligibility and Enquiry Channels",
+        "Institute-Wide Academic Programmes and Courses Directory",
+        "SRGI Career Pathfinder and Course Selection Simulator"
       ],
-      "answer": "For B.Tech programmes at S. R. Group of Institutions (SRGI), Lucknow, the admission requirements and tuition fees vary based on the specific programme and specialization. For the core B.Tech Computer Science & Engineering programme, the annual intake is 180 seats. Specialized tracks like Artificial Intelligence & Machine Learning (60 seats), Artificial Intelligence (60 seats), and Data Science (60 seats) are also offered. Tuition fees for B.Tech programmes are not specified in the provided evidence, and specific fees for each programme and specialization are not detailed. However, SRGI Lucknow offers merit-based admissions through state-level counselling (UPTAC / AKTU) based on JEE Main scores for B.Tech, CUET-PG for MBA, or respective state entrance examination rankings. Direct institutional merit admission is also available through the online portal or at the campus admission cell under the management / vacant seats quota as per regulatory norms. For detailed information on tuition fees, one should refer to the official prospectus or contact SRGI Lucknow directly."
+      "answer": "For B.Tech programmes at SRGI Lucknow, the admission requirements and tuition fees vary based on the specific programme and category of the candidate. For B.Tech Computer Science & Engineering, the core programme has a sanctioned annual intake of 180 seats. Specialized tracks like Artificial Intelligence & Machine Learning, Artificial Intelligence, and Data Science each have dedicated intakes of 60 seats. Admission is through State Level Counselling (UPTAC / AKTU) based on JEE Main scores or through direct institutional merit admission. Tuition fees for B.Tech programmes are not specified in the provided information, but candidates should refer to the official SRGI Lucknow website for the most accurate and up-to-date fee details. Admission to other B.Tech programmes such as Information Technology, Electronics & Communication Engineering, Electrical & Electronics Engineering, Mechanical Engineering, Civil Engineering, Biotechnology, and Agricultural Engineering also follows similar admission procedures and may have different intakes and fees."
     },
     {
       "id": "MI_05_library_timings_hostel_contacts",
       "question": "Tell me about the library timings and hostel facilities, then provide the relevant contact details if the package supports them.",
       "verdict": "PASS",
-      "latency": 34.378,
+      "latency": 23.913,
       "coverage": 1.0,
       "sources": [
-        "SRGI Lucknow Institutional Overview, Campus Profile and History",
-        "Student Services and Campus Facilities Directory",
         "Central Library System and Digital Knowledge Repositories",
-        "Institutional Profile \u2014 S. R. Group of Institutions (SRGI), Lucknow"
+        "Student Services and Campus Facilities Directory",
+        "SRGI Lucknow Institutional Overview, Campus Profile and History",
+        "Student Grievance Redressal Mechanism and Support Portal"
       ],
-      "answer": "### Library Timings and Hostel Facilities **Library Timings:** The SRGI Lucknow Library System, which includes the Central Library and two specialized departmental libraries, provides comprehensive bibliographic and digital support across various academic disciplines. The library holdings consist of 53,760+ books and 448+ journals. The library system is equipped with facilities such as Techlib-7 software, OPAC, NDL, DELNET, and Sugamya Pustakalaya access. The library system's architecture is designed to support students and faculty in their academic pursuits. **Hostel Facilities:** The SRGI Lucknow campus offers hostel facilities for students. The hostel residential capacity is 2,000 students, divided into separate boys' and girls' wings. The hostel provides residential services such as 3. Location, Connectivity & Ambience. The campus is situated along the major educational highway corridor of National Highway 24 (NH-24), connecting Lucknow and Sitapur. It is situated in the educational hub of Bakshi ka Talab (BKT), Lucknow - 226201. The campus environment is a pollution-free, green 65-acre ecosystem designed with state-of-the-art academic complexes, futuristic laboratories, residential blocks, auditoriums, and sports facilities. ### Contact Details **Library:** - Central Library: Holdings: 53,760+ Books & 448+ Journals; Librarian: Kr. Abhishek Pratap (+91 9793000050) **Hostel:** - Hostel Facilities: Hostel room facilities, canteen & mess food hygiene, Wi-Fi connectivity, electrical / plumbing maintenance. For contact details, please refer to the Student Grievance Redressal Mechanism and Support Portal, which provides official administrative contacts for hostel issues. For any further assistance, you can contact the following: - **Training & Placement Cell:** Head: Mr. Kaushal Chandra (+91 9793000080) - **Proctorial Board & Campus Security:** Head: Dr. Shashank Singh (+91 8417000011) - **Cafeteria & Dining Mess:** Description: Hygienic multi-cuisine dining options on campus - **Sports & Gymnasium Complex:** Description: Indoor gym and extensive outdoor sports grounds across 65 - **Sports & Gymnasium Complex:** Description: Indoor gym and extensive outdoor sports grounds across 65-acre campus."
+      "answer": "### Library Timings and Hostel Facilities **Library Timings:** The SRGI Lucknow Library System, comprising the Central Library and two specialized departmental libraries, provides comprehensive bibliographic and digital support across various academic disciplines. The Central Library holds a collection of 53,760+ books and 448+ journals, covering engineering, management, medical sciences, and humanities. The library system includes facilities such as Techlib-7 software, OPAC, NDL, DELNET, and Sugamya Pustakalaya access. The library system operates during standard working hours, which are typically from 9:00 AM to 5:00 PM, Monday to Friday. Specific library hours may vary and are best confirmed with the library administration. **Hostel Facilities:** The SRGI Lucknow campus offers hostel facilities for students, including separate boys' and girls' wings. The residential capacity is 2,000 students. The hostel provides amenities such as clean and hygienic rooms, a canteen, and a mess. The hostel also offers Wi-Fi connectivity, electrical and plumbing maintenance, and other essential services to ensure a comfortable living environment for students. ### Contact Details **Library:** - **Librarian:** Kr. Abhishek Pratap - **Contact Number:** +91 9793000050 **Hostel:** - **Head:** Dr. Shashank Singh - **Contact Number:** +91 8417000011 For any further inquiries or support, you can contact the Student Grievance Redressal Mechanism and Support Portal at: - **Contact Number:** +91 9793000080."
     }
   ],
   "conversations": {
@@ -74,25 +72,25 @@
         "turn": "A1",
         "q": "Tell me about B.Tech CSE at SRGI.",
         "verdict": "PASS",
-        "latency": 9.79
+        "latency": 12.38
       },
       {
         "turn": "A2",
         "q": "And what is the intake?",
         "verdict": "PASS",
-        "latency": 9.46
+        "latency": 14.65
       },
       {
         "turn": "A3",
         "q": "What about eligibility?",
-        "verdict": "FAIL",
-        "latency": 10.98
+        "verdict": "PASS",
+        "latency": 22.96
       },
       {
         "turn": "A4",
         "q": "How do I apply?",
         "verdict": "PASS",
-        "latency": 13.98
+        "latency": 21.4
       }
     ],
     "Sequence_B": [
@@ -100,25 +98,25 @@
         "turn": "B1",
         "q": "Tell me about B.Tech CSE at SRGI.",
         "verdict": "PASS",
-        "latency": 2.78
+        "latency": 16.78
       },
       {
         "turn": "B2",
         "q": "What facilities are available in the hostels?",
         "verdict": "PASS",
-        "latency": 10.05
+        "latency": 20.92
       },
       {
         "turn": "B3",
         "q": "How does student transport work?",
         "verdict": "PASS",
-        "latency": 9.34
+        "latency": 14.89
       },
       {
         "turn": "B4",
         "q": "What is its annual intake?",
         "verdict": "PASS",
-        "latency": 9.29
+        "latency": 14.81
       }
     ],
     "Sequence_C": [
@@ -126,19 +124,19 @@
         "turn": "C1",
         "q": "Tell me about B.Tech CSE at SRGI.",
         "verdict": "PASS",
-        "latency": 2.86
+        "latency": 13.49
       },
       {
         "turn": "C2",
         "q": "Tell me about the library facilities.",
         "verdict": "PASS",
-        "latency": 18.32
+        "latency": 19.42
       },
       {
         "turn": "C3",
         "q": "Returning to CSE, what is the intake?",
         "verdict": "PASS",
-        "latency": 9.63
+        "latency": 13.92
       }
     ],
     "Sequence_D": {

@@ -463,10 +463,20 @@ def _scope_score(candidate: RetrievalCandidate) -> float:
 
 def _detect_qualification_level(text: str) -> str | None:
     t = text.casefold()
-    if any(k in t for k in ("10+2", "class 12", "12th", "pcm", "pcb", "intermediate", "senior secondary", "after 12th", "b.tech", "btech", "b.voc", "bvoc", "b.pharm", "bpharm", "undergraduate", "bachelor")):
+    # First check prospective application targets (e.g. "eligible for M.Tech", "apply for B.Tech")
+    if re.search(r"\b(?:eligible\s+for|eligibility\s+(?:for|of|in)|admission\s+(?:to|in|for)|apply\s+(?:for|to)|stud(?:y|ying)|pursu(?:e|ing))\s+(?:m\.?tech|mtech|mba|mca|m\.?sc|master|postgraduate)\b", t):
+        return "postgraduate"
+    if re.search(r"\b(?:eligible\s+for|eligibility\s+(?:for|of|in)|admission\s+(?:to|in|for)|apply\s+(?:for|to)|stud(?:y|ying)|pursu(?:e|ing))\s+(?:ph\.?d|phd|doctorate|doctoral)\b", t):
+        return "doctoral"
+    if re.search(r"\b(?:eligible\s+for|eligibility\s+(?:for|of|in)|admission\s+(?:to|in|for)|apply\s+(?:for|to)|stud(?:y|ying)|pursu(?:e|ing))\s+(?:b\.?tech|btech|b\.?voc|bvoc|b\.?pharm|bpharm|undergraduate|bachelor)\b", t):
         return "undergraduate"
+    if re.search(r"\b(?:eligible\s+for|eligibility\s+(?:for|of|in)|admission\s+(?:to|in|for)|apply\s+(?:for|to)|stud(?:y|ying)|pursu(?:e|ing))\s+(?:d\.?pharm|dpharm|diploma)\b", t):
+        return "diploma"
+
     if any(k in t for k in ("m.tech", "mtech", "master", "postgraduate", "gate", "cat", "mat", "after graduation", "after b.tech", "after btech", "after bsc", "after bca")):
         return "postgraduate"
+    if any(k in t for k in ("10+2", "class 12", "12th", "pcm", "pcb", "intermediate", "senior secondary", "after 12th", "b.tech", "btech", "b.voc", "bvoc", "b.pharm", "bpharm", "undergraduate", "bachelor")):
+        return "undergraduate"
     if any(k in t for k in ("diploma", "d.pharm", "dpharm", "dhp", "after 10th", "polytechnic")):
         return "diploma"
     if any(k in t for k in ("ph.d", "phd", "doctorate", "doctoral")):

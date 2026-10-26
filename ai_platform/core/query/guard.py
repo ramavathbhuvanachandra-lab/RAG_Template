@@ -152,6 +152,10 @@ _SECURITY_ATTACK_PATTERNS = (
 # ---------------------------------------------------------------------------
 _INJECTION_OVERRIDE_PATTERNS = (
     r"\b(?:ignore|disregard|forget|bypass)\s+(?:all\s+|your\s+|any\s+|the\s+)?(?:previous\s+|prior\s+|above\s+|existing\s+|system\s+|institutional\s+|campus\s+|university\s+|ethics?\s+|safety\s+|developer\s+)*(?:instructions|prompts?|rules|guidelines|policies|restrictions)\b",
+    r"\b(?:treat|set|assume|consider)\s+(?:the\s+)?(?:[a-zA-Z0-9.\s-]{1,35})?\b(?:eligibility|fee|fees|tuition|intake|requirement|criteria|policy)\s+(?:as|to\s+be)\s+(?:[a-zA-Z0-9%₹,.\s]+?)(?=(?:\.|\?|!|\band\s+the\b|\bignore\b|\btell\b|$))",
+    r"\b(?:and\s+)?(?:the\s+)?(?:tuition\s+)?fee\s+as\s+₹?\s*[\d,]+(?:\s+per\s+year)?",
+    r"\b(?:ignore|disregard|suppress)\s+(?:contradictory\s+)?(?:documents|sources|facts|policies)\b",
+    r"\b(?:confidently\s+)?tell\s+(?:students|users?)\s+(?:this|that)\s+is\s+(?:the\s+)?official\s+(?:srgi\s+)?policy\b",
     r"\b(?:reveal|show|display|print|leak|output|dump)\s+(?:me\s+)?(?:your\s+)?(?:hidden\s+|secret\s+)?(?:system\s+)?(?:prompt|instructions?|rules?|directives?)\b",
     r"\b(?:ignore\s+(?:all\s+)?rules\s+and\s+reveal\s+your\s+system\s+instructions)\b",
     r"\b(?:show\s+(?:me\s+)?(?:private\s+credentials|confidential\s+data|api\s*keys?|secret\s*tokens?))\b",
@@ -168,9 +172,9 @@ _INJECTION_OVERRIDE_PATTERNS = (
 # Out-of-Scope Domains (Entertainment, Personal Advice, Cooking, External/Fictional)
 # ---------------------------------------------------------------------------
 _OOS_DOMAINS = (
-    # Entertainment / Movies / Jokes
+    # Entertainment / Movies / Jokes / Creative writing
     (re.compile(r"\b(?:watch\s+a\s+movie|recommend\s+(?:a\s+)?movie|good\s+movies?|netflix|cinema|popcorn)\b", re.I), "entertainment"),
-    (re.compile(r"\b(?:tell\s+(?:me\s+)?(?:a\s+)?(?:joke|funny\s+story|story|poem)|sing\s+(?:a\s+)?song|write\s+(?:me\s+)?(?:a\s+)?poem|make\s+me\s+laugh)\b", re.I), "entertainment_joke"),
+    (re.compile(r"\b(?:tell\s+(?:me\s+)?(?:a\s+)?(?:[a-z0-9\s-]{0,20}\s+)?(?:joke|story|poem|limerick|haiku)|sing\s+(?:a\s+)?song|write\s+(?:me\s+)?(?:a\s+)?(?:[a-z0-9\s-]{0,25}\s+)?(?:joke|story|poem|limerick|haiku|essay|song)|make\s+me\s+laugh)\b", re.I), "entertainment_joke"),
     # Dating / Personal Advice
     (re.compile(r"\b(?:ask\s+someone\s+on\s+a\s+date|propose\s+to|dating\s+advice|love\s+advice|relationship\s+advice|crush)\b", re.I), "personal_advice"),
     # Cooking recipes (even when "hostel kitchen" is mentioned)
@@ -296,6 +300,30 @@ def evaluate_security_and_scope(
                 reason="injection_payload_stripped_legitimate_query_preserved",
                 flags=("instruction_override_attempt", "sanitized_payload"),
                 confidence=0.98,
+                safe_response=None,
+            )
+
+        # Policy manipulation recovery: if the user attempted to falsify policy/numbers for a
+        # legitimate institutional target, extract and answer the underlying verified institutional query
+        policy_manip = re.search(
+            r"\b(?:treat|set|assume|consider)\s+(?:the\s+)?([a-zA-Z0-9.\s-]{1,35}?)\b(eligibility|fees?|tuition|intake|requirements?|criteria)\b",
+            clean_query,
+            re.I,
+        )
+        if policy_manip:
+            target_prog = policy_manip.group(1).strip()
+            target_prop = policy_manip.group(2).strip()
+            has_fee = bool(re.search(r"\b(?:fee|fees|tuition)\b", clean_query, re.I))
+            recovered_query = f"What is the official {target_prog} {target_prop}" + (
+                " and tuition fee?" if has_fee and "fee" not in target_prop.casefold() else "?"
+            )
+            return GuardResult(
+                decision=GuardDecision.MIXED_SCOPE_WITH_INJECTION,
+                original_query=raw_query,
+                sanitized_query=" ".join(recovered_query.split()),
+                reason="policy_manipulation_neutralized_legitimate_query_recovered",
+                flags=("instruction_override_attempt", "sanitized_payload", "policy_manipulation_neutralized"),
+                confidence=0.95,
                 safe_response=None,
             )
 

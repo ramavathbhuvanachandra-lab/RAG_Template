@@ -130,12 +130,16 @@ _DEGREE_PATTERNS = (
 
 _BRANCH_ACRONYM_PATTERNS = (
     (re.compile(r"\b(?:cse|cs)\b", re.I), "B.Tech CSE"),
-    (re.compile(r"\bit\b", re.I), "B.Tech IT"),
+    (re.compile(r"\b(?:b\.?tech\s+it|it\s+branch|it\s+department)\b", re.I), "B.Tech IT"),
+    (re.compile(r"\bIT\b"), "B.Tech IT"),
     (re.compile(r"\bece\b", re.I), "B.Tech ECE"),
     (re.compile(r"\b(?:eee|ee)\b", re.I), "B.Tech EE"),
-    (re.compile(r"\bme\b", re.I), "B.Tech ME"),
-    (re.compile(r"\bce\b", re.I), "B.Tech CE"),
-    (re.compile(r"\bbt\b", re.I), "B.Tech BT"),
+    (re.compile(r"\b(?:b\.?tech\s+me|me\s+branch|me\s+department)\b", re.I), "B.Tech ME"),
+    (re.compile(r"\bME\b"), "B.Tech ME"),
+    (re.compile(r"\b(?:b\.?tech\s+ce|ce\s+branch|ce\s+department)\b", re.I), "B.Tech CE"),
+    (re.compile(r"\bCE\b"), "B.Tech CE"),
+    (re.compile(r"\b(?:b\.?tech\s+bt|bt\s+branch|bt\s+department)\b", re.I), "B.Tech BT"),
+    (re.compile(r"\bBT\b"), "B.Tech BT"),
     (re.compile(r"\b(?:ai\s*&\s*ml|aiml)\b", re.I), "B.Tech AI & ML"),
     (re.compile(r"\b(?:ai\s*&\s*ds|aids)\b", re.I), "B.Tech AI & DS"),
 )

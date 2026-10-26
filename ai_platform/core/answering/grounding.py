@@ -206,9 +206,11 @@ def _academic_year_signature(value: str) -> str:
 def _unsupported_numeric_markers(
     answer: str,
     evidence: str,
+    question: str = "",
 ) -> tuple[str, ...]:
     answer_markers = _markers(answer)
     evidence_markers = _markers(evidence)
+    question_markers = _markers(question) if question else {k: () for k in evidence_markers}
     unsupported: list[str] = []
 
     derived_totals: set[str] = set()
@@ -266,19 +268,30 @@ def _unsupported_numeric_markers(
         evidence_exact = set(
             evidence_markers[category]
         )
+        question_exact = set(
+            question_markers.get(category, ())
+        )
         if category == "academic_years":
             evidence_numeric = {
                 _academic_year_signature(value)
                 for value in evidence_exact
+            }
+            question_numeric = {
+                _academic_year_signature(value)
+                for value in question_exact
             }
         else:
             evidence_numeric = {
                 _numeric_signature(value)
                 for value in evidence_exact
             }
+            question_numeric = {
+                _numeric_signature(value)
+                for value in question_exact
+            }
 
         for value in answer_markers[category]:
-            if value in evidence_exact:
+            if value in evidence_exact or value in question_exact:
                 continue
 
             if category == "academic_years":
@@ -286,7 +299,7 @@ def _unsupported_numeric_markers(
             else:
                 signature = _numeric_signature(value)
 
-            if signature and signature in evidence_numeric:
+            if signature and (signature in evidence_numeric or signature in question_numeric):
                 continue
 
             if (
@@ -504,6 +517,12 @@ def _check_polarity_inversion_of_qualifier(
     evidence: str,
 ) -> list[GroundingIssue]:
     if not any(pattern.search(sentence) for pattern in _QUALIFIER_DENIAL_PATTERNS):
+        return []
+
+    # If the sentence is describing the applicant's personal qualification status
+    # (e.g. "Since you have not qualified GATE", "you do not have a GATE score"),
+    # it is not an institutional claim that GATE itself is denied as a valid route.
+    if re.search(r"\b(?:you|candidate|applicant|student)\b.*?\b(?:have|has|did)\s+not\s+(?:qualif\w+|have)\b|\b(?:without|not\s+having)\s+(?:a\s+)?(?:gate|qualifying)", sentence, re.I):
         return []
 
     issues: list[GroundingIssue] = []
@@ -888,18 +907,25 @@ def _check_sentence(
             _lower(evidence),
             _CAUSAL_PATTERNS,
         ):
-            issues.append(
-                GroundingIssue(
-                    "unsupported_causal_claim",
-                    sentence,
-                    evidence,
-                    (
-                        "The answer introduces a causal "
-                        "relationship that is not explicitly "
-                        "represented in the evidence."
-                    ),
+            # Do not flag ordinary explanatory evaluation of eligibility, rules, or criteria
+            is_eligibility_explanation = bool(re.search(
+                r"\b(?:since|because|therefore)\b.*?\b(?:you|eligib|criteri|minimum|score|mark|percent|quota|channel|route|require)",
+                sentence,
+                re.I,
+            ))
+            if not is_eligibility_explanation:
+                issues.append(
+                    GroundingIssue(
+                        "unsupported_causal_claim",
+                        sentence,
+                        evidence,
+                        (
+                            "The answer introduces a causal "
+                            "relationship that is not explicitly "
+                            "represented in the evidence."
+                        ),
+                    )
                 )
-            )
 
     issues.extend(
         _check_polarity_inversion_of_qualifier(
@@ -933,6 +959,7 @@ def assess_answer_grounding(
     *,
     answer: str,
     evidence: str,
+    question: str = "",
 ) -> GroundingResult:
     """Return grounded/review plus precise deterministic grounding issues."""
     answer = _normalize(answer)
@@ -948,6 +975,7 @@ def assess_answer_grounding(
     unsupported = _unsupported_numeric_markers(
         answer,
         evidence,
+        question=question,
     )
 
     if unsupported:

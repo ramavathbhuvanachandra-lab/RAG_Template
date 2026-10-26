@@ -22,22 +22,32 @@
       "omitted_claims",
       "packaged_units"
     ],
-    "answer": "SRGI Lucknow comprises four core academic faculties: 1. Faculty of Engineering & Technology: Offers Bachelor of Technology (B.Tech) and Master of Technology (M.Tech) degrees. 2. Faculty of Management Studies: Offers Master of Business Administration (MBA), Integrated MBA (IMBA), and Applied Global Management Programmes (AGMP). Additionally, SRGI Lucknow has two constituent academic units: 1. S. R. Institute of Management & Technology (SRIMT): Focuses on Engineering (B.Tech, M.Tech) and Management (MBA, IMBA), IMBA, and AGMP. 2. SRM Business School (SRMBS): Offers various management programmes.",
+    "answer": "SRGI Lucknow comprises the following faculties and institutes: - Faculty of Engineering & Technology, offering B.Tech and M.Tech degrees - Faculty of Management Studies, offering MBA, IMBA, and AGMP programmes - Faculty of Skill & Vocational Studies, offering B.Voc in Software Development - Faculty of Medical & Allied Health Sciences, offering programmes in Pharmacy (D.Pharm), Nursing & Paramedical Sciences, and Homeopathy (DHP) The institution also includes SRIMT, which offers Engineering (B.Tech, M.Tech), Management (MBA, IMBA), and Vocational (B.Voc) programmes.",
     "citations": [
       {
-        "source": "/Users/bhuvanachandra/Desktop/RAG_SRGI/data/data_srgi/srgi_lucknow_rag_package_v3/documents/01_institutional_profile/srgi_lucknow_overview.docx",
-        "heading": "SRGI Lucknow Institutional Overview, Campus Profile and History",
-        "evidence_id": "8ea391e3ed7ee32bb590393d3e4ac10a6d4a97eb899ef870ed9724d727d3f553:0"
+        "source": "/Users/bhuvanachandra/Desktop/RAG_SRGI/data/data_srgi/srgi_lucknow_rag_package_v3/data/departments.json",
+        "heading": "Academic Faculties and Departments Directory",
+        "evidence_id": "d27e4dff392a884ae499fee559ad2bc6d5de55809e491c155f2bc98cdb55e72e:0"
+      },
+      {
+        "source": "/Users/bhuvanachandra/Desktop/RAG_SRGI/data/data_srgi/srgi_lucknow_rag_package_v3/documents/06_programmes_medical_healthcare/srgi_lucknow_medical_programmes_overview.docx",
+        "heading": "Faculty of Medical & Allied Health Sciences \u2014 Overview",
+        "evidence_id": "9b982e94d2ba01f7101ccef933f94d45162050e11371d8fa79770bc5612b7a63:0"
       },
       {
         "source": "/Users/bhuvanachandra/Desktop/RAG_SRGI/data/data_srgi/srgi_lucknow_rag_package_v3/documents/03_constituent_units/srgi_lucknow_academic_units_overview.docx",
         "heading": "SRGI Lucknow Constituent Academic Units and Institutional Network",
         "evidence_id": "946523e23be44344d574390ea855ecbacaf8d03418f58f5e5bc75a67da1334b9:0"
+      },
+      {
+        "source": "/Users/bhuvanachandra/Desktop/RAG_SRGI/data/data_srgi/srgi_lucknow_rag_package_v3/documents/01_institutional_profile/srgi_lucknow_overview.docx",
+        "heading": "SRGI Lucknow Institutional Overview, Campus Profile and History",
+        "evidence_id": "8ea391e3ed7ee32bb590393d3e4ac10a6d4a97eb899ef870ed9724d727d3f553:0"
       }
     ],
     "evidence_status": "supported",
     "is_safe_refusal": false,
-    "latency_seconds": 9.08,
+    "latency_seconds": 12.45,
     "route_selected": "rag_hybrid"
   },
   {
@@ -63,12 +73,12 @@
       "omitted_claims",
       "packaged_units"
     ],
-    "answer": "At SRGI, B.Tech programmes and specializations offered include Computer Science, Information Technology, Electronics & Communication Engineering, and AI & ML/Data Science in Computer Science.",
+    "answer": "SRGI offers the following B.Tech programmes and specializations: - B.Tech in Computer Science & Engineering (Core, AI & ML, AI & DS) - B.Tech in Computer Science - B.Tech in Information Technology - B.Tech in Electronics & Communication Engineering - B.Tech in Electrical & Electronics Engineering - B.Tech in Mechanical Engineering - B.Tech in Civil Engineering - B.Tech in Biotechnology - B.Tech in Agricultural Engineering.",
     "citations": [
       {
         "source": "/Users/bhuvanachandra/Desktop/RAG_SRGI/data/data_srgi/srgi_lucknow_rag_package_v3/data/academic_programmes.json",
-        "heading": "Complete List of B.Tech Programmes",
-        "evidence_id": "59f8d780557a4e6c639b121369325338193b1390b97d160fdc8782d2f2da0b62:0"
+        "heading": "Complete List of B.Tech Programmes and Specializations",
+        "evidence_id": "6959e7069e61a005922d409e66f8dded2c1854de096a8586a3f67cedebc15bef:0"
       },
       {
         "source": "/Users/bhuvanachandra/Desktop/RAG_SRGI/data/data_srgi/srgi_lucknow_rag_package_v3/documents/04_programmes_engineering/srgi_lucknow_btech_overview.docx",
@@ -76,19 +86,19 @@
         "evidence_id": "734d73389ac6d12238bfc208d6ee8cdce8d9282d158399f1a727b78033a12524:0"
       },
       {
-        "source": "/Users/bhuvanachandra/Desktop/RAG_SRGI/data/data_srgi/srgi_lucknow_rag_package_v3/documents/15_official_prospectus/srgi_lucknow_official_prospectus_extracts.docx",
-        "heading": "Official Institutional Prospectus \u2014 Summary and Documentary Index",
-        "evidence_id": "5df675c9eac270a147e0271af3540acd2662d2637b9193eb044dfbdd224c4fc9:0"
+        "source": "/Users/bhuvanachandra/Desktop/RAG_SRGI/data/data_srgi/srgi_lucknow_rag_package_v3/documents/04_programmes_engineering/srgi_lucknow_btech_computer_science_engineering.docx",
+        "heading": "B.Tech in Computer Science & Engineering (AI & ML, AI & DS Specializations)",
+        "evidence_id": "289263ecc8e0e24bd1b44dbab6156dd682b97ab33d9b4a935583c39851d8b334:0"
       },
       {
-        "source": "/Users/bhuvanachandra/Desktop/RAG_SRGI/data/data_srgi/srgi_lucknow_rag_package_v3/data/degrees.json",
-        "heading": "Degrees & Academic Levels Offered",
-        "evidence_id": "16be4c6dc3226ccd32f460178948a8a42981646a6ef4a59cd87d7f7384851b82:0"
+        "source": "/Users/bhuvanachandra/Desktop/RAG_SRGI/data/data_srgi/srgi_lucknow_rag_package_v3/documents/13_faqs/srgi_lucknow_frequently_asked_questions.docx",
+        "heading": "Frequently Asked Questions (FAQ) \u2014 Admissions, Academics and Life at SRGI",
+        "evidence_id": "014d35f00daf5c6711cbb60d364e8b96b4bbcc37c20a8bf12bc36ffe61767a84:0"
       }
     ],
     "evidence_status": "supported",
     "is_safe_refusal": false,
-    "latency_seconds": 14.66,
+    "latency_seconds": 10.95,
     "route_selected": "rag_hybrid"
   },
   {
@@ -114,7 +124,7 @@
       "omitted_claims",
       "packaged_units"
     ],
-    "answer": "The admission procedure for B.Tech at SRGI Lucknow involves two primary channels: 1. **State Level Counselling (UPTAC / JEE Main score)**: This is based on scores from the Uttar Pradesh Technical Admission Counselling (UPTAC) or JEE Main scores for B.Tech. 2. **Direct Institutional Merit Admission**: Eligible candidates can apply directly to SRGI Lucknow through the online portal or at the campus admission cell under the management / vacant seats quota as per regulatory norms. Eligibility for B.Tech at SRGI Lucknow includes: - A minimum aggregate of 45% marks (40% for SC/ST candidates). - A 10+2 qualification from CBSE, ICSE, UP Board, or any recognized equivalent board. - Mandatory subjects of Physics and Mathematics, along with one optional subject (Chemistry, Biotechnology, Biology, or Technical Vocational subject).",
+    "answer": "The admission procedure for B.Tech at SRGI Lucknow involves two primary channels: 1. **State Level Counselling (UPTAC / AKTU)**: Based on JEE Main scores for B.Tech, CUET-PG for MBA, or respective state entrance examination rankings. 2. **Direct Institutional Merit Admission**: Eligible candidates may apply directly to SRGI Lucknow through the online portal or at the campus admission cell under the management / vacant seats quota as per regulatory norms. Eligibility for B.Tech at SRGI Lucknow requires a minimum aggregate mark of 45% (40% for candidates belonging to SC/ST reserved categories). The B.Tech programmes offered include Computer Science, Agricultural Engineering, and Biotechnology. Admission to these programmes is through Uttar Pradesh Technical Admission Counselling (UPTAC) or JEE Main scores, and direct institutional merit quota. The sanctioned seat intakes for these programmes are as follows: - B.Tech in Agricultural Engineering (AG): 60 seats - B.Tech in Biotechnology (BT): 180 seats For more detailed information, you can refer to the official SRGI Lucknow Admissions Procedure, Eligibility and Enquiry Channels.",
     "citations": [
       {
         "source": "/Users/bhuvanachandra/Desktop/RAG_SRGI/data/data_srgi/srgi_lucknow_rag_package_v3/documents/08_admissions_and_counselling/srgi_lucknow_admissions_enquiry_and_eligibility.docx",
@@ -129,7 +139,7 @@
     ],
     "evidence_status": "supported",
     "is_safe_refusal": false,
-    "latency_seconds": 26.2,
+    "latency_seconds": 14.9,
     "route_selected": "rag_hybrid"
   },
   {
@@ -155,32 +165,32 @@
       "omitted_claims",
       "packaged_units"
     ],
-    "answer": "At SRGI Lucknow, hostel facilities are available for resident students, including separate boys' and girls' hostels with 24-hour security, Wi-Fi, and mess dining. The library facilities include a central library with over 53,760 books and 448 journals.",
+    "answer": "At SRGI Lucknow, students have access to several hostel and library facilities. Here are the details: **Hostel Facilities:** - The SRGI Lucknow residential complex provides a secure, disciplined, and comfortable home-like environment for over 2,000+ resident students. Separate, self-contained residential wings are maintained for male and female scholars with round-the-clock administrative oversight. - Each resident receives an individual bed, wardrobe, study table, and ergonomic chair. - The hostel amenities include: - Hygienic dining mess - Fitness gym - High-speed Wi-Fi - Power backup - Sports facilities - The Chief Warden is Mr. K.M. Upadhyay, and you can contact him at +91 9793000090. **Library Facilities:** - The SRGI Lucknow campus has a central library system with a holding of 53,760+ books and 448+ journals. - The hostel residential capacity is 2,000+ students, with separate boys' and girls' wings.",
     "citations": [
-      {
-        "source": "/Users/bhuvanachandra/Desktop/RAG_SRGI/data/data_srgi/srgi_lucknow_rag_package_v3/documents/01_institutional_profile/srgi_lucknow_overview.docx",
-        "heading": "SRGI Lucknow Institutional Overview, Campus Profile and History",
-        "evidence_id": "bd061387f460f522544a11ac30f5208f0d2ec33217328904fc40b216de8638c7:0"
-      },
       {
         "source": "/Users/bhuvanachandra/Desktop/RAG_SRGI/data/data_srgi/srgi_lucknow_rag_package_v3/documents/09_campus_facilities_and_services/srgi_lucknow_hostel_accommodation.docx",
         "heading": "Hostel Accommodation and Residential Life (2,000+ Capacity)",
         "evidence_id": "c8dd5cea800ebe98fee69c1055e680bcbbc83d91c41ef8953ab66bfc326de866:0"
       },
       {
-        "source": "/Users/bhuvanachandra/Desktop/RAG_SRGI/data/data_srgi/srgi_lucknow_rag_package_v3/documents/13_faqs/srgi_lucknow_frequently_asked_questions.docx",
-        "heading": "Frequently Asked Questions (FAQ) \u2014 Admissions, Academics and Life at SRGI",
-        "evidence_id": "60e0f1475284a3fecd91822b262b27d2f5f575fe6516f8fda1db6db85494c7d6:0"
-      },
-      {
         "source": "/Users/bhuvanachandra/Desktop/RAG_SRGI/data/data_srgi/srgi_lucknow_rag_package_v3/data/hostel_facilities.json",
         "heading": "Hostel Accommodation and Residential Facilities",
         "evidence_id": "f37aaf4dd4ae5dbf77f6e68bee53358efa117b951a886ee0261c9e953da6c54c:0"
+      },
+      {
+        "source": "/Users/bhuvanachandra/Desktop/RAG_SRGI/data/data_srgi/srgi_lucknow_rag_package_v3/documents/01_institutional_profile/srgi_lucknow_overview.docx",
+        "heading": "SRGI Lucknow Institutional Overview, Campus Profile and History",
+        "evidence_id": "bd061387f460f522544a11ac30f5208f0d2ec33217328904fc40b216de8638c7:0"
+      },
+      {
+        "source": "/Users/bhuvanachandra/Desktop/RAG_SRGI/data/data_srgi/srgi_lucknow_rag_package_v3/documents/13_faqs/srgi_lucknow_frequently_asked_questions.docx",
+        "heading": "Frequently Asked Questions (FAQ) \u2014 Admissions, Academics and Life at SRGI",
+        "evidence_id": "60e0f1475284a3fecd91822b262b27d2f5f575fe6516f8fda1db6db85494c7d6:0"
       }
     ],
     "evidence_status": "supported",
     "is_safe_refusal": false,
-    "latency_seconds": 20.24,
+    "latency_seconds": 15.74,
     "route_selected": "rag_hybrid"
   },
   {
@@ -206,11 +216,11 @@
       "omitted_claims",
       "packaged_units"
     ],
-    "answer": "The provided evidence does not contain information regarding the Master of Science in Underwater Archaeology program at SRGI.",
+    "answer": "The provided evidence does not contain information regarding the Master of Science in Underwater Archaeology program at SRGI Lucknow. SRGI Lucknow offers Master of Technology (M.Tech) postgraduate programs in Computer Science & Engineering, Mechanical Engineering (Production), and Integrated MBA (5-Year Dual-Degree Management Programme). Admission requirements for these programs are as follows: - For M.Tech programs: - Candidates must possess a Bachelor's degree in relevant engineering branch (B.E./B.Tech) with a minimum of 50% marks (45% for reserved category). - Preference is accorded to GATE-qualified candidates, followed by university admission counselling merit. - For Integrated MBA (IMBA): - Candidates must have passed 10+2 (Arts, Commerce, or Science) with a minimum of 45% aggregate marks.",
     "citations": [],
     "evidence_status": "refusal",
     "is_safe_refusal": true,
-    "latency_seconds": 16.99,
+    "latency_seconds": 14.05,
     "route_selected": "rag_hybrid"
   },
   {
@@ -236,12 +246,12 @@
       "omitted_claims",
       "packaged_units"
     ],
-    "answer": "At S. R. Group of Institutions (SRGI), Lucknow, the B.Tech in Computer Science & Engineering (CSE) programme has a sanctioned annual intake of 180 seats. The programme is affiliated with Dr. A.P.J. Abdul Kalam Technical University (AKTU), Lucknow, and approved by the All India Council for Technical Education (AICTE), New Delhi. SRGI offers this programme alongside specialized tracks in Artificial Intelligence & Machine Learning (AI & ML), Artificial Intelligence (AI), and Data Science (AI & DS), each with a dedicated intake of 60 seats.",
+    "answer": "The S. R. Group of Institutions (SRGI), Lucknow offers a B.Tech in Computer Science & Engineering (CSE) with a sanctioned intake of 180 seats. The program is affiliated with Dr. A.P.J. Abdul Kalam Technical University (AKTU), Lucknow, and approved by the All India Council for Technical Education (AICTE), New Delhi.",
     "citations": [
       {
-        "source": "/Users/bhuvanachandra/Desktop/RAG_SRGI/data/data_srgi/srgi_lucknow_rag_package_v3/documents/04_programmes_engineering/srgi_lucknow_btech_computer_science_engineering.docx",
-        "heading": "B.Tech in Computer Science & Engineering (AI & ML, AI & DS Specializations)",
-        "evidence_id": "76903c206398ac00fbacf48182d48bbb3fdf3d661b751f60b657de2f63370594:0"
+        "source": "/Users/bhuvanachandra/Desktop/RAG_SRGI/data/data_srgi/srgi_lucknow_rag_package_v3/documents/04_programmes_engineering/srgi_lucknow_btech_computer_science.docx",
+        "heading": "B.Tech in Computer Science (CS)",
+        "evidence_id": "7cd46956b83884faeb38fe7851e7f1e69280ff77cf795fe111912d53d61df568:0"
       },
       {
         "source": "/Users/bhuvanachandra/Desktop/RAG_SRGI/data/data_srgi/srgi_lucknow_rag_package_v3/documents/04_programmes_engineering/srgi_lucknow_btech_overview.docx",
@@ -249,19 +259,19 @@
         "evidence_id": "34b4d4dcb1f890198c8a1970b35c1b166e061be471bb2a7c5d9db4e82d6f53e8:0"
       },
       {
-        "source": "/Users/bhuvanachandra/Desktop/RAG_SRGI/data/data_srgi/srgi_lucknow_rag_package_v3/documents/04_programmes_engineering/srgi_lucknow_btech_computer_science.docx",
-        "heading": "B.Tech in Computer Science (CS)",
-        "evidence_id": "7cd46956b83884faeb38fe7851e7f1e69280ff77cf795fe111912d53d61df568:0"
+        "source": "/Users/bhuvanachandra/Desktop/RAG_SRGI/data/data_srgi/srgi_lucknow_rag_package_v3/documents/04_programmes_engineering/srgi_lucknow_btech_computer_science_engineering.docx",
+        "heading": "B.Tech in Computer Science & Engineering (AI & ML, AI & DS Specializations)",
+        "evidence_id": "76903c206398ac00fbacf48182d48bbb3fdf3d661b751f60b657de2f63370594:0"
       },
       {
-        "source": "/Users/bhuvanachandra/Desktop/RAG_SRGI/data/data_srgi/srgi_lucknow_rag_package_v3/documents/13_faqs/srgi_lucknow_frequently_asked_questions.docx",
-        "heading": "Frequently Asked Questions (FAQ) \u2014 Admissions, Academics and Life at SRGI",
-        "evidence_id": "46ed7b40e62639ad92d513c7dc98be3aa7d8fae50668291916834f66abc44d23:0"
+        "source": "/Users/bhuvanachandra/Desktop/RAG_SRGI/data/data_srgi/srgi_lucknow_rag_package_v3/data/academic_programmes.json",
+        "heading": "B.Tech in Computer Science & Engineering",
+        "evidence_id": "48159e42e3ebf71ef90569111d8454486f049335eacd72484feabab952d080af:0"
       }
     ],
     "evidence_status": "supported",
     "is_safe_refusal": false,
-    "latency_seconds": 24.87,
+    "latency_seconds": 15.75,
     "route_selected": "rag_hybrid"
   }
 ]

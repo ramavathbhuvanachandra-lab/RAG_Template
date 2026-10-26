@@ -2488,7 +2488,7 @@ def _deterministic_build_query_plan(original: str) -> QueryPlan:
         is_multi = False
     else:
         intents = _deterministic_intents(original)
-        is_multi = len(intents) > 1
+        is_multi = len(intents) > 1 or (bool(intents) and len(getattr(intents[0], "requested_attributes", ())) >= 2)
 
     route = classify_query_route(
         domain_decision=scope,
@@ -3172,18 +3172,14 @@ def plan_to_query(plan: QueryPlan, *, intent_index: int = 0) -> Query:
 
 
 
-def retrieval_queries_from_plan(plan: QueryPlan, *, limit: int = 5) -> tuple[str, ...]:
+def retrieval_queries_from_plan(plan: QueryPlan, *, limit: int = 8) -> tuple[str, ...]:
 
     out = [plan.resolved_query or plan.original_query]
 
     # Intent queries are recovery formulations only; original/resolved wording
-
     # remains the authoritative primary retrieval query.
-
     for intent in plan.intents:
-
         if intent.retrieval_query:
-
             out.append(intent.retrieval_query)
 
     # For multi-part queries or queries with multiple distinct preserved facets,
@@ -3201,6 +3197,18 @@ def retrieval_queries_from_plan(plan: QueryPlan, *, limit: int = 5) -> tuple[str
             else:
                 facet_q = t_clean
             out.append(facet_q)
+
+    # For queries requesting multiple distinct attributes (e.g. eligibility, documents, how to apply, contact),
+    # generate a focused facet query for each distinct requested attribute.
+    for intent in plan.intents:
+        for attr in getattr(intent, "requested_attributes", ()) or ():
+            attr_str = str(attr).strip()
+            if attr_str:
+                if target_str and target_str.casefold() not in attr_str.casefold():
+                    facet_attr = f"{target_str} {attr_str}"
+                else:
+                    facet_attr = attr_str
+                out.append(facet_attr)
 
     # Recover institutional policy formulations for domain-wide entities (fees, dining, housing)
     # where individual programme queries otherwise displace general policy documents.
