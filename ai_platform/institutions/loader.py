@@ -10,7 +10,7 @@ from ai_platform.core.institution.profile import InstitutionProfile
 
 from typing import Any, Callable
 
-DEFAULT_INSTITUTION = "iitj"
+DEFAULT_INSTITUTION = "srgi"
 
 _INSTITUTION_REGISTRY: dict[str, InstitutionProfile] = {}
 _STRUCTURED_HANDLERS_REGISTRY: dict[str, dict[str, Callable[[str], Any]]] = {}

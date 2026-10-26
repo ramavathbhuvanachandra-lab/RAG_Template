@@ -1,0 +1,55 @@
+{
+  "schema_version": "2.0.0",
+  "institution_id": "srgi_lucknow",
+  "institution_name": "S. R. Group of Institutions (SRGI), Lucknow",
+  "document_id": "srgi_lucknow_admissions_enquiry_and_eligibility",
+  "title": "SRGI Lucknow Admissions Procedure, Eligibility and Enquiry Channels",
+  "category": "08_admissions_and_counselling",
+  "subcategory": "admissions",
+  "document_type": "institutional_knowledge",
+  "language": "en",
+  "markdown_path": "documents/08_admissions_and_counselling/srgi_lucknow_admissions_enquiry_and_eligibility.md",
+  "docx_path": "documents/08_admissions_and_counselling/srgi_lucknow_admissions_enquiry_and_eligibility.docx",
+  "source_urls": [
+    "https://srgi.in/enquiry",
+    "https://srgi.in/contact",
+    "https://aktu.ac.in"
+  ],
+  "canonical_source_urls": [
+    "https://srgi.in/enquiry",
+    "https://srgi.in/contact",
+    "https://aktu.ac.in"
+  ],
+  "source_hashes": [
+    "7c03ca844b8a31b328da7ebd351a298d9426d1c45c0eefee11e3119c8f576bb7",
+    "0b06ebff0bd4349637372b4dedcba87cb3f01ea594a50eefb2728ff5a7512b64",
+    "3594c4ae155d77b457c82c4eee06f6a64a48a1363a423d95905f37f2fd5c0bbf"
+  ],
+  "markdown_hash": "e93b7823321c53e2cda1ba10fb16f26d75ffc186b43c3bb7c3520c82b1a7951e",
+  "docx_hash": "20d8ae6d4f819b2c930fa87f215dd76d0358bddec425efe2602a1ffc263bb6e6",
+  "byte_size_md": 2761,
+  "byte_size_docx": 38173,
+  "word_count_md": 314,
+  "sections_count": 7,
+  "table_count": 0,
+  "content_quality_status": "PASS",
+  "conflict_status": "NO_UNRESOLVED_CONFLICTS",
+  "provenance_section_count": 1,
+  "docx_provenance_heading_count": 1,
+  "docx_leaked_syntax_count": 0,
+  "summary": "Official admission procedure, direct application channels, online enquiry mechanism, official helpline numbers, and document verification requirements.",
+  "keywords": [
+    "Admissions 2026",
+    "Enquiry Form",
+    "Eligibility",
+    "Helpline",
+    "Apply Now",
+    "UPTAC"
+  ],
+  "related_documents": [
+    "srgi_lucknow_btech_overview",
+    "srgi_lucknow_campus_contacts_and_directions"
+  ],
+  "created_at": "2026-10-23T21:19:33.833742+00:00",
+  "pipeline_stage": "release_v3_production"
+}

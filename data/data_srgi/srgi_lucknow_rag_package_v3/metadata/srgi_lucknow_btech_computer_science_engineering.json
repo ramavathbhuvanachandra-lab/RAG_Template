@@ -1,0 +1,49 @@
+{
+  "schema_version": "2.0.0",
+  "institution_id": "srgi_lucknow",
+  "institution_name": "S. R. Group of Institutions (SRGI), Lucknow",
+  "document_id": "srgi_lucknow_btech_computer_science_engineering",
+  "title": "B.Tech in Computer Science & Engineering (AI & ML, AI & DS Specializations)",
+  "category": "04_programmes_engineering",
+  "subcategory": "undergraduate_engineering",
+  "document_type": "institutional_knowledge",
+  "language": "en",
+  "markdown_path": "documents/04_programmes_engineering/srgi_lucknow_btech_computer_science_engineering.md",
+  "docx_path": "documents/04_programmes_engineering/srgi_lucknow_btech_computer_science_engineering.docx",
+  "source_urls": [
+    "https://srgi.in/btech/cse"
+  ],
+  "canonical_source_urls": [
+    "https://srgi.in/btech/cse"
+  ],
+  "source_hashes": [
+    "7fe5206399fb00c4b0d94ffb82c469faddc7cfbcebe343aa7f9b44b2085bad62"
+  ],
+  "markdown_hash": "33e1f8bdd8dbda39c6c926401199afc881301915def81f0fe3fd03c84d1dd0bf",
+  "docx_hash": "52a71317a813a0c068408735b42057486b2b5aa5c7358b00c8cf8058dc812421",
+  "byte_size_md": 3464,
+  "byte_size_docx": 38479,
+  "word_count_md": 411,
+  "sections_count": 8,
+  "table_count": 0,
+  "content_quality_status": "PASS",
+  "conflict_status": "DOCUMENTED_SOURCE_CONFLICT",
+  "provenance_section_count": 1,
+  "docx_provenance_heading_count": 1,
+  "docx_leaked_syntax_count": 0,
+  "summary": "Specialized curriculum details, high-growth focus areas in Artificial Intelligence, Machine Learning, and Data Science, sanctioned intake of 120 seats, and career opportunities.",
+  "keywords": [
+    "B.Tech CSE",
+    "AI & ML",
+    "Data Science",
+    "Computer Science Engineering",
+    "Intake 120",
+    "Machine Learning"
+  ],
+  "related_documents": [
+    "srgi_lucknow_btech_computer_science",
+    "srgi_lucknow_btech_information_technology"
+  ],
+  "created_at": "2026-10-23T21:19:33.151174+00:00",
+  "pipeline_stage": "release_v3_production"
+}

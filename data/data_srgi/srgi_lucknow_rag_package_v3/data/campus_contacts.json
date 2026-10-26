@@ -1,0 +1,82 @@
+{
+  "institution_id": "srgi_lucknow",
+  "admissions_helpline": [
+    "+91 9793000005",
+    "+91 9793000006",
+    "+91 9793000007"
+  ],
+  "media_helpline": "+91 9793000004",
+  "whatsapp_support": "+91 9793000005",
+  "official_emails": [
+    "info@srgi.in",
+    "srgi666@gmail.com"
+  ],
+  "key_officials": [
+    {
+      "role": "Chief Proctor",
+      "name": "Dr. Shashank Singh",
+      "phone": "+91 8417000011",
+      "source_url": "https://srgi.in/administrative-heads"
+    },
+    {
+      "role": "Director (Training & Placement)",
+      "name": "Mr. Kaushal Chandra",
+      "phone": "+91 9793000080",
+      "source_url": "https://srgi.in/administrative-heads"
+    },
+    {
+      "role": "Registrar",
+      "name": "Mr. Devendra Srivastava",
+      "phone": "+91 8417000010",
+      "source_url": "https://srgi.in/administrative-heads"
+    },
+    {
+      "role": "Chief Account Officer",
+      "name": "Mr. Jitendra Srivastava",
+      "phone": "+91 9793000095",
+      "source_url": "https://srgi.in/administrative-heads"
+    },
+    {
+      "role": "Chief Transport Officer",
+      "name": "Mr. Devesh Singh",
+      "phone": "+91 9793000099",
+      "source_url": "https://srgi.in/administrative-heads"
+    },
+    {
+      "role": "Chief Warden",
+      "name": "Mr. K.M. Upadhyay",
+      "phone": "+91 9793000090",
+      "source_url": "https://srgi.in/administrative-heads"
+    },
+    {
+      "role": "Librarian",
+      "name": "Kr. Abhishek Pratap",
+      "phone": "+91 9793000050",
+      "source_url": "https://srgi.in/administrative-heads"
+    },
+    {
+      "role": "Senior Advisor",
+      "name": "Prof. V.K. Singh",
+      "phone": "+91 7617000009",
+      "source_url": "https://srgi.in/administrative-heads"
+    },
+    {
+      "role": "Advisor",
+      "name": "Mr. Neeraj Shukla",
+      "phone": "+91 9793000044",
+      "source_url": "https://srgi.in/administrative-heads"
+    },
+    {
+      "role": "Executive Director",
+      "name": "Dr. S.S. Chauhan",
+      "phone": "+91 8417000008",
+      "source_url": "https://srgi.in/board-of-directors"
+    },
+    {
+      "role": "Chief Administrative Officer",
+      "name": "Mr. Sonendra Singh Tomar",
+      "phone": "+91 9793000005",
+      "source_url": "https://srgi.in/board-of-directors"
+    }
+  ]
+}

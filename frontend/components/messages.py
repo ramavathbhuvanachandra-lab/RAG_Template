@@ -81,8 +81,18 @@ def render_chat_messages(messages: Sequence[ChatMessage]) -> str | None:
                 if message.is_safe_refusal:
                     meta_parts.append("🛡️ Safe Abstention")
 
+                turn_id = (message.diagnostics or {}).get("turn_id")
+                if turn_id:
+                    meta_parts.append(f"ID: `{turn_id}`")
+
                 if meta_parts:
                     st.caption(" • ".join(meta_parts))
+
+                if st.session_state.get("show_retrieval_diagnostics", False) and turn_id:
+                    if st.button(f"🔍 Inspect Trace for this turn", key=f"btn_inspect_trace_{idx}_{turn_id}"):
+                        st.session_state["selected_trace_id"] = turn_id
+                        st.session_state["pending_trace_id"] = turn_id
+                        st.rerun()
 
     return clicked_suggestion
 

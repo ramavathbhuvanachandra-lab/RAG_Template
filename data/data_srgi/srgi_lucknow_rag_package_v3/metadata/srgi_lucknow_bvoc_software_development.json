@@ -1,0 +1,48 @@
+{
+  "schema_version": "2.0.0",
+  "institution_id": "srgi_lucknow",
+  "institution_name": "S. R. Group of Institutions (SRGI), Lucknow",
+  "document_id": "srgi_lucknow_bvoc_software_development",
+  "title": "B.Voc in Software Development",
+  "category": "07_programmes_vocation",
+  "subcategory": "vocational_education",
+  "document_type": "institutional_knowledge",
+  "language": "en",
+  "markdown_path": "documents/07_programmes_vocation/srgi_lucknow_bvoc_software_development.md",
+  "docx_path": "documents/07_programmes_vocation/srgi_lucknow_bvoc_software_development.docx",
+  "source_urls": [
+    "https://srgi.in/bvoc/sd"
+  ],
+  "canonical_source_urls": [
+    "https://srgi.in/bvoc/sd"
+  ],
+  "source_hashes": [
+    "9894a4d3595abf57d58cc8f4fcfcb9910983ac721982e59a3fc40c36b2b08587"
+  ],
+  "markdown_hash": "5aafe0f2fe2334f2cf34759fbe819ee158b0796b2d68bc8b30211efffe8c4057",
+  "docx_hash": "2b7a52ba8393d4c3f857a2abb1ccce92dfdcde517434b8c1bc75fd19ba696551",
+  "byte_size_md": 1647,
+  "byte_size_docx": 37684,
+  "word_count_md": 178,
+  "sections_count": 7,
+  "table_count": 0,
+  "content_quality_status": "PASS",
+  "conflict_status": "NO_UNRESOLVED_CONFLICTS",
+  "provenance_section_count": 1,
+  "docx_provenance_heading_count": 1,
+  "docx_leaked_syntax_count": 0,
+  "summary": "Software Development vocational degree, sanctioned intake of 90 seats, HTML/CSS/JavaScript, database management, full-stack application projects.",
+  "keywords": [
+    "B.Voc Software Development",
+    "Coding",
+    "Web Development",
+    "Intake 90",
+    "IT Skills"
+  ],
+  "related_documents": [
+    "srgi_lucknow_bvoc_overview",
+    "srgi_lucknow_btech_computer_science"
+  ],
+  "created_at": "2026-10-23T21:19:33.743947+00:00",
+  "pipeline_stage": "release_v3_production"
+}

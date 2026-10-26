@@ -1,0 +1,48 @@
+{
+  "schema_version": "2.0.0",
+  "institution_id": "srgi_lucknow",
+  "institution_name": "S. R. Group of Institutions (SRGI), Lucknow",
+  "document_id": "srgi_lucknow_cafeteria_and_dining",
+  "title": "Cafeteria and Campus Dining Services",
+  "category": "09_campus_facilities_and_services",
+  "subcategory": "dining_services",
+  "document_type": "institutional_knowledge",
+  "language": "en",
+  "markdown_path": "documents/09_campus_facilities_and_services/srgi_lucknow_cafeteria_and_dining.md",
+  "docx_path": "documents/09_campus_facilities_and_services/srgi_lucknow_cafeteria_and_dining.docx",
+  "source_urls": [
+    "https://srgi.in/cafeteria"
+  ],
+  "canonical_source_urls": [
+    "https://srgi.in/cafeteria"
+  ],
+  "source_hashes": [
+    "8a84f7067936e8c30085c9ab87ced10544983d640d6b170f987cbc946b2d4aae"
+  ],
+  "markdown_hash": "d1635dfa9bb7a967951813542f21a6cd8d3ad0cd4322834b67c29d0be2756dde",
+  "docx_hash": "d388d21186af246fceb07d09ae22fc9329bed2a14048da8f065b7c0e752b8fae",
+  "byte_size_md": 1718,
+  "byte_size_docx": 37721,
+  "word_count_md": 186,
+  "sections_count": 6,
+  "table_count": 0,
+  "content_quality_status": "PASS",
+  "conflict_status": "NO_UNRESOLVED_CONFLICTS",
+  "provenance_section_count": 1,
+  "docx_provenance_heading_count": 1,
+  "docx_leaked_syntax_count": 0,
+  "summary": "Campus cafeteria infrastructure, hygienic food preparation, nutritious multi-cuisine menus, dining capacity, student relaxation spaces.",
+  "keywords": [
+    "Cafeteria",
+    "Dining",
+    "Mess",
+    "Hygienic Food",
+    "Student Canteen"
+  ],
+  "related_documents": [
+    "srgi_lucknow_hostel_accommodation",
+    "srgi_lucknow_overview"
+  ],
+  "created_at": "2026-10-23T21:19:33.975715+00:00",
+  "pipeline_stage": "release_v3_production"
+}

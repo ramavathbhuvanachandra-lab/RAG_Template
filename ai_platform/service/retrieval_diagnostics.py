@@ -446,11 +446,18 @@ def build_retrieval_diagnostics(
         "post_processing": round(float(stage_timings.get("post_processing", 0.0)), 5),
         "total_pipeline": round(float(stage_timings.get("total_pipeline", stage_timings.get("total_turn", 0.0))), 5),
     }
+    t_q_embed = float(stage_timings.get("query_embedding", 0.0))
+    t_chroma = float(stage_timings.get("chroma_vector_search", 0.0))
+    t_dense = float(stage_timings.get("dense_retrieve", 0.0))
+    if t_q_embed == 0.0 and t_chroma == 0.0 and t_dense > 0.0:
+        t_chroma = t_dense
+
     exclusive_timings = {
         "resolve_conversation": round(float(stage_timings.get("resolve_conversation", 0.0)), 5),
         "understand_query": round(float(stage_timings.get("understand_query", 0.0)), 5),
-        "query_embedding": round(float(stage_timings.get("query_embedding", 0.0)), 5),
-        "chroma_vector_search": round(float(stage_timings.get("chroma_vector_search", 0.0)), 5),
+        "plan_multi_intent": round(float(stage_timings.get("plan_multi_intent", 0.0)), 5),
+        "query_embedding": round(t_q_embed, 5),
+        "chroma_vector_search": round(t_chroma, 5),
         "bm25_retrieve": round(float(stage_timings.get("bm25_retrieve", 0.0)), 5),
         "lexical_retrieve": round(float(stage_timings.get("lexical_retrieve", 0.0)), 5),
         "fusion": round(float(stage_timings.get("fusion", 0.0)), 5),

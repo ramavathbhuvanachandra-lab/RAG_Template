@@ -1,0 +1,50 @@
+{
+  "institution": {
+    "srgi": ["srgi", "srimt", "sr group of institutions", "sr group", "sr college"]
+  },
+  "programs": {
+    "btech": ["btech", "b.tech", "bachelor of technology"],
+    "mtech": ["mtech", "m.tech", "master of technology"],
+    "mba": ["mba", "master of business administration"],
+    "imba": ["imba", "integrated mba"],
+    "agmp": ["agmp", "applied global management"],
+    "bvoc": ["bvoc", "b.voc", "bachelor of vocation"],
+    "dpharm": ["dpharm", "d.pharm", "d.pharma", "diploma in pharmacy"],
+    "dhp": ["dhp", "homeopathy", "diploma in homeopathic pharmacy"],
+    "nursing": ["nursing", "paramedical"]
+  },
+  "topics": {
+    "admissions": ["admission", "eligibility", "counselling", "uptac", "enquiry", "direct merit"],
+    "academics": ["curriculum", "courses", "syllabus", "intake", "seats"],
+    "placements": ["placement", "highest package", "average package", "recruiters", "companies", "salary"],
+    "facilities": ["hostel", "mess", "dining", "gym", "library", "transport", "bus", "cafeteria", "sports"],
+    "governance": ["chairman", "trust", "board of governors", "director", "proctor", "warden"]
+  },
+  "entities": {
+    "srgi": ["srgi", "srimt", "sr institute of management and technology"],
+    "aktu": ["aktu", "abdul kalam technical university"],
+    "aicte": ["aicte"],
+    "trust": ["subedar raj devi educational trust"]
+  },
+  "attributes": {
+    "fees": ["fee", "fees", "tuition", "cost", "charges"],
+    "seats": ["intake", "seats", "capacity"],
+    "duration": ["duration", "years", "semesters"],
+    "contacts": ["phone", "email", "helpline", "whatsapp", "contact", "number", "address", "location"]
+  },
+  "qualifiers": {
+    "undergraduate": ["ug", "undergraduate", "bachelor"],
+    "postgraduate": ["pg", "postgraduate", "master"],
+    "diploma": ["diploma"]
+  },
+  "scopes": {
+    "program": {
+      "btech": ["btech", "b.tech"],
+      "mtech": ["mtech", "m.tech"],
+      "mba": ["mba"],
+      "bvoc": ["bvoc", "b.voc"],
+      "dpharm": ["dpharm", "d.pharm"],
+      "dhp": ["dhp"]
+    }
+  }
+}

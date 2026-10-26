@@ -1,0 +1,9 @@
+{
+  "institution_id": "srgi_lucknow",
+  "rag_companion_format": "DOCX",
+  "authoritative_human_editable_format": "Markdown",
+  "metadata_attachment_mode": "Sidecar JSON",
+  "table_styling": "Word Native Table Grid with Header Shading",
+  "hash_algorithm": "SHA-256",
+  "indexing_mode": "DOCX_COMPANION_WITH_SIDECAR"
+}

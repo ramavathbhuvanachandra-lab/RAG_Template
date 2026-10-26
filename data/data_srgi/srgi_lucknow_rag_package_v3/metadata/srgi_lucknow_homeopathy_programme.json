@@ -1,0 +1,48 @@
+{
+  "schema_version": "2.0.0",
+  "institution_id": "srgi_lucknow",
+  "institution_name": "S. R. Group of Institutions (SRGI), Lucknow",
+  "document_id": "srgi_lucknow_homeopathy_programme",
+  "title": "Diploma in Homeopathic Pharmacy (DHP)",
+  "category": "06_programmes_medical_healthcare",
+  "subcategory": "medical_and_allied_health",
+  "document_type": "institutional_knowledge",
+  "language": "en",
+  "markdown_path": "documents/06_programmes_medical_healthcare/srgi_lucknow_homeopathy_programme.md",
+  "docx_path": "documents/06_programmes_medical_healthcare/srgi_lucknow_homeopathy_programme.docx",
+  "source_urls": [
+    "https://srgi.in/medical/homeopathy"
+  ],
+  "canonical_source_urls": [
+    "https://srgi.in/medical/homeopathy"
+  ],
+  "source_hashes": [
+    "b64072543110ba0b03b7719572bd87c0f4b8e423dd0fff8326327e7cb3b6dd46"
+  ],
+  "markdown_hash": "5ff31e0fe340e81144b5504cfe77edbfea721138081d1cc33bf3ab9a67aedee8",
+  "docx_hash": "29cfbb1af8bc27f1abc3cbb99a50314c01c122121d541dd0cb92296b7ac5bc37",
+  "byte_size_md": 1760,
+  "byte_size_docx": 37667,
+  "word_count_md": 186,
+  "sections_count": 6,
+  "table_count": 0,
+  "content_quality_status": "PASS",
+  "conflict_status": "NO_UNRESOLVED_CONFLICTS",
+  "provenance_section_count": 1,
+  "docx_provenance_heading_count": 1,
+  "docx_leaked_syntax_count": 0,
+  "summary": "Diploma in Homeopathic Pharmacy curriculum, portal status * [Coming Soon], 2-year duration, sanctioned intake of 100 seats, medicine dispensing, homeopathic pharmacopoeia, quality control.",
+  "keywords": [
+    "Homeopathy",
+    "DHP",
+    "Diploma in Homeopathic Pharmacy",
+    "Intake 100",
+    "Ayush"
+  ],
+  "related_documents": [
+    "srgi_lucknow_medical_programmes_overview",
+    "srgi_lucknow_d_pharma_programme"
+  ],
+  "created_at": "2026-10-23T21:19:33.682706+00:00",
+  "pipeline_stage": "release_v3_production"
+}

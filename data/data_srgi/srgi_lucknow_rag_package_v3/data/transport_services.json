@@ -1,0 +1,14 @@
+{
+  "institution_id": "srgi_lucknow",
+  "fleet_type": "Institutional Bus & Van Fleets",
+  "service_coverage": [
+    "Lucknow City Metropolitan Corridors",
+    "Sitapur Road Transit Highway",
+    "Bakshi ka Talab (BKT) adjoining localities"
+  ],
+  "transport_officer": {
+    "name": "Mr. Devesh Singh",
+    "phone": "+91 9793000099"
+  },
+  "source_url": "https://srgi.in/transport"
+}

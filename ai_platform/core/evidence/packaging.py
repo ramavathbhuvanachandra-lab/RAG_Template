@@ -316,11 +316,19 @@ class IntentEvidenceGroup:
 def _status_for(
     items: Sequence[PackagedEvidenceItem],
     claim_audit: ClaimAudit | None,
+    verified_evidence: bool = False,
 ) -> PackageStatus:
     if claim_audit is not None and claim_audit.conflicting_claim_ids:
         return "conflicted"
     if not items:
         return "empty"
+    if verified_evidence:
+        # Verified evidence was explicitly supplied. When claim audit marks a claim insufficient
+        # (e.g. fees not documented), do not discard the qualified evidence for the other parts;
+        # mark as "partial" so generation can answer supported parts and abstain on missing ones.
+        if claim_audit is not None and getattr(claim_audit, "status", None) in ("insufficient", "partial"):
+            return "partial"
+        return "ready"
     if (
         claim_audit is not None
         and claim_audit.claims
@@ -440,7 +448,7 @@ def build_evidence_package(
             omitted += 1
             continue
 
-        pass1_limit = max_units_per_source if (priority == 0 or verified_evidence) else base_per_source
+        pass1_limit = min(3, max_units_per_source)
         if source_counts.get(source_key, 0) >= pass1_limit:
             deferred_candidates.append(candidate)
             continue
@@ -450,7 +458,7 @@ def build_evidence_package(
             continue
 
         item_text = sanitize_evidence_text(unit.text)
-        if any(item.source == unit.source and item_text.casefold() in item.text.casefold() for item in selected):
+        if any(item.source == unit.source and (item_text.casefold() in item.text.casefold() or item.text.casefold() in item_text.casefold()) for item in selected):
             omitted += 1
             continue
 
@@ -458,6 +466,35 @@ def build_evidence_package(
             _is_specialized_source(unit.source)
             and any(_is_generic_source(item.source) and any(w in item.source.casefold() for w in ("finance", "fees")) for item in selected)
             and any(w in item_text.casefold() for w in ("tuition", "program fee", "programme fee", "fee structure", "inr 2,25,000", "225000"))
+        ):
+            omitted += 1
+            continue
+
+        # Omit tiny fragment chunks (< 80 chars) that carry no supported or partial claims
+        if len(item_text.strip()) < 80 and not supported_ids and not partial_ids:
+            omitted += 1
+            continue
+
+        # When an authoritative catalogue or directory is already present, limit peripheral overviews to 1 chunk
+        has_authoritative_catalogue = any(
+            item.source.endswith("departments.json")
+            or "academic_programmes.json" in item.source
+            or "departments_directory" in item.source.casefold()
+            for item in selected
+        )
+        if has_authoritative_catalogue:
+            if any(w in unit.source.casefold() for w in ("institutional_overview", "frequently_asked_questions", "simulator", "prospectus")):
+                if source_counts.get(source_key, 0) >= 1:
+                    omitted += 1
+                    continue
+
+        if (
+            _is_specialized_source(unit.source)
+            and has_authoritative_catalogue
+            and not any(
+                w in unit.source.casefold()
+                for w in ("departments", "academic_programmes", "btech_overview", "faculties", "btech_computer_science")
+            )
         ):
             omitted += 1
             continue
@@ -504,7 +541,7 @@ def build_evidence_package(
             continue
 
         item_text = sanitize_evidence_text(unit.text)
-        if any(item.source == unit.source and item_text.casefold() in item.text.casefold() for item in selected):
+        if any(item.source == unit.source and (item_text.casefold() in item.text.casefold() or item.text.casefold() in item_text.casefold()) for item in selected):
             omitted += 1
             continue
 
@@ -512,6 +549,35 @@ def build_evidence_package(
             _is_specialized_source(unit.source)
             and any(_is_generic_source(item.source) and any(w in item.source.casefold() for w in ("finance", "fees")) for item in selected)
             and any(w in item_text.casefold() for w in ("tuition", "program fee", "programme fee", "fee structure", "inr 2,25,000", "225000"))
+        ):
+            omitted += 1
+            continue
+
+        # Omit tiny fragment chunks (< 80 chars) that carry no supported or partial claims
+        if len(item_text.strip()) < 80 and not supported_ids and not partial_ids:
+            omitted += 1
+            continue
+
+        # When an authoritative catalogue or directory is already present, limit peripheral overviews to 1 chunk
+        has_authoritative_catalogue = any(
+            item.source.endswith("departments.json")
+            or "academic_programmes.json" in item.source
+            or "departments_directory" in item.source.casefold()
+            for item in selected
+        )
+        if has_authoritative_catalogue:
+            if any(w in unit.source.casefold() for w in ("institutional_overview", "frequently_asked_questions", "simulator", "prospectus")):
+                if source_counts.get(source_key, 0) >= 1:
+                    omitted += 1
+                    continue
+
+        if (
+            _is_specialized_source(unit.source)
+            and has_authoritative_catalogue
+            and not any(
+                w in unit.source.casefold()
+                for w in ("departments", "academic_programmes", "btech_overview", "faculties", "btech_computer_science")
+            )
         ):
             omitted += 1
             continue
@@ -557,7 +623,7 @@ def build_evidence_package(
 
     omitted_claims = tuple(sorted((all_supported | all_partial) - selected_supported - selected_partial))
     return EvidencePackage(
-        status=_status_for(selected, claim_audit),
+        status=_status_for(selected, claim_audit, verified_evidence=verified_evidence),
         context=context,
         items=tuple(selected),
         source_count=len({item.source.casefold() for item in selected}),

@@ -1,0 +1,52 @@
+{
+  "schema_version": "2.0.0",
+  "institution_id": "srgi_lucknow",
+  "institution_name": "S. R. Group of Institutions (SRGI), Lucknow",
+  "document_id": "srgi_lucknow_heritage_and_inspiration",
+  "title": "SRGI Lucknow Heritage, Sponsoring Trust and Foundational Inspiration",
+  "category": "01_institutional_profile",
+  "subcategory": "heritage_and_trust",
+  "document_type": "institutional_knowledge",
+  "language": "en",
+  "markdown_path": "documents/01_institutional_profile/srgi_lucknow_heritage_and_inspiration.md",
+  "docx_path": "documents/01_institutional_profile/srgi_lucknow_heritage_and_inspiration.docx",
+  "source_urls": [
+    "https://srgi.in/inspiration",
+    "https://srgi.in/about"
+  ],
+  "canonical_source_urls": [
+    "https://srgi.in/inspiration",
+    "https://srgi.in/about"
+  ],
+  "source_hashes": [
+    "83fc8dd619cfd38e1149364d6751008e8956f649a980cd2dfe160c17e452fc4b",
+    "199aea81a694f708e74cfadb5f24f9ef8aa1a11eb79293b57602acf5b14ea690"
+  ],
+  "markdown_hash": "7cdecc30e31eb76193b796ebefb6db2e6cd1d5a70686fd54136e188a30aab03d",
+  "docx_hash": "3b209dc71ff7a0ff39166e6ce89db20b0fc52b63d26891718e22785e495f19ba",
+  "byte_size_md": 4154,
+  "byte_size_docx": 39148,
+  "word_count_md": 522,
+  "sections_count": 8,
+  "table_count": 2,
+  "content_quality_status": "PASS",
+  "conflict_status": "NO_UNRESOLVED_CONFLICTS",
+  "provenance_section_count": 1,
+  "docx_provenance_heading_count": 1,
+  "docx_leaked_syntax_count": 0,
+  "summary": "Foundational inspiration of Late Shri Subedar Singh and Late Smt. Raj Devi Singh, establishment of Subedar Raj Devi Educational Trust, institutional ethos, and guiding philosophical principles.",
+  "keywords": [
+    "Late Subedar Singh",
+    "Late Raj Devi Singh",
+    "Subedar Raj Devi Educational Trust",
+    "Shiksha Sanskar Rozgar",
+    "Heritage",
+    "Founding Principles"
+  ],
+  "related_documents": [
+    "srgi_lucknow_overview",
+    "srgi_lucknow_chairman_message"
+  ],
+  "created_at": "2026-10-23T21:19:32.809738+00:00",
+  "pipeline_stage": "release_v3_production"
+}

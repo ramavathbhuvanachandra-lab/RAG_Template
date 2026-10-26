@@ -107,6 +107,26 @@ REQUEST_TYPE_BACKSTOP_PATTERNS: tuple[tuple[str, str], ...] = (
         "admission",
         r"\b(?:application\s+deadlines?|admission|admissions|admit|entry)\b",
     ),
+    (
+        "intake",
+        r"\b(?:intake|seats?|seat\s+intake|sanctioned\s+(?:seats?|intake)|capacity)\b",
+    ),
+    (
+        "documents",
+        r"\b(?:documents?|docs?|certificates?|affidavits?|dastavej|document)\b",
+    ),
+    (
+        "timing",
+        r"\b(?:timings?|time|timing|hours?|working\s+hours|schedule)\b",
+    ),
+    (
+        "placement",
+        r"\b(?:placements?|package|packages|highest\s+package|average\s+package|recruit(?:ers|ment)?)\b",
+    ),
+    (
+        "contact",
+        r"\b(?:contact|phone(?:\s+number)?|email(?:\s+address)?|helpline|who\s+to\s+contact)\b",
+    ),
 )
 
 # Generic institutional targets. The longest literal match wins. These are
@@ -115,7 +135,7 @@ GENERIC_TARGET_PATTERNS: tuple[str, ...] = (
     r"\bacademic\s+programs?\b",
     r"\badmission\s+requirements?\b",
     r"\badmission\s+(?:fees?|charges?)\b",
-    r"\badmission\s+(?:process|procedure)\b",
+    r"\badmission\s+(?:process|procedure|steps?)\b",
     r"\bapplication\s+(?:deadlines?|process|procedure)\b",
     r"\bresearch\s+opportunit(?:y|ies)\b",
     r"\bresearch\s+areas?\b",
@@ -125,6 +145,13 @@ GENERIC_TARGET_PATTERNS: tuple[str, ...] = (
     r"\btuition\s+fees?\b",
     r"\beligibility\s+requirements?\b",
     r"\bapplication\s+deadlines?\b",
+    r"\b(?:cse|cs|it|ece|eee|ee|me|ce|bt|aiml|aids)\b",
+    r"\b(?:b\.?tech|m\.?tech|mca|mba|b\.?pharm|d\.?pharm)\b",
+    r"\b(?:intake|seats?)\b",
+    r"\b(?:documents?|docs?)\b",
+    r"\b(?:bus(?:\s+timing)?|transport)\b",
+    r"\b(?:library(?:\s+timings?|\s+time)?)\b",
+    r"\b(?:placements?)\b",
     r"\bdepartments?\b",
     r"\bprograms?\b",
     r"\bfacilities?\b",
@@ -495,6 +522,14 @@ def _apply_deterministic_backstop(
         deterministic_floor = 0.92 if lexical_request_type and target else 0.86
         confidence = max(confidence, deterministic_floor)
 
+    has_multi_topic = bool(
+        interpretation.is_multi_part
+        or bool(
+            re.search(r"\b(?:and|aur|evam|tatha|&)\b", original_query, re.I)
+            and any(term in original_query.casefold() for term in ("hostel", "mess", "fees", "fee", "intake", "eligibility", "admission", "transport", "bus", "cse", "btech", "it", "ece"))
+        )
+    )
+
     return SemanticInterpretation(
         semantic_query=interpretation.semantic_query,
         target=target,
@@ -508,7 +543,7 @@ def _apply_deterministic_backstop(
         preserved_terms=tuple(dedupe_text((*interpretation.preserved_terms, *_high_signal_literal_terms(original_query))))[:MAX_PRESERVED_TERMS],
         is_list_question=list_intent,
         is_comparison_question=bool(interpretation.is_comparison_question),
-        is_multi_part=bool(interpretation.is_multi_part),
+        is_multi_part=has_multi_topic,
         confidence=confidence,
         needs_clarification=bool(interpretation.needs_clarification),
         clarification_reason=interpretation.clarification_reason,
@@ -1141,7 +1176,7 @@ def derive_retrieval_requirement(
     if interpretation.is_list_question:
         return RetrievalRequirement(
             mode="broad",
-            require_target_alignment=False,
+            require_target_alignment=has_target,
             require_attribute_alignment=False,
             require_scope_alignment=False,
             reject_explicit_conflict=True,
@@ -1325,12 +1360,23 @@ def interpretation_to_query(
     entities = ()
     mentions = ()
     if interpretation.target:
+        entity_type = "facility" if str(interpretation.request_type or "").casefold() in ("hostel", "transport", "facility", "library") else "program"
+        res_state = "resolved" if interpretation.confidence >= 0.7 else "unresolved"
+        entities = (
+            Entity(
+                name=interpretation.target,
+                entity_type=entity_type,
+                confidence=interpretation.confidence,
+                resolution_state=res_state,
+            ),
+        )
         mentions = (
             EntityMention(
                 text=interpretation.target,
                 normalized_text=interpretation.target,
+                entity_type=entity_type,
                 confidence=interpretation.confidence,
-                resolution_state="unresolved",
+                resolution_state=res_state,
             ),
         )
 

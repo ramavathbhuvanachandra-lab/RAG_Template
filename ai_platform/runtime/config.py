@@ -20,7 +20,7 @@ from ai_platform.institutions.loader import load_institution_profile
 load_dotenv()
 
 PROJECT_ROOT = Path(__file__).resolve().parents[2]
-DEFAULT_INSTITUTION = "iitj"
+DEFAULT_INSTITUTION = "srgi"
 
 
 def _env(name: str, default: str) -> str:

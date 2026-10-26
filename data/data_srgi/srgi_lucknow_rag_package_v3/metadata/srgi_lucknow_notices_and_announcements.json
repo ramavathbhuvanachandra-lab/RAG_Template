@@ -1,0 +1,49 @@
+{
+  "schema_version": "2.0.0",
+  "institution_id": "srgi_lucknow",
+  "institution_name": "S. R. Group of Institutions (SRGI), Lucknow",
+  "document_id": "srgi_lucknow_notices_and_announcements",
+  "title": "Academic Notices, Circulars and Institutional Announcements",
+  "category": "12_events_notices_and_speakers",
+  "subcategory": "academic_notices",
+  "document_type": "institutional_knowledge",
+  "language": "en",
+  "markdown_path": "documents/12_events_notices_and_speakers/srgi_lucknow_notices_and_announcements.md",
+  "docx_path": "documents/12_events_notices_and_speakers/srgi_lucknow_notices_and_announcements.docx",
+  "source_urls": [
+    "https://srgi.in/notices"
+  ],
+  "canonical_source_urls": [
+    "https://srgi.in/notices"
+  ],
+  "source_hashes": [
+    "2506b8cca7f496073d7959aa797321383fbf9690b4e47c3d12806e8b1abca718"
+  ],
+  "markdown_hash": "421ed6705877136f1a8e5a97669a63d3ad25630bbefd3462ad151ddc36d97403",
+  "docx_hash": "a29b5a25298fb00a33e1c1668481f2434ba63ff65a81a99f1654321f52c1a9fd",
+  "byte_size_md": 2214,
+  "byte_size_docx": 38127,
+  "word_count_md": 257,
+  "sections_count": 6,
+  "table_count": 3,
+  "content_quality_status": "PASS",
+  "conflict_status": "NO_UNRESOLVED_CONFLICTS",
+  "provenance_section_count": 1,
+  "docx_provenance_heading_count": 1,
+  "docx_leaked_syntax_count": 0,
+  "summary": "Official academic notices, examination schedules for 2026-27 sessional exams, memorial tournament invitations, administrative contacts, cultural notices.",
+  "keywords": [
+    "Notices",
+    "Circulars",
+    "Sessional Exams",
+    "Basketball Tournament",
+    "Odd Sem 2026-27",
+    "Announcements"
+  ],
+  "related_documents": [
+    "srgi_lucknow_events_and_youth_manifesto",
+    "srgi_lucknow_overview"
+  ],
+  "created_at": "2026-10-23T21:19:34.323777+00:00",
+  "pipeline_stage": "release_v3_production"
+}

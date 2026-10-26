@@ -1,0 +1,47 @@
+{
+  "schema_version": "2.0.0",
+  "institution_id": "srgi_lucknow",
+  "institution_name": "S. R. Group of Institutions (SRGI), Lucknow",
+  "document_id": "srgi_lucknow_bvoc_automobile_engineering",
+  "title": "B.Voc in Automobile Engineering",
+  "category": "07_programmes_vocation",
+  "subcategory": "vocational_education",
+  "document_type": "institutional_knowledge",
+  "language": "en",
+  "markdown_path": "documents/07_programmes_vocation/srgi_lucknow_bvoc_automobile_engineering.md",
+  "docx_path": "documents/07_programmes_vocation/srgi_lucknow_bvoc_automobile_engineering.docx",
+  "source_urls": [
+    "https://srgi.in/bvoc/ae"
+  ],
+  "canonical_source_urls": [
+    "https://srgi.in/bvoc/ae"
+  ],
+  "source_hashes": [
+    "642053102aa9827651ab507cbcf3fcaab6b070ee2096ca3d1ed77b3dc926fe8b"
+  ],
+  "markdown_hash": "772ccc81402c9e9757266dda488af73f0211e61beb12a52a114da6518fefe18c",
+  "docx_hash": "de5bf79f4a7e96ad1d11604ed7762048b20ad7d134de51c0ee6e30fa37c26ae0",
+  "byte_size_md": 1476,
+  "byte_size_docx": 37556,
+  "word_count_md": 152,
+  "sections_count": 6,
+  "table_count": 0,
+  "content_quality_status": "PASS",
+  "conflict_status": "NO_UNRESOLVED_CONFLICTS",
+  "provenance_section_count": 1,
+  "docx_provenance_heading_count": 1,
+  "docx_leaked_syntax_count": 0,
+  "summary": "Automobile Engineering vocational degree, sanctioned intake of 30 seats, vehicle diagnostics, modern automotive manufacturing, EV basics.",
+  "keywords": [
+    "B.Voc Automobile",
+    "Automobile Engineering",
+    "Vehicle Maintenance",
+    "Intake 30"
+  ],
+  "related_documents": [
+    "srgi_lucknow_bvoc_overview",
+    "srgi_lucknow_btech_mechanical_engineering"
+  ],
+  "created_at": "2026-10-23T21:19:33.797158+00:00",
+  "pipeline_stage": "release_v3_production"
+}

@@ -1,0 +1,26 @@
+{
+  "institution_id": "srgi_lucknow",
+  "services": [
+    {
+      "service_name": "Central Library",
+      "holdings": "53,760+ Books & 448+ Journals",
+      "librarian": "Kr. Abhishek Pratap (+91 9793000050)"
+    },
+    {
+      "service_name": "Training & Placement Cell",
+      "head": "Mr. Kaushal Chandra (+91 9793000080)"
+    },
+    {
+      "service_name": "Proctorial Board & Campus Security",
+      "head": "Dr. Shashank Singh (+91 8417000011)"
+    },
+    {
+      "service_name": "Cafeteria & Dining Mess",
+      "description": "Hygienic multi-cuisine dining options on campus"
+    },
+    {
+      "service_name": "Sports & Gymnasium Complex",
+      "description": "Indoor gym and extensive outdoor sports grounds across 65-acre campus"
+    }
+  ]
+}

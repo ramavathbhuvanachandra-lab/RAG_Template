@@ -1,0 +1,240 @@
+{
+  "institution_id": "srgi_lucknow",
+  "programmes": [
+    {
+      "programme_id": "btech_cse",
+      "name": "B.Tech in Computer Science & Engineering",
+      "degree": "B.Tech",
+      "faculty": "Faculty of Engineering & Technology",
+      "duration_years": 4,
+      "intake": 180,
+      "track_intakes": {
+        "core_cse": 180,
+        "ai_ml_specialization": 60,
+        "data_science_specialization": 60
+      },
+      "intake_evidence_note": "Overview page lists 180 core seats, with 60 seats each in specialized AI/ML and Data Science tracks.",
+      "affiliation": "AKTU, Lucknow",
+      "approval": "AICTE, New Delhi",
+      "canonical_document_id": "srgi_lucknow_btech_computer_science_engineering",
+      "source_url": "https://srgi.in/btech/cs"
+    },
+    {
+      "programme_id": "btech_cs",
+      "name": "B.Tech in Computer Science",
+      "degree": "B.Tech",
+      "faculty": "Faculty of Engineering & Technology",
+      "duration_years": 4,
+      "intake": 180,
+      "affiliation": "AKTU, Lucknow",
+      "canonical_document_id": "srgi_lucknow_btech_computer_science",
+      "source_url": "https://srgi.in/btech/cs"
+    },
+    {
+      "programme_id": "btech_it",
+      "name": "B.Tech in Information Technology",
+      "degree": "B.Tech",
+      "faculty": "Faculty of Engineering & Technology",
+      "duration_years": 4,
+      "intake": 60,
+      "affiliation": "AKTU, Lucknow",
+      "canonical_document_id": "srgi_lucknow_btech_information_technology",
+      "source_url": "https://srgi.in/btech/it"
+    },
+    {
+      "programme_id": "btech_ec",
+      "name": "B.Tech in Electronics & Communication Engineering",
+      "degree": "B.Tech",
+      "faculty": "Faculty of Engineering & Technology",
+      "duration_years": 4,
+      "intake": 60,
+      "affiliation": "AKTU, Lucknow",
+      "canonical_document_id": "srgi_lucknow_btech_electronics_communication",
+      "source_url": "https://srgi.in/btech/ec"
+    },
+    {
+      "programme_id": "btech_en",
+      "name": "B.Tech in Electrical & Electronics Engineering",
+      "degree": "B.Tech",
+      "faculty": "Faculty of Engineering & Technology",
+      "duration_years": 4,
+      "intake": 60,
+      "affiliation": "AKTU, Lucknow",
+      "canonical_document_id": "srgi_lucknow_btech_electrical_electronics",
+      "source_url": "https://srgi.in/btech/en"
+    },
+    {
+      "programme_id": "btech_me",
+      "name": "B.Tech in Mechanical Engineering",
+      "degree": "B.Tech",
+      "faculty": "Faculty of Engineering & Technology",
+      "duration_years": 4,
+      "intake": 60,
+      "affiliation": "AKTU, Lucknow",
+      "canonical_document_id": "srgi_lucknow_btech_mechanical_engineering",
+      "source_url": "https://srgi.in/btech/me"
+    },
+    {
+      "programme_id": "btech_ce",
+      "name": "B.Tech in Civil Engineering",
+      "degree": "B.Tech",
+      "faculty": "Faculty of Engineering & Technology",
+      "duration_years": 4,
+      "intake": 60,
+      "affiliation": "AKTU, Lucknow",
+      "canonical_document_id": "srgi_lucknow_btech_civil_engineering",
+      "source_url": "https://srgi.in/btech/ce"
+    },
+    {
+      "programme_id": "btech_bt",
+      "name": "B.Tech in Biotechnology",
+      "degree": "B.Tech",
+      "faculty": "Faculty of Engineering & Technology",
+      "duration_years": 4,
+      "intake": 180,
+      "affiliation": "AKTU, Lucknow",
+      "intake_evidence_note": "Official portal (/btech/bt) states 180 seats. Reconciled in V3 across MD, DOCX, and JSON.",
+      "canonical_document_id": "srgi_lucknow_btech_biotechnology",
+      "source_url": "https://srgi.in/btech/bt"
+    },
+    {
+      "programme_id": "btech_ag",
+      "name": "B.Tech in Agricultural Engineering",
+      "degree": "B.Tech",
+      "faculty": "Faculty of Engineering & Technology",
+      "duration_years": 4,
+      "intake": 60,
+      "affiliation": "AKTU, Lucknow",
+      "canonical_document_id": "srgi_lucknow_btech_agricultural_engineering",
+      "source_url": "https://srgi.in/btech/ag"
+    },
+    {
+      "programme_id": "mtech_cse",
+      "name": "M.Tech in Computer Science & Engineering",
+      "degree": "M.Tech",
+      "faculty": "Faculty of Engineering & Technology",
+      "duration_years": 2,
+      "intake": 18,
+      "affiliation": "AKTU, Lucknow",
+      "canonical_document_id": "srgi_lucknow_mtech_overview",
+      "source_url": "https://srgi.in/mtech"
+    },
+    {
+      "programme_id": "mtech_me_prod",
+      "name": "M.Tech in Mechanical Engineering (Production)",
+      "degree": "M.Tech",
+      "faculty": "Faculty of Engineering & Technology",
+      "duration_years": 2,
+      "intake": 18,
+      "affiliation": "AKTU, Lucknow",
+      "canonical_document_id": "srgi_lucknow_mtech_overview",
+      "source_url": "https://srgi.in/mtech"
+    },
+    {
+      "programme_id": "mba",
+      "name": "Master of Business Administration",
+      "degree": "MBA",
+      "faculty": "Faculty of Management Studies",
+      "duration_years": 2,
+      "intake": 240,
+      "specializations": [
+        "Marketing",
+        "Finance",
+        "HR",
+        "IT",
+        "Operations"
+      ],
+      "affiliation": "AKTU, Lucknow",
+      "canonical_document_id": "srgi_lucknow_mba_programme",
+      "source_url": "https://srgi.in/management"
+    },
+    {
+      "programme_id": "imba",
+      "name": "Integrated MBA",
+      "degree": "IMBA",
+      "faculty": "Faculty of Management Studies",
+      "duration_years": 5,
+      "intake": 30,
+      "affiliation": "AKTU, Lucknow",
+      "canonical_document_id": "srgi_lucknow_integrated_mba_programme",
+      "source_url": "https://srgi.in/management/imba"
+    },
+    {
+      "programme_id": "agmp",
+      "name": "Applied Global Management Programme",
+      "degree": "AGMP",
+      "faculty": "Faculty of Management Studies",
+      "duration_years": 2,
+      "intake": 60,
+      "canonical_document_id": "srgi_lucknow_agmp_programme",
+      "source_url": "https://srgi.in/management/agmp"
+    },
+    {
+      "programme_id": "bvoc_sd",
+      "name": "B.Voc in Software Development",
+      "degree": "B.Voc",
+      "faculty": "Faculty of Skill & Vocational Studies",
+      "duration_years": 3,
+      "intake": 90,
+      "framework": "UGC / NSQF",
+      "canonical_document_id": "srgi_lucknow_bvoc_software_development",
+      "source_url": "https://srgi.in/bvoc/sd"
+    },
+    {
+      "programme_id": "bvoc_bfsi",
+      "name": "B.Voc in Banking, Financial Services & Insurance",
+      "degree": "B.Voc",
+      "faculty": "Faculty of Skill & Vocational Studies",
+      "duration_years": 3,
+      "intake": 120,
+      "framework": "UGC / NSQF",
+      "canonical_document_id": "srgi_lucknow_bvoc_banking_financial_services",
+      "source_url": "https://srgi.in/bvoc/bfsi"
+    },
+    {
+      "programme_id": "bvoc_ae",
+      "name": "B.Voc in Automobile Engineering",
+      "degree": "B.Voc",
+      "faculty": "Faculty of Skill & Vocational Studies",
+      "duration_years": 3,
+      "intake": 30,
+      "framework": "UGC / NSQF",
+      "canonical_document_id": "srgi_lucknow_bvoc_automobile_engineering",
+      "source_url": "https://srgi.in/bvoc/ae"
+    },
+    {
+      "programme_id": "d_pharm",
+      "name": "Diploma in Pharmacy",
+      "degree": "D.Pharm",
+      "faculty": "Faculty of Medical & Allied Health Sciences",
+      "duration_years": 2,
+      "intake": 50,
+      "statutory_recognition": "Pharmacy Council of India (PCI)",
+      "canonical_document_id": "srgi_lucknow_d_pharma_programme",
+      "source_url": "https://srgi.in/medical/dpharma"
+    },
+    {
+      "programme_id": "nursing",
+      "name": "Ayurvedic Healthcare Nursing",
+      "degree": "Nursing Diploma (GNM / Ayurvedic Healthcare Nursing)",
+      "faculty": "Faculty of Medical & Allied Health Sciences",
+      "duration_years": 3.5,
+      "intake": 100,
+      "canonical_document_id": "srgi_lucknow_nursing_programme",
+      "source_url": "https://srgi.in/medical/nursing",
+      "notes": "Course duration 3.5 years and intake 100 as published on official portal."
+    },
+    {
+      "programme_id": "dhp",
+      "name": "Diploma in Homeopathic Pharmacy",
+      "degree": "DHP",
+      "faculty": "Faculty of Medical & Allied Health Sciences",
+      "duration_years": 2,
+      "intake": 100,
+      "status": "upcoming_portal_marked",
+      "canonical_document_id": "srgi_lucknow_homeopathy_programme",
+      "source_url": "https://srgi.in/medical/homeopathy",
+      "notes": "Marked with asterisk (* [Coming Soon]) on the official SRGI Medical portal."
+    }
+  ]
+}

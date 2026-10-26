@@ -191,9 +191,8 @@ def _has_meaningful_signal(
             if is_facility_or_dept and analysis.target_score < 0.15:
                 return False
             return (
-                analysis.query_overlap >= 0.15
-                or analysis.semantic_score >= 0.35
-                or analysis.target_score >= 0.15
+                analysis.target_score >= 0.20
+                or (analysis.query_overlap >= 0.25 and analysis.semantic_score >= 0.40)
             )
         return False
 
@@ -354,12 +353,17 @@ def verify_candidate(
             evidence=analysis,
         )
 
-    if target_required and not target_grounded and analysis.target_score < 0.20:
-        is_specialized_path = any(
-            seg in cand_source for seg in (
-                "/schools/", "/departments/", "/programs/",
-                "/research_platforms/", "/centers/",
+    if target_required and not target_grounded and analysis.target_score < 0.25:
+        is_specialized_path = (
+            any(
+                seg in cand_source for seg in (
+                    "/schools/", "/departments/", "/programs/", "/programmes/",
+                    "/research_platforms/", "/centers/",
+                    "04_programmes_engineering", "05_programmes_management", "06_programmes_medical", "07_programmes_vocation",
+                    "btech_", "mtech_", "bvoc_", "d_pharma_", "mba_",
+                )
             )
+            and not any(g in cand_source for g in ("overview", "general", "catalog", "directory", "academic_programmes"))
         )
         target_name = str(getattr(frame, "target", "") or "").casefold()
         is_facility_target = any(k in target_name for k in ("hostel", "mess", "dining", "guest"))

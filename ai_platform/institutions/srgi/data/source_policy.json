@@ -1,0 +1,58 @@
+{
+  "institution_id": "srgi",
+  "categories": {
+    "programs": {
+      "path_markers": ["04_programmes_engineering", "05_programmes_management", "06_programmes_medical_healthcare", "07_programmes_vocation", "academic_programmes"],
+      "rank_weight": 1.0
+    },
+    "admissions": {
+      "path_markers": ["08_admissions_and_counselling", "admissions", "enquiry"],
+      "rank_weight": 0.95
+    },
+    "profile": {
+      "path_markers": ["01_institutional_profile", "02_governance_and_leadership", "03_constituent_units", "institution_profile"],
+      "rank_weight": 0.9
+    },
+    "facilities": {
+      "path_markers": ["09_campus_facilities_and_services", "hostel", "transport", "library", "campus_locations"],
+      "rank_weight": 0.85
+    },
+    "placements": {
+      "path_markers": ["10_placements_and_careers", "placements"],
+      "rank_weight": 0.9
+    },
+    "emergency": {
+      "path_markers": ["emergency_contacts", "campus_contacts", "14_contact_and_locations"],
+      "rank_weight": 0.95
+    },
+    "faqs": {
+      "path_markers": ["13_faqs", "faq"],
+      "rank_weight": 0.8
+    }
+  },
+  "preference_by_request": {
+    "general": {
+      "profile": 1.0,
+      "programs": 0.9,
+      "admissions": 0.8
+    },
+    "program": {
+      "programs": 1.0,
+      "admissions": 0.8
+    },
+    "admission": {
+      "admissions": 1.0,
+      "programs": 0.85
+    },
+    "fee": {
+      "admissions": 1.0,
+      "programs": 0.9
+    },
+    "hostel": {
+      "facilities": 1.0
+    },
+    "emergency": {
+      "emergency": 1.0
+    }
+  }
+}

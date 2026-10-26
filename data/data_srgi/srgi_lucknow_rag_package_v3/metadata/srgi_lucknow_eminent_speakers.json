@@ -1,0 +1,49 @@
+{
+  "schema_version": "2.0.0",
+  "institution_id": "srgi_lucknow",
+  "institution_name": "S. R. Group of Institutions (SRGI), Lucknow",
+  "document_id": "srgi_lucknow_eminent_speakers",
+  "title": "Eminent Speakers and Distinguished Visitors",
+  "category": "12_events_notices_and_speakers",
+  "subcategory": "guest_lectures",
+  "document_type": "institutional_knowledge",
+  "language": "en",
+  "markdown_path": "documents/12_events_notices_and_speakers/srgi_lucknow_eminent_speakers.md",
+  "docx_path": "documents/12_events_notices_and_speakers/srgi_lucknow_eminent_speakers.docx",
+  "source_urls": [
+    "https://srgi.in/eminent-speakers"
+  ],
+  "canonical_source_urls": [
+    "https://srgi.in/eminent-speakers"
+  ],
+  "source_hashes": [
+    "85647d85e7b77e288dee0190b3669a537ab3187351835c17e81866b322f854ff"
+  ],
+  "markdown_hash": "8b8f97848d8f7cb6927585bef58bd49fa929f4a16dbc0d945952883064315411",
+  "docx_hash": "cfecff028af480ddd4add53dcd81d542c131778fc9813299002578148becf717",
+  "byte_size_md": 1925,
+  "byte_size_docx": 38107,
+  "word_count_md": 227,
+  "sections_count": 5,
+  "table_count": 2,
+  "content_quality_status": "PASS",
+  "conflict_status": "NO_UNRESOLVED_CONFLICTS",
+  "provenance_section_count": 1,
+  "docx_provenance_heading_count": 1,
+  "docx_leaked_syntax_count": 0,
+  "summary": "Distinguished public leaders, police generals, vice-chancellors, economic experts, and educators who have addressed the SRGI student body.",
+  "keywords": [
+    "Eminent Speakers",
+    "Navniet Sikera",
+    "Dr. Raheesh Singh",
+    "Bhuvnesh Kumar",
+    "Prof. S.P. Singh",
+    "Guest Lectures"
+  ],
+  "related_documents": [
+    "srgi_lucknow_events_and_youth_manifesto",
+    "srgi_lucknow_overview"
+  ],
+  "created_at": "2026-10-23T21:19:34.379447+00:00",
+  "pipeline_stage": "release_v3_production"
+}

@@ -1,0 +1,48 @@
+{
+  "schema_version": "2.0.0",
+  "institution_id": "srgi_lucknow",
+  "institution_name": "S. R. Group of Institutions (SRGI), Lucknow",
+  "document_id": "srgi_lucknow_board_of_governors",
+  "title": "SRGI Lucknow Board of Governors \u2014 Composition and Strategic Counsel",
+  "category": "02_governance_and_leadership",
+  "subcategory": "governance_bodies",
+  "document_type": "institutional_knowledge",
+  "language": "en",
+  "markdown_path": "documents/02_governance_and_leadership/srgi_lucknow_board_of_governors.md",
+  "docx_path": "documents/02_governance_and_leadership/srgi_lucknow_board_of_governors.docx",
+  "source_urls": [
+    "https://srgi.in/board-of-governors"
+  ],
+  "canonical_source_urls": [
+    "https://srgi.in/board-of-governors"
+  ],
+  "source_hashes": [
+    "ec30d9bd6d1c262f72d9b8e10cad3d6ac873f4fca3f069a222ffc8666069461a"
+  ],
+  "markdown_hash": "0ad11425b1096b18fa8bbcac58663ecf56da31d957eafa1197c4171b0159a963",
+  "docx_hash": "0c035a93def5f3131107b223b2a2a15a28049b033edf3c03eab7625ac021cea0",
+  "byte_size_md": 2692,
+  "byte_size_docx": 38192,
+  "word_count_md": 298,
+  "sections_count": 9,
+  "table_count": 0,
+  "content_quality_status": "PASS",
+  "conflict_status": "NO_UNRESOLVED_CONFLICTS",
+  "provenance_section_count": 1,
+  "docx_provenance_heading_count": 1,
+  "docx_leaked_syntax_count": 0,
+  "summary": "Official membership, profiles, medical/academic credentials, and strategic guidance of the SRGI Board of Governors.",
+  "keywords": [
+    "Board of Governors",
+    "Dr. Vaibhav Pratap Singh",
+    "Dr. Pallavi Singh",
+    "Governance",
+    "Strategic Direction"
+  ],
+  "related_documents": [
+    "srgi_lucknow_board_of_directors",
+    "srgi_lucknow_administrative_heads"
+  ],
+  "created_at": "2026-10-23T21:19:32.974867+00:00",
+  "pipeline_stage": "release_v3_production"
+}

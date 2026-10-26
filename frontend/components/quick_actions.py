@@ -56,7 +56,7 @@ def render_quick_actions(config: InstitutionUIConfig) -> str | None:
             "🗺️ Campus Map & Location Directory",
             use_container_width=True,
             key="qa_campus_map_btn",
-            help="Explore IIT Jodhpur campus buildings, lecture halls, hostels, and dining facilities.",
+            help=f"Explore {config.display_name} campus buildings, lecture halls, hostels, and dining facilities.",
         ):
             st.session_state.show_campus_map = True
             st.rerun()

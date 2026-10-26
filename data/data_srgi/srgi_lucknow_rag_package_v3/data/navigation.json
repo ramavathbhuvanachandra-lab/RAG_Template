@@ -1,0 +1,66 @@
+{
+  "institution_id": "srgi_lucknow",
+  "homepage": "https://srgi.in",
+  "menu_sections": [
+    {
+      "title": "Institutional Profile",
+      "category": "01_institutional_profile"
+    },
+    {
+      "title": "Governance & Leadership",
+      "category": "02_governance_and_leadership"
+    },
+    {
+      "title": "Constituent Units",
+      "category": "03_constituent_units"
+    },
+    {
+      "title": "Programmes: Engineering",
+      "category": "04_programmes_engineering"
+    },
+    {
+      "title": "Programmes: Management",
+      "category": "05_programmes_management"
+    },
+    {
+      "title": "Programmes: Medical & Healthcare",
+      "category": "06_programmes_medical_healthcare"
+    },
+    {
+      "title": "Programmes: Vocational Studies",
+      "category": "07_programmes_vocation"
+    },
+    {
+      "title": "Admissions & Counselling",
+      "category": "08_admissions_and_counselling"
+    },
+    {
+      "title": "Campus Facilities & Services",
+      "category": "09_campus_facilities_and_services"
+    },
+    {
+      "title": "Placements & Careers",
+      "category": "10_placements_and_careers"
+    },
+    {
+      "title": "Student Life & Regulations",
+      "category": "11_student_life_and_regulations"
+    },
+    {
+      "title": "Events, Notices & Speakers",
+      "category": "12_events_notices_and_speakers"
+    },
+    {
+      "title": "Frequently Asked Questions",
+      "category": "13_faqs"
+    },
+    {
+      "title": "Contact & Locations",
+      "category": "14_contact_and_locations"
+    },
+    {
+      "title": "Official Prospectus",
+      "category": "15_official_prospectus"
+    }
+  ]
+}

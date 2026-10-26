@@ -37,6 +37,16 @@ def render_sidebar(config: InstitutionUIConfig) -> None:
             reset_conversation(config)
             st.rerun()
 
+        if config.has_campus_map:
+            if st.button(
+                "🗺️ Campus Map & Directory",
+                use_container_width=True,
+                key="btn_sidebar_map",
+                help=f"View {config.display_name} campus facilities, locations, and directions.",
+            ):
+                st.session_state.show_campus_map = True
+                st.rerun()
+
         st.markdown("---")
 
         # 4. Supported Topics & Knowledge Scope

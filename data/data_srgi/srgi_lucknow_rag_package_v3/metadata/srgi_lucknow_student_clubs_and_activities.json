@@ -1,0 +1,49 @@
+{
+  "schema_version": "2.0.0",
+  "institution_id": "srgi_lucknow",
+  "institution_name": "S. R. Group of Institutions (SRGI), Lucknow",
+  "document_id": "srgi_lucknow_student_clubs_and_activities",
+  "title": "Student Clubs, Societies and Cultural Extracurricular Life",
+  "category": "11_student_life_and_regulations",
+  "subcategory": "co_curricular_life",
+  "document_type": "institutional_knowledge",
+  "language": "en",
+  "markdown_path": "documents/11_student_life_and_regulations/srgi_lucknow_student_clubs_and_activities.md",
+  "docx_path": "documents/11_student_life_and_regulations/srgi_lucknow_student_clubs_and_activities.docx",
+  "source_urls": [
+    "https://srgi.in/student-clubs"
+  ],
+  "canonical_source_urls": [
+    "https://srgi.in/student-clubs"
+  ],
+  "source_hashes": [
+    "b494b55c87a683e8fcc4b2587d6796ed1bcd33266ee2f9953ae269d510db9049"
+  ],
+  "markdown_hash": "51d6bd39109af13bfca1b1f672b70362caff692cf2aca074f600816544702889",
+  "docx_hash": "ba2a80452fbc78ac20136cc3a7be096449b9fbba4cc1324c64ed3e7aa6fa3c5f",
+  "byte_size_md": 3125,
+  "byte_size_docx": 38651,
+  "word_count_md": 373,
+  "sections_count": 6,
+  "table_count": 3,
+  "content_quality_status": "PASS",
+  "conflict_status": "NO_UNRESOLVED_CONFLICTS",
+  "provenance_section_count": 1,
+  "docx_provenance_heading_count": 1,
+  "docx_leaked_syntax_count": 0,
+  "summary": "Student club structure, Technical Club, Cultural Club, Sports Club, Literary Club, Creative Arts & Design Club, hackathons, and campus societies.",
+  "keywords": [
+    "Student Clubs",
+    "Technical Club",
+    "Cultural Club",
+    "Sports Club",
+    "Literary Club",
+    "Hackathons"
+  ],
+  "related_documents": [
+    "srgi_lucknow_sports_ground_and_complex",
+    "srgi_lucknow_events_and_youth_manifesto"
+  ],
+  "created_at": "2026-10-23T21:19:34.221808+00:00",
+  "pipeline_stage": "release_v3_production"
+}

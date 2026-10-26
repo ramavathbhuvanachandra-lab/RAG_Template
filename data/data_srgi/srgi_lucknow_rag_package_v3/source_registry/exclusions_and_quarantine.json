@@ -1,0 +1,16 @@
+{
+  "institution_id": "srgi_lucknow",
+  "quarantined_urls": [
+    {
+      "url": "https://srgi.in/login",
+      "reason": "Administrative authentication portal"
+    },
+    {
+      "url": "https://connectsr.in/",
+      "reason": "Student ERP requiring individual authentication"
+    }
+  ],
+  "excluded_domains": [
+    "external-campus-legacy.ac.in"
+  ]
+}

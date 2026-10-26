@@ -1,0 +1,52 @@
+{
+  "schema_version": "2.0.0",
+  "institution_id": "srgi_lucknow",
+  "institution_name": "S. R. Group of Institutions (SRGI), Lucknow",
+  "document_id": "srgi_lucknow_anti_ragging_regulations",
+  "title": "Anti-Ragging Committee, Policies and Zero-Tolerance Mandate",
+  "category": "11_student_life_and_regulations",
+  "subcategory": "regulations",
+  "document_type": "institutional_knowledge",
+  "language": "en",
+  "markdown_path": "documents/11_student_life_and_regulations/srgi_lucknow_anti_ragging_regulations.md",
+  "docx_path": "documents/11_student_life_and_regulations/srgi_lucknow_anti_ragging_regulations.docx",
+  "source_urls": [
+    "https://srgi.in/Anti-Ragging.pdf",
+    "https://srgi.in"
+  ],
+  "canonical_source_urls": [
+    "https://srgi.in/Anti-Ragging.pdf",
+    "https://srgi.in"
+  ],
+  "source_hashes": [
+    "34bf237b480b9c3a4c64f3a36477ba9e7a53bffb2836f71d0783ef95e4a8667c",
+    "21b702eb95fbfcf1e3040a7c996f6ed261781ee8bcc71ff275a161f43964e6e9"
+  ],
+  "markdown_hash": "a911f39aea8106f1ea702b4beeaacac4334ca185d1ce14dacbcd06b9ae8ea903",
+  "docx_hash": "75cf2dcf9483c5fb55fed4f091289682c0f7ab189dc8c8f4e330f433a0edee34",
+  "byte_size_md": 3423,
+  "byte_size_docx": 38427,
+  "word_count_md": 389,
+  "sections_count": 7,
+  "table_count": 0,
+  "content_quality_status": "PASS_WITH_DISCLOSED_LIMITATION",
+  "conflict_status": "NO_UNRESOLVED_CONFLICTS",
+  "provenance_section_count": 1,
+  "docx_provenance_heading_count": 1,
+  "docx_leaked_syntax_count": 0,
+  "summary": "Zero-tolerance anti-ragging policy, institutional committee structure, regulatory compliance with Supreme Court and AICTE directives, emergency proctorial lines.",
+  "keywords": [
+    "Anti-Ragging",
+    "Zero Tolerance",
+    "Chief Proctor",
+    "Supreme Court Directives",
+    "Discipline",
+    "Safety"
+  ],
+  "related_documents": [
+    "srgi_lucknow_administrative_heads",
+    "srgi_lucknow_student_grievance_redressal"
+  ],
+  "created_at": "2026-10-23T21:19:34.297253+00:00",
+  "pipeline_stage": "release_v3_production"
+}

@@ -1,0 +1,28 @@
+{
+  "institution_id": "srgi_lucknow",
+  "total_configs": 19,
+  "configs_validated": [
+    "navigation.json",
+    "document_inventory.json",
+    "aliases.json",
+    "student_services.json",
+    "acronyms.json",
+    "transport_services.json",
+    "ingestion_config.json",
+    "departments.json",
+    "entity_registry.json",
+    "scope_policy.json",
+    "campus_locations.json",
+    "academic_programmes.json",
+    "source_policy.json",
+    "manifest.json",
+    "institution_profile.json",
+    "hostel_facilities.json",
+    "campus_contacts.json",
+    "degrees.json",
+    "emergency_contacts.json"
+  ],
+  "all_valid_json": true,
+  "all_schema_valid": true,
+  "audit_status": "PASS"
+}

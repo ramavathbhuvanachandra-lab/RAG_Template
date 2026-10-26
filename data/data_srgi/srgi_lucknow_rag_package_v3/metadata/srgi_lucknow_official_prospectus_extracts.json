@@ -1,0 +1,52 @@
+{
+  "schema_version": "2.0.0",
+  "institution_id": "srgi_lucknow",
+  "institution_name": "S. R. Group of Institutions (SRGI), Lucknow",
+  "document_id": "srgi_lucknow_official_prospectus_extracts",
+  "title": "Official Institutional Prospectus \u2014 Summary and Documentary Index",
+  "category": "15_official_prospectus",
+  "subcategory": "official_brochure",
+  "document_type": "institutional_knowledge",
+  "language": "en",
+  "markdown_path": "documents/15_official_prospectus/srgi_lucknow_official_prospectus_extracts.md",
+  "docx_path": "documents/15_official_prospectus/srgi_lucknow_official_prospectus_extracts.docx",
+  "source_urls": [
+    "https://srgi.in/Prospectus.pdf",
+    "https://srgi.in/media/documents/Prospectus.pdf"
+  ],
+  "canonical_source_urls": [
+    "https://srgi.in/Prospectus.pdf",
+    "https://srgi.in/media/documents/Prospectus.pdf"
+  ],
+  "source_hashes": [
+    "b90b1ff0f6289b635a3c69165f89224c025bc795854d2f60a79bc09a10055dad",
+    "c114a1a4fb9764e49d22799dbcbaed229e8ed11947d96416b7fa5b0cd08a1bbb"
+  ],
+  "markdown_hash": "ea0b08c82533d5e4b17eb902d9344102c7e214580a66f841f115813295fb7fd5",
+  "docx_hash": "7241649460a9486a2e9472fe81f180b97f695b8f7aa171c80967ac7872b5fa9b",
+  "byte_size_md": 3300,
+  "byte_size_docx": 38383,
+  "word_count_md": 364,
+  "sections_count": 7,
+  "table_count": 0,
+  "content_quality_status": "PASS",
+  "conflict_status": "NO_UNRESOLVED_CONFLICTS",
+  "provenance_section_count": 1,
+  "docx_provenance_heading_count": 1,
+  "docx_leaked_syntax_count": 0,
+  "summary": "Comprehensive documentary index and verified textual excerpts extracted from the official 61-page SRGI Lucknow Prospectus publication.",
+  "keywords": [
+    "Prospectus",
+    "Official Document",
+    "61 Pages",
+    "SRGI Brochure",
+    "Documentary Extracts"
+  ],
+  "related_documents": [
+    "srgi_lucknow_overview",
+    "srgi_lucknow_btech_overview",
+    "srgi_lucknow_management_overview"
+  ],
+  "created_at": "2026-10-23T21:19:34.483833+00:00",
+  "pipeline_stage": "release_v3_production"
+}

@@ -1,0 +1,50 @@
+{
+  "schema_version": "2.0.0",
+  "institution_id": "srgi_lucknow",
+  "institution_name": "S. R. Group of Institutions (SRGI), Lucknow",
+  "document_id": "srgi_lucknow_chairman_message",
+  "title": "Message from the Chairman \u2014 Mr. Pawan Singh Chauhan",
+  "category": "02_governance_and_leadership",
+  "subcategory": "leadership_messages",
+  "document_type": "institutional_knowledge",
+  "language": "en",
+  "markdown_path": "documents/02_governance_and_leadership/srgi_lucknow_chairman_message.md",
+  "docx_path": "documents/02_governance_and_leadership/srgi_lucknow_chairman_message.docx",
+  "source_urls": [
+    "https://srgi.in/chairman-message"
+  ],
+  "canonical_source_urls": [
+    "https://srgi.in/chairman-message"
+  ],
+  "source_hashes": [
+    "adb0f0cca0b86b1f3f0a6af64afdffc2cf412cfb67b8ab0a004646a87f570b5f"
+  ],
+  "markdown_hash": "e2e3a2883f22c63b20ee597e8041a30a141bcbc03c2b1b76521d7e0845996966",
+  "docx_hash": "d655563718a95fd3431d35f4352060fe3b077c54d6296df93bceb3076cde00d9",
+  "byte_size_md": 3557,
+  "byte_size_docx": 38640,
+  "word_count_md": 449,
+  "sections_count": 7,
+  "table_count": 0,
+  "content_quality_status": "PASS",
+  "conflict_status": "NO_UNRESOLVED_CONFLICTS",
+  "provenance_section_count": 1,
+  "docx_provenance_heading_count": 1,
+  "docx_leaked_syntax_count": 0,
+  "summary": "Official address, institutional philosophy, strategic educational vision, and public leadership profile of Chairman Mr. Pawan Singh Chauhan (MLC, Sitapur).",
+  "keywords": [
+    "Pawan Singh Chauhan",
+    "Chairman SRGI",
+    "MLC Sitapur",
+    "Financial and Administrative Delays Committee",
+    "Chairman Message",
+    "Victory"
+  ],
+  "related_documents": [
+    "srgi_lucknow_chairperson_message",
+    "srgi_lucknow_vice_chairman_message",
+    "srgi_lucknow_overview"
+  ],
+  "created_at": "2026-10-23T21:19:32.843943+00:00",
+  "pipeline_stage": "release_v3_production"
+}

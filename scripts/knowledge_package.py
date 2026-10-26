@@ -133,7 +133,7 @@ def cmd_build_index(args: argparse.Namespace) -> int:
     print(f"  Persist Directory:  {persist_dir}")
 
     t0 = time.perf_counter()
-    release = load_institutional_release(pkg_root)
+    release = load_institutional_release(pkg_root, institution_id=inst_id)
     print(f"  Loaded {len(release.documents)} canonical documents, {len(release.structured_records)} structured fact records.")
 
     chunks = chunk_package_documents(release)

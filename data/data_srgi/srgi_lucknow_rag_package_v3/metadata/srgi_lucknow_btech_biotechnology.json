@@ -1,0 +1,49 @@
+{
+  "schema_version": "2.0.0",
+  "institution_id": "srgi_lucknow",
+  "institution_name": "S. R. Group of Institutions (SRGI), Lucknow",
+  "document_id": "srgi_lucknow_btech_biotechnology",
+  "title": "B.Tech in Biotechnology (BT)",
+  "category": "04_programmes_engineering",
+  "subcategory": "undergraduate_engineering",
+  "document_type": "institutional_knowledge",
+  "language": "en",
+  "markdown_path": "documents/04_programmes_engineering/srgi_lucknow_btech_biotechnology.md",
+  "docx_path": "documents/04_programmes_engineering/srgi_lucknow_btech_biotechnology.docx",
+  "source_urls": [
+    "https://srgi.in/btech/bt"
+  ],
+  "canonical_source_urls": [
+    "https://srgi.in/btech/bt"
+  ],
+  "source_hashes": [
+    "ff4f54f4c412c677432bf947638c4c3a956ef4a7dc378b58af3169a0462a9ac9"
+  ],
+  "markdown_hash": "5f6730176bf2b5cdff7a6f3e602fd1aa84c58ad5c9f71d7a16beae4ae9171e6f",
+  "docx_hash": "5243c7e0dabbbb6b2e38265819685cf0f9571c7915f55fd9732f9726f031487f",
+  "byte_size_md": 2046,
+  "byte_size_docx": 37819,
+  "word_count_md": 215,
+  "sections_count": 8,
+  "table_count": 0,
+  "content_quality_status": "PASS",
+  "conflict_status": "DOCUMENTED_SOURCE_CONFLICT",
+  "provenance_section_count": 1,
+  "docx_provenance_heading_count": 1,
+  "docx_leaked_syntax_count": 0,
+  "summary": "Biotechnology engineering curriculum, molecular biology, bioprocess engineering, bioinformatics, pharmaceuticals, sanctioned annual intake of 180 seats.",
+  "keywords": [
+    "Biotechnology",
+    "B.Tech BT",
+    "Molecular Biology",
+    "Intake 180",
+    "Bioprocess",
+    "AKTU"
+  ],
+  "related_documents": [
+    "srgi_lucknow_btech_agricultural_engineering",
+    "srgi_lucknow_medical_programmes_overview"
+  ],
+  "created_at": "2026-10-23T21:19:33.386532+00:00",
+  "pipeline_stage": "release_v3_production"
+}

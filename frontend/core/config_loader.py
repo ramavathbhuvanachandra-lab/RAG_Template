@@ -10,6 +10,10 @@ import logging
 import os
 from typing import TYPE_CHECKING
 
+from dotenv import load_dotenv
+
+load_dotenv()
+
 from ai_platform.institutions.loader import (
     DEFAULT_INSTITUTION,
     load_institution_profile,

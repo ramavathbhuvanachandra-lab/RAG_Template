@@ -1,0 +1,49 @@
+{
+  "schema_version": "2.0.0",
+  "institution_id": "srgi_lucknow",
+  "institution_name": "S. R. Group of Institutions (SRGI), Lucknow",
+  "document_id": "srgi_lucknow_d_pharma_programme",
+  "title": "Diploma in Pharmacy (D.Pharm) \u2014 2-Year Entry-Level Pharmacy Programme",
+  "category": "06_programmes_medical_healthcare",
+  "subcategory": "medical_and_allied_health",
+  "document_type": "institutional_knowledge",
+  "language": "en",
+  "markdown_path": "documents/06_programmes_medical_healthcare/srgi_lucknow_d_pharma_programme.md",
+  "docx_path": "documents/06_programmes_medical_healthcare/srgi_lucknow_d_pharma_programme.docx",
+  "source_urls": [
+    "https://srgi.in/medical/dpharma"
+  ],
+  "canonical_source_urls": [
+    "https://srgi.in/medical/dpharma"
+  ],
+  "source_hashes": [
+    "d9dfbdf727380080a6f9a6dd50828d9acfebe2c8fe28e80db27bf6d25d70fc26"
+  ],
+  "markdown_hash": "a3ef62b6b8ad8ec59713fefbfbe6609a75a8cfd2dd5279b913eab1624c936062",
+  "docx_hash": "6c26a120455660968458425e429870f0784d04a8b72a17bb51aa25df6063ff45",
+  "byte_size_md": 2047,
+  "byte_size_docx": 37819,
+  "word_count_md": 231,
+  "sections_count": 7,
+  "table_count": 0,
+  "content_quality_status": "PASS",
+  "conflict_status": "NO_UNRESOLVED_CONFLICTS",
+  "provenance_section_count": 1,
+  "docx_provenance_heading_count": 1,
+  "docx_leaked_syntax_count": 0,
+  "summary": "D.Pharm course details, sanctioned intake of 50 seats, minimum qualification for Registered Pharmacist status in India, eligibility (10+2 PCB/PCM).",
+  "keywords": [
+    "D.Pharma",
+    "Diploma in Pharmacy",
+    "Pharmacy Council",
+    "Registered Pharmacist",
+    "Intake 50",
+    "PCB PCM"
+  ],
+  "related_documents": [
+    "srgi_lucknow_medical_programmes_overview",
+    "srgi_lucknow_nursing_programme"
+  ],
+  "created_at": "2026-10-23T21:19:33.627856+00:00",
+  "pipeline_stage": "release_v3_production"
+}

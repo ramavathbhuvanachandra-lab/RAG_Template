@@ -109,12 +109,40 @@ def load_and_split(data_path: str | Path, use_cache: bool = True) -> list[Docume
     if not root.exists():
         raise FileNotFoundError(f"Corpus path does not exist: {root}")
 
-    # Check if root is or contains a V2 knowledge package
-    pkg_manifest = root / "manifests" / "primary_corpus_manifest.json"
-    pkg_root = root if pkg_manifest.exists() else None
+    # 0. Check if active or staged release configuration specifies an explicit lexical cache
+    try:
+        from ai_platform.packages.registry import get_active_release_config
+        active_cfg = get_active_release_config()
+        if active_cfg and active_cfg.get("lexical_cache_path"):
+            staged_cache = Path(active_cfg["lexical_cache_path"]).resolve()
+            if use_cache and staged_cache.exists():
+                import json
+                with open(staged_cache, "r", encoding="utf-8") as f:
+                    data = json.load(f)
+                if "chunks" in data and data["chunks"]:
+                    return [
+                        Document(
+                            page_content=item["page_content"],
+                            metadata=item.get("metadata", {}),
+                        )
+                        for item in data["chunks"]
+                    ]
+    except Exception:
+        pass
+
+    # Check if root is or contains a knowledge package
+    def _is_package(p: Path) -> bool:
+        return (
+            (p / "manifests" / "primary_corpus_manifest.json").exists()
+            or (p / "data" / "manifest.json").exists()
+            or (p / "manifest.json").exists()
+            or (p / "RAG_INGESTION_CONTRACT.md").exists()
+        )
+
+    pkg_root = root if _is_package(root) else None
     if not pkg_root and root.is_dir():
         for sub in sorted(root.iterdir()):
-            if sub.is_dir() and (sub / "manifests" / "primary_corpus_manifest.json").exists():
+            if sub.is_dir() and _is_package(sub):
                 pkg_root = sub
                 break
 
@@ -146,7 +174,8 @@ def load_and_split(data_path: str | Path, use_cache: bool = True) -> list[Docume
                 except Exception:
                     pass
 
-            release = load_institutional_release(pkg_root)
+            target_inst = (active_cfg.get("institution_id") if "active_cfg" in locals() and active_cfg else None)
+            release = load_institutional_release(pkg_root, institution_id=target_inst)
             chunks = chunk_package_documents(release)
 
             if use_cache and chunks:

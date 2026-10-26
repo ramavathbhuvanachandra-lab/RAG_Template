@@ -1,0 +1,48 @@
+{
+  "schema_version": "2.0.0",
+  "institution_id": "srgi_lucknow",
+  "institution_name": "S. R. Group of Institutions (SRGI), Lucknow",
+  "document_id": "srgi_lucknow_career_pathfinder_simulator",
+  "title": "SRGI Career Pathfinder and Course Selection Simulator",
+  "category": "08_admissions_and_counselling",
+  "subcategory": "student_guidance",
+  "document_type": "institutional_knowledge",
+  "language": "en",
+  "markdown_path": "documents/08_admissions_and_counselling/srgi_lucknow_career_pathfinder_simulator.md",
+  "docx_path": "documents/08_admissions_and_counselling/srgi_lucknow_career_pathfinder_simulator.docx",
+  "source_urls": [
+    "https://srgi.in/careerpathfinder"
+  ],
+  "canonical_source_urls": [
+    "https://srgi.in/careerpathfinder"
+  ],
+  "source_hashes": [
+    "c779d13f9e24f27ffbea9c58424906a72a9e9a1a6926405f2939c28968e259e4"
+  ],
+  "markdown_hash": "e3a59f81c679a2710388b7e2e91e016214bc3459451ae54e5fe56b33c7096f20",
+  "docx_hash": "227cfc8258cea5b12a22322b6fd2c43d2ebb8bed40b5caf3f71f247e8c8f382f",
+  "byte_size_md": 1986,
+  "byte_size_docx": 37808,
+  "word_count_md": 217,
+  "sections_count": 6,
+  "table_count": 0,
+  "content_quality_status": "PASS",
+  "conflict_status": "NO_UNRESOLVED_CONFLICTS",
+  "provenance_section_count": 1,
+  "docx_provenance_heading_count": 1,
+  "docx_leaked_syntax_count": 0,
+  "summary": "Interactive career simulator tool provided on the official website helping prospective students map interests to engineering, management, or medical branches.",
+  "keywords": [
+    "Career Pathfinder",
+    "Simulator",
+    "Course Selection",
+    "Counselling Tool",
+    "Career Mapping"
+  ],
+  "related_documents": [
+    "srgi_lucknow_admissions_enquiry_and_eligibility",
+    "srgi_lucknow_btech_overview"
+  ],
+  "created_at": "2026-10-23T21:19:33.860238+00:00",
+  "pipeline_stage": "release_v3_production"
+}

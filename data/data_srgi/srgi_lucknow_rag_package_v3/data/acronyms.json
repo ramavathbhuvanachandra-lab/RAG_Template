@@ -1,0 +1,21 @@
+{
+  "institution_id": "srgi_lucknow",
+  "acronyms": {
+    "SRGI": "S. R. Group of Institutions",
+    "SRIMT": "S. R. Institute of Management & Technology",
+    "AKTU": "Dr. A.P.J. Abdul Kalam Technical University, Lucknow",
+    "AICTE": "All India Council for Technical Education, New Delhi",
+    "PCI": "Pharmacy Council of India",
+    "UGC": "University Grants Commission",
+    "B.Tech": "Bachelor of Technology",
+    "M.Tech": "Master of Technology",
+    "MBA": "Master of Business Administration",
+    "IMBA": "Integrated Master of Business Administration",
+    "AGMP": "Applied Global Management Programme",
+    "B.Voc": "Bachelor of Vocation",
+    "D.Pharm": "Diploma in Pharmacy",
+    "DHP": "Diploma in Homeopathic Pharmacy",
+    "T&P": "Training & Placement Cell",
+    "BKT": "Bakshi ka Talab, Lucknow"
+  }
+}

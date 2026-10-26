@@ -1,0 +1,48 @@
+{
+  "schema_version": "2.0.0",
+  "institution_id": "srgi_lucknow",
+  "institution_name": "S. R. Group of Institutions (SRGI), Lucknow",
+  "document_id": "srgi_lucknow_student_grievance_redressal",
+  "title": "Student Grievance Redressal Mechanism and Support Portal",
+  "category": "11_student_life_and_regulations",
+  "subcategory": "student_welfare",
+  "document_type": "institutional_knowledge",
+  "language": "en",
+  "markdown_path": "documents/11_student_life_and_regulations/srgi_lucknow_student_grievance_redressal.md",
+  "docx_path": "documents/11_student_life_and_regulations/srgi_lucknow_student_grievance_redressal.docx",
+  "source_urls": [
+    "https://srgi.in/student-grievances"
+  ],
+  "canonical_source_urls": [
+    "https://srgi.in/student-grievances"
+  ],
+  "source_hashes": [
+    "cb085d09b620aabe018e7facaffeea48d978421cb0203064062a375c589b0d62"
+  ],
+  "markdown_hash": "47f8f17a5b4c3dab0367eaf163154a3abf7ac13b4bf1747029f843e7bf90733e",
+  "docx_hash": "9fa69467231477ea84bc4700ff9ae8b49eed28fa9dd70e8d0c0926a921df1dda",
+  "byte_size_md": 3783,
+  "byte_size_docx": 39012,
+  "word_count_md": 461,
+  "sections_count": 8,
+  "table_count": 5,
+  "content_quality_status": "PASS",
+  "conflict_status": "NO_UNRESOLVED_CONFLICTS",
+  "provenance_section_count": 1,
+  "docx_provenance_heading_count": 1,
+  "docx_leaked_syntax_count": 0,
+  "summary": "Institutional grievance redressal framework, online complaint submission portal, grievance categories, administrative escalation, resolution timelines.",
+  "keywords": [
+    "Student Grievances",
+    "Grievance Portal",
+    "Redressal Cell",
+    "Student Welfare",
+    "Complaint Mechanism"
+  ],
+  "related_documents": [
+    "srgi_lucknow_anti_ragging_regulations",
+    "srgi_lucknow_administrative_heads"
+  ],
+  "created_at": "2026-10-23T21:19:34.261286+00:00",
+  "pipeline_stage": "release_v3_production"
+}

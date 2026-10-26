@@ -461,6 +461,65 @@ def _scope_score(candidate: RetrievalCandidate) -> float:
     return 1.0 if value <= 0.0 else max(0.0, min(1.0, value))
 
 
+def _detect_qualification_level(text: str) -> str | None:
+    t = text.casefold()
+    if any(k in t for k in ("10+2", "class 12", "12th", "pcm", "pcb", "intermediate", "senior secondary", "after 12th", "b.tech", "btech", "b.voc", "bvoc", "b.pharm", "bpharm", "undergraduate", "bachelor")):
+        return "undergraduate"
+    if any(k in t for k in ("m.tech", "mtech", "master", "postgraduate", "gate", "cat", "mat", "after graduation", "after b.tech", "after btech", "after bsc", "after bca")):
+        return "postgraduate"
+    if any(k in t for k in ("diploma", "d.pharm", "dpharm", "dhp", "after 10th", "polytechnic")):
+        return "diploma"
+    if any(k in t for k in ("ph.d", "phd", "doctorate", "doctoral")):
+        return "doctoral"
+    return None
+
+
+def _detect_candidate_level(candidate: RetrievalCandidate) -> str | None:
+    src = _candidate_source(candidate).casefold()
+    doc = getattr(candidate, "document", None)
+    meta = getattr(doc, "metadata", {}) if doc and hasattr(doc, "metadata") else {}
+    subcat = str(meta.get("subcategory") or "").casefold()
+    title = str(meta.get("title") or "").casefold()
+    text = _candidate_text(candidate).casefold()[:400]
+
+    if "postgraduate" in subcat or "mtech" in src or "m.tech" in title or "master of technology" in text or "bachelor's degree in relevant engineering" in text or "gate-qualified" in text:
+        return "postgraduate"
+    if "undergraduate" in subcat or "btech" in src or "bvoc" in src or "b.tech" in title or "bachelor of technology" in text or "10+2 qualification" in text or "10+2 examination" in text:
+        return "undergraduate"
+    if "diploma" in subcat or "d_pharma" in src or "d.pharm" in title or "diploma in pharmacy" in text:
+        return "diploma"
+    if "doctoral" in subcat or "phd" in src or "ph.d" in title:
+        return "doctoral"
+    return None
+
+
+def _check_conflict(frame: SemanticQueryFrame, candidate: RetrievalCandidate) -> tuple[bool, str]:
+    alignment = getattr(candidate, "alignment", None)
+    if alignment is not None and bool(getattr(alignment, "conflicts", ()) or ()):
+        return True, "alignment_conflict"
+
+    query_str = " ".join([
+        str(getattr(frame, "original_query", "") or ""),
+        str(getattr(frame, "semantic_query", "") or ""),
+        str(getattr(frame, "target", "") or ""),
+        " ".join(str(c) for c in (getattr(frame, "constraints", ()) or ())),
+    ])
+    q_level = _detect_qualification_level(query_str)
+    c_level = _detect_candidate_level(candidate)
+
+    cand_doc = getattr(candidate, "document", None)
+    cand_meta = getattr(cand_doc, "metadata", {}) if cand_doc and hasattr(cand_doc, "metadata") else {}
+    doc_type = str(cand_meta.get("document_type") or "").casefold()
+    cand_subcat = str(cand_meta.get("subcategory") or "").casefold()
+    if doc_type in {"dataset", "directory"} or cand_subcat in {"institutional_overview", "heritage_and_trust", "leadership_messages", "general_regulations"}:
+        return False, ""
+
+    if q_level and c_level and q_level != c_level:
+        return True, f"qualification_incompatible: query={q_level} vs candidate={c_level}"
+
+    return False, ""
+
+
 def _conflict(candidate: RetrievalCandidate) -> bool:
     alignment = getattr(candidate, "alignment", None)
     return bool(getattr(alignment, "conflicts", ()) or ()) if alignment is not None else False
@@ -476,7 +535,7 @@ def analyze_candidate(frame: SemanticQueryFrame, candidate: RetrievalCandidate) 
     alignment = getattr(candidate, "alignment", None)
     semantic = float(getattr(alignment, "semantic_match", 0.0) or 0.0) if alignment is not None else 0.0
     scope = _scope_score(candidate)
-    conflict = _conflict(candidate)
+    conflict, conflict_reason = _check_conflict(frame, candidate)
 
     reasons: list[str] = []
     if target >= 0.80:
@@ -497,6 +556,8 @@ def analyze_candidate(frame: SemanticQueryFrame, candidate: RetrievalCandidate) 
         reasons.append("semantic_compatibility_weak")
     if conflict:
         reasons.append("explicit_conflict")
+        if conflict_reason:
+            reasons.append(conflict_reason)
 
     hard_evidence = target >= 0.80 and (attribute >= 0.70 or not _attribute_phrases(frame))
     return EvidenceAnalysis(

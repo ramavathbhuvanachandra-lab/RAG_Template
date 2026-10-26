@@ -1,0 +1,48 @@
+{
+  "schema_version": "2.0.0",
+  "institution_id": "srgi_lucknow",
+  "institution_name": "S. R. Group of Institutions (SRGI), Lucknow",
+  "document_id": "srgi_lucknow_btech_computer_science",
+  "title": "B.Tech in Computer Science (CS)",
+  "category": "04_programmes_engineering",
+  "subcategory": "undergraduate_engineering",
+  "document_type": "institutional_knowledge",
+  "language": "en",
+  "markdown_path": "documents/04_programmes_engineering/srgi_lucknow_btech_computer_science.md",
+  "docx_path": "documents/04_programmes_engineering/srgi_lucknow_btech_computer_science.docx",
+  "source_urls": [
+    "https://srgi.in/btech/cs"
+  ],
+  "canonical_source_urls": [
+    "https://srgi.in/btech/cs"
+  ],
+  "source_hashes": [
+    "1ad6132352b2feca77712a4ffaa90500ba98a7cce6ec30c21a25906a969bb54f"
+  ],
+  "markdown_hash": "c324c3de4fd96465c8df95d0288c4ed9e5e9f18330b6e27b851ae08d36f57f87",
+  "docx_hash": "9f030a3741366b74e38ff65f9d156862b4e50513ec78062e153998febb368311",
+  "byte_size_md": 2767,
+  "byte_size_docx": 38152,
+  "word_count_md": 314,
+  "sections_count": 7,
+  "table_count": 0,
+  "content_quality_status": "PASS",
+  "conflict_status": "DOCUMENTED_SOURCE_CONFLICT",
+  "provenance_section_count": 1,
+  "docx_provenance_heading_count": 1,
+  "docx_leaked_syntax_count": 0,
+  "summary": "Curriculum overview, core computing concepts, algorithmic design, software systems, sanctioned intake of 60 seats, and professional pathways.",
+  "keywords": [
+    "B.Tech CS",
+    "Computer Science",
+    "Software Engineering",
+    "Algorithms",
+    "Intake 60"
+  ],
+  "related_documents": [
+    "srgi_lucknow_btech_computer_science_engineering",
+    "srgi_lucknow_btech_information_technology"
+  ],
+  "created_at": "2026-10-23T21:19:33.204304+00:00",
+  "pipeline_stage": "release_v3_production"
+}

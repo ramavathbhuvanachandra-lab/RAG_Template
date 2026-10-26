@@ -1,0 +1,443 @@
+[
+  {
+    "source_url": "https://srgi.in",
+    "document_id": "srgi_lucknow_overview",
+    "category": "01_institutional_profile",
+    "title": "SRGI Lucknow Institutional Overview, Campus Profile and History",
+    "mapping_type": "PRIMARY_SOURCE"
+  },
+  {
+    "source_url": "https://srgi.in/about",
+    "document_id": "srgi_lucknow_overview",
+    "category": "01_institutional_profile",
+    "title": "SRGI Lucknow Institutional Overview, Campus Profile and History",
+    "mapping_type": "PRIMARY_SOURCE"
+  },
+  {
+    "source_url": "https://srgi.in/inspiration",
+    "document_id": "srgi_lucknow_heritage_and_inspiration",
+    "category": "01_institutional_profile",
+    "title": "SRGI Lucknow Heritage, Sponsoring Trust and Foundational Inspiration",
+    "mapping_type": "PRIMARY_SOURCE"
+  },
+  {
+    "source_url": "https://srgi.in/about",
+    "document_id": "srgi_lucknow_heritage_and_inspiration",
+    "category": "01_institutional_profile",
+    "title": "SRGI Lucknow Heritage, Sponsoring Trust and Foundational Inspiration",
+    "mapping_type": "PRIMARY_SOURCE"
+  },
+  {
+    "source_url": "https://srgi.in/chairman-message",
+    "document_id": "srgi_lucknow_chairman_message",
+    "category": "02_governance_and_leadership",
+    "title": "Message from the Chairman \u2014 Mr. Pawan Singh Chauhan",
+    "mapping_type": "PRIMARY_SOURCE"
+  },
+  {
+    "source_url": "https://srgi.in/chairperson-message",
+    "document_id": "srgi_lucknow_chairperson_message",
+    "category": "02_governance_and_leadership",
+    "title": "Message from the Chairperson \u2014 Mrs. Nirmala Singh Chauhan",
+    "mapping_type": "PRIMARY_SOURCE"
+  },
+  {
+    "source_url": "https://srgi.in/vice-chairman-message",
+    "document_id": "srgi_lucknow_vice_chairman_message",
+    "category": "02_governance_and_leadership",
+    "title": "Message from the Vice-Chairman \u2014 Mr. Piyush Singh Chauhan",
+    "mapping_type": "PRIMARY_SOURCE"
+  },
+  {
+    "source_url": "https://srgi.in/vice-chairperson-message",
+    "document_id": "srgi_lucknow_vice_chairperson_message",
+    "category": "02_governance_and_leadership",
+    "title": "Message from the Vice-Chairperson \u2014 Dr. Sushmita Singh",
+    "mapping_type": "PRIMARY_SOURCE"
+  },
+  {
+    "source_url": "https://srgi.in/board-of-governors",
+    "document_id": "srgi_lucknow_board_of_governors",
+    "category": "02_governance_and_leadership",
+    "title": "SRGI Lucknow Board of Governors \u2014 Composition and Strategic Counsel",
+    "mapping_type": "PRIMARY_SOURCE"
+  },
+  {
+    "source_url": "https://srgi.in/board-of-directors",
+    "document_id": "srgi_lucknow_board_of_directors",
+    "category": "02_governance_and_leadership",
+    "title": "SRGI Lucknow Board of Directors \u2014 Institutional Execution and Oversight",
+    "mapping_type": "PRIMARY_SOURCE"
+  },
+  {
+    "source_url": "https://srgi.in/administrative-heads",
+    "document_id": "srgi_lucknow_administrative_heads",
+    "category": "02_governance_and_leadership",
+    "title": "SRGI Lucknow Administrative Heads and Core Operational Team",
+    "mapping_type": "PRIMARY_SOURCE"
+  },
+  {
+    "source_url": "https://srgi.in",
+    "document_id": "srgi_lucknow_academic_units_overview",
+    "category": "03_constituent_units",
+    "title": "SRGI Lucknow Constituent Academic Units and Institutional Network",
+    "mapping_type": "PRIMARY_SOURCE"
+  },
+  {
+    "source_url": "https://srgi.in/about",
+    "document_id": "srgi_lucknow_academic_units_overview",
+    "category": "03_constituent_units",
+    "title": "SRGI Lucknow Constituent Academic Units and Institutional Network",
+    "mapping_type": "PRIMARY_SOURCE"
+  },
+  {
+    "source_url": "https://srgi.in/btech",
+    "document_id": "srgi_lucknow_btech_overview",
+    "category": "04_programmes_engineering",
+    "title": "Bachelor of Technology (B.Tech) Programmes \u2014 Comprehensive Overview",
+    "mapping_type": "PRIMARY_SOURCE"
+  },
+  {
+    "source_url": "https://srgi.in/btech/cse",
+    "document_id": "srgi_lucknow_btech_computer_science_engineering",
+    "category": "04_programmes_engineering",
+    "title": "B.Tech in Computer Science & Engineering (AI & ML, AI & DS Specializations)",
+    "mapping_type": "PRIMARY_SOURCE"
+  },
+  {
+    "source_url": "https://srgi.in/btech/cs",
+    "document_id": "srgi_lucknow_btech_computer_science",
+    "category": "04_programmes_engineering",
+    "title": "B.Tech in Computer Science (CS)",
+    "mapping_type": "PRIMARY_SOURCE"
+  },
+  {
+    "source_url": "https://srgi.in/btech/it",
+    "document_id": "srgi_lucknow_btech_information_technology",
+    "category": "04_programmes_engineering",
+    "title": "B.Tech in Information Technology (IT)",
+    "mapping_type": "PRIMARY_SOURCE"
+  },
+  {
+    "source_url": "https://srgi.in/btech/ec",
+    "document_id": "srgi_lucknow_btech_electronics_communication",
+    "category": "04_programmes_engineering",
+    "title": "B.Tech in Electronics & Communication Engineering (ECE)",
+    "mapping_type": "PRIMARY_SOURCE"
+  },
+  {
+    "source_url": "https://srgi.in/btech/en",
+    "document_id": "srgi_lucknow_btech_electrical_electronics",
+    "category": "04_programmes_engineering",
+    "title": "B.Tech in Electrical & Electronics Engineering (EEE / EN)",
+    "mapping_type": "PRIMARY_SOURCE"
+  },
+  {
+    "source_url": "https://srgi.in/btech/me",
+    "document_id": "srgi_lucknow_btech_mechanical_engineering",
+    "category": "04_programmes_engineering",
+    "title": "B.Tech in Mechanical Engineering (ME)",
+    "mapping_type": "PRIMARY_SOURCE"
+  },
+  {
+    "source_url": "https://srgi.in/btech/ce",
+    "document_id": "srgi_lucknow_btech_civil_engineering",
+    "category": "04_programmes_engineering",
+    "title": "B.Tech in Civil Engineering (CE)",
+    "mapping_type": "PRIMARY_SOURCE"
+  },
+  {
+    "source_url": "https://srgi.in/btech/bt",
+    "document_id": "srgi_lucknow_btech_biotechnology",
+    "category": "04_programmes_engineering",
+    "title": "B.Tech in Biotechnology (BT)",
+    "mapping_type": "PRIMARY_SOURCE"
+  },
+  {
+    "source_url": "https://srgi.in/btech/ag",
+    "document_id": "srgi_lucknow_btech_agricultural_engineering",
+    "category": "04_programmes_engineering",
+    "title": "B.Tech in Agricultural Engineering (AG)",
+    "mapping_type": "PRIMARY_SOURCE"
+  },
+  {
+    "source_url": "https://srgi.in/mtech",
+    "document_id": "srgi_lucknow_mtech_programmes",
+    "category": "04_programmes_engineering",
+    "title": "Master of Technology (M.Tech) Postgraduate Programmes",
+    "mapping_type": "PRIMARY_SOURCE"
+  },
+  {
+    "source_url": "https://srgi.in/management",
+    "document_id": "srgi_lucknow_management_overview",
+    "category": "05_programmes_management",
+    "title": "Faculty of Management Studies \u2014 Academic Framework and Programmes",
+    "mapping_type": "PRIMARY_SOURCE"
+  },
+  {
+    "source_url": "https://srgi.in/management/mba",
+    "document_id": "srgi_lucknow_mba_programme",
+    "category": "05_programmes_management",
+    "title": "Master of Business Administration (MBA) \u2014 2-Year Full-Time Programme",
+    "mapping_type": "PRIMARY_SOURCE"
+  },
+  {
+    "source_url": "https://srgi.in/management/imba",
+    "document_id": "srgi_lucknow_integrated_mba",
+    "category": "05_programmes_management",
+    "title": "Integrated MBA (IMBA) \u2014 5-Year Dual-Degree Management Programme",
+    "mapping_type": "PRIMARY_SOURCE"
+  },
+  {
+    "source_url": "https://srgi.in/management/agmp",
+    "document_id": "srgi_lucknow_applied_global_management",
+    "category": "05_programmes_management",
+    "title": "Applied Global Management Programme (AGMP)",
+    "mapping_type": "PRIMARY_SOURCE"
+  },
+  {
+    "source_url": "https://srgi.in/medical",
+    "document_id": "srgi_lucknow_medical_programmes_overview",
+    "category": "06_programmes_medical_healthcare",
+    "title": "Faculty of Medical & Allied Health Sciences \u2014 Overview",
+    "mapping_type": "PRIMARY_SOURCE"
+  },
+  {
+    "source_url": "https://srgi.in/medical/dpharma",
+    "document_id": "srgi_lucknow_d_pharma_programme",
+    "category": "06_programmes_medical_healthcare",
+    "title": "Diploma in Pharmacy (D.Pharm) \u2014 2-Year Entry-Level Pharmacy Programme",
+    "mapping_type": "PRIMARY_SOURCE"
+  },
+  {
+    "source_url": "https://srgi.in/medical/nursing",
+    "document_id": "srgi_lucknow_nursing_programme",
+    "category": "06_programmes_medical_healthcare",
+    "title": "Nursing Programme \u2014 Clinical Healthcare & Ayurvedic Nursing",
+    "mapping_type": "PRIMARY_SOURCE"
+  },
+  {
+    "source_url": "https://srgi.in/medical/homeopathy",
+    "document_id": "srgi_lucknow_homeopathy_programme",
+    "category": "06_programmes_medical_healthcare",
+    "title": "Diploma in Homeopathic Pharmacy (DHP)",
+    "mapping_type": "PRIMARY_SOURCE"
+  },
+  {
+    "source_url": "https://srgi.in/bvoc",
+    "document_id": "srgi_lucknow_bvoc_overview",
+    "category": "07_programmes_vocation",
+    "title": "Bachelor of Vocation (B.Voc) Programmes \u2014 UGC Skill Education Framework",
+    "mapping_type": "PRIMARY_SOURCE"
+  },
+  {
+    "source_url": "https://srgi.in/bvoc/sd",
+    "document_id": "srgi_lucknow_bvoc_software_development",
+    "category": "07_programmes_vocation",
+    "title": "B.Voc in Software Development",
+    "mapping_type": "PRIMARY_SOURCE"
+  },
+  {
+    "source_url": "https://srgi.in/bvoc/bfsi",
+    "document_id": "srgi_lucknow_bvoc_banking_financial_services",
+    "category": "07_programmes_vocation",
+    "title": "B.Voc in Banking, Financial Services and Insurance (BFSI)",
+    "mapping_type": "PRIMARY_SOURCE"
+  },
+  {
+    "source_url": "https://srgi.in/bvoc/ae",
+    "document_id": "srgi_lucknow_bvoc_automobile_engineering",
+    "category": "07_programmes_vocation",
+    "title": "B.Voc in Automobile Engineering",
+    "mapping_type": "PRIMARY_SOURCE"
+  },
+  {
+    "source_url": "https://srgi.in/enquiry",
+    "document_id": "srgi_lucknow_admissions_enquiry_and_eligibility",
+    "category": "08_admissions_and_counselling",
+    "title": "SRGI Lucknow Admissions Procedure, Eligibility and Enquiry Channels",
+    "mapping_type": "PRIMARY_SOURCE"
+  },
+  {
+    "source_url": "https://srgi.in/contact",
+    "document_id": "srgi_lucknow_admissions_enquiry_and_eligibility",
+    "category": "08_admissions_and_counselling",
+    "title": "SRGI Lucknow Admissions Procedure, Eligibility and Enquiry Channels",
+    "mapping_type": "PRIMARY_SOURCE"
+  },
+  {
+    "source_url": "https://aktu.ac.in",
+    "document_id": "srgi_lucknow_admissions_enquiry_and_eligibility",
+    "category": "08_admissions_and_counselling",
+    "title": "SRGI Lucknow Admissions Procedure, Eligibility and Enquiry Channels",
+    "mapping_type": "PRIMARY_SOURCE"
+  },
+  {
+    "source_url": "https://srgi.in/careerpathfinder",
+    "document_id": "srgi_lucknow_career_pathfinder_simulator",
+    "category": "08_admissions_and_counselling",
+    "title": "SRGI Career Pathfinder and Course Selection Simulator",
+    "mapping_type": "PRIMARY_SOURCE"
+  },
+  {
+    "source_url": "https://srgi.in/hostel",
+    "document_id": "srgi_lucknow_hostel_accommodation",
+    "category": "09_campus_facilities_and_services",
+    "title": "Hostel Accommodation and Residential Life (2,000+ Capacity)",
+    "mapping_type": "PRIMARY_SOURCE"
+  },
+  {
+    "source_url": "https://srgi.in/transport",
+    "document_id": "srgi_lucknow_transport_facility",
+    "category": "09_campus_facilities_and_services",
+    "title": "Transport Fleet and Bus Connectivity Across Lucknow",
+    "mapping_type": "PRIMARY_SOURCE"
+  },
+  {
+    "source_url": "https://srgi.in/central-library",
+    "document_id": "srgi_lucknow_central_library",
+    "category": "09_campus_facilities_and_services",
+    "title": "Central Library System and Digital Knowledge Repositories",
+    "mapping_type": "PRIMARY_SOURCE"
+  },
+  {
+    "source_url": "https://srgi.in/cafeteria",
+    "document_id": "srgi_lucknow_cafeteria_and_dining",
+    "category": "09_campus_facilities_and_services",
+    "title": "Cafeteria and Campus Dining Services",
+    "mapping_type": "PRIMARY_SOURCE"
+  },
+  {
+    "source_url": "https://srgi.in/labs",
+    "document_id": "srgi_lucknow_futuristic_labs",
+    "category": "09_campus_facilities_and_services",
+    "title": "Futuristic Laboratories and Technical Infrastructure",
+    "mapping_type": "PRIMARY_SOURCE"
+  },
+  {
+    "source_url": "https://srgi.in/smart-classroom",
+    "document_id": "srgi_lucknow_smart_classrooms",
+    "category": "09_campus_facilities_and_services",
+    "title": "Smart Classrooms and Digital Learning Spaces",
+    "mapping_type": "PRIMARY_SOURCE"
+  },
+  {
+    "source_url": "https://srgi.in/seminar-hall",
+    "document_id": "srgi_lucknow_seminar_halls_and_conference",
+    "category": "09_campus_facilities_and_services",
+    "title": "Conference Rooms and Seminar Halls",
+    "mapping_type": "PRIMARY_SOURCE"
+  },
+  {
+    "source_url": "https://srgi.in/swimming-pool",
+    "document_id": "srgi_lucknow_indoor_swimming_pool",
+    "category": "09_campus_facilities_and_services",
+    "title": "Indoor Olympic-Standard Swimming Pool (6-Track)",
+    "mapping_type": "PRIMARY_SOURCE"
+  },
+  {
+    "source_url": "https://srgi.in/sports",
+    "document_id": "srgi_lucknow_sports_ground_and_complex",
+    "category": "09_campus_facilities_and_services",
+    "title": "65-Acre Sports Complex, Cricket Ground and Gymnasium",
+    "mapping_type": "PRIMARY_SOURCE"
+  },
+  {
+    "source_url": "https://srgi.in/about-training-and-placement",
+    "document_id": "srgi_lucknow_training_and_placement_cell",
+    "category": "10_placements_and_careers",
+    "title": "Training & Placement Cell \u2014 Structure, Training Programmes and Corporate Relations",
+    "mapping_type": "PRIMARY_SOURCE"
+  },
+  {
+    "source_url": "https://srgi.in/top-placements",
+    "document_id": "srgi_lucknow_top_placements_and_recruiters",
+    "category": "10_placements_and_careers",
+    "title": "Placement Performance Dashboard and Top Recruiting Partners",
+    "mapping_type": "PRIMARY_SOURCE"
+  },
+  {
+    "source_url": "https://srgi.in",
+    "document_id": "srgi_lucknow_top_placements_and_recruiters",
+    "category": "10_placements_and_careers",
+    "title": "Placement Performance Dashboard and Top Recruiting Partners",
+    "mapping_type": "PRIMARY_SOURCE"
+  },
+  {
+    "source_url": "https://srgi.in/student-clubs",
+    "document_id": "srgi_lucknow_student_clubs_and_activities",
+    "category": "11_student_life_and_regulations",
+    "title": "Student Clubs, Societies and Cultural Extracurricular Life",
+    "mapping_type": "PRIMARY_SOURCE"
+  },
+  {
+    "source_url": "https://srgi.in/student-grievances",
+    "document_id": "srgi_lucknow_student_grievance_redressal",
+    "category": "11_student_life_and_regulations",
+    "title": "Student Grievance Redressal Mechanism and Support Portal",
+    "mapping_type": "PRIMARY_SOURCE"
+  },
+  {
+    "source_url": "https://srgi.in/Anti-Ragging.pdf",
+    "document_id": "srgi_lucknow_anti_ragging_regulations",
+    "category": "11_student_life_and_regulations",
+    "title": "Anti-Ragging Committee, Policies and Zero-Tolerance Mandate",
+    "mapping_type": "PRIMARY_SOURCE"
+  },
+  {
+    "source_url": "https://srgi.in",
+    "document_id": "srgi_lucknow_anti_ragging_regulations",
+    "category": "11_student_life_and_regulations",
+    "title": "Anti-Ragging Committee, Policies and Zero-Tolerance Mandate",
+    "mapping_type": "PRIMARY_SOURCE"
+  },
+  {
+    "source_url": "https://srgi.in/notices",
+    "document_id": "srgi_lucknow_notices_and_announcements",
+    "category": "12_events_notices_and_speakers",
+    "title": "Academic Notices, Circulars and Institutional Announcements",
+    "mapping_type": "PRIMARY_SOURCE"
+  },
+  {
+    "source_url": "https://srgi.in/events",
+    "document_id": "srgi_lucknow_events_and_youth_manifesto",
+    "category": "12_events_notices_and_speakers",
+    "title": "Institutional Events and Uttar Pradesh Youth Manifesto",
+    "mapping_type": "PRIMARY_SOURCE"
+  },
+  {
+    "source_url": "https://srgi.in/eminent-speakers",
+    "document_id": "srgi_lucknow_eminent_speakers",
+    "category": "12_events_notices_and_speakers",
+    "title": "Eminent Speakers and Distinguished Visitors",
+    "mapping_type": "PRIMARY_SOURCE"
+  },
+  {
+    "source_url": "https://srgi.in/faq",
+    "document_id": "srgi_lucknow_frequently_asked_questions",
+    "category": "13_faqs",
+    "title": "Frequently Asked Questions (FAQ) \u2014 Admissions, Academics and Life at SRGI",
+    "mapping_type": "PRIMARY_SOURCE"
+  },
+  {
+    "source_url": "https://srgi.in/contact",
+    "document_id": "srgi_lucknow_campus_contacts_and_directions",
+    "category": "14_contact_and_locations",
+    "title": "Campus Contacts, Location Directions and Official Helplines",
+    "mapping_type": "PRIMARY_SOURCE"
+  },
+  {
+    "source_url": "https://srgi.in/Prospectus.pdf",
+    "document_id": "srgi_lucknow_official_prospectus_extracts",
+    "category": "15_official_prospectus",
+    "title": "Official Institutional Prospectus \u2014 Summary and Documentary Index",
+    "mapping_type": "PRIMARY_SOURCE"
+  },
+  {
+    "source_url": "https://srgi.in/media/documents/Prospectus.pdf",
+    "document_id": "srgi_lucknow_official_prospectus_extracts",
+    "category": "15_official_prospectus",
+    "title": "Official Institutional Prospectus \u2014 Summary and Documentary Index",
+    "mapping_type": "PRIMARY_SOURCE"
+  }
+]

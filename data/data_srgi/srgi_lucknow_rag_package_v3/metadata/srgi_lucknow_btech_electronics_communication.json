@@ -1,0 +1,49 @@
+{
+  "schema_version": "2.0.0",
+  "institution_id": "srgi_lucknow",
+  "institution_name": "S. R. Group of Institutions (SRGI), Lucknow",
+  "document_id": "srgi_lucknow_btech_electronics_communication",
+  "title": "B.Tech in Electronics & Communication Engineering (ECE)",
+  "category": "04_programmes_engineering",
+  "subcategory": "undergraduate_engineering",
+  "document_type": "institutional_knowledge",
+  "language": "en",
+  "markdown_path": "documents/04_programmes_engineering/srgi_lucknow_btech_electronics_communication.md",
+  "docx_path": "documents/04_programmes_engineering/srgi_lucknow_btech_electronics_communication.docx",
+  "source_urls": [
+    "https://srgi.in/btech/ec"
+  ],
+  "canonical_source_urls": [
+    "https://srgi.in/btech/ec"
+  ],
+  "source_hashes": [
+    "92cfdfd8ce0e7d1f8bfab87256ebd030f78a88ce239df604eb193e8345e7fb85"
+  ],
+  "markdown_hash": "627c258d3c8287c10d91d40b2da54314b30c8058e82fdb207d9c1b28233bdeef",
+  "docx_hash": "8fd81012c6c623e92aa5a9abdefbf98a7baed27acc3fabfdd2d964eb0b7f92e7",
+  "byte_size_md": 2092,
+  "byte_size_docx": 37848,
+  "word_count_md": 234,
+  "sections_count": 8,
+  "table_count": 0,
+  "content_quality_status": "PASS",
+  "conflict_status": "NO_UNRESOLVED_CONFLICTS",
+  "provenance_section_count": 1,
+  "docx_provenance_heading_count": 1,
+  "docx_leaked_syntax_count": 0,
+  "summary": "ECE programme overview, semiconductor electronics, VLSI design, wireless communications, embedded IoT systems, sanctioned intake of 60 seats.",
+  "keywords": [
+    "B.Tech EC",
+    "Electronics & Communication",
+    "VLSI",
+    "Embedded Systems",
+    "Telecom",
+    "Intake 60"
+  ],
+  "related_documents": [
+    "srgi_lucknow_btech_electrical_electronics",
+    "srgi_lucknow_btech_overview"
+  ],
+  "created_at": "2026-10-23T21:19:33.264930+00:00",
+  "pipeline_stage": "release_v3_production"
+}

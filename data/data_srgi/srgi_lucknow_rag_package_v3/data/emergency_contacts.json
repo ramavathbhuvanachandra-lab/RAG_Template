@@ -1,0 +1,25 @@
+{
+  "institution_id": "srgi_lucknow",
+  "contacts": [
+    {
+      "service": "Campus Security & Anti-Ragging Helpline",
+      "phone": "+91 8417000011",
+      "contact_person": "Dr. Shashank Singh (Chief Proctor)"
+    },
+    {
+      "service": "Campus Transit Dispatch Emergency",
+      "phone": "+91 9793000099",
+      "contact_person": "Mr. Devesh Singh (Chief Transport Officer)"
+    },
+    {
+      "service": "Hostel Residential Emergency",
+      "phone": "+91 9793000090",
+      "contact_person": "Mr. K.M. Upadhyay (Chief Warden)"
+    },
+    {
+      "service": "Main Admissions Helpline",
+      "phone": "+91 9793000005",
+      "contact_person": "Admissions Desk"
+    }
+  ]
+}

@@ -1,0 +1,69 @@
+{
+  "institution": {
+    "srgi": [
+      "SRGI",
+      "SRGI Lucknow",
+      "S. R. Group of Institutions",
+      "S. R. Group of Institutions, Lucknow",
+      "S. R. Group of Institutions (SRGI)",
+      "SRIMT",
+      "S. R. Institute of Management & Technology",
+      "S. R. Institute of Management and Technology"
+    ]
+  },
+  "programs": {
+    "btech": [
+      "B.Tech.",
+      "B.Tech",
+      "B Tech",
+      "BTech",
+      "Bachelor of Technology"
+    ],
+    "mtech": [
+      "M.Tech.",
+      "M.Tech",
+      "M Tech",
+      "MTech",
+      "Master of Technology"
+    ],
+    "mba": [
+      "MBA",
+      "M.B.A.",
+      "Master of Business Administration"
+    ],
+    "imba": [
+      "IMBA",
+      "Integrated MBA",
+      "Integrated Master of Business Administration",
+      "5-Year Integrated MBA"
+    ],
+    "agmp": [
+      "AGMP",
+      "Applied Global Management",
+      "Applied Global Management Programme"
+    ],
+    "bvoc": [
+      "B.Voc",
+      "BVoc",
+      "Bachelor of Vocation",
+      "Vocational Studies"
+    ],
+    "dpharm": [
+      "D.Pharm",
+      "D.Pharma",
+      "D Pharma",
+      "Diploma in Pharmacy",
+      "Pharmacy"
+    ],
+    "dhp": [
+      "DHP",
+      "Homeopathy",
+      "Diploma in Homeopathic Pharmacy"
+    ],
+    "nursing": [
+      "Nursing",
+      "Paramedical",
+      "Nursing & Paramedical"
+    ]
+  }
+}

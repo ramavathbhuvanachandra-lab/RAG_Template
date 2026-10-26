@@ -1,0 +1,49 @@
+{
+  "schema_version": "2.0.0",
+  "institution_id": "srgi_lucknow",
+  "institution_name": "S. R. Group of Institutions (SRGI), Lucknow",
+  "document_id": "srgi_lucknow_board_of_directors",
+  "title": "SRGI Lucknow Board of Directors \u2014 Institutional Execution and Oversight",
+  "category": "02_governance_and_leadership",
+  "subcategory": "governance_bodies",
+  "document_type": "institutional_knowledge",
+  "language": "en",
+  "markdown_path": "documents/02_governance_and_leadership/srgi_lucknow_board_of_directors.md",
+  "docx_path": "documents/02_governance_and_leadership/srgi_lucknow_board_of_directors.docx",
+  "source_urls": [
+    "https://srgi.in/board-of-directors"
+  ],
+  "canonical_source_urls": [
+    "https://srgi.in/board-of-directors"
+  ],
+  "source_hashes": [
+    "0ffd1486dbe64f6ade0d3306a1d403c5b2a34abc328d35f6ad5a3c1a705b92fd"
+  ],
+  "markdown_hash": "959b5cbf6ae2e477ef784438c69c7e9318049be151e34d0bc181ce323af0a1a2",
+  "docx_hash": "377c9551051110656beba080a012d88943a8bf3f339ee3d42fb4e04e77215b1f",
+  "byte_size_md": 4501,
+  "byte_size_docx": 39219,
+  "word_count_md": 594,
+  "sections_count": 7,
+  "table_count": 4,
+  "content_quality_status": "PASS",
+  "conflict_status": "NO_UNRESOLVED_CONFLICTS",
+  "provenance_section_count": 1,
+  "docx_provenance_heading_count": 1,
+  "docx_leaked_syntax_count": 0,
+  "summary": "Profiles, designations, direct contact lines, and functional roles of the members of the SRGI Board of Directors.",
+  "keywords": [
+    "Board of Directors",
+    "Prof. V.K. Singh",
+    "Dr. D.P. Singh",
+    "Mr. Sataranjan Sharma",
+    "Mr. Ankur Singh",
+    "Directors"
+  ],
+  "related_documents": [
+    "srgi_lucknow_board_of_governors",
+    "srgi_lucknow_administrative_heads"
+  ],
+  "created_at": "2026-10-23T21:19:33.006966+00:00",
+  "pipeline_stage": "release_v3_production"
+}

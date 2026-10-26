@@ -1,0 +1,61 @@
+{
+  "institution_id": "srgi_lucknow",
+  "named_entities": [
+    {
+      "entity_name": "S. R. Group of Institutions (SRGI)",
+      "category": "Institution"
+    },
+    {
+      "entity_name": "S. R. Institute of Management and Technology (SRIMT)",
+      "category": "Constituent College"
+    },
+    {
+      "entity_name": "SRM Ayush Institute of Medical Sciences",
+      "category": "Medical Unit"
+    },
+    {
+      "entity_name": "Subedar Raj Devi Educational Trust",
+      "category": "Sponsoring Trust"
+    },
+    {
+      "entity_name": "Late Shri Subedar Singh",
+      "category": "Foundational In Memoria"
+    },
+    {
+      "entity_name": "Late Smt. Raj Devi Singh",
+      "category": "Foundational In Memoria"
+    },
+    {
+      "entity_name": "Mr. Pawan Singh Chauhan",
+      "category": "Founder Chairman (MLC - Sitapur)"
+    },
+    {
+      "entity_name": "Dr. S.S. Chauhan",
+      "category": "Executive Director"
+    },
+    {
+      "entity_name": "Mr. Sonendra Singh Tomar",
+      "category": "Chief Administrative Officer"
+    },
+    {
+      "entity_name": "Dr. Shashank Singh",
+      "category": "Chief Proctor"
+    },
+    {
+      "entity_name": "Mr. Kaushal Chandra",
+      "category": "Director T&P"
+    },
+    {
+      "entity_name": "Mr. Devesh Singh",
+      "category": "Chief Transport Officer"
+    },
+    {
+      "entity_name": "Mr. K.M. Upadhyay",
+      "category": "Chief Warden"
+    },
+    {
+      "entity_name": "Kr. Abhishek Pratap",
+      "category": "Librarian"
+    }
+  ]
+}

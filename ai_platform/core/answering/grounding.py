@@ -99,7 +99,7 @@ _NUMBER_WORDS = {
 }
 
 _MONEY_RE = re.compile(
-    r"(?:₹|rs\.?|inr)\s*\d[\d,]*(?:\.\d+)?",
+    r"(?:₹|(?<![a-zA-Z])(?:rs\.?|inr))\s*\d[\d,]*(?:\.\d+)?",
     re.I,
 )
 _PERCENT_RE = re.compile(r"\b\d+(?:\.\d+)?\s*%")
@@ -365,12 +365,11 @@ _PERSONAL_ELIGIBILITY_PATTERNS = (
     re.compile(
         r"\b(?:you|your)\b.{0,150}"
         r"\b(?:are|would be|will be|should be|may be|might be)\b"
-        r".{0,90}\b(?:eligible|qualified)\b",
+        r".{0,90}\b(?:eligible|qualified|admitted|accepted)\b",
         re.I,
     ),
     re.compile(
-        r"\b(?:you|your)\b.{0,100}"
-        r"\bcan\b.{0,70}\bapply\b",
+        r"\b(?:you\s+meet\s+all\s+(?:the\s+)?eligibility|confirm(?:ing)?\s+your\s+admission|you\s+qualify\s+for\s+admission)\b",
         re.I,
     ),
 )

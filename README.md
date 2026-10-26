@@ -1,137 +1,96 @@
-# Institutional RAG Chatbot Source Template
+# S. R. Group of Institutions (SRGI), Lucknow — AI Assistant
 
-> A clean, production-ready, institution-grounded Retrieval-Augmented Generation (RAG) source template designed for rapid cloning and multi-institution deployment. Reference institution: **Indian Institute of Technology Jodhpur (IIT Jodhpur)**.
+> Production-ready, institution-grounded Retrieval-Augmented Generation (RAG) assistant for **S. R. Group of Institutions (SRGI), Lucknow** (`INSTITUTION_ID=srgi`).
 
 ---
 
-## 1. Overview & Reusability Goal
+## 1. Overview & Institutional Identity
 
-`RAG_Source_Template` is a clean source-code distribution extracted from the validated institutional RAG platform. It contains only production application code, runtime dependencies, institution configuration, knowledge-package adapters, operational deployment files, and documentation.
-
-This repository is designed to be **cloned once per educational institution** (e.g. for IIT Jodhpur, IIT Mandi, SRGI Lucknow, etc.) and customized through configuration and data packages rather than code rewrites.
+This repository deploys the official, fully evidence-grounded conversational AI assistant for **S. R. Group of Institutions (SRGI), Lucknow**, encompassing:
+- Faculty of Engineering & Technology (SRIMT)
+- Faculty of Management Studies
+- Faculty of Skill & Vocational Studies
+- Faculty of Medical & Allied Health Sciences (SRM Ayush Institute, Pharmacy, Nursing, Homeopathy)
 
 ### Key Capabilities
-- **High-Precision Evidence Grounding**: Answers are synthesized exclusively from verified institutional evidence extracted from authoritative documents.
-- **Compound Query Understanding**: Automatically decomposes multi-policy queries into focused sub-queries and aggregates answers.
-- **Hybrid Retrieval & RRF**: Fuses dense semantic vector retrieval (`nomic-embed-text` in ChromaDB) with lexical keyword search (`rank-bm25`) using weighted Reciprocal Rank Fusion.
-- **Strict Evidence Boundary & Qualification**: Deterministically rejects off-target passages and prevents hallucinated cross-degree assertions.
-- **Safe Abstention**: Refuses speculation gracefully when evidence is insufficient or conflicting.
-- **Attribution & Provenance**: Provides authoritative source citations in the UI with zero hallucinated citations on abstention.
-- **Decoupled Modern Frontend**: Modular Streamlit interface (`frontend/`) supporting institutional themes, continuous chat history, quick action cards, and diagnostic inspectors.
+- **High-Precision Evidence Grounding**: Answers are synthesized exclusively from verified institutional evidence extracted from authoritative documents (`srgi_lucknow_rag_package_v3`).
+- **Sub-Second Embedding Latency**: Pre-warmed `nomic-embed-text` with persistent process caching and `keep_alive` ensures dense retrieval runs in < 0.20s.
+- **Strict Evidence Boundary & Isolation**: Undergraduate vs. postgraduate eligibility, fees, branch structures, and statutory regulations are strictly isolated without cross-discipline pollution.
+- **Deterministic Refusal & Impersonation Defense**: Safeguards prevent authority roleplay (e.g. Chairman/Registrar impersonation), prompt exfiltration, and out-of-scope fraud.
+- **Interactive Campus Map & Location Directory**: Full geospatial visualization of SRGI campus blocks, hostels, and administrative facilities.
+- **Turn-Accurate Developer Diagnostics**: Trace inspector displays real-time retrieval candidates, verified units, token estimates, and panel timings for each exact turn.
 
 ---
 
-## 2. Directory Structure
+## 2. Single Authoritative Launch Command
 
-```text
-RAG_Source_Template/
-├── app.py                     # Primary Streamlit application launcher
-├── requirements.txt           # Verified Python runtime dependencies
-├── Dockerfile                 # Container image specification
-├── docker-compose.yml         # Local container orchestration
-├── .env.example               # Environment configuration template
-├── .gitignore                 # Clean ignore rules (excludes caches, local DBs)
-├── .dockerignore              # Container build ignore rules
-├── README.md                  # Template documentation & onboarding guide
-├── AI_PLATFORM_ARCHITECTURE.md# Comprehensive architectural specification
-├── flow.md                    # Detailed runtime execution flow & state schema
-├── INSTITUTION_CHANGE_MAP.md  # Detailed institution adaptation map
-├── frontend/                  # Modular Streamlit user interface
-│   ├── app.py                 # Frontend composition root
-│   ├── styles.py              # Dynamic theme & styling token injector
-│   ├── clients/               # Presentation-to-service client adapter
-│   ├── components/            # Chat view, messages, sidebar, cards
-│   ├── core/                  # Session manager, config loader, plugin registry
-│   └── plugins/               # Institution UI plugins (iitj, template)
-├── ai_platform/               # Reusable AI Platform core & runtime
-│   ├── core/                  # Core RAG engine (graph, retrieval, answering)
-│   ├── runtime/               # Execution roots, LLM, embeddings, vectorstore
-│   ├── service/               # Canonical assistant service boundary
-│   ├── packages/              # KIE V2 package adapter & release registry
-│   └── institutions/          # Institution profiles & adapters
-│       ├── loader.py          # Dynamic institution profile resolver
-│       └── iitj/              # Reference institution configuration & data
-├── data/                      # Reference data & knowledge packages
-│   ├── campus_locations.json  # Reference campus coordinates & map data
-│   ├── emergency_contacts.json# Reference emergency contact list
-│   ├── staging_release_iitj.json # Staging release metadata
-│   └── data_iitj/             # Reference institution knowledge root
-│       └── iit_jodhpur_rag_package_v2/ # Validated KIE V2 package
-└── scripts/
-    └── knowledge_package.py   # Operational package validation & indexing CLI
+To launch the SRGI application deterministically on port 8501:
+
+```bash
+cd /Users/bhuvanachandra/Desktop/RAG_SRGI
+python run_srgi.py
+```
+
+Or directly via Streamlit:
+```bash
+streamlit run app.py --server.port 8501
+```
+
+Once started, open your browser at:
+`http://localhost:8501`
+
+### Running on an Alternative Port (e.g. 8502)
+If port 8501 is occupied by another application:
+```bash
+STREAMLIT_PORT=8502 python run_srgi.py
 ```
 
 ---
 
-## 3. Technology Stack & Prerequisites
+## 3. Technology Stack & Runtime Configuration
 
 | Layer | Component | Specification |
 |---|---|---|
 | **Python Runtime** | Core Engine | Python 3.11+ |
 | **User Interface** | Web Application | Streamlit (>= 1.60.0) |
-| **Reasoning Engine** | Graph Orchestration | LangGraph (>= 1.2.9) |
-| **Local LLM** | Answer & Query Generation | `qwen2.5:3b` via [Ollama](http://localhost:11434) |
-| **Embeddings** | Dense Semantic Search | `nomic-embed-text:latest` via [Ollama](http://localhost:11434) |
-| **Vector Database** | Local Vector Persistence | ChromaDB (>= 1.5.9) |
+| **Active Institution** | Tenant ID | `srgi` (`S. R. Group of Institutions, Lucknow`) |
+| **Active Staging Release** | Knowledge Package | `srgi_lucknow_rag_package_v3` |
+| **Vector Collection** | ChromaDB Collection | `srgi_srgi_lucknow_rag_package_v3_staging` (768 dimensions) |
+| **Dense Embeddings** | Ollama Model | `nomic-embed-text:latest` (Ollama keep_alive=3600) |
+| **Language Model** | Reasoning & Answering | `qwen2.5:3b` via [Ollama](http://localhost:11434) |
 | **Lexical Search** | Keyword Matching | `rank-bm25` (BM25Retriever) |
-| **Package Adapter** | Data Ingestion V2 | `scripts/knowledge_package.py` |
-
-### System Requirements
-1. **Ollama**: Installed and running locally (`ollama serve`).
-2. **Models pulled**:
-   ```bash
-   ollama pull qwen2.5:3b
-   ollama pull nomic-embed-text
-   ```
+| **Fusion Algorithm** | Hybrid Reranking | Weighted Reciprocal Rank Fusion (RRF, k=60) |
 
 ---
 
-## 4. Quickstart: Running IIT Jodhpur Reference Deployment
+## 4. Quickstart & Verification
 
-### Step 1: Environment Setup
-Create and activate a virtual environment:
+### Step 1: Verify Ollama Models
+Ensure Ollama is running and models are pulled:
 ```bash
-python3.11 -m venv venv
-source venv/bin/activate
-pip install -r requirements.txt
+ollama list
+# Required: qwen2.5:3b, nomic-embed-text:latest
 ```
 
-### Step 2: Configure Environment
+### Step 2: Environment Settings (.env)
 ```bash
-cp .env.example .env
-```
-Default `.env` settings point to `INSTITUTION_ID=iitj` and `OLLAMA_BASE_URL=http://localhost:11434`.
-
-### Step 3: Validate the Reference Knowledge Package
-Validate the included IIT Jodhpur KIE V2 package:
-```bash
-python scripts/knowledge_package.py validate --package-root data/data_iitj/iit_jodhpur_rag_package_v2
+INSTITUTION_ID=srgi
+RAG_USE_STAGING=1
+OLLAMA_BASE_URL=http://localhost:11434
+QUERY_LLM_MODEL=qwen2.5:3b
+ANSWER_LLM_MODEL=qwen2.5:3b
+LLM_TEMPERATURE=0
 ```
 
-### Step 4: Build the Vector & Lexical Index
-The repository does not commit binary Chroma databases or disposable lexical caches. Build them locally from the validated package:
+### Step 3: Run Blind Evaluation Suite
 ```bash
-# 1. Stage the package
-python scripts/knowledge_package.py stage \
-    --package-root data/data_iitj/iit_jodhpur_rag_package_v2 \
-    --institution iitj \
-    --release iit_jodhpur_rag_package_v2
-
-# 2. Build the vector collection and lexical cache
-python scripts/knowledge_package.py build-index --institution iitj
-
-# 3. (Optional) Run evaluation probes to verify indexing
-python scripts/knowledge_package.py evaluate --institution iitj
-
-# 4. Activate the release
-python scripts/knowledge_package.py activate --institution iitj --force
+python scripts/run_srgi_blind_evaluation.py
 ```
 
-### Step 5: Launch the Streamlit Web Application
+### Step 4: Run Regression Test Suite
 ```bash
-streamlit run app.py
+python scripts/run_srgi_evaluation_suite.py
 ```
-Open your browser at `http://localhost:8501`.
 
 ---
 

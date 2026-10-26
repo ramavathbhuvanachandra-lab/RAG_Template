@@ -1,0 +1,48 @@
+{
+  "schema_version": "2.0.0",
+  "institution_id": "srgi_lucknow",
+  "institution_name": "S. R. Group of Institutions (SRGI), Lucknow",
+  "document_id": "srgi_lucknow_vice_chairperson_message",
+  "title": "Message from the Vice-Chairperson \u2014 Dr. Sushmita Singh",
+  "category": "02_governance_and_leadership",
+  "subcategory": "leadership_messages",
+  "document_type": "institutional_knowledge",
+  "language": "en",
+  "markdown_path": "documents/02_governance_and_leadership/srgi_lucknow_vice_chairperson_message.md",
+  "docx_path": "documents/02_governance_and_leadership/srgi_lucknow_vice_chairperson_message.docx",
+  "source_urls": [
+    "https://srgi.in/vice-chairperson-message"
+  ],
+  "canonical_source_urls": [
+    "https://srgi.in/vice-chairperson-message"
+  ],
+  "source_hashes": [
+    "bf998efdad772591c3c2310b53880920a6e6dc561eec04bc219980a48faeb8f4"
+  ],
+  "markdown_hash": "be8bb5fd49f6b1a271d26294c2bfd1dcde49b0da1abb0ef67ac7bbb9b9d45759",
+  "docx_hash": "7881db355ddc133189b3c7d66f90c2451e4a39ec1092b7c112678f1cde6980b2",
+  "byte_size_md": 2708,
+  "byte_size_docx": 38195,
+  "word_count_md": 322,
+  "sections_count": 7,
+  "table_count": 0,
+  "content_quality_status": "PASS",
+  "conflict_status": "NO_UNRESOLVED_CONFLICTS",
+  "provenance_section_count": 1,
+  "docx_provenance_heading_count": 1,
+  "docx_leaked_syntax_count": 0,
+  "summary": "Official address, academic rigor, technocrat development, and administrative vision of Vice-Chairperson Dr. Sushmita Singh (B.Tech, MBA, Ph.D).",
+  "keywords": [
+    "Dr. Sushmita Singh",
+    "Vice-Chairperson SRGI",
+    "Technocrat Development",
+    "Academic Excellence",
+    "Leadership"
+  ],
+  "related_documents": [
+    "srgi_lucknow_chairperson_message",
+    "srgi_lucknow_vice_chairman_message"
+  ],
+  "created_at": "2026-10-23T21:19:32.942318+00:00",
+  "pipeline_stage": "release_v3_production"
+}

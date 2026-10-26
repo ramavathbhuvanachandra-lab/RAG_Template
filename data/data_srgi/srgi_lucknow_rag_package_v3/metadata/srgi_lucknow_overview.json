@@ -1,0 +1,54 @@
+{
+  "schema_version": "2.0.0",
+  "institution_id": "srgi_lucknow",
+  "institution_name": "S. R. Group of Institutions (SRGI), Lucknow",
+  "document_id": "srgi_lucknow_overview",
+  "title": "SRGI Lucknow Institutional Overview, Campus Profile and History",
+  "category": "01_institutional_profile",
+  "subcategory": "institutional_overview",
+  "document_type": "institutional_knowledge",
+  "language": "en",
+  "markdown_path": "documents/01_institutional_profile/srgi_lucknow_overview.md",
+  "docx_path": "documents/01_institutional_profile/srgi_lucknow_overview.docx",
+  "source_urls": [
+    "https://srgi.in",
+    "https://srgi.in/about"
+  ],
+  "canonical_source_urls": [
+    "https://srgi.in",
+    "https://srgi.in/about"
+  ],
+  "source_hashes": [
+    "21b702eb95fbfcf1e3040a7c996f6ed261781ee8bcc71ff275a161f43964e6e9",
+    "199aea81a694f708e74cfadb5f24f9ef8aa1a11eb79293b57602acf5b14ea690"
+  ],
+  "markdown_hash": "d7e9fde9a5d8b7e324f26206687e5a6718940c1bde0170ce5b9a97a92ac6730d",
+  "docx_hash": "50f70343a4d8b1201f8454a9a9327d72405eecad59a42d716e41c9d3d1068b04",
+  "byte_size_md": 5333,
+  "byte_size_docx": 39755,
+  "word_count_md": 694,
+  "sections_count": 9,
+  "table_count": 3,
+  "content_quality_status": "PASS",
+  "conflict_status": "NO_UNRESOLVED_CONFLICTS",
+  "provenance_section_count": 1,
+  "docx_provenance_heading_count": 1,
+  "docx_leaked_syntax_count": 0,
+  "summary": "Official institutional profile, campus expanse, establishment history since 2009, core statistics, and academic orientation of S. R. Group of Institutions, Lucknow.",
+  "keywords": [
+    "SRGI Lucknow",
+    "SRIMT",
+    "Subedar Raj Devi Educational Trust",
+    "Sitapur Road",
+    "Engineering College Lucknow",
+    "65-acre campus",
+    "History 2009"
+  ],
+  "related_documents": [
+    "srgi_lucknow_heritage_and_inspiration",
+    "srgi_lucknow_academic_units_overview",
+    "srgi_lucknow_campus_contacts_and_directions"
+  ],
+  "created_at": "2026-10-23T21:19:32.774175+00:00",
+  "pipeline_stage": "release_v3_production"
+}

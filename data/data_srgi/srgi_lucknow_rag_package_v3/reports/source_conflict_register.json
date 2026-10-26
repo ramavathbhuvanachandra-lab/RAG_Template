@@ -1,0 +1,62 @@
+{
+  "institution_id": "srgi_lucknow",
+  "total_conflicts_logged": 4,
+  "conflicts": [
+    {
+      "conflict_id": "conflict_btech_cse_intake",
+      "entity": "B.Tech Computer Science & Engineering Sanctioned Intake",
+      "source_1": {
+        "url": "https://srgi.in/btech",
+        "stated_value": "CSE Total Intake: 180, AI/ML Intake: 60, AI Intake: 60, Data Science Intake: 60"
+      },
+      "source_2": {
+        "url": "https://srgi.in/btech/cs",
+        "stated_value": "Computer Science & Engineering Duration: 4 Years Intake: 180"
+      },
+      "source_3": {
+        "url": "https://srgi.in/btech/cse",
+        "stated_value": "Artificial Intelligence & Data Science Duration: 4 Years Intake: 60"
+      },
+      "disposition": "PRESERVED_DOCUMENTED_SOURCE_VARIANCE",
+      "explanation": "Dual-level reporting on official portal where 180 represents core departmental intake and 60 represents specialized sub-track intake. Downstream consumers are advised to present both figures in their respective context."
+    },
+    {
+      "conflict_id": "conflict_btech_bt_intake",
+      "entity": "B.Tech Biotechnology (BT) Sanctioned Intake",
+      "source_1": {
+        "url": "https://srgi.in/btech/bt",
+        "stated_value": "Bio-Technology Engineering Duration: 4 Years Intake: 180"
+      },
+      "source_2": {
+        "url": "https://srgi.in/Prospectus.pdf",
+        "stated_value": "Biotechnology Engineering Intake: 60 (Historical print prospectus baseline)"
+      },
+      "disposition": "RESOLVED_BY_OFFICIAL_PORTAL_EVIDENCE_180_SEATS",
+      "explanation": "Resolved in V3 Release. The official active portal /btech/bt explicitly mandates an intake of 180 seats. The canonical programme specification, Markdown, DOCX, and JSON records are reconciled to 180 seats with a footnote disclosing historical 60-seat baseline."
+    },
+    {
+      "conflict_id": "conflict_faq_cse_intake",
+      "entity": "FAQ B.Tech CSE Intake Answer",
+      "source_1": {
+        "url": "https://srgi.in/faq",
+        "stated_value": "Legacy FAQ Q6: 120 seats"
+      },
+      "source_2": {
+        "url": "https://srgi.in/btech/cs",
+        "stated_value": "Core CSE: 180 seats, emerging technology tracks: 60 seats each"
+      },
+      "disposition": "SYNCHRONIZED_WITH_CANONICAL_PORTAL",
+      "explanation": "Resolved in V3 FAQ document. FAQ Q6 answer updated to state 180 core seats plus 60 seats each for emerging tracks (AI/ML, AI, Data Science), with historical 120-seat baseline explicitly noted."
+    },
+    {
+      "conflict_id": "conflict_anti_ragging_pdf_scanned",
+      "entity": "Anti-Ragging Standing Circular Clauses",
+      "source_1": {
+        "url": "https://srgi.in/Anti-Ragging.pdf",
+        "status": "SCANNED_RASTER_PDF_WITHOUT_TEXT_LAYER"
+      },
+      "disposition": "DISCLOSED_INVENTORY_LIMITATION",
+      "explanation": "The official Anti-Ragging circular PDF is a 3-page scanned raster image. Operational claims regarding unannounced night patrol rotas are treated as unverified pending OCR extraction, while statutory zero tolerance and Chief Proctor Dr. Shashank Singh's verified contact (+91 8417000011) are fully retained."
+    }
+  ]
+}

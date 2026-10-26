@@ -1,0 +1,447 @@
+{
+  "institution_id": "srgi_lucknow",
+  "total_documents": 55,
+  "parity_pass_count": 55,
+  "parity_audits": [
+    {
+      "document_id": "srgi_lucknow_overview",
+      "title": "SRGI Lucknow Institutional Overview, Campus Profile and History",
+      "markdown_hash": "d7e9fde9a5d8b7e324f26206687e5a6718940c1bde0170ce5b9a97a92ac6730d",
+      "docx_hash": "50f70343a4d8b1201f8454a9a9327d72405eecad59a42d716e41c9d3d1068b04",
+      "sidecar_hash": "d9b79a95bf242f5a5c8e5ab3a96f5867b46ec573cd56fdd88f4133182419f3ce",
+      "parity_status": "PASS"
+    },
+    {
+      "document_id": "srgi_lucknow_heritage_and_inspiration",
+      "title": "SRGI Lucknow Heritage, Sponsoring Trust and Foundational Inspiration",
+      "markdown_hash": "7cdecc30e31eb76193b796ebefb6db2e6cd1d5a70686fd54136e188a30aab03d",
+      "docx_hash": "3b209dc71ff7a0ff39166e6ce89db20b0fc52b63d26891718e22785e495f19ba",
+      "sidecar_hash": "46a1cc31981fc721faacdb0f6fdca2a4b06b5a7f44a86ccbbfe693611e79a7ff",
+      "parity_status": "PASS"
+    },
+    {
+      "document_id": "srgi_lucknow_chairman_message",
+      "title": "Message from the Chairman \u2014 Mr. Pawan Singh Chauhan",
+      "markdown_hash": "e2e3a2883f22c63b20ee597e8041a30a141bcbc03c2b1b76521d7e0845996966",
+      "docx_hash": "d655563718a95fd3431d35f4352060fe3b077c54d6296df93bceb3076cde00d9",
+      "sidecar_hash": "1efe78170de0270e4af03b2975911f467b86cc7bc26b4d1a52fb63ee538e21bf",
+      "parity_status": "PASS"
+    },
+    {
+      "document_id": "srgi_lucknow_chairperson_message",
+      "title": "Message from the Chairperson \u2014 Mrs. Nirmala Singh Chauhan",
+      "markdown_hash": "5b90c587f2d3bd642fc0596b5bd4069e9a4e628ee75b249cfa9c79ba90250fe8",
+      "docx_hash": "d40ba50c2ca05bf132aacce83f334fb38420301ef9584d82bdfe5ba37b15f8ee",
+      "sidecar_hash": "187730d21c69bd62f54a8622a8ac0c6161cbf077ad0a6960fb62fd0c2ae76287",
+      "parity_status": "PASS"
+    },
+    {
+      "document_id": "srgi_lucknow_vice_chairman_message",
+      "title": "Message from the Vice-Chairman \u2014 Mr. Piyush Singh Chauhan",
+      "markdown_hash": "17b1d4122e69b2b5a4fe0dbbcf28c05ecc831719806f22f9527e84c00ee53008",
+      "docx_hash": "0ac90bb52392827cca8a0412a7d64b010b4eaee96c26bd5d78897d944a0a2690",
+      "sidecar_hash": "dec38f3f6ec363f2244185d6d0bc0f882c2e13ba91053e5127aadaca43a41fb5",
+      "parity_status": "PASS"
+    },
+    {
+      "document_id": "srgi_lucknow_vice_chairperson_message",
+      "title": "Message from the Vice-Chairperson \u2014 Dr. Sushmita Singh",
+      "markdown_hash": "be8bb5fd49f6b1a271d26294c2bfd1dcde49b0da1abb0ef67ac7bbb9b9d45759",
+      "docx_hash": "7881db355ddc133189b3c7d66f90c2451e4a39ec1092b7c112678f1cde6980b2",
+      "sidecar_hash": "561cb355bbf1790a68270c40bcb00031e41b1faa282b9e004b58e187338994fa",
+      "parity_status": "PASS"
+    },
+    {
+      "document_id": "srgi_lucknow_board_of_governors",
+      "title": "SRGI Lucknow Board of Governors \u2014 Composition and Strategic Counsel",
+      "markdown_hash": "0ad11425b1096b18fa8bbcac58663ecf56da31d957eafa1197c4171b0159a963",
+      "docx_hash": "0c035a93def5f3131107b223b2a2a15a28049b033edf3c03eab7625ac021cea0",
+      "sidecar_hash": "fc7ebf3dcea410beeacc40969d727010b232395471ca8f024a63344fcd028a54",
+      "parity_status": "PASS"
+    },
+    {
+      "document_id": "srgi_lucknow_board_of_directors",
+      "title": "SRGI Lucknow Board of Directors \u2014 Institutional Execution and Oversight",
+      "markdown_hash": "959b5cbf6ae2e477ef784438c69c7e9318049be151e34d0bc181ce323af0a1a2",
+      "docx_hash": "377c9551051110656beba080a012d88943a8bf3f339ee3d42fb4e04e77215b1f",
+      "sidecar_hash": "1b761b1ea2c4baf3e7f02f0ce04949b9bb2eff6a7b1b4a697acbe322b0d51139",
+      "parity_status": "PASS"
+    },
+    {
+      "document_id": "srgi_lucknow_administrative_heads",
+      "title": "SRGI Lucknow Administrative Heads and Core Operational Team",
+      "markdown_hash": "232b4fba5b348cbe4073c37dd2a947bc3975e3cddd40b6280e50b9d3c49167c9",
+      "docx_hash": "9b639a80a6ef0090ecfe4a262e7822e8f6c5c839a32aa658ef184d30517dd510",
+      "sidecar_hash": "a8c7b51415bde912df4fb9d8dc4a7cafdd039868ee078fcf8d21b1e1feb28583",
+      "parity_status": "PASS"
+    },
+    {
+      "document_id": "srgi_lucknow_academic_units_overview",
+      "title": "SRGI Lucknow Constituent Academic Units and Institutional Network",
+      "markdown_hash": "36e779ca26c7dd756d9c41d2a4c5c097b13491ef3bc184e5503360baddc71b49",
+      "docx_hash": "9dbd07a3aae3079c0c3746e8e7f7f49b9f33c9f0927b717bc5465ba75ee1040e",
+      "sidecar_hash": "3fb131fa6037127ea02711ae97099c8e99bba4693575bad1262147a7d915fc51",
+      "parity_status": "PASS"
+    },
+    {
+      "document_id": "srgi_lucknow_btech_overview",
+      "title": "Bachelor of Technology (B.Tech) Programmes \u2014 Comprehensive Overview",
+      "markdown_hash": "686974828890c719cd2cd0e13a2cc5160595ac804c69a584e3350c0dc8025116",
+      "docx_hash": "29bf16578ae915277ea7abc02855fc0db297f75d53831f51cebb8904bda52e2b",
+      "sidecar_hash": "209d836abb0e9fc6652f2e5c51fce712a8beb96009b096ecfa19dd59f6a8744b",
+      "parity_status": "PASS"
+    },
+    {
+      "document_id": "srgi_lucknow_btech_computer_science_engineering",
+      "title": "B.Tech in Computer Science & Engineering (AI & ML, AI & DS Specializations)",
+      "markdown_hash": "33e1f8bdd8dbda39c6c926401199afc881301915def81f0fe3fd03c84d1dd0bf",
+      "docx_hash": "52a71317a813a0c068408735b42057486b2b5aa5c7358b00c8cf8058dc812421",
+      "sidecar_hash": "1da310571a4faed1b2ed73a9df74e0aa6610592ac1aa7845a6e3ac0b3c56e681",
+      "parity_status": "PASS"
+    },
+    {
+      "document_id": "srgi_lucknow_btech_computer_science",
+      "title": "B.Tech in Computer Science (CS)",
+      "markdown_hash": "c324c3de4fd96465c8df95d0288c4ed9e5e9f18330b6e27b851ae08d36f57f87",
+      "docx_hash": "9f030a3741366b74e38ff65f9d156862b4e50513ec78062e153998febb368311",
+      "sidecar_hash": "8a27ce1f0da7d65768b9a2988b9b2b2a95f6a7eebc817ddfb7aff36b017f31cf",
+      "parity_status": "PASS"
+    },
+    {
+      "document_id": "srgi_lucknow_btech_information_technology",
+      "title": "B.Tech in Information Technology (IT)",
+      "markdown_hash": "28d0c940276f63726b7d63c1c2f31b87cc4badddd02983046c8d261b3b45dc54",
+      "docx_hash": "c42ba980873751d8f626b325bf3a98c07437ba1b9fb02e4a913dd259724f14e0",
+      "sidecar_hash": "df9c62a877b6b0b485a159c85c0637b5afab4dfd88ca9302a230910fe6ed2a54",
+      "parity_status": "PASS"
+    },
+    {
+      "document_id": "srgi_lucknow_btech_electronics_communication",
+      "title": "B.Tech in Electronics & Communication Engineering (ECE)",
+      "markdown_hash": "627c258d3c8287c10d91d40b2da54314b30c8058e82fdb207d9c1b28233bdeef",
+      "docx_hash": "8fd81012c6c623e92aa5a9abdefbf98a7baed27acc3fabfdd2d964eb0b7f92e7",
+      "sidecar_hash": "90a0174167f275eaae2db8b67ab52e821aff85b6706efb616d2fcca37baa8dfe",
+      "parity_status": "PASS"
+    },
+    {
+      "document_id": "srgi_lucknow_btech_electrical_electronics",
+      "title": "B.Tech in Electrical & Electronics Engineering (EEE / EN)",
+      "markdown_hash": "986490b777e06ed9851cd7128708b1356dd790bfe9679da8b50d3147645f4061",
+      "docx_hash": "696f1e4c5c3bddb785b3c06dd25e21eba54d3f8d62e10c762dc26a65144a75c7",
+      "sidecar_hash": "1f1bd06c148eb3253f35426f3696a9e2c8386b8046148c7e0ebac4ca6fea9bc7",
+      "parity_status": "PASS"
+    },
+    {
+      "document_id": "srgi_lucknow_btech_mechanical_engineering",
+      "title": "B.Tech in Mechanical Engineering (ME)",
+      "markdown_hash": "73493b8197270a9b73f617b8c3274b01937ae61d739b5f8264ac0229a74e2e7e",
+      "docx_hash": "2dac726022310c8cc0417cd785b27bd4e07b8ff85046732218e882ae9fcb2d94",
+      "sidecar_hash": "ca7c47505d9c984c030e8c08862265347ef1efd705cbb39fb232071924afbf3f",
+      "parity_status": "PASS"
+    },
+    {
+      "document_id": "srgi_lucknow_btech_civil_engineering",
+      "title": "B.Tech in Civil Engineering (CE)",
+      "markdown_hash": "e3d46da1bdbd555a1c49b27e4bd49b3dcd5f54ba0ea2eb252e6580bd37c2fb36",
+      "docx_hash": "7e3c7da620526d1fca450f3770ec030c6723325828d108e08b43dfee3a9797e3",
+      "sidecar_hash": "12a0346f55ff9512a50de9490fd66d8e41d2049e68b621c73e688648ed1f38fe",
+      "parity_status": "PASS"
+    },
+    {
+      "document_id": "srgi_lucknow_btech_biotechnology",
+      "title": "B.Tech in Biotechnology (BT)",
+      "markdown_hash": "5f6730176bf2b5cdff7a6f3e602fd1aa84c58ad5c9f71d7a16beae4ae9171e6f",
+      "docx_hash": "5243c7e0dabbbb6b2e38265819685cf0f9571c7915f55fd9732f9726f031487f",
+      "sidecar_hash": "ddb74f3f9c41253c26ee4ea8c1f83521e51348ee1732c3c6c349ec1cde770732",
+      "parity_status": "PASS"
+    },
+    {
+      "document_id": "srgi_lucknow_btech_agricultural_engineering",
+      "title": "B.Tech in Agricultural Engineering (AG)",
+      "markdown_hash": "6ac6eaeeb9517a8eb58207417eefbcf2e98e7e0fb7224cd6efe6a7359933e381",
+      "docx_hash": "8344ec662cab8d9535852015c874fb2207171bf44ebdb376e67201025bbc4fbc",
+      "sidecar_hash": "a1b9e1584b57f9fee92202d484d28e2af1b3ae377aa2a7c4438d1388a4dbf87e",
+      "parity_status": "PASS"
+    },
+    {
+      "document_id": "srgi_lucknow_mtech_programmes",
+      "title": "Master of Technology (M.Tech) Postgraduate Programmes",
+      "markdown_hash": "643663e477663316df5e9706a1268757cd53aba8b0d0ace4441f8507a4dff9aa",
+      "docx_hash": "ef77c79a242d112fc80eb87dfe2e8c70ef4637c593b200a30d884509e5767e9e",
+      "sidecar_hash": "9eb34ceebbc1197c313434fbc020f413e90b210b19550695efd299223aa5afb9",
+      "parity_status": "PASS"
+    },
+    {
+      "document_id": "srgi_lucknow_management_overview",
+      "title": "Faculty of Management Studies \u2014 Academic Framework and Programmes",
+      "markdown_hash": "8c10f48aec829a13fbdd1b097e18eda13eda6260b6e3e357a38db8a078096a41",
+      "docx_hash": "5a034da2003b9b3ba15547947b032935c9f9998fdc3e721b557f633ae829a3c0",
+      "sidecar_hash": "5fbab0d22448822a9d67cbfaaa4b1088d56eea2115b511dd40995ef7cbba0c7d",
+      "parity_status": "PASS"
+    },
+    {
+      "document_id": "srgi_lucknow_mba_programme",
+      "title": "Master of Business Administration (MBA) \u2014 2-Year Full-Time Programme",
+      "markdown_hash": "8f29822788a3c241339b9492f7cf2093ab5a6c24f88bbe216b86fa13eeaac1c8",
+      "docx_hash": "15f25017b4d6ef93675cf1c2f3646b5821c24cb878ebdb76c22a7efb72f282f2",
+      "sidecar_hash": "530359637adec02d80bbdb6e29f943d23136a29f7d4403b373a73adb0e52d68d",
+      "parity_status": "PASS"
+    },
+    {
+      "document_id": "srgi_lucknow_integrated_mba",
+      "title": "Integrated MBA (IMBA) \u2014 5-Year Dual-Degree Management Programme",
+      "markdown_hash": "bf142f285a14038e727e3197ec3ec4de7be91e5e76bfd843b944ec3a8774e5dd",
+      "docx_hash": "16ac7e9dc2b5049a6e5b01d020fdd3cf05c06559f42c3273c7febb1a46b43497",
+      "sidecar_hash": "4ce47b84f9e693d5e9595b8dac170b8284ec74dbf935b9a433766c88de7ab686",
+      "parity_status": "PASS"
+    },
+    {
+      "document_id": "srgi_lucknow_applied_global_management",
+      "title": "Applied Global Management Programme (AGMP)",
+      "markdown_hash": "38d79f9bcfaf97ade5791af10ea0e54dc025033564f1cd7c5a941c3877364b35",
+      "docx_hash": "da41551c6ba85b6f97b9f519d393b7580c27f5e9861b866bbc01b8ad6979b27a",
+      "sidecar_hash": "09b02bde7d4dd6f8bf76467ba5d4944c3fcda2acc118e6165a91c4fc2fbbef30",
+      "parity_status": "PASS"
+    },
+    {
+      "document_id": "srgi_lucknow_medical_programmes_overview",
+      "title": "Faculty of Medical & Allied Health Sciences \u2014 Overview",
+      "markdown_hash": "02a9f50b0dccfbbc55e2bbc7931f56ba78fcd5607441421b500ad3e7e4ad918d",
+      "docx_hash": "297bec7189587378e5a5c0237803d9b48d36aac877f561489aa9cd9aa5bc7775",
+      "sidecar_hash": "79aede40b43a272109b19e766b0f016fff4863409b3e299cd26ead7a89ff9537",
+      "parity_status": "PASS"
+    },
+    {
+      "document_id": "srgi_lucknow_d_pharma_programme",
+      "title": "Diploma in Pharmacy (D.Pharm) \u2014 2-Year Entry-Level Pharmacy Programme",
+      "markdown_hash": "a3ef62b6b8ad8ec59713fefbfbe6609a75a8cfd2dd5279b913eab1624c936062",
+      "docx_hash": "6c26a120455660968458425e429870f0784d04a8b72a17bb51aa25df6063ff45",
+      "sidecar_hash": "2d46edb0128582cf96572a2fcd9ebd04f7e732e13ff2ddcc62224c92ba8308a2",
+      "parity_status": "PASS"
+    },
+    {
+      "document_id": "srgi_lucknow_nursing_programme",
+      "title": "Nursing Programme \u2014 Clinical Healthcare & Ayurvedic Nursing",
+      "markdown_hash": "7dc28c23018ac315e3d4a378d81960aee70a681d4251fefccf7f2a320d56ef0e",
+      "docx_hash": "8c38e767e6cae28de6ada8a0fb42ae3f81f0fa06470bf73b63b5a0d2691eae83",
+      "sidecar_hash": "15f646a99dcd3e5c9e46c8a7a96c39fc3eb0b5c338fa5bee1e024ee589ca314b",
+      "parity_status": "PASS"
+    },
+    {
+      "document_id": "srgi_lucknow_homeopathy_programme",
+      "title": "Diploma in Homeopathic Pharmacy (DHP)",
+      "markdown_hash": "5ff31e0fe340e81144b5504cfe77edbfea721138081d1cc33bf3ab9a67aedee8",
+      "docx_hash": "29cfbb1af8bc27f1abc3cbb99a50314c01c122121d541dd0cb92296b7ac5bc37",
+      "sidecar_hash": "d8daec458fcfa74953b56c73850d2247895b7f2bd3476c59387ddd5353fe5908",
+      "parity_status": "PASS"
+    },
+    {
+      "document_id": "srgi_lucknow_bvoc_overview",
+      "title": "Bachelor of Vocation (B.Voc) Programmes \u2014 UGC Skill Education Framework",
+      "markdown_hash": "df058bfa1dc31e8a48d4e1ce8afbb2793ea622fef9d61d51f05e6ee0c59d7137",
+      "docx_hash": "7cf4adf74b46604e8fa60c3e06ef6e560445ef41a0bc567a158fca734a54430a",
+      "sidecar_hash": "a05b3e2cdbb01dc6fb5e779865d8342fddc89cc40e0b12991aa5208425cbf387",
+      "parity_status": "PASS"
+    },
+    {
+      "document_id": "srgi_lucknow_bvoc_software_development",
+      "title": "B.Voc in Software Development",
+      "markdown_hash": "5aafe0f2fe2334f2cf34759fbe819ee158b0796b2d68bc8b30211efffe8c4057",
+      "docx_hash": "2b7a52ba8393d4c3f857a2abb1ccce92dfdcde517434b8c1bc75fd19ba696551",
+      "sidecar_hash": "4874fd63f2b8ab8e07650bf32e0d77a42e7f292d3c4b1c8b24ef0b61bcfdd84c",
+      "parity_status": "PASS"
+    },
+    {
+      "document_id": "srgi_lucknow_bvoc_banking_financial_services",
+      "title": "B.Voc in Banking, Financial Services and Insurance (BFSI)",
+      "markdown_hash": "c3b2b374b96d20c5eb08737f0ec239bc9b91de0a7cada90fd5a81875fe17fda2",
+      "docx_hash": "018d9637ab7148aa3cb871eea4d56082049f348d89d441b57299cbe867626936",
+      "sidecar_hash": "fa66aac3450ad0a4cecd9aa8e80a9d531b7c9e5423538971f55ac5788250ef06",
+      "parity_status": "PASS"
+    },
+    {
+      "document_id": "srgi_lucknow_bvoc_automobile_engineering",
+      "title": "B.Voc in Automobile Engineering",
+      "markdown_hash": "772ccc81402c9e9757266dda488af73f0211e61beb12a52a114da6518fefe18c",
+      "docx_hash": "de5bf79f4a7e96ad1d11604ed7762048b20ad7d134de51c0ee6e30fa37c26ae0",
+      "sidecar_hash": "22687e53b2797431084fc57b5bbf8afec362caf1f982e8c4788c5efe4fd42762",
+      "parity_status": "PASS"
+    },
+    {
+      "document_id": "srgi_lucknow_admissions_enquiry_and_eligibility",
+      "title": "SRGI Lucknow Admissions Procedure, Eligibility and Enquiry Channels",
+      "markdown_hash": "e93b7823321c53e2cda1ba10fb16f26d75ffc186b43c3bb7c3520c82b1a7951e",
+      "docx_hash": "20d8ae6d4f819b2c930fa87f215dd76d0358bddec425efe2602a1ffc263bb6e6",
+      "sidecar_hash": "31b79f958a128cb54ce3a922c7b424309ffa4f228c854d9892e5cd98ba25b4f2",
+      "parity_status": "PASS"
+    },
+    {
+      "document_id": "srgi_lucknow_career_pathfinder_simulator",
+      "title": "SRGI Career Pathfinder and Course Selection Simulator",
+      "markdown_hash": "e3a59f81c679a2710388b7e2e91e016214bc3459451ae54e5fe56b33c7096f20",
+      "docx_hash": "227cfc8258cea5b12a22322b6fd2c43d2ebb8bed40b5caf3f71f247e8c8f382f",
+      "sidecar_hash": "262e10b6b7d802902bcdc0b4ed0d5fb67eebaa1a2d3e7ae6dc351a437d786586",
+      "parity_status": "PASS"
+    },
+    {
+      "document_id": "srgi_lucknow_hostel_accommodation",
+      "title": "Hostel Accommodation and Residential Life (2,000+ Capacity)",
+      "markdown_hash": "23665bb266bb0a1c9f52f9048546db382977fc65811e5c49dcd8747a108d6952",
+      "docx_hash": "769680a97286a66c52dbd935d93bdb022a0c7e4ccc9ede1b5ef80afd5acbce21",
+      "sidecar_hash": "0113982bf930277e2eccd734e5798ba4d4d3d352ec2483c1577d65f6ea309840",
+      "parity_status": "PASS"
+    },
+    {
+      "document_id": "srgi_lucknow_transport_facility",
+      "title": "Transport Fleet and Bus Connectivity Across Lucknow",
+      "markdown_hash": "0bc4ac4303435adce30e8b0ea3ea0532b3e3e5fca76a8ed879b9b01a5541afeb",
+      "docx_hash": "5aefe214253d7a6cb5386d14a9e5a48a819cfdf5a672fa3064f10c576b5a11b0",
+      "sidecar_hash": "799eb05c7edbdec11162437f945e5bed4288a9c8efb197b0c1cfbbe29cf69caf",
+      "parity_status": "PASS"
+    },
+    {
+      "document_id": "srgi_lucknow_central_library",
+      "title": "Central Library System and Digital Knowledge Repositories",
+      "markdown_hash": "37e2d38202cd5c4845ff68ccbcc7c731b5cf573a3a03d7fba15d4a23cbe5ac44",
+      "docx_hash": "8642ff5e09060d859472be593289b74aac9c9f6a89918f92c77f368b1f3eba8d",
+      "sidecar_hash": "0f76d03bb68eb7c7f41a8c05869e4c3b5765acd0ae55a8e9c42f65bece4ed36a",
+      "parity_status": "PASS"
+    },
+    {
+      "document_id": "srgi_lucknow_cafeteria_and_dining",
+      "title": "Cafeteria and Campus Dining Services",
+      "markdown_hash": "d1635dfa9bb7a967951813542f21a6cd8d3ad0cd4322834b67c29d0be2756dde",
+      "docx_hash": "d388d21186af246fceb07d09ae22fc9329bed2a14048da8f065b7c0e752b8fae",
+      "sidecar_hash": "5c956c30e8d1293ff3d8ed4f68959e1b4abf9b1ca62f0bed56a3caf06ce18fc6",
+      "parity_status": "PASS"
+    },
+    {
+      "document_id": "srgi_lucknow_futuristic_labs",
+      "title": "Futuristic Laboratories and Technical Infrastructure",
+      "markdown_hash": "e978e4444c407e6af5cb56157dcef12a7e942b30ef97219b0303e5d342152669",
+      "docx_hash": "635c5212e30970d994c49e44cd0b23266532aa5d91c3d68bb5eb065e7c383fcb",
+      "sidecar_hash": "13c676ee7cce734fd3eba69d2c6225930a4f26b584065ad11d7d0ab298d89724",
+      "parity_status": "PASS"
+    },
+    {
+      "document_id": "srgi_lucknow_smart_classrooms",
+      "title": "Smart Classrooms and Digital Learning Spaces",
+      "markdown_hash": "a4d0f44e7fa764a621932cb634739ef91e103bf520085c891dc0407d240b8a4a",
+      "docx_hash": "7b83d51a840ee02221457df95865715c041aa80882f1b2f5f1b63e3f122f2641",
+      "sidecar_hash": "484bd72e3ba573661a161f68371fada4621917fecffd24bb7b924ed37891d4da",
+      "parity_status": "PASS"
+    },
+    {
+      "document_id": "srgi_lucknow_seminar_halls_and_conference",
+      "title": "Conference Rooms and Seminar Halls",
+      "markdown_hash": "c4535412eb31b56915ae124db33e1e1dab89d24e30b820134773dd14d0343f58",
+      "docx_hash": "f333606a83efed0f08060d0da1bf9642d35fa38449758b050d2e93ecbfb3682c",
+      "sidecar_hash": "5950ad205e424969038c6a9c4616bdf5a91d9512b1d7a1f2b644f134fcfdae24",
+      "parity_status": "PASS"
+    },
+    {
+      "document_id": "srgi_lucknow_indoor_swimming_pool",
+      "title": "Indoor Olympic-Standard Swimming Pool (6-Track)",
+      "markdown_hash": "33bf2b26c8967c5bfb0dd370821a6030342a81eb974fd33a810c6e6a5d95a9dc",
+      "docx_hash": "6932a8580c5ae346caeb5b34dc56150549f51d1fbeaafffa1de6a6bddf2ac89e",
+      "sidecar_hash": "e73325b8fe6fa8800e6b7c947b86ac32ea70024f5dfa8d72aa323e403278cfc4",
+      "parity_status": "PASS"
+    },
+    {
+      "document_id": "srgi_lucknow_sports_ground_and_complex",
+      "title": "65-Acre Sports Complex, Cricket Ground and Gymnasium",
+      "markdown_hash": "dadd21194c030685b486e25a42b7943d0540eb34b99df7202fe2d22f9972f97d",
+      "docx_hash": "1e6f524224e655601cad046b3f8b1cca1725667fa04748c50093013ddac2f30a",
+      "sidecar_hash": "2334a0952b1066ba304c57e0a8653aa1189142b0a61eacd9e50d2228cabfdd32",
+      "parity_status": "PASS"
+    },
+    {
+      "document_id": "srgi_lucknow_training_and_placement_cell",
+      "title": "Training & Placement Cell \u2014 Structure, Training Programmes and Corporate Relations",
+      "markdown_hash": "9b0e64a104dc7d13edea3701b2e2a851a72d8869d5ae17ce5d58f1cadc455e31",
+      "docx_hash": "cfe7858d77ee07444f250742836f0bf0760dfb3a3b2b3298329c7ba751d55925",
+      "sidecar_hash": "35038e2982fe0a6b74cc44ad08d085383ec1914fa502f9e46d0187d79f09144c",
+      "parity_status": "PASS"
+    },
+    {
+      "document_id": "srgi_lucknow_top_placements_and_recruiters",
+      "title": "Placement Performance Dashboard and Top Recruiting Partners",
+      "markdown_hash": "53ff88298c13daf610ad323ff5eacf4ec87faac50674e2313d2f1d17546946f7",
+      "docx_hash": "2c221214696a9b05e48abe14259296297a6f8414be5eb10d571318334a581419",
+      "sidecar_hash": "06395af0d6b98b4074f47f3bc57f472dea6a786b0a4ebacc98ec170fbc3655cb",
+      "parity_status": "PASS"
+    },
+    {
+      "document_id": "srgi_lucknow_student_clubs_and_activities",
+      "title": "Student Clubs, Societies and Cultural Extracurricular Life",
+      "markdown_hash": "51d6bd39109af13bfca1b1f672b70362caff692cf2aca074f600816544702889",
+      "docx_hash": "ba2a80452fbc78ac20136cc3a7be096449b9fbba4cc1324c64ed3e7aa6fa3c5f",
+      "sidecar_hash": "0f08522b916fde772de4fa22c47ce32d54bebeeb81be6400910c4b21c040b628",
+      "parity_status": "PASS"
+    },
+    {
+      "document_id": "srgi_lucknow_student_grievance_redressal",
+      "title": "Student Grievance Redressal Mechanism and Support Portal",
+      "markdown_hash": "47f8f17a5b4c3dab0367eaf163154a3abf7ac13b4bf1747029f843e7bf90733e",
+      "docx_hash": "9fa69467231477ea84bc4700ff9ae8b49eed28fa9dd70e8d0c0926a921df1dda",
+      "sidecar_hash": "f6071c32d9f7113d65e7dd1c307e513aa7aee47637ba5a5331191eae6420e367",
+      "parity_status": "PASS"
+    },
+    {
+      "document_id": "srgi_lucknow_anti_ragging_regulations",
+      "title": "Anti-Ragging Committee, Policies and Zero-Tolerance Mandate",
+      "markdown_hash": "a911f39aea8106f1ea702b4beeaacac4334ca185d1ce14dacbcd06b9ae8ea903",
+      "docx_hash": "75cf2dcf9483c5fb55fed4f091289682c0f7ab189dc8c8f4e330f433a0edee34",
+      "sidecar_hash": "81a5a790b9eb8fafb869157d660010e9db0177ba4b5d7327a831cf9d387183cb",
+      "parity_status": "PASS"
+    },
+    {
+      "document_id": "srgi_lucknow_notices_and_announcements",
+      "title": "Academic Notices, Circulars and Institutional Announcements",
+      "markdown_hash": "421ed6705877136f1a8e5a97669a63d3ad25630bbefd3462ad151ddc36d97403",
+      "docx_hash": "a29b5a25298fb00a33e1c1668481f2434ba63ff65a81a99f1654321f52c1a9fd",
+      "sidecar_hash": "aaeaedc58d01d4ebff14898e46a96f83b3ceb86f1ff78ab3485c92e8d201530a",
+      "parity_status": "PASS"
+    },
+    {
+      "document_id": "srgi_lucknow_events_and_youth_manifesto",
+      "title": "Institutional Events and Uttar Pradesh Youth Manifesto",
+      "markdown_hash": "13fcbf29b6112da0a135a5322c886613db64b8ef66e47bb0c391a059419d1064",
+      "docx_hash": "75daacbfb513e9164e6319d24d16e21c13ff6dc64a56d39341c800e774cf8891",
+      "sidecar_hash": "1587b94a0027d0ede754083287942606bc9097d85aba2d2809cf00d3338f674a",
+      "parity_status": "PASS"
+    },
+    {
+      "document_id": "srgi_lucknow_eminent_speakers",
+      "title": "Eminent Speakers and Distinguished Visitors",
+      "markdown_hash": "8b8f97848d8f7cb6927585bef58bd49fa929f4a16dbc0d945952883064315411",
+      "docx_hash": "cfecff028af480ddd4add53dcd81d542c131778fc9813299002578148becf717",
+      "sidecar_hash": "5bfc65412ecc73e74586afc493c5cb6f6618f7ed7a9b2e5bfe82a64e5cece688",
+      "parity_status": "PASS"
+    },
+    {
+      "document_id": "srgi_lucknow_frequently_asked_questions",
+      "title": "Frequently Asked Questions (FAQ) \u2014 Admissions, Academics and Life at SRGI",
+      "markdown_hash": "c65d8cfff405887291d76a8187b88511cd45763335d4a1bd92ba90aacf845c58",
+      "docx_hash": "4d41ba7c1af695c9026249d189e3d20608c8242986f1d7f003b4fd9395980441",
+      "sidecar_hash": "e653984f20769ee37c962453a6a3684301d375ed76b442367258e1fcbabdfa2f",
+      "parity_status": "PASS"
+    },
+    {
+      "document_id": "srgi_lucknow_campus_contacts_and_directions",
+      "title": "Campus Contacts, Location Directions and Official Helplines",
+      "markdown_hash": "cebb854e100a8a7f4c37edd1cf62b43a25f3fdeda6bd611ab7941303b2ed9c50",
+      "docx_hash": "63b68e61c579a797aadce8581bc7438a711eacf26fad85f4af1eaf9d3054baea",
+      "sidecar_hash": "25096a54767b3cc084dea262f2f42baee23513b6dfda4a64a310b35a97c58133",
+      "parity_status": "PASS"
+    },
+    {
+      "document_id": "srgi_lucknow_official_prospectus_extracts",
+      "title": "Official Institutional Prospectus \u2014 Summary and Documentary Index",
+      "markdown_hash": "ea0b08c82533d5e4b17eb902d9344102c7e214580a66f841f115813295fb7fd5",
+      "docx_hash": "7241649460a9486a2e9472fe81f180b97f695b8f7aa171c80967ac7872b5fa9b",
+      "sidecar_hash": "1f3fc2b713aabc9232b3cb1d7bf0cce9886ec00c59123f1c2ff69d38a8ff2b0f",
+      "parity_status": "PASS"
+    }
+  ]
+}

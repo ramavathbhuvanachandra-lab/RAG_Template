@@ -1,0 +1,49 @@
+{
+  "schema_version": "2.0.0",
+  "institution_id": "srgi_lucknow",
+  "institution_name": "S. R. Group of Institutions (SRGI), Lucknow",
+  "document_id": "srgi_lucknow_training_and_placement_cell",
+  "title": "Training & Placement Cell \u2014 Structure, Training Programmes and Corporate Relations",
+  "category": "10_placements_and_careers",
+  "subcategory": "placement_cell",
+  "document_type": "institutional_knowledge",
+  "language": "en",
+  "markdown_path": "documents/10_placements_and_careers/srgi_lucknow_training_and_placement_cell.md",
+  "docx_path": "documents/10_placements_and_careers/srgi_lucknow_training_and_placement_cell.docx",
+  "source_urls": [
+    "https://srgi.in/about-training-and-placement"
+  ],
+  "canonical_source_urls": [
+    "https://srgi.in/about-training-and-placement"
+  ],
+  "source_hashes": [
+    "67314011969d4d4d42d7eb4a017de50f39c8df9bb5af84aec30c59f10cbdea4f"
+  ],
+  "markdown_hash": "9b0e64a104dc7d13edea3701b2e2a851a72d8869d5ae17ce5d58f1cadc455e31",
+  "docx_hash": "cfe7858d77ee07444f250742836f0bf0760dfb3a3b2b3298329c7ba751d55925",
+  "byte_size_md": 2197,
+  "byte_size_docx": 37942,
+  "word_count_md": 237,
+  "sections_count": 6,
+  "table_count": 0,
+  "content_quality_status": "PASS",
+  "conflict_status": "NO_UNRESOLVED_CONFLICTS",
+  "provenance_section_count": 1,
+  "docx_provenance_heading_count": 1,
+  "docx_leaked_syntax_count": 0,
+  "summary": "Inception of T&P Cell in 2009, soft skills development, technical bootcamps, aptitude coaching, corporate internships, and interview readiness.",
+  "keywords": [
+    "Training and Placement",
+    "T&P Cell",
+    "Mr. Kaushal Chandra",
+    "Employability",
+    "Soft Skills",
+    "Internships"
+  ],
+  "related_documents": [
+    "srgi_lucknow_top_placements_and_recruiters",
+    "srgi_lucknow_overview"
+  ],
+  "created_at": "2026-10-23T21:19:34.149609+00:00",
+  "pipeline_stage": "release_v3_production"
+}

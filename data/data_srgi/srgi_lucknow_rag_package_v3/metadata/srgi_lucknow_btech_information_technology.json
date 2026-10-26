@@ -1,0 +1,48 @@
+{
+  "schema_version": "2.0.0",
+  "institution_id": "srgi_lucknow",
+  "institution_name": "S. R. Group of Institutions (SRGI), Lucknow",
+  "document_id": "srgi_lucknow_btech_information_technology",
+  "title": "B.Tech in Information Technology (IT)",
+  "category": "04_programmes_engineering",
+  "subcategory": "undergraduate_engineering",
+  "document_type": "institutional_knowledge",
+  "language": "en",
+  "markdown_path": "documents/04_programmes_engineering/srgi_lucknow_btech_information_technology.md",
+  "docx_path": "documents/04_programmes_engineering/srgi_lucknow_btech_information_technology.docx",
+  "source_urls": [
+    "https://srgi.in/btech/it"
+  ],
+  "canonical_source_urls": [
+    "https://srgi.in/btech/it"
+  ],
+  "source_hashes": [
+    "bd0a518827ef32d1fdb02f38fb7ff524802a063b60cc56bb6467097113721dcb"
+  ],
+  "markdown_hash": "28d0c940276f63726b7d63c1c2f31b87cc4badddd02983046c8d261b3b45dc54",
+  "docx_hash": "c42ba980873751d8f626b325bf3a98c07437ba1b9fb02e4a913dd259724f14e0",
+  "byte_size_md": 2021,
+  "byte_size_docx": 37824,
+  "word_count_md": 224,
+  "sections_count": 8,
+  "table_count": 0,
+  "content_quality_status": "PASS",
+  "conflict_status": "NO_UNRESOLVED_CONFLICTS",
+  "provenance_section_count": 1,
+  "docx_provenance_heading_count": 1,
+  "docx_leaked_syntax_count": 0,
+  "summary": "Information Technology degree details, web services, enterprise information systems, cybersecurity, sanctioned intake of 60 seats, and industry demand.",
+  "keywords": [
+    "B.Tech IT",
+    "Information Technology",
+    "Enterprise Systems",
+    "Cloud Computing",
+    "Intake 60"
+  ],
+  "related_documents": [
+    "srgi_lucknow_btech_computer_science_engineering",
+    "srgi_lucknow_btech_computer_science"
+  ],
+  "created_at": "2026-10-23T21:19:33.234087+00:00",
+  "pipeline_stage": "release_v3_production"
+}

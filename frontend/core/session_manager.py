@@ -174,6 +174,7 @@ def add_assistant_message(response: AssistantResponse) -> ChatMessage:
         if len(st.session_state.execution_traces) > MAX_EXECUTION_TRACES:
             st.session_state.execution_traces = st.session_state.execution_traces[-MAX_EXECUTION_TRACES:]
         st.session_state.selected_trace_id = turn_id
+        st.session_state["pending_trace_id"] = turn_id
 
     msg = ChatMessage(
         role="assistant",

@@ -1,0 +1,49 @@
+{
+  "schema_version": "2.0.0",
+  "institution_id": "srgi_lucknow",
+  "institution_name": "S. R. Group of Institutions (SRGI), Lucknow",
+  "document_id": "srgi_lucknow_indoor_swimming_pool",
+  "title": "Indoor Olympic-Standard Swimming Pool (6-Track)",
+  "category": "09_campus_facilities_and_services",
+  "subcategory": "sports_and_recreation",
+  "document_type": "institutional_knowledge",
+  "language": "en",
+  "markdown_path": "documents/09_campus_facilities_and_services/srgi_lucknow_indoor_swimming_pool.md",
+  "docx_path": "documents/09_campus_facilities_and_services/srgi_lucknow_indoor_swimming_pool.docx",
+  "source_urls": [
+    "https://srgi.in/swimming-pool"
+  ],
+  "canonical_source_urls": [
+    "https://srgi.in/swimming-pool"
+  ],
+  "source_hashes": [
+    "5eaad27cead85784bfe859a2804d9ba9b0fa1109729ba6ef0c8cda23a726b841"
+  ],
+  "markdown_hash": "33bf2b26c8967c5bfb0dd370821a6030342a81eb974fd33a810c6e6a5d95a9dc",
+  "docx_hash": "6932a8580c5ae346caeb5b34dc56150549f51d1fbeaafffa1de6a6bddf2ac89e",
+  "byte_size_md": 1960,
+  "byte_size_docx": 37800,
+  "word_count_md": 209,
+  "sections_count": 6,
+  "table_count": 0,
+  "content_quality_status": "PASS",
+  "conflict_status": "NO_UNRESOLVED_CONFLICTS",
+  "provenance_section_count": 1,
+  "docx_provenance_heading_count": 1,
+  "docx_leaked_syntax_count": 0,
+  "summary": "National standard 6-track Olympic-style indoor swimming pool, certified lifeguards, advanced filtration and chlorination, coaching schedules.",
+  "keywords": [
+    "Swimming Pool",
+    "6-Track",
+    "Olympic Standard",
+    "Lifeguards",
+    "Water Filtration",
+    "Sports"
+  ],
+  "related_documents": [
+    "srgi_lucknow_sports_ground_and_complex",
+    "srgi_lucknow_overview"
+  ],
+  "created_at": "2026-10-23T21:19:34.088203+00:00",
+  "pipeline_stage": "release_v3_production"
+}

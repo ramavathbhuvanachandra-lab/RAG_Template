@@ -1,0 +1,50 @@
+{
+  "schema_version": "2.0.0",
+  "institution_id": "srgi_lucknow",
+  "institution_name": "S. R. Group of Institutions (SRGI), Lucknow",
+  "document_id": "srgi_lucknow_management_overview",
+  "title": "Faculty of Management Studies \u2014 Academic Framework and Programmes",
+  "category": "05_programmes_management",
+  "subcategory": "management_studies",
+  "document_type": "institutional_knowledge",
+  "language": "en",
+  "markdown_path": "documents/05_programmes_management/srgi_lucknow_management_overview.md",
+  "docx_path": "documents/05_programmes_management/srgi_lucknow_management_overview.docx",
+  "source_urls": [
+    "https://srgi.in/management"
+  ],
+  "canonical_source_urls": [
+    "https://srgi.in/management"
+  ],
+  "source_hashes": [
+    "ef9f7807b67736568945b06b15cd8dfaded2c91a6ed6403655bb6181dbd47005"
+  ],
+  "markdown_hash": "8c10f48aec829a13fbdd1b097e18eda13eda6260b6e3e357a38db8a078096a41",
+  "docx_hash": "5a034da2003b9b3ba15547947b032935c9f9998fdc3e721b557f633ae829a3c0",
+  "byte_size_md": 2429,
+  "byte_size_docx": 38295,
+  "word_count_md": 303,
+  "sections_count": 7,
+  "table_count": 5,
+  "content_quality_status": "PASS",
+  "conflict_status": "NO_UNRESOLVED_CONFLICTS",
+  "provenance_section_count": 1,
+  "docx_provenance_heading_count": 1,
+  "docx_leaked_syntax_count": 0,
+  "summary": "Overview of management education at SRGI Lucknow, MBA, Integrated MBA (IMBA), Applied Global Management Programme (AGMP), and corporate leadership ecosystem.",
+  "keywords": [
+    "Management Studies",
+    "MBA Overview",
+    "IMBA",
+    "AGMP",
+    "SRM Business School",
+    "Business Education"
+  ],
+  "related_documents": [
+    "srgi_lucknow_mba_programme",
+    "srgi_lucknow_integrated_mba",
+    "srgi_lucknow_applied_global_management"
+  ],
+  "created_at": "2026-10-23T21:19:33.478474+00:00",
+  "pipeline_stage": "release_v3_production"
+}

@@ -18,7 +18,7 @@ import streamlit as st
 
 
 def render_developer_trace_inspector() -> None:
-    """Render the centralized per-turn developer diagnostics inspector with trace selector."""
+    """Render the persistent multi-turn developer diagnostics inspector."""
     if not st.session_state.get("show_retrieval_diagnostics", False):
         return
 
@@ -31,49 +31,39 @@ def render_developer_trace_inspector() -> None:
             )
         return
 
-    with st.expander("🛠️ Developer Diagnostics — Request and Evidence Trace", expanded=True):
-        if st.session_state.get("_turn_in_progress", False):
-            st.info("⏳ **Turn in Progress:** A new conversational turn is actively executing. Finalized stage measurements will appear here upon completion.")
+    st.markdown("---")
+    st.markdown(f"### 🛠️ Retrieval & Pipeline Diagnostics ({len(traces)} Completed Turn{'s' if len(traces) != 1 else ''})")
+    st.caption(
+        f"Displaying persistent diagnostic traces for all {len(traces)} completed turn(s) in this session. "
+        "Each turn's retrieval funnel, packaged context, timing breakdown, and candidate decisions are preserved. "
+        "Diagnostics are read-only and captured non-invasively during execution."
+    )
 
-        st.markdown("#### 🔬 Execution Trace Selector")
-        st.caption(
-            "Select any completed conversation turn to inspect its end-to-end retrieval and verification trace. "
-            "Diagnostics are read-only and captured non-invasively during original execution."
-        )
+    if st.session_state.get("_turn_in_progress", False):
+        st.info("⏳ **Turn in Progress:** A new conversational turn is actively executing. Finalized stage measurements will appear here upon completion.")
 
-        trace_ids = [t["turn_id"] for t in traces]
-        trace_lookup = {t["turn_id"]: t for t in traces}
+    # Render each completed turn in its own independent expandable container
+    for idx, active_trace in enumerate(traces):
+        turn_id = active_trace.get("turn_id", f"turn_{idx}")
+        turn_no = active_trace.get("turn_number", idx + 1)
+        preview = active_trace.get("query_preview", "") or active_trace.get("query", "")
+        latency = active_trace.get("latency_seconds", 0.0)
+        status = str(active_trace.get("terminal_status", "SUCCESS")).upper()
+        time_str = active_trace.get("timestamp", "")
 
-        selected_id = st.session_state.get("selected_trace_id")
-        if selected_id not in trace_lookup:
-            selected_id = trace_ids[-1]
-            st.session_state["selected_trace_id"] = selected_id
+        is_latest = (idx == len(traces) - 1)
+        is_selected = (turn_id == st.session_state.get("selected_trace_id"))
+        should_expand = is_latest or is_selected
 
-        def _format_trace(tid: str) -> str:
-            t = trace_lookup[tid]
-            turn_no = t.get("turn_number", 1)
-            time_str = t.get("timestamp", "")
-            preview = t.get("query_preview", "")
-            latency = t.get("latency_seconds", 0.0)
-            status = str(t.get("terminal_status", "SUCCESS")).upper()
-            return f"Turn #{turn_no} [{time_str}] — \"{preview}\" ({latency:.2f}s) [{status}]"
+        status_emoji = "🟢" if status == "SUCCESS" else ("🟡" if status == "SAFE_REFUSAL" else "🔴")
+        header = f"Turn #{turn_no} [{time_str}] — {status_emoji} \"{preview}\" ({latency:.2f}s) — ID: `{turn_id}`"
 
-        chosen_id = st.selectbox(
-            "Select Turn Trace to Inspect:",
-            options=trace_ids,
-            index=trace_ids.index(selected_id),
-            format_func=_format_trace,
-            key="trace_selector_dropdown",
-        )
-        st.session_state["selected_trace_id"] = chosen_id
-
-        active_trace = trace_lookup[chosen_id]
-        diag = active_trace.get("diagnostics")
-        if not diag:
-            st.warning("No diagnostic payload attached to this turn.")
-            return
-
-        _render_turn_panels(diag, active_trace)
+        with st.expander(header, expanded=should_expand):
+            diag = active_trace.get("diagnostics")
+            if not diag:
+                st.warning(f"No diagnostic payload attached to Turn #{turn_no} ({turn_id}).")
+                continue
+            _render_turn_panels(diag, active_trace)
 
 
 def _render_turn_panels(diagnostics: Mapping[str, Any], trace_meta: Mapping[str, Any]) -> None:

@@ -1,0 +1,13 @@
+{
+  "institution_id": "srgi_lucknow",
+  "target_institution": "SRGI Lucknow",
+  "excluded_institutions": [
+    "External Sister Campuses"
+  ],
+  "academic_faculties_in_scope": [
+    "Faculty of Engineering & Technology",
+    "Faculty of Management Studies",
+    "Faculty of Skill & Vocational Studies",
+    "Faculty of Medical & Allied Health Sciences"
+  ]
+}

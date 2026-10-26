@@ -1,0 +1,48 @@
+{
+  "schema_version": "2.0.0",
+  "institution_id": "srgi_lucknow",
+  "institution_name": "S. R. Group of Institutions (SRGI), Lucknow",
+  "document_id": "srgi_lucknow_futuristic_labs",
+  "title": "Futuristic Laboratories and Technical Infrastructure",
+  "category": "09_campus_facilities_and_services",
+  "subcategory": "laboratory_facilities",
+  "document_type": "institutional_knowledge",
+  "language": "en",
+  "markdown_path": "documents/09_campus_facilities_and_services/srgi_lucknow_futuristic_labs.md",
+  "docx_path": "documents/09_campus_facilities_and_services/srgi_lucknow_futuristic_labs.docx",
+  "source_urls": [
+    "https://srgi.in/labs"
+  ],
+  "canonical_source_urls": [
+    "https://srgi.in/labs"
+  ],
+  "source_hashes": [
+    "37a65d19e4052b33a13b1c02e76f3a165297877dbfd2c1d853c60ad7d8eeb432"
+  ],
+  "markdown_hash": "e978e4444c407e6af5cb56157dcef12a7e942b30ef97219b0303e5d342152669",
+  "docx_hash": "635c5212e30970d994c49e44cd0b23266532aa5d91c3d68bb5eb065e7c383fcb",
+  "byte_size_md": 2104,
+  "byte_size_docx": 37922,
+  "word_count_md": 220,
+  "sections_count": 6,
+  "table_count": 0,
+  "content_quality_status": "PASS",
+  "conflict_status": "NO_UNRESOLVED_CONFLICTS",
+  "provenance_section_count": 1,
+  "docx_provenance_heading_count": 1,
+  "docx_leaked_syntax_count": 0,
+  "summary": "High-tech engineering, computing, electronics, mechanical, and pharmaceutical laboratories, industrial-grade equipment, practical experimentation.",
+  "keywords": [
+    "Futuristic Labs",
+    "Computer Labs",
+    "Engineering Labs",
+    "Workshops",
+    "Equipment"
+  ],
+  "related_documents": [
+    "srgi_lucknow_btech_overview",
+    "srgi_lucknow_smart_classrooms"
+  ],
+  "created_at": "2026-10-23T21:19:34.004798+00:00",
+  "pipeline_stage": "release_v3_production"
+}

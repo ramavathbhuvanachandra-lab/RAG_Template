@@ -1,0 +1,50 @@
+{
+  "schema_version": "2.0.0",
+  "institution_id": "srgi_lucknow",
+  "institution_name": "S. R. Group of Institutions (SRGI), Lucknow",
+  "document_id": "srgi_lucknow_central_library",
+  "title": "Central Library System and Digital Knowledge Repositories",
+  "category": "09_campus_facilities_and_services",
+  "subcategory": "learning_resources",
+  "document_type": "institutional_knowledge",
+  "language": "en",
+  "markdown_path": "documents/09_campus_facilities_and_services/srgi_lucknow_central_library.md",
+  "docx_path": "documents/09_campus_facilities_and_services/srgi_lucknow_central_library.docx",
+  "source_urls": [
+    "https://srgi.in/central-library"
+  ],
+  "canonical_source_urls": [
+    "https://srgi.in/central-library"
+  ],
+  "source_hashes": [
+    "fb70219e8c942fadfad2b7b4106f532b19fa359429ba8bf62d9f8626b46a66c4"
+  ],
+  "markdown_hash": "37e2d38202cd5c4845ff68ccbcc7c731b5cf573a3a03d7fba15d4a23cbe5ac44",
+  "docx_hash": "8642ff5e09060d859472be593289b74aac9c9f6a89918f92c77f368b1f3eba8d",
+  "byte_size_md": 2424,
+  "byte_size_docx": 38355,
+  "word_count_md": 285,
+  "sections_count": 7,
+  "table_count": 2,
+  "content_quality_status": "PASS",
+  "conflict_status": "NO_UNRESOLVED_CONFLICTS",
+  "provenance_section_count": 1,
+  "docx_provenance_heading_count": 1,
+  "docx_leaked_syntax_count": 0,
+  "summary": "Central Library collection of 53,760+ books, 448+ journals, 13,440 sq. ft. area, Techlib-7 software, OPAC, NDL, DELNET, and Sugamya Pustakalaya access.",
+  "keywords": [
+    "Central Library",
+    "53760 Books",
+    "448 Journals",
+    "Techlib-7",
+    "DELNET",
+    "NDL",
+    "Sugamya Pustakalaya"
+  ],
+  "related_documents": [
+    "srgi_lucknow_smart_classrooms",
+    "srgi_lucknow_overview"
+  ],
+  "created_at": "2026-10-23T21:19:33.949585+00:00",
+  "pipeline_stage": "release_v3_production"
+}

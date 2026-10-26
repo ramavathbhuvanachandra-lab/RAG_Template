@@ -1,0 +1,48 @@
+{
+  "schema_version": "2.0.0",
+  "institution_id": "srgi_lucknow",
+  "institution_name": "S. R. Group of Institutions (SRGI), Lucknow",
+  "document_id": "srgi_lucknow_applied_global_management",
+  "title": "Applied Global Management Programme (AGMP)",
+  "category": "05_programmes_management",
+  "subcategory": "management_studies",
+  "document_type": "institutional_knowledge",
+  "language": "en",
+  "markdown_path": "documents/05_programmes_management/srgi_lucknow_applied_global_management.md",
+  "docx_path": "documents/05_programmes_management/srgi_lucknow_applied_global_management.docx",
+  "source_urls": [
+    "https://srgi.in/management/agmp"
+  ],
+  "canonical_source_urls": [
+    "https://srgi.in/management/agmp"
+  ],
+  "source_hashes": [
+    "675c4364ab483d609a9773ee12666987ed170db6acee145af89f6458c44db645"
+  ],
+  "markdown_hash": "38d79f9bcfaf97ade5791af10ea0e54dc025033564f1cd7c5a941c3877364b35",
+  "docx_hash": "da41551c6ba85b6f97b9f519d393b7580c27f5e9861b866bbc01b8ad6979b27a",
+  "byte_size_md": 1710,
+  "byte_size_docx": 37653,
+  "word_count_md": 179,
+  "sections_count": 6,
+  "table_count": 0,
+  "content_quality_status": "PASS",
+  "conflict_status": "NO_UNRESOLVED_CONFLICTS",
+  "provenance_section_count": 1,
+  "docx_provenance_heading_count": 1,
+  "docx_leaked_syntax_count": 0,
+  "summary": "2-year advanced general management programme focused on international corporate strategy, contemporary corporate challenges, sanctioned intake of 60 seats.",
+  "keywords": [
+    "AGMP",
+    "Applied Global Management",
+    "Global Business",
+    "Intake 60",
+    "Executive Management"
+  ],
+  "related_documents": [
+    "srgi_lucknow_management_overview",
+    "srgi_lucknow_mba_programme"
+  ],
+  "created_at": "2026-10-23T21:19:33.569151+00:00",
+  "pipeline_stage": "release_v3_production"
+}

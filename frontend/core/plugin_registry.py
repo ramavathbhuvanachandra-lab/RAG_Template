@@ -61,7 +61,14 @@ def _ensure_default_plugins_registered() -> None:
     except Exception as exc:
         logger.warning("Could not auto-register IITJ UI plugin: %s", exc)
 
-    # 2. Register template plugin
+    # 2. Register SRGI plugin
+    try:
+        from frontend.plugins.srgi.plugin import SRGIUIPlugin
+        register_ui_plugin(SRGIUIPlugin())
+    except Exception as exc:
+        logger.warning("Could not auto-register SRGI UI plugin: %s", exc)
+
+    # 3. Register template plugin
     try:
         from frontend.plugins.template.plugin import TemplateUIPlugin
         register_ui_plugin(TemplateUIPlugin())
@@ -69,6 +76,7 @@ def _ensure_default_plugins_registered() -> None:
         logger.warning("Could not auto-register Template UI plugin: %s", exc)
 
     _PLUGINS_DISCOVERED = True
+
 
 
 def get_ui_plugin(institution_id: str | None) -> InstitutionUIPlugin | None:

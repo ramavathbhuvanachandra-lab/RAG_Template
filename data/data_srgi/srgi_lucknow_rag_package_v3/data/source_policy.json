@@ -1,0 +1,13 @@
+{
+  "institution_id": "srgi_lucknow",
+  "primary_domain": "https://srgi.in",
+  "allowed_schemes": [
+    "https",
+    "http"
+  ],
+  "external_domains_disallowed": [
+    "external-campus-legacy.ac.in"
+  ],
+  "max_redirect_depth": 3,
+  "user_agent": "KnowledgeIngestionEngine/3.0.0"
+}

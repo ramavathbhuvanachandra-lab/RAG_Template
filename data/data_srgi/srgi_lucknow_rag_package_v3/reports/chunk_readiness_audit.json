@@ -1,0 +1,3920 @@
+{
+  "institution_id": "srgi_lucknow",
+  "evaluation_mode": "QA_STRUCTURAL_SIMULATION_DRY_RUN",
+  "total_documents_evaluated": 55,
+  "total_simulated_chunks": 379,
+  "chunks_preserving_context_count": 379,
+  "context_retention_rate_pct": 100.0,
+  "table_header_integrity_pct": 100.0,
+  "headless_sections_count": 0,
+  "orphan_table_fragments_count": 0,
+  "overall_readiness_status": "READY_FOR_RAG_INGESTION",
+  "document_evaluations": [
+    {
+      "document_id": "srgi_lucknow_overview",
+      "category": "01_institutional_profile",
+      "title": "SRGI Lucknow Institutional Overview, Campus Profile and History",
+      "simulated_chunks_count": 9,
+      "chunks": [
+        {
+          "chunk_index": 0,
+          "section_heading": "Overview",
+          "has_table": false,
+          "table_header_preserved": true,
+          "entity_context_preserved": true,
+          "word_count": 43,
+          "status": "CHUNK_READY"
+        },
+        {
+          "chunk_index": 1,
+          "section_heading": "Scope",
+          "has_table": false,
+          "table_header_preserved": true,
+          "entity_context_preserved": true,
+          "word_count": 23,
+          "status": "CHUNK_READY"
+        },
+        {
+          "chunk_index": 2,
+          "section_heading": "1. Executive Summary & Identity",
+          "has_table": false,
+          "table_header_preserved": true,
+          "entity_context_preserved": true,
+          "word_count": 93,
+          "status": "CHUNK_READY"
+        },
+        {
+          "chunk_index": 3,
+          "section_heading": "2. Institutional Legacy & Key Statistics",
+          "has_table": true,
+          "table_header_preserved": true,
+          "entity_context_preserved": true,
+          "word_count": 215,
+          "status": "CHUNK_READY"
+        },
+        {
+          "chunk_index": 4,
+          "section_heading": "3. Location, Connectivity & Ambience",
+          "has_table": false,
+          "table_header_preserved": true,
+          "entity_context_preserved": true,
+          "word_count": 80,
+          "status": "CHUNK_READY"
+        },
+        {
+          "chunk_index": 5,
+          "section_heading": "4. Academic Structure & Disciplines",
+          "has_table": false,
+          "table_header_preserved": true,
+          "entity_context_preserved": true,
+          "word_count": 111,
+          "status": "CHUNK_READY"
+        },
+        {
+          "chunk_index": 6,
+          "section_heading": "5. Vision and Mission Framework",
+          "has_table": false,
+          "table_header_preserved": true,
+          "entity_context_preserved": true,
+          "word_count": 72,
+          "status": "CHUNK_READY"
+        },
+        {
+          "chunk_index": 7,
+          "section_heading": "Related Information",
+          "has_table": false,
+          "table_header_preserved": true,
+          "entity_context_preserved": true,
+          "word_count": 9,
+          "status": "CHUNK_READY"
+        },
+        {
+          "chunk_index": 8,
+          "section_heading": "Official Sources and Provenance",
+          "has_table": false,
+          "table_header_preserved": true,
+          "entity_context_preserved": true,
+          "word_count": 48,
+          "status": "CHUNK_READY"
+        }
+      ],
+      "document_readiness_status": "READY_FOR_RAG_INGESTION"
+    },
+    {
+      "document_id": "srgi_lucknow_heritage_and_inspiration",
+      "category": "01_institutional_profile",
+      "title": "SRGI Lucknow Heritage, Sponsoring Trust and Foundational Inspiration",
+      "simulated_chunks_count": 8,
+      "chunks": [
+        {
+          "chunk_index": 0,
+          "section_heading": "Overview",
+          "has_table": false,
+          "table_header_preserved": true,
+          "entity_context_preserved": true,
+          "word_count": 43,
+          "status": "CHUNK_READY"
+        },
+        {
+          "chunk_index": 1,
+          "section_heading": "Scope",
+          "has_table": false,
+          "table_header_preserved": true,
+          "entity_context_preserved": true,
+          "word_count": 28,
+          "status": "CHUNK_READY"
+        },
+        {
+          "chunk_index": 2,
+          "section_heading": "1. The Guiding Light: Late Subedar Singh & Late Raj Devi Singh",
+          "has_table": false,
+          "table_header_preserved": true,
+          "entity_context_preserved": true,
+          "word_count": 101,
+          "status": "CHUNK_READY"
+        },
+        {
+          "chunk_index": 3,
+          "section_heading": "2. Establishment of the Sponsoring Trust",
+          "has_table": true,
+          "table_header_preserved": true,
+          "entity_context_preserved": true,
+          "word_count": 108,
+          "status": "CHUNK_READY"
+        },
+        {
+          "chunk_index": 4,
+          "section_heading": "3. The Tri-Fold Philosophy: Shiksha, Sanskar, and Rozgar",
+          "has_table": false,
+          "table_header_preserved": true,
+          "entity_context_preserved": true,
+          "word_count": 73,
+          "status": "CHUNK_READY"
+        },
+        {
+          "chunk_index": 5,
+          "section_heading": "4. Growth Trajectory Since Inception",
+          "has_table": false,
+          "table_header_preserved": true,
+          "entity_context_preserved": true,
+          "word_count": 114,
+          "status": "CHUNK_READY"
+        },
+        {
+          "chunk_index": 6,
+          "section_heading": "Related Information",
+          "has_table": false,
+          "table_header_preserved": true,
+          "entity_context_preserved": true,
+          "word_count": 7,
+          "status": "CHUNK_READY"
+        },
+        {
+          "chunk_index": 7,
+          "section_heading": "Official Sources and Provenance",
+          "has_table": false,
+          "table_header_preserved": true,
+          "entity_context_preserved": true,
+          "word_count": 48,
+          "status": "CHUNK_READY"
+        }
+      ],
+      "document_readiness_status": "READY_FOR_RAG_INGESTION"
+    },
+    {
+      "document_id": "srgi_lucknow_chairman_message",
+      "category": "02_governance_and_leadership",
+      "title": "Message from the Chairman \u2014 Mr. Pawan Singh Chauhan",
+      "simulated_chunks_count": 7,
+      "chunks": [
+        {
+          "chunk_index": 0,
+          "section_heading": "Overview",
+          "has_table": false,
+          "table_header_preserved": true,
+          "entity_context_preserved": true,
+          "word_count": 43,
+          "status": "CHUNK_READY"
+        },
+        {
+          "chunk_index": 1,
+          "section_heading": "Scope",
+          "has_table": false,
+          "table_header_preserved": true,
+          "entity_context_preserved": true,
+          "word_count": 38,
+          "status": "CHUNK_READY"
+        },
+        {
+          "chunk_index": 2,
+          "section_heading": "Direct Message from the Chairman",
+          "has_table": false,
+          "table_header_preserved": true,
+          "entity_context_preserved": true,
+          "word_count": 164,
+          "status": "CHUNK_READY"
+        },
+        {
+          "chunk_index": 3,
+          "section_heading": "Leadership Profile & Official Portfolios",
+          "has_table": false,
+          "table_header_preserved": true,
+          "entity_context_preserved": true,
+          "word_count": 54,
+          "status": "CHUNK_READY"
+        },
+        {
+          "chunk_index": 4,
+          "section_heading": "Institutional Context & Strategic Priorities (Derived Analysis)",
+          "has_table": false,
+          "table_header_preserved": true,
+          "entity_context_preserved": true,
+          "word_count": 87,
+          "status": "CHUNK_READY"
+        },
+        {
+          "chunk_index": 5,
+          "section_heading": "Related Information",
+          "has_table": false,
+          "table_header_preserved": true,
+          "entity_context_preserved": true,
+          "word_count": 17,
+          "status": "CHUNK_READY"
+        },
+        {
+          "chunk_index": 6,
+          "section_heading": "Official Sources and Provenance",
+          "has_table": false,
+          "table_header_preserved": true,
+          "entity_context_preserved": true,
+          "word_count": 46,
+          "status": "CHUNK_READY"
+        }
+      ],
+      "document_readiness_status": "READY_FOR_RAG_INGESTION"
+    },
+    {
+      "document_id": "srgi_lucknow_chairperson_message",
+      "category": "02_governance_and_leadership",
+      "title": "Message from the Chairperson \u2014 Mrs. Nirmala Singh Chauhan",
+      "simulated_chunks_count": 7,
+      "chunks": [
+        {
+          "chunk_index": 0,
+          "section_heading": "Overview",
+          "has_table": false,
+          "table_header_preserved": true,
+          "entity_context_preserved": true,
+          "word_count": 43,
+          "status": "CHUNK_READY"
+        },
+        {
+          "chunk_index": 1,
+          "section_heading": "Scope",
+          "has_table": false,
+          "table_header_preserved": true,
+          "entity_context_preserved": true,
+          "word_count": 19,
+          "status": "CHUNK_READY"
+        },
+        {
+          "chunk_index": 2,
+          "section_heading": "1. Chairperson Profile",
+          "has_table": false,
+          "table_header_preserved": true,
+          "entity_context_preserved": true,
+          "word_count": 19,
+          "status": "CHUNK_READY"
+        },
+        {
+          "chunk_index": 3,
+          "section_heading": "2. Official Address to Prospective & Enrolled Students",
+          "has_table": false,
+          "table_header_preserved": true,
+          "entity_context_preserved": true,
+          "word_count": 117,
+          "status": "CHUNK_READY"
+        },
+        {
+          "chunk_index": 4,
+          "section_heading": "3. Strategic Campus Initiatives",
+          "has_table": false,
+          "table_header_preserved": true,
+          "entity_context_preserved": true,
+          "word_count": 63,
+          "status": "CHUNK_READY"
+        },
+        {
+          "chunk_index": 5,
+          "section_heading": "Related Information",
+          "has_table": false,
+          "table_header_preserved": true,
+          "entity_context_preserved": true,
+          "word_count": 7,
+          "status": "CHUNK_READY"
+        },
+        {
+          "chunk_index": 6,
+          "section_heading": "Official Sources and Provenance",
+          "has_table": false,
+          "table_header_preserved": true,
+          "entity_context_preserved": true,
+          "word_count": 46,
+          "status": "CHUNK_READY"
+        }
+      ],
+      "document_readiness_status": "READY_FOR_RAG_INGESTION"
+    },
+    {
+      "document_id": "srgi_lucknow_vice_chairman_message",
+      "category": "02_governance_and_leadership",
+      "title": "Message from the Vice-Chairman \u2014 Mr. Piyush Singh Chauhan",
+      "simulated_chunks_count": 7,
+      "chunks": [
+        {
+          "chunk_index": 0,
+          "section_heading": "Overview",
+          "has_table": false,
+          "table_header_preserved": true,
+          "entity_context_preserved": true,
+          "word_count": 43,
+          "status": "CHUNK_READY"
+        },
+        {
+          "chunk_index": 1,
+          "section_heading": "Scope",
+          "has_table": false,
+          "table_header_preserved": true,
+          "entity_context_preserved": true,
+          "word_count": 19,
+          "status": "CHUNK_READY"
+        },
+        {
+          "chunk_index": 2,
+          "section_heading": "1. Vice-Chairman Profile",
+          "has_table": false,
+          "table_header_preserved": true,
+          "entity_context_preserved": true,
+          "word_count": 38,
+          "status": "CHUNK_READY"
+        },
+        {
+          "chunk_index": 3,
+          "section_heading": "2. Official Message",
+          "has_table": false,
+          "table_header_preserved": true,
+          "entity_context_preserved": true,
+          "word_count": 137,
+          "status": "CHUNK_READY"
+        },
+        {
+          "chunk_index": 4,
+          "section_heading": "3. Youth Empowerment & Global Competencies",
+          "has_table": false,
+          "table_header_preserved": true,
+          "entity_context_preserved": true,
+          "word_count": 50,
+          "status": "CHUNK_READY"
+        },
+        {
+          "chunk_index": 5,
+          "section_heading": "Related Information",
+          "has_table": false,
+          "table_header_preserved": true,
+          "entity_context_preserved": true,
+          "word_count": 7,
+          "status": "CHUNK_READY"
+        },
+        {
+          "chunk_index": 6,
+          "section_heading": "Official Sources and Provenance",
+          "has_table": false,
+          "table_header_preserved": true,
+          "entity_context_preserved": true,
+          "word_count": 46,
+          "status": "CHUNK_READY"
+        }
+      ],
+      "document_readiness_status": "READY_FOR_RAG_INGESTION"
+    },
+    {
+      "document_id": "srgi_lucknow_vice_chairperson_message",
+      "category": "02_governance_and_leadership",
+      "title": "Message from the Vice-Chairperson \u2014 Dr. Sushmita Singh",
+      "simulated_chunks_count": 7,
+      "chunks": [
+        {
+          "chunk_index": 0,
+          "section_heading": "Overview",
+          "has_table": false,
+          "table_header_preserved": true,
+          "entity_context_preserved": true,
+          "word_count": 41,
+          "status": "CHUNK_READY"
+        },
+        {
+          "chunk_index": 1,
+          "section_heading": "Scope",
+          "has_table": false,
+          "table_header_preserved": true,
+          "entity_context_preserved": true,
+          "word_count": 19,
+          "status": "CHUNK_READY"
+        },
+        {
+          "chunk_index": 2,
+          "section_heading": "1. Vice-Chairperson Profile",
+          "has_table": false,
+          "table_header_preserved": true,
+          "entity_context_preserved": true,
+          "word_count": 24,
+          "status": "CHUNK_READY"
+        },
+        {
+          "chunk_index": 3,
+          "section_heading": "2. Official Message",
+          "has_table": false,
+          "table_header_preserved": true,
+          "entity_context_preserved": true,
+          "word_count": 143,
+          "status": "CHUNK_READY"
+        },
+        {
+          "chunk_index": 4,
+          "section_heading": "3. Key Focus Areas",
+          "has_table": false,
+          "table_header_preserved": true,
+          "entity_context_preserved": true,
+          "word_count": 42,
+          "status": "CHUNK_READY"
+        },
+        {
+          "chunk_index": 5,
+          "section_heading": "Related Information",
+          "has_table": false,
+          "table_header_preserved": true,
+          "entity_context_preserved": true,
+          "word_count": 7,
+          "status": "CHUNK_READY"
+        },
+        {
+          "chunk_index": 6,
+          "section_heading": "Official Sources and Provenance",
+          "has_table": false,
+          "table_header_preserved": true,
+          "entity_context_preserved": true,
+          "word_count": 46,
+          "status": "CHUNK_READY"
+        }
+      ],
+      "document_readiness_status": "READY_FOR_RAG_INGESTION"
+    },
+    {
+      "document_id": "srgi_lucknow_board_of_governors",
+      "category": "02_governance_and_leadership",
+      "title": "SRGI Lucknow Board of Governors \u2014 Composition and Strategic Counsel",
+      "simulated_chunks_count": 7,
+      "chunks": [
+        {
+          "chunk_index": 0,
+          "section_heading": "Overview",
+          "has_table": false,
+          "table_header_preserved": true,
+          "entity_context_preserved": true,
+          "word_count": 45,
+          "status": "CHUNK_READY"
+        },
+        {
+          "chunk_index": 1,
+          "section_heading": "Scope",
+          "has_table": false,
+          "table_header_preserved": true,
+          "entity_context_preserved": true,
+          "word_count": 16,
+          "status": "CHUNK_READY"
+        },
+        {
+          "chunk_index": 2,
+          "section_heading": "1. Governance Charter",
+          "has_table": false,
+          "table_header_preserved": true,
+          "entity_context_preserved": true,
+          "word_count": 28,
+          "status": "CHUNK_READY"
+        },
+        {
+          "chunk_index": 3,
+          "section_heading": "2. Distinguished Governors",
+          "has_table": false,
+          "table_header_preserved": true,
+          "entity_context_preserved": true,
+          "word_count": 122,
+          "status": "CHUNK_READY"
+        },
+        {
+          "chunk_index": 4,
+          "section_heading": "3. Governance Responsibilities",
+          "has_table": false,
+          "table_header_preserved": true,
+          "entity_context_preserved": true,
+          "word_count": 34,
+          "status": "CHUNK_READY"
+        },
+        {
+          "chunk_index": 5,
+          "section_heading": "Related Information",
+          "has_table": false,
+          "table_header_preserved": true,
+          "entity_context_preserved": true,
+          "word_count": 7,
+          "status": "CHUNK_READY"
+        },
+        {
+          "chunk_index": 6,
+          "section_heading": "Official Sources and Provenance",
+          "has_table": false,
+          "table_header_preserved": true,
+          "entity_context_preserved": true,
+          "word_count": 46,
+          "status": "CHUNK_READY"
+        }
+      ],
+      "document_readiness_status": "READY_FOR_RAG_INGESTION"
+    },
+    {
+      "document_id": "srgi_lucknow_board_of_directors",
+      "category": "02_governance_and_leadership",
+      "title": "SRGI Lucknow Board of Directors \u2014 Institutional Execution and Oversight",
+      "simulated_chunks_count": 7,
+      "chunks": [
+        {
+          "chunk_index": 0,
+          "section_heading": "Overview",
+          "has_table": false,
+          "table_header_preserved": true,
+          "entity_context_preserved": true,
+          "word_count": 45,
+          "status": "CHUNK_READY"
+        },
+        {
+          "chunk_index": 1,
+          "section_heading": "Scope",
+          "has_table": false,
+          "table_header_preserved": true,
+          "entity_context_preserved": true,
+          "word_count": 41,
+          "status": "CHUNK_READY"
+        },
+        {
+          "chunk_index": 2,
+          "section_heading": "Board of Directors Overview",
+          "has_table": false,
+          "table_header_preserved": true,
+          "entity_context_preserved": true,
+          "word_count": 29,
+          "status": "CHUNK_READY"
+        },
+        {
+          "chunk_index": 3,
+          "section_heading": "Directory of Directors & Leadership Messages",
+          "has_table": true,
+          "table_header_preserved": true,
+          "entity_context_preserved": true,
+          "word_count": 376,
+          "status": "CHUNK_READY"
+        },
+        {
+          "chunk_index": 4,
+          "section_heading": "Executive Governance Responsibilities",
+          "has_table": false,
+          "table_header_preserved": true,
+          "entity_context_preserved": true,
+          "word_count": 41,
+          "status": "CHUNK_READY"
+        },
+        {
+          "chunk_index": 5,
+          "section_heading": "Related Information",
+          "has_table": false,
+          "table_header_preserved": true,
+          "entity_context_preserved": true,
+          "word_count": 16,
+          "status": "CHUNK_READY"
+        },
+        {
+          "chunk_index": 6,
+          "section_heading": "Official Sources and Provenance",
+          "has_table": false,
+          "table_header_preserved": true,
+          "entity_context_preserved": true,
+          "word_count": 46,
+          "status": "CHUNK_READY"
+        }
+      ],
+      "document_readiness_status": "READY_FOR_RAG_INGESTION"
+    },
+    {
+      "document_id": "srgi_lucknow_administrative_heads",
+      "category": "02_governance_and_leadership",
+      "title": "SRGI Lucknow Administrative Heads and Core Operational Team",
+      "simulated_chunks_count": 7,
+      "chunks": [
+        {
+          "chunk_index": 0,
+          "section_heading": "Overview",
+          "has_table": false,
+          "table_header_preserved": true,
+          "entity_context_preserved": true,
+          "word_count": 41,
+          "status": "CHUNK_READY"
+        },
+        {
+          "chunk_index": 1,
+          "section_heading": "Scope",
+          "has_table": false,
+          "table_header_preserved": true,
+          "entity_context_preserved": true,
+          "word_count": 44,
+          "status": "CHUNK_READY"
+        },
+        {
+          "chunk_index": 2,
+          "section_heading": "Executive Administrative Directorate",
+          "has_table": false,
+          "table_header_preserved": true,
+          "entity_context_preserved": true,
+          "word_count": 30,
+          "status": "CHUNK_READY"
+        },
+        {
+          "chunk_index": 3,
+          "section_heading": "Key Administrative Officers & Official Contacts",
+          "has_table": true,
+          "table_header_preserved": true,
+          "entity_context_preserved": true,
+          "word_count": 261,
+          "status": "CHUNK_READY"
+        },
+        {
+          "chunk_index": 4,
+          "section_heading": "Administrative Office Location",
+          "has_table": false,
+          "table_header_preserved": true,
+          "entity_context_preserved": true,
+          "word_count": 38,
+          "status": "CHUNK_READY"
+        },
+        {
+          "chunk_index": 5,
+          "section_heading": "Related Information",
+          "has_table": false,
+          "table_header_preserved": true,
+          "entity_context_preserved": true,
+          "word_count": 32,
+          "status": "CHUNK_READY"
+        },
+        {
+          "chunk_index": 6,
+          "section_heading": "Official Sources and Provenance",
+          "has_table": false,
+          "table_header_preserved": true,
+          "entity_context_preserved": true,
+          "word_count": 46,
+          "status": "CHUNK_READY"
+        }
+      ],
+      "document_readiness_status": "READY_FOR_RAG_INGESTION"
+    },
+    {
+      "document_id": "srgi_lucknow_academic_units_overview",
+      "category": "03_constituent_units",
+      "title": "SRGI Lucknow Constituent Academic Units and Institutional Network",
+      "simulated_chunks_count": 6,
+      "chunks": [
+        {
+          "chunk_index": 0,
+          "section_heading": "Overview",
+          "has_table": false,
+          "table_header_preserved": true,
+          "entity_context_preserved": true,
+          "word_count": 43,
+          "status": "CHUNK_READY"
+        },
+        {
+          "chunk_index": 1,
+          "section_heading": "Scope",
+          "has_table": false,
+          "table_header_preserved": true,
+          "entity_context_preserved": true,
+          "word_count": 23,
+          "status": "CHUNK_READY"
+        },
+        {
+          "chunk_index": 2,
+          "section_heading": "1. The Institutional Ecosystem",
+          "has_table": true,
+          "table_header_preserved": true,
+          "entity_context_preserved": true,
+          "word_count": 138,
+          "status": "CHUNK_READY"
+        },
+        {
+          "chunk_index": 3,
+          "section_heading": "2. Academic Integration & Shared Campus Resources",
+          "has_table": false,
+          "table_header_preserved": true,
+          "entity_context_preserved": true,
+          "word_count": 84,
+          "status": "CHUNK_READY"
+        },
+        {
+          "chunk_index": 4,
+          "section_heading": "Related Information",
+          "has_table": false,
+          "table_header_preserved": true,
+          "entity_context_preserved": true,
+          "word_count": 7,
+          "status": "CHUNK_READY"
+        },
+        {
+          "chunk_index": 5,
+          "section_heading": "Official Sources and Provenance",
+          "has_table": false,
+          "table_header_preserved": true,
+          "entity_context_preserved": true,
+          "word_count": 48,
+          "status": "CHUNK_READY"
+        }
+      ],
+      "document_readiness_status": "READY_FOR_RAG_INGESTION"
+    },
+    {
+      "document_id": "srgi_lucknow_btech_overview",
+      "category": "04_programmes_engineering",
+      "title": "Bachelor of Technology (B.Tech) Programmes \u2014 Comprehensive Overview",
+      "simulated_chunks_count": 7,
+      "chunks": [
+        {
+          "chunk_index": 0,
+          "section_heading": "Overview",
+          "has_table": false,
+          "table_header_preserved": true,
+          "entity_context_preserved": true,
+          "word_count": 41,
+          "status": "CHUNK_READY"
+        },
+        {
+          "chunk_index": 1,
+          "section_heading": "Scope",
+          "has_table": false,
+          "table_header_preserved": true,
+          "entity_context_preserved": true,
+          "word_count": 44,
+          "status": "CHUNK_READY"
+        },
+        {
+          "chunk_index": 2,
+          "section_heading": "Programme Framework",
+          "has_table": false,
+          "table_header_preserved": true,
+          "entity_context_preserved": true,
+          "word_count": 52,
+          "status": "CHUNK_READY"
+        },
+        {
+          "chunk_index": 3,
+          "section_heading": "Engineering Disciplines & Sanctioned Seat Intake",
+          "has_table": true,
+          "table_header_preserved": true,
+          "entity_context_preserved": true,
+          "word_count": 334,
+          "status": "CHUNK_READY"
+        },
+        {
+          "chunk_index": 4,
+          "section_heading": "General Eligibility Criteria",
+          "has_table": false,
+          "table_header_preserved": true,
+          "entity_context_preserved": true,
+          "word_count": 87,
+          "status": "CHUNK_READY"
+        },
+        {
+          "chunk_index": 5,
+          "section_heading": "Related Information",
+          "has_table": false,
+          "table_header_preserved": true,
+          "entity_context_preserved": true,
+          "word_count": 26,
+          "status": "CHUNK_READY"
+        },
+        {
+          "chunk_index": 6,
+          "section_heading": "Official Sources and Provenance",
+          "has_table": false,
+          "table_header_preserved": true,
+          "entity_context_preserved": true,
+          "word_count": 54,
+          "status": "CHUNK_READY"
+        }
+      ],
+      "document_readiness_status": "READY_FOR_RAG_INGESTION"
+    },
+    {
+      "document_id": "srgi_lucknow_btech_computer_science_engineering",
+      "category": "04_programmes_engineering",
+      "title": "B.Tech in Computer Science & Engineering (AI & ML, AI & DS Specializations)",
+      "simulated_chunks_count": 8,
+      "chunks": [
+        {
+          "chunk_index": 0,
+          "section_heading": "Overview",
+          "has_table": false,
+          "table_header_preserved": true,
+          "entity_context_preserved": true,
+          "word_count": 51,
+          "status": "CHUNK_READY"
+        },
+        {
+          "chunk_index": 1,
+          "section_heading": "Scope",
+          "has_table": false,
+          "table_header_preserved": true,
+          "entity_context_preserved": true,
+          "word_count": 43,
+          "status": "CHUNK_READY"
+        },
+        {
+          "chunk_index": 2,
+          "section_heading": "Programme Specification",
+          "has_table": false,
+          "table_header_preserved": true,
+          "entity_context_preserved": true,
+          "word_count": 72,
+          "status": "CHUNK_READY"
+        },
+        {
+          "chunk_index": 3,
+          "section_heading": "Academic Scope & Technical Coverage",
+          "has_table": false,
+          "table_header_preserved": true,
+          "entity_context_preserved": true,
+          "word_count": 81,
+          "status": "CHUNK_READY"
+        },
+        {
+          "chunk_index": 4,
+          "section_heading": "Laboratory Infrastructure",
+          "has_table": false,
+          "table_header_preserved": true,
+          "entity_context_preserved": true,
+          "word_count": 42,
+          "status": "CHUNK_READY"
+        },
+        {
+          "chunk_index": 5,
+          "section_heading": "Career Opportunities",
+          "has_table": false,
+          "table_header_preserved": true,
+          "entity_context_preserved": true,
+          "word_count": 45,
+          "status": "CHUNK_READY"
+        },
+        {
+          "chunk_index": 6,
+          "section_heading": "Related Information",
+          "has_table": false,
+          "table_header_preserved": true,
+          "entity_context_preserved": true,
+          "word_count": 23,
+          "status": "CHUNK_READY"
+        },
+        {
+          "chunk_index": 7,
+          "section_heading": "Official Sources and Provenance",
+          "has_table": false,
+          "table_header_preserved": true,
+          "entity_context_preserved": true,
+          "word_count": 54,
+          "status": "CHUNK_READY"
+        }
+      ],
+      "document_readiness_status": "READY_FOR_RAG_INGESTION"
+    },
+    {
+      "document_id": "srgi_lucknow_btech_computer_science",
+      "category": "04_programmes_engineering",
+      "title": "B.Tech in Computer Science (CS)",
+      "simulated_chunks_count": 7,
+      "chunks": [
+        {
+          "chunk_index": 0,
+          "section_heading": "Overview",
+          "has_table": false,
+          "table_header_preserved": true,
+          "entity_context_preserved": true,
+          "word_count": 35,
+          "status": "CHUNK_READY"
+        },
+        {
+          "chunk_index": 1,
+          "section_heading": "Scope",
+          "has_table": false,
+          "table_header_preserved": true,
+          "entity_context_preserved": true,
+          "word_count": 36,
+          "status": "CHUNK_READY"
+        },
+        {
+          "chunk_index": 2,
+          "section_heading": "Programme Specification",
+          "has_table": false,
+          "table_header_preserved": true,
+          "entity_context_preserved": true,
+          "word_count": 56,
+          "status": "CHUNK_READY"
+        },
+        {
+          "chunk_index": 3,
+          "section_heading": "Programme Philosophy",
+          "has_table": false,
+          "table_header_preserved": true,
+          "entity_context_preserved": true,
+          "word_count": 25,
+          "status": "CHUNK_READY"
+        },
+        {
+          "chunk_index": 4,
+          "section_heading": "Core Curricular Modules",
+          "has_table": false,
+          "table_header_preserved": true,
+          "entity_context_preserved": true,
+          "word_count": 48,
+          "status": "CHUNK_READY"
+        },
+        {
+          "chunk_index": 5,
+          "section_heading": "Career Pathways",
+          "has_table": false,
+          "table_header_preserved": true,
+          "entity_context_preserved": true,
+          "word_count": 60,
+          "status": "CHUNK_READY"
+        },
+        {
+          "chunk_index": 6,
+          "section_heading": "Official Sources and Provenance",
+          "has_table": false,
+          "table_header_preserved": true,
+          "entity_context_preserved": true,
+          "word_count": 54,
+          "status": "CHUNK_READY"
+        }
+      ],
+      "document_readiness_status": "READY_FOR_RAG_INGESTION"
+    },
+    {
+      "document_id": "srgi_lucknow_btech_information_technology",
+      "category": "04_programmes_engineering",
+      "title": "B.Tech in Information Technology (IT)",
+      "simulated_chunks_count": 8,
+      "chunks": [
+        {
+          "chunk_index": 0,
+          "section_heading": "Overview",
+          "has_table": false,
+          "table_header_preserved": true,
+          "entity_context_preserved": true,
+          "word_count": 35,
+          "status": "CHUNK_READY"
+        },
+        {
+          "chunk_index": 1,
+          "section_heading": "Scope",
+          "has_table": false,
+          "table_header_preserved": true,
+          "entity_context_preserved": true,
+          "word_count": 20,
+          "status": "CHUNK_READY"
+        },
+        {
+          "chunk_index": 2,
+          "section_heading": "1. Programme Specification",
+          "has_table": false,
+          "table_header_preserved": true,
+          "entity_context_preserved": true,
+          "word_count": 29,
+          "status": "CHUNK_READY"
+        },
+        {
+          "chunk_index": 3,
+          "section_heading": "2. Programme Highlights",
+          "has_table": false,
+          "table_header_preserved": true,
+          "entity_context_preserved": true,
+          "word_count": 25,
+          "status": "CHUNK_READY"
+        },
+        {
+          "chunk_index": 4,
+          "section_heading": "3. Key Learning Areas",
+          "has_table": false,
+          "table_header_preserved": true,
+          "entity_context_preserved": true,
+          "word_count": 40,
+          "status": "CHUNK_READY"
+        },
+        {
+          "chunk_index": 5,
+          "section_heading": "4. Industry Outcomes",
+          "has_table": false,
+          "table_header_preserved": true,
+          "entity_context_preserved": true,
+          "word_count": 22,
+          "status": "CHUNK_READY"
+        },
+        {
+          "chunk_index": 6,
+          "section_heading": "Related Information",
+          "has_table": false,
+          "table_header_preserved": true,
+          "entity_context_preserved": true,
+          "word_count": 7,
+          "status": "CHUNK_READY"
+        },
+        {
+          "chunk_index": 7,
+          "section_heading": "Official Sources and Provenance",
+          "has_table": false,
+          "table_header_preserved": true,
+          "entity_context_preserved": true,
+          "word_count": 46,
+          "status": "CHUNK_READY"
+        }
+      ],
+      "document_readiness_status": "READY_FOR_RAG_INGESTION"
+    },
+    {
+      "document_id": "srgi_lucknow_btech_electronics_communication",
+      "category": "04_programmes_engineering",
+      "title": "B.Tech in Electronics & Communication Engineering (ECE)",
+      "simulated_chunks_count": 8,
+      "chunks": [
+        {
+          "chunk_index": 0,
+          "section_heading": "Overview",
+          "has_table": false,
+          "table_header_preserved": true,
+          "entity_context_preserved": true,
+          "word_count": 39,
+          "status": "CHUNK_READY"
+        },
+        {
+          "chunk_index": 1,
+          "section_heading": "Scope",
+          "has_table": false,
+          "table_header_preserved": true,
+          "entity_context_preserved": true,
+          "word_count": 19,
+          "status": "CHUNK_READY"
+        },
+        {
+          "chunk_index": 2,
+          "section_heading": "1. Programme Specification",
+          "has_table": false,
+          "table_header_preserved": true,
+          "entity_context_preserved": true,
+          "word_count": 31,
+          "status": "CHUNK_READY"
+        },
+        {
+          "chunk_index": 3,
+          "section_heading": "2. Curricular Scope",
+          "has_table": false,
+          "table_header_preserved": true,
+          "entity_context_preserved": true,
+          "word_count": 23,
+          "status": "CHUNK_READY"
+        },
+        {
+          "chunk_index": 4,
+          "section_heading": "3. Core Laboratory & Theory Areas",
+          "has_table": false,
+          "table_header_preserved": true,
+          "entity_context_preserved": true,
+          "word_count": 51,
+          "status": "CHUNK_READY"
+        },
+        {
+          "chunk_index": 5,
+          "section_heading": "4. Career Profiles",
+          "has_table": false,
+          "table_header_preserved": true,
+          "entity_context_preserved": true,
+          "word_count": 18,
+          "status": "CHUNK_READY"
+        },
+        {
+          "chunk_index": 6,
+          "section_heading": "Related Information",
+          "has_table": false,
+          "table_header_preserved": true,
+          "entity_context_preserved": true,
+          "word_count": 7,
+          "status": "CHUNK_READY"
+        },
+        {
+          "chunk_index": 7,
+          "section_heading": "Official Sources and Provenance",
+          "has_table": false,
+          "table_header_preserved": true,
+          "entity_context_preserved": true,
+          "word_count": 46,
+          "status": "CHUNK_READY"
+        }
+      ],
+      "document_readiness_status": "READY_FOR_RAG_INGESTION"
+    },
+    {
+      "document_id": "srgi_lucknow_btech_electrical_electronics",
+      "category": "04_programmes_engineering",
+      "title": "B.Tech in Electrical & Electronics Engineering (EEE / EN)",
+      "simulated_chunks_count": 8,
+      "chunks": [
+        {
+          "chunk_index": 0,
+          "section_heading": "Overview",
+          "has_table": false,
+          "table_header_preserved": true,
+          "entity_context_preserved": true,
+          "word_count": 43,
+          "status": "CHUNK_READY"
+        },
+        {
+          "chunk_index": 1,
+          "section_heading": "Scope",
+          "has_table": false,
+          "table_header_preserved": true,
+          "entity_context_preserved": true,
+          "word_count": 20,
+          "status": "CHUNK_READY"
+        },
+        {
+          "chunk_index": 2,
+          "section_heading": "1. Programme Specification",
+          "has_table": false,
+          "table_header_preserved": true,
+          "entity_context_preserved": true,
+          "word_count": 33,
+          "status": "CHUNK_READY"
+        },
+        {
+          "chunk_index": 3,
+          "section_heading": "2. Academic Focus",
+          "has_table": false,
+          "table_header_preserved": true,
+          "entity_context_preserved": true,
+          "word_count": 27,
+          "status": "CHUNK_READY"
+        },
+        {
+          "chunk_index": 4,
+          "section_heading": "3. Laboratory Suites & Practical Training",
+          "has_table": false,
+          "table_header_preserved": true,
+          "entity_context_preserved": true,
+          "word_count": 39,
+          "status": "CHUNK_READY"
+        },
+        {
+          "chunk_index": 5,
+          "section_heading": "4. Career Profiles",
+          "has_table": false,
+          "table_header_preserved": true,
+          "entity_context_preserved": true,
+          "word_count": 20,
+          "status": "CHUNK_READY"
+        },
+        {
+          "chunk_index": 6,
+          "section_heading": "Related Information",
+          "has_table": false,
+          "table_header_preserved": true,
+          "entity_context_preserved": true,
+          "word_count": 7,
+          "status": "CHUNK_READY"
+        },
+        {
+          "chunk_index": 7,
+          "section_heading": "Official Sources and Provenance",
+          "has_table": false,
+          "table_header_preserved": true,
+          "entity_context_preserved": true,
+          "word_count": 46,
+          "status": "CHUNK_READY"
+        }
+      ],
+      "document_readiness_status": "READY_FOR_RAG_INGESTION"
+    },
+    {
+      "document_id": "srgi_lucknow_btech_mechanical_engineering",
+      "category": "04_programmes_engineering",
+      "title": "B.Tech in Mechanical Engineering (ME)",
+      "simulated_chunks_count": 8,
+      "chunks": [
+        {
+          "chunk_index": 0,
+          "section_heading": "Overview",
+          "has_table": false,
+          "table_header_preserved": true,
+          "entity_context_preserved": true,
+          "word_count": 35,
+          "status": "CHUNK_READY"
+        },
+        {
+          "chunk_index": 1,
+          "section_heading": "Scope",
+          "has_table": false,
+          "table_header_preserved": true,
+          "entity_context_preserved": true,
+          "word_count": 18,
+          "status": "CHUNK_READY"
+        },
+        {
+          "chunk_index": 2,
+          "section_heading": "1. Programme Specification",
+          "has_table": false,
+          "table_header_preserved": true,
+          "entity_context_preserved": true,
+          "word_count": 29,
+          "status": "CHUNK_READY"
+        },
+        {
+          "chunk_index": 3,
+          "section_heading": "2. Department Overview",
+          "has_table": false,
+          "table_header_preserved": true,
+          "entity_context_preserved": true,
+          "word_count": 26,
+          "status": "CHUNK_READY"
+        },
+        {
+          "chunk_index": 4,
+          "section_heading": "3. Practical Facilities & Workspaces",
+          "has_table": false,
+          "table_header_preserved": true,
+          "entity_context_preserved": true,
+          "word_count": 45,
+          "status": "CHUNK_READY"
+        },
+        {
+          "chunk_index": 5,
+          "section_heading": "4. Career Opportunities",
+          "has_table": false,
+          "table_header_preserved": true,
+          "entity_context_preserved": true,
+          "word_count": 19,
+          "status": "CHUNK_READY"
+        },
+        {
+          "chunk_index": 6,
+          "section_heading": "Related Information",
+          "has_table": false,
+          "table_header_preserved": true,
+          "entity_context_preserved": true,
+          "word_count": 7,
+          "status": "CHUNK_READY"
+        },
+        {
+          "chunk_index": 7,
+          "section_heading": "Official Sources and Provenance",
+          "has_table": false,
+          "table_header_preserved": true,
+          "entity_context_preserved": true,
+          "word_count": 46,
+          "status": "CHUNK_READY"
+        }
+      ],
+      "document_readiness_status": "READY_FOR_RAG_INGESTION"
+    },
+    {
+      "document_id": "srgi_lucknow_btech_civil_engineering",
+      "category": "04_programmes_engineering",
+      "title": "B.Tech in Civil Engineering (CE)",
+      "simulated_chunks_count": 8,
+      "chunks": [
+        {
+          "chunk_index": 0,
+          "section_heading": "Overview",
+          "has_table": false,
+          "table_header_preserved": true,
+          "entity_context_preserved": true,
+          "word_count": 35,
+          "status": "CHUNK_READY"
+        },
+        {
+          "chunk_index": 1,
+          "section_heading": "Scope",
+          "has_table": false,
+          "table_header_preserved": true,
+          "entity_context_preserved": true,
+          "word_count": 17,
+          "status": "CHUNK_READY"
+        },
+        {
+          "chunk_index": 2,
+          "section_heading": "1. Programme Specification",
+          "has_table": false,
+          "table_header_preserved": true,
+          "entity_context_preserved": true,
+          "word_count": 29,
+          "status": "CHUNK_READY"
+        },
+        {
+          "chunk_index": 3,
+          "section_heading": "2. Departmental Scope",
+          "has_table": false,
+          "table_header_preserved": true,
+          "entity_context_preserved": true,
+          "word_count": 30,
+          "status": "CHUNK_READY"
+        },
+        {
+          "chunk_index": 4,
+          "section_heading": "3. Specialized Laboratories",
+          "has_table": false,
+          "table_header_preserved": true,
+          "entity_context_preserved": true,
+          "word_count": 37,
+          "status": "CHUNK_READY"
+        },
+        {
+          "chunk_index": 5,
+          "section_heading": "4. Professional Pathways",
+          "has_table": false,
+          "table_header_preserved": true,
+          "entity_context_preserved": true,
+          "word_count": 14,
+          "status": "CHUNK_READY"
+        },
+        {
+          "chunk_index": 6,
+          "section_heading": "Related Information",
+          "has_table": false,
+          "table_header_preserved": true,
+          "entity_context_preserved": true,
+          "word_count": 7,
+          "status": "CHUNK_READY"
+        },
+        {
+          "chunk_index": 7,
+          "section_heading": "Official Sources and Provenance",
+          "has_table": false,
+          "table_header_preserved": true,
+          "entity_context_preserved": true,
+          "word_count": 46,
+          "status": "CHUNK_READY"
+        }
+      ],
+      "document_readiness_status": "READY_FOR_RAG_INGESTION"
+    },
+    {
+      "document_id": "srgi_lucknow_btech_biotechnology",
+      "category": "04_programmes_engineering",
+      "title": "B.Tech in Biotechnology (BT)",
+      "simulated_chunks_count": 8,
+      "chunks": [
+        {
+          "chunk_index": 0,
+          "section_heading": "Overview",
+          "has_table": false,
+          "table_header_preserved": true,
+          "entity_context_preserved": true,
+          "word_count": 33,
+          "status": "CHUNK_READY"
+        },
+        {
+          "chunk_index": 1,
+          "section_heading": "Scope",
+          "has_table": false,
+          "table_header_preserved": true,
+          "entity_context_preserved": true,
+          "word_count": 17,
+          "status": "CHUNK_READY"
+        },
+        {
+          "chunk_index": 2,
+          "section_heading": "1. Programme Specification",
+          "has_table": false,
+          "table_header_preserved": true,
+          "entity_context_preserved": true,
+          "word_count": 40,
+          "status": "CHUNK_READY"
+        },
+        {
+          "chunk_index": 3,
+          "section_heading": "2. Programme Overview",
+          "has_table": false,
+          "table_header_preserved": true,
+          "entity_context_preserved": true,
+          "word_count": 22,
+          "status": "CHUNK_READY"
+        },
+        {
+          "chunk_index": 4,
+          "section_heading": "3. Curricular Modules & Labs",
+          "has_table": false,
+          "table_header_preserved": true,
+          "entity_context_preserved": true,
+          "word_count": 33,
+          "status": "CHUNK_READY"
+        },
+        {
+          "chunk_index": 5,
+          "section_heading": "4. Career Opportunities",
+          "has_table": false,
+          "table_header_preserved": true,
+          "entity_context_preserved": true,
+          "word_count": 17,
+          "status": "CHUNK_READY"
+        },
+        {
+          "chunk_index": 6,
+          "section_heading": "Related Information",
+          "has_table": false,
+          "table_header_preserved": true,
+          "entity_context_preserved": true,
+          "word_count": 7,
+          "status": "CHUNK_READY"
+        },
+        {
+          "chunk_index": 7,
+          "section_heading": "Official Sources and Provenance",
+          "has_table": false,
+          "table_header_preserved": true,
+          "entity_context_preserved": true,
+          "word_count": 46,
+          "status": "CHUNK_READY"
+        }
+      ],
+      "document_readiness_status": "READY_FOR_RAG_INGESTION"
+    },
+    {
+      "document_id": "srgi_lucknow_btech_agricultural_engineering",
+      "category": "04_programmes_engineering",
+      "title": "B.Tech in Agricultural Engineering (AG)",
+      "simulated_chunks_count": 8,
+      "chunks": [
+        {
+          "chunk_index": 0,
+          "section_heading": "Overview",
+          "has_table": false,
+          "table_header_preserved": true,
+          "entity_context_preserved": true,
+          "word_count": 35,
+          "status": "CHUNK_READY"
+        },
+        {
+          "chunk_index": 1,
+          "section_heading": "Scope",
+          "has_table": false,
+          "table_header_preserved": true,
+          "entity_context_preserved": true,
+          "word_count": 20,
+          "status": "CHUNK_READY"
+        },
+        {
+          "chunk_index": 2,
+          "section_heading": "1. Programme Specification",
+          "has_table": false,
+          "table_header_preserved": true,
+          "entity_context_preserved": true,
+          "word_count": 29,
+          "status": "CHUNK_READY"
+        },
+        {
+          "chunk_index": 3,
+          "section_heading": "2. Departmental Scope",
+          "has_table": false,
+          "table_header_preserved": true,
+          "entity_context_preserved": true,
+          "word_count": 25,
+          "status": "CHUNK_READY"
+        },
+        {
+          "chunk_index": 4,
+          "section_heading": "3. Laboratory & Field Resources",
+          "has_table": false,
+          "table_header_preserved": true,
+          "entity_context_preserved": true,
+          "word_count": 39,
+          "status": "CHUNK_READY"
+        },
+        {
+          "chunk_index": 5,
+          "section_heading": "4. Professional Outcomes",
+          "has_table": false,
+          "table_header_preserved": true,
+          "entity_context_preserved": true,
+          "word_count": 19,
+          "status": "CHUNK_READY"
+        },
+        {
+          "chunk_index": 6,
+          "section_heading": "Related Information",
+          "has_table": false,
+          "table_header_preserved": true,
+          "entity_context_preserved": true,
+          "word_count": 7,
+          "status": "CHUNK_READY"
+        },
+        {
+          "chunk_index": 7,
+          "section_heading": "Official Sources and Provenance",
+          "has_table": false,
+          "table_header_preserved": true,
+          "entity_context_preserved": true,
+          "word_count": 46,
+          "status": "CHUNK_READY"
+        }
+      ],
+      "document_readiness_status": "READY_FOR_RAG_INGESTION"
+    },
+    {
+      "document_id": "srgi_lucknow_mtech_programmes",
+      "category": "04_programmes_engineering",
+      "title": "Master of Technology (M.Tech) Postgraduate Programmes",
+      "simulated_chunks_count": 7,
+      "chunks": [
+        {
+          "chunk_index": 0,
+          "section_heading": "Overview",
+          "has_table": false,
+          "table_header_preserved": true,
+          "entity_context_preserved": true,
+          "word_count": 37,
+          "status": "CHUNK_READY"
+        },
+        {
+          "chunk_index": 1,
+          "section_heading": "Scope",
+          "has_table": false,
+          "table_header_preserved": true,
+          "entity_context_preserved": true,
+          "word_count": 21,
+          "status": "CHUNK_READY"
+        },
+        {
+          "chunk_index": 2,
+          "section_heading": "1. Programme Overview",
+          "has_table": false,
+          "table_header_preserved": true,
+          "entity_context_preserved": true,
+          "word_count": 56,
+          "status": "CHUNK_READY"
+        },
+        {
+          "chunk_index": 3,
+          "section_heading": "2. Postgraduate Disciplines & Sanctioned Intake",
+          "has_table": true,
+          "table_header_preserved": true,
+          "entity_context_preserved": true,
+          "word_count": 69,
+          "status": "CHUNK_READY"
+        },
+        {
+          "chunk_index": 4,
+          "section_heading": "3. Eligibility & Admission",
+          "has_table": false,
+          "table_header_preserved": true,
+          "entity_context_preserved": true,
+          "word_count": 42,
+          "status": "CHUNK_READY"
+        },
+        {
+          "chunk_index": 5,
+          "section_heading": "Related Information",
+          "has_table": false,
+          "table_header_preserved": true,
+          "entity_context_preserved": true,
+          "word_count": 7,
+          "status": "CHUNK_READY"
+        },
+        {
+          "chunk_index": 6,
+          "section_heading": "Official Sources and Provenance",
+          "has_table": false,
+          "table_header_preserved": true,
+          "entity_context_preserved": true,
+          "word_count": 46,
+          "status": "CHUNK_READY"
+        }
+      ],
+      "document_readiness_status": "READY_FOR_RAG_INGESTION"
+    },
+    {
+      "document_id": "srgi_lucknow_management_overview",
+      "category": "05_programmes_management",
+      "title": "Faculty of Management Studies \u2014 Academic Framework and Programmes",
+      "simulated_chunks_count": 7,
+      "chunks": [
+        {
+          "chunk_index": 0,
+          "section_heading": "Overview",
+          "has_table": false,
+          "table_header_preserved": true,
+          "entity_context_preserved": true,
+          "word_count": 43,
+          "status": "CHUNK_READY"
+        },
+        {
+          "chunk_index": 1,
+          "section_heading": "Scope",
+          "has_table": false,
+          "table_header_preserved": true,
+          "entity_context_preserved": true,
+          "word_count": 22,
+          "status": "CHUNK_READY"
+        },
+        {
+          "chunk_index": 2,
+          "section_heading": "1. Vision for Management Education",
+          "has_table": false,
+          "table_header_preserved": true,
+          "entity_context_preserved": true,
+          "word_count": 40,
+          "status": "CHUNK_READY"
+        },
+        {
+          "chunk_index": 3,
+          "section_heading": "2. Portfolio of Management Programmes",
+          "has_table": true,
+          "table_header_preserved": true,
+          "entity_context_preserved": true,
+          "word_count": 103,
+          "status": "CHUNK_READY"
+        },
+        {
+          "chunk_index": 4,
+          "section_heading": "3. Pedagogical Pillars",
+          "has_table": false,
+          "table_header_preserved": true,
+          "entity_context_preserved": true,
+          "word_count": 40,
+          "status": "CHUNK_READY"
+        },
+        {
+          "chunk_index": 5,
+          "section_heading": "Related Information",
+          "has_table": false,
+          "table_header_preserved": true,
+          "entity_context_preserved": true,
+          "word_count": 9,
+          "status": "CHUNK_READY"
+        },
+        {
+          "chunk_index": 6,
+          "section_heading": "Official Sources and Provenance",
+          "has_table": false,
+          "table_header_preserved": true,
+          "entity_context_preserved": true,
+          "word_count": 46,
+          "status": "CHUNK_READY"
+        }
+      ],
+      "document_readiness_status": "READY_FOR_RAG_INGESTION"
+    },
+    {
+      "document_id": "srgi_lucknow_mba_programme",
+      "category": "05_programmes_management",
+      "title": "Master of Business Administration (MBA) \u2014 2-Year Full-Time Programme",
+      "simulated_chunks_count": 8,
+      "chunks": [
+        {
+          "chunk_index": 0,
+          "section_heading": "Overview",
+          "has_table": false,
+          "table_header_preserved": true,
+          "entity_context_preserved": true,
+          "word_count": 43,
+          "status": "CHUNK_READY"
+        },
+        {
+          "chunk_index": 1,
+          "section_heading": "Scope",
+          "has_table": false,
+          "table_header_preserved": true,
+          "entity_context_preserved": true,
+          "word_count": 22,
+          "status": "CHUNK_READY"
+        },
+        {
+          "chunk_index": 2,
+          "section_heading": "1. Programme Specification",
+          "has_table": false,
+          "table_header_preserved": true,
+          "entity_context_preserved": true,
+          "word_count": 39,
+          "status": "CHUNK_READY"
+        },
+        {
+          "chunk_index": 3,
+          "section_heading": "2. Programme Specializations",
+          "has_table": false,
+          "table_header_preserved": true,
+          "entity_context_preserved": true,
+          "word_count": 67,
+          "status": "CHUNK_READY"
+        },
+        {
+          "chunk_index": 4,
+          "section_heading": "3. Eligibility & Admission Procedure",
+          "has_table": false,
+          "table_header_preserved": true,
+          "entity_context_preserved": true,
+          "word_count": 37,
+          "status": "CHUNK_READY"
+        },
+        {
+          "chunk_index": 5,
+          "section_heading": "4. Placement Opportunities",
+          "has_table": false,
+          "table_header_preserved": true,
+          "entity_context_preserved": true,
+          "word_count": 18,
+          "status": "CHUNK_READY"
+        },
+        {
+          "chunk_index": 6,
+          "section_heading": "Related Information",
+          "has_table": false,
+          "table_header_preserved": true,
+          "entity_context_preserved": true,
+          "word_count": 7,
+          "status": "CHUNK_READY"
+        },
+        {
+          "chunk_index": 7,
+          "section_heading": "Official Sources and Provenance",
+          "has_table": false,
+          "table_header_preserved": true,
+          "entity_context_preserved": true,
+          "word_count": 46,
+          "status": "CHUNK_READY"
+        }
+      ],
+      "document_readiness_status": "READY_FOR_RAG_INGESTION"
+    },
+    {
+      "document_id": "srgi_lucknow_integrated_mba",
+      "category": "05_programmes_management",
+      "title": "Integrated MBA (IMBA) \u2014 5-Year Dual-Degree Management Programme",
+      "simulated_chunks_count": 7,
+      "chunks": [
+        {
+          "chunk_index": 0,
+          "section_heading": "Overview",
+          "has_table": false,
+          "table_header_preserved": true,
+          "entity_context_preserved": true,
+          "word_count": 41,
+          "status": "CHUNK_READY"
+        },
+        {
+          "chunk_index": 1,
+          "section_heading": "Scope",
+          "has_table": false,
+          "table_header_preserved": true,
+          "entity_context_preserved": true,
+          "word_count": 19,
+          "status": "CHUNK_READY"
+        },
+        {
+          "chunk_index": 2,
+          "section_heading": "1. Programme Specification",
+          "has_table": false,
+          "table_header_preserved": true,
+          "entity_context_preserved": true,
+          "word_count": 35,
+          "status": "CHUNK_READY"
+        },
+        {
+          "chunk_index": 3,
+          "section_heading": "2. Programme Distinctives",
+          "has_table": false,
+          "table_header_preserved": true,
+          "entity_context_preserved": true,
+          "word_count": 71,
+          "status": "CHUNK_READY"
+        },
+        {
+          "chunk_index": 4,
+          "section_heading": "3. Admission Criteria",
+          "has_table": false,
+          "table_header_preserved": true,
+          "entity_context_preserved": true,
+          "word_count": 20,
+          "status": "CHUNK_READY"
+        },
+        {
+          "chunk_index": 5,
+          "section_heading": "Related Information",
+          "has_table": false,
+          "table_header_preserved": true,
+          "entity_context_preserved": true,
+          "word_count": 7,
+          "status": "CHUNK_READY"
+        },
+        {
+          "chunk_index": 6,
+          "section_heading": "Official Sources and Provenance",
+          "has_table": false,
+          "table_header_preserved": true,
+          "entity_context_preserved": true,
+          "word_count": 46,
+          "status": "CHUNK_READY"
+        }
+      ],
+      "document_readiness_status": "READY_FOR_RAG_INGESTION"
+    },
+    {
+      "document_id": "srgi_lucknow_applied_global_management",
+      "category": "05_programmes_management",
+      "title": "Applied Global Management Programme (AGMP)",
+      "simulated_chunks_count": 6,
+      "chunks": [
+        {
+          "chunk_index": 0,
+          "section_heading": "Overview",
+          "has_table": false,
+          "table_header_preserved": true,
+          "entity_context_preserved": true,
+          "word_count": 35,
+          "status": "CHUNK_READY"
+        },
+        {
+          "chunk_index": 1,
+          "section_heading": "Scope",
+          "has_table": false,
+          "table_header_preserved": true,
+          "entity_context_preserved": true,
+          "word_count": 20,
+          "status": "CHUNK_READY"
+        },
+        {
+          "chunk_index": 2,
+          "section_heading": "1. Programme Specification",
+          "has_table": false,
+          "table_header_preserved": true,
+          "entity_context_preserved": true,
+          "word_count": 31,
+          "status": "CHUNK_READY"
+        },
+        {
+          "chunk_index": 3,
+          "section_heading": "2. Curriculum Highlights",
+          "has_table": false,
+          "table_header_preserved": true,
+          "entity_context_preserved": true,
+          "word_count": 40,
+          "status": "CHUNK_READY"
+        },
+        {
+          "chunk_index": 4,
+          "section_heading": "Related Information",
+          "has_table": false,
+          "table_header_preserved": true,
+          "entity_context_preserved": true,
+          "word_count": 7,
+          "status": "CHUNK_READY"
+        },
+        {
+          "chunk_index": 5,
+          "section_heading": "Official Sources and Provenance",
+          "has_table": false,
+          "table_header_preserved": true,
+          "entity_context_preserved": true,
+          "word_count": 46,
+          "status": "CHUNK_READY"
+        }
+      ],
+      "document_readiness_status": "READY_FOR_RAG_INGESTION"
+    },
+    {
+      "document_id": "srgi_lucknow_medical_programmes_overview",
+      "category": "06_programmes_medical_healthcare",
+      "title": "Faculty of Medical & Allied Health Sciences \u2014 Overview",
+      "simulated_chunks_count": 7,
+      "chunks": [
+        {
+          "chunk_index": 0,
+          "section_heading": "Overview",
+          "has_table": false,
+          "table_header_preserved": true,
+          "entity_context_preserved": true,
+          "word_count": 43,
+          "status": "CHUNK_READY"
+        },
+        {
+          "chunk_index": 1,
+          "section_heading": "Scope",
+          "has_table": false,
+          "table_header_preserved": true,
+          "entity_context_preserved": true,
+          "word_count": 22,
+          "status": "CHUNK_READY"
+        },
+        {
+          "chunk_index": 2,
+          "section_heading": "1. Departmental Mission",
+          "has_table": false,
+          "table_header_preserved": true,
+          "entity_context_preserved": true,
+          "word_count": 36,
+          "status": "CHUNK_READY"
+        },
+        {
+          "chunk_index": 3,
+          "section_heading": "2. Academic Offerings Summary",
+          "has_table": true,
+          "table_header_preserved": true,
+          "entity_context_preserved": true,
+          "word_count": 93,
+          "status": "CHUNK_READY"
+        },
+        {
+          "chunk_index": 4,
+          "section_heading": "3. Clinical & Practical Training",
+          "has_table": false,
+          "table_header_preserved": true,
+          "entity_context_preserved": true,
+          "word_count": 22,
+          "status": "CHUNK_READY"
+        },
+        {
+          "chunk_index": 5,
+          "section_heading": "Related Information",
+          "has_table": false,
+          "table_header_preserved": true,
+          "entity_context_preserved": true,
+          "word_count": 9,
+          "status": "CHUNK_READY"
+        },
+        {
+          "chunk_index": 6,
+          "section_heading": "Official Sources and Provenance",
+          "has_table": false,
+          "table_header_preserved": true,
+          "entity_context_preserved": true,
+          "word_count": 46,
+          "status": "CHUNK_READY"
+        }
+      ],
+      "document_readiness_status": "READY_FOR_RAG_INGESTION"
+    },
+    {
+      "document_id": "srgi_lucknow_d_pharma_programme",
+      "category": "06_programmes_medical_healthcare",
+      "title": "Diploma in Pharmacy (D.Pharm) \u2014 2-Year Entry-Level Pharmacy Programme",
+      "simulated_chunks_count": 7,
+      "chunks": [
+        {
+          "chunk_index": 0,
+          "section_heading": "Overview",
+          "has_table": false,
+          "table_header_preserved": true,
+          "entity_context_preserved": true,
+          "word_count": 43,
+          "status": "CHUNK_READY"
+        },
+        {
+          "chunk_index": 1,
+          "section_heading": "Scope",
+          "has_table": false,
+          "table_header_preserved": true,
+          "entity_context_preserved": true,
+          "word_count": 21,
+          "status": "CHUNK_READY"
+        },
+        {
+          "chunk_index": 2,
+          "section_heading": "1. Programme Specification",
+          "has_table": false,
+          "table_header_preserved": true,
+          "entity_context_preserved": true,
+          "word_count": 40,
+          "status": "CHUNK_READY"
+        },
+        {
+          "chunk_index": 3,
+          "section_heading": "2. Curricular Scope",
+          "has_table": false,
+          "table_header_preserved": true,
+          "entity_context_preserved": true,
+          "word_count": 38,
+          "status": "CHUNK_READY"
+        },
+        {
+          "chunk_index": 4,
+          "section_heading": "3. Eligibility Criteria",
+          "has_table": false,
+          "table_header_preserved": true,
+          "entity_context_preserved": true,
+          "word_count": 36,
+          "status": "CHUNK_READY"
+        },
+        {
+          "chunk_index": 5,
+          "section_heading": "Related Information",
+          "has_table": false,
+          "table_header_preserved": true,
+          "entity_context_preserved": true,
+          "word_count": 7,
+          "status": "CHUNK_READY"
+        },
+        {
+          "chunk_index": 6,
+          "section_heading": "Official Sources and Provenance",
+          "has_table": false,
+          "table_header_preserved": true,
+          "entity_context_preserved": true,
+          "word_count": 46,
+          "status": "CHUNK_READY"
+        }
+      ],
+      "document_readiness_status": "READY_FOR_RAG_INGESTION"
+    },
+    {
+      "document_id": "srgi_lucknow_nursing_programme",
+      "category": "06_programmes_medical_healthcare",
+      "title": "Nursing Programme \u2014 Clinical Healthcare & Ayurvedic Nursing",
+      "simulated_chunks_count": 6,
+      "chunks": [
+        {
+          "chunk_index": 0,
+          "section_heading": "Overview",
+          "has_table": false,
+          "table_header_preserved": true,
+          "entity_context_preserved": true,
+          "word_count": 41,
+          "status": "CHUNK_READY"
+        },
+        {
+          "chunk_index": 1,
+          "section_heading": "Scope",
+          "has_table": false,
+          "table_header_preserved": true,
+          "entity_context_preserved": true,
+          "word_count": 22,
+          "status": "CHUNK_READY"
+        },
+        {
+          "chunk_index": 2,
+          "section_heading": "1. Programme Specification",
+          "has_table": false,
+          "table_header_preserved": true,
+          "entity_context_preserved": true,
+          "word_count": 44,
+          "status": "CHUNK_READY"
+        },
+        {
+          "chunk_index": 3,
+          "section_heading": "2. Practical Training Modules",
+          "has_table": false,
+          "table_header_preserved": true,
+          "entity_context_preserved": true,
+          "word_count": 35,
+          "status": "CHUNK_READY"
+        },
+        {
+          "chunk_index": 4,
+          "section_heading": "Related Information",
+          "has_table": false,
+          "table_header_preserved": true,
+          "entity_context_preserved": true,
+          "word_count": 7,
+          "status": "CHUNK_READY"
+        },
+        {
+          "chunk_index": 5,
+          "section_heading": "Official Sources and Provenance",
+          "has_table": false,
+          "table_header_preserved": true,
+          "entity_context_preserved": true,
+          "word_count": 46,
+          "status": "CHUNK_READY"
+        }
+      ],
+      "document_readiness_status": "READY_FOR_RAG_INGESTION"
+    },
+    {
+      "document_id": "srgi_lucknow_homeopathy_programme",
+      "category": "06_programmes_medical_healthcare",
+      "title": "Diploma in Homeopathic Pharmacy (DHP)",
+      "simulated_chunks_count": 6,
+      "chunks": [
+        {
+          "chunk_index": 0,
+          "section_heading": "Overview",
+          "has_table": false,
+          "table_header_preserved": true,
+          "entity_context_preserved": true,
+          "word_count": 35,
+          "status": "CHUNK_READY"
+        },
+        {
+          "chunk_index": 1,
+          "section_heading": "Scope",
+          "has_table": false,
+          "table_header_preserved": true,
+          "entity_context_preserved": true,
+          "word_count": 18,
+          "status": "CHUNK_READY"
+        },
+        {
+          "chunk_index": 2,
+          "section_heading": "1. Programme Specification",
+          "has_table": false,
+          "table_header_preserved": true,
+          "entity_context_preserved": true,
+          "word_count": 52,
+          "status": "CHUNK_READY"
+        },
+        {
+          "chunk_index": 3,
+          "section_heading": "2. Focus & Career Potential",
+          "has_table": false,
+          "table_header_preserved": true,
+          "entity_context_preserved": true,
+          "word_count": 28,
+          "status": "CHUNK_READY"
+        },
+        {
+          "chunk_index": 4,
+          "section_heading": "Related Information",
+          "has_table": false,
+          "table_header_preserved": true,
+          "entity_context_preserved": true,
+          "word_count": 7,
+          "status": "CHUNK_READY"
+        },
+        {
+          "chunk_index": 5,
+          "section_heading": "Official Sources and Provenance",
+          "has_table": false,
+          "table_header_preserved": true,
+          "entity_context_preserved": true,
+          "word_count": 46,
+          "status": "CHUNK_READY"
+        }
+      ],
+      "document_readiness_status": "READY_FOR_RAG_INGESTION"
+    },
+    {
+      "document_id": "srgi_lucknow_bvoc_overview",
+      "category": "07_programmes_vocation",
+      "title": "Bachelor of Vocation (B.Voc) Programmes \u2014 UGC Skill Education Framework",
+      "simulated_chunks_count": 7,
+      "chunks": [
+        {
+          "chunk_index": 0,
+          "section_heading": "Overview",
+          "has_table": false,
+          "table_header_preserved": true,
+          "entity_context_preserved": true,
+          "word_count": 45,
+          "status": "CHUNK_READY"
+        },
+        {
+          "chunk_index": 1,
+          "section_heading": "Scope",
+          "has_table": false,
+          "table_header_preserved": true,
+          "entity_context_preserved": true,
+          "word_count": 21,
+          "status": "CHUNK_READY"
+        },
+        {
+          "chunk_index": 2,
+          "section_heading": "1. Programme Framework",
+          "has_table": false,
+          "table_header_preserved": true,
+          "entity_context_preserved": true,
+          "word_count": 39,
+          "status": "CHUNK_READY"
+        },
+        {
+          "chunk_index": 3,
+          "section_heading": "2. Multiple Exit & Entry Points",
+          "has_table": false,
+          "table_header_preserved": true,
+          "entity_context_preserved": true,
+          "word_count": 44,
+          "status": "CHUNK_READY"
+        },
+        {
+          "chunk_index": 4,
+          "section_heading": "3. Branches Offered & Sanctioned Intakes",
+          "has_table": true,
+          "table_header_preserved": true,
+          "entity_context_preserved": true,
+          "word_count": 94,
+          "status": "CHUNK_READY"
+        },
+        {
+          "chunk_index": 5,
+          "section_heading": "Related Information",
+          "has_table": false,
+          "table_header_preserved": true,
+          "entity_context_preserved": true,
+          "word_count": 9,
+          "status": "CHUNK_READY"
+        },
+        {
+          "chunk_index": 6,
+          "section_heading": "Official Sources and Provenance",
+          "has_table": false,
+          "table_header_preserved": true,
+          "entity_context_preserved": true,
+          "word_count": 46,
+          "status": "CHUNK_READY"
+        }
+      ],
+      "document_readiness_status": "READY_FOR_RAG_INGESTION"
+    },
+    {
+      "document_id": "srgi_lucknow_bvoc_software_development",
+      "category": "07_programmes_vocation",
+      "title": "B.Voc in Software Development",
+      "simulated_chunks_count": 7,
+      "chunks": [
+        {
+          "chunk_index": 0,
+          "section_heading": "Overview",
+          "has_table": false,
+          "table_header_preserved": true,
+          "entity_context_preserved": true,
+          "word_count": 33,
+          "status": "CHUNK_READY"
+        },
+        {
+          "chunk_index": 1,
+          "section_heading": "Scope",
+          "has_table": false,
+          "table_header_preserved": true,
+          "entity_context_preserved": true,
+          "word_count": 17,
+          "status": "CHUNK_READY"
+        },
+        {
+          "chunk_index": 2,
+          "section_heading": "1. Programme Specification",
+          "has_table": false,
+          "table_header_preserved": true,
+          "entity_context_preserved": true,
+          "word_count": 24,
+          "status": "CHUNK_READY"
+        },
+        {
+          "chunk_index": 3,
+          "section_heading": "2. Practical Training Curriculum",
+          "has_table": false,
+          "table_header_preserved": true,
+          "entity_context_preserved": true,
+          "word_count": 36,
+          "status": "CHUNK_READY"
+        },
+        {
+          "chunk_index": 4,
+          "section_heading": "3. Career Roles",
+          "has_table": false,
+          "table_header_preserved": true,
+          "entity_context_preserved": true,
+          "word_count": 15,
+          "status": "CHUNK_READY"
+        },
+        {
+          "chunk_index": 5,
+          "section_heading": "Related Information",
+          "has_table": false,
+          "table_header_preserved": true,
+          "entity_context_preserved": true,
+          "word_count": 7,
+          "status": "CHUNK_READY"
+        },
+        {
+          "chunk_index": 6,
+          "section_heading": "Official Sources and Provenance",
+          "has_table": false,
+          "table_header_preserved": true,
+          "entity_context_preserved": true,
+          "word_count": 46,
+          "status": "CHUNK_READY"
+        }
+      ],
+      "document_readiness_status": "READY_FOR_RAG_INGESTION"
+    },
+    {
+      "document_id": "srgi_lucknow_bvoc_banking_financial_services",
+      "category": "07_programmes_vocation",
+      "title": "B.Voc in Banking, Financial Services and Insurance (BFSI)",
+      "simulated_chunks_count": 7,
+      "chunks": [
+        {
+          "chunk_index": 0,
+          "section_heading": "Overview",
+          "has_table": false,
+          "table_header_preserved": true,
+          "entity_context_preserved": true,
+          "word_count": 41,
+          "status": "CHUNK_READY"
+        },
+        {
+          "chunk_index": 1,
+          "section_heading": "Scope",
+          "has_table": false,
+          "table_header_preserved": true,
+          "entity_context_preserved": true,
+          "word_count": 18,
+          "status": "CHUNK_READY"
+        },
+        {
+          "chunk_index": 2,
+          "section_heading": "1. Programme Specification",
+          "has_table": false,
+          "table_header_preserved": true,
+          "entity_context_preserved": true,
+          "word_count": 28,
+          "status": "CHUNK_READY"
+        },
+        {
+          "chunk_index": 3,
+          "section_heading": "2. Core Industry Competencies",
+          "has_table": false,
+          "table_header_preserved": true,
+          "entity_context_preserved": true,
+          "word_count": 33,
+          "status": "CHUNK_READY"
+        },
+        {
+          "chunk_index": 4,
+          "section_heading": "3. Employment Partners",
+          "has_table": false,
+          "table_header_preserved": true,
+          "entity_context_preserved": true,
+          "word_count": 18,
+          "status": "CHUNK_READY"
+        },
+        {
+          "chunk_index": 5,
+          "section_heading": "Related Information",
+          "has_table": false,
+          "table_header_preserved": true,
+          "entity_context_preserved": true,
+          "word_count": 7,
+          "status": "CHUNK_READY"
+        },
+        {
+          "chunk_index": 6,
+          "section_heading": "Official Sources and Provenance",
+          "has_table": false,
+          "table_header_preserved": true,
+          "entity_context_preserved": true,
+          "word_count": 46,
+          "status": "CHUNK_READY"
+        }
+      ],
+      "document_readiness_status": "READY_FOR_RAG_INGESTION"
+    },
+    {
+      "document_id": "srgi_lucknow_bvoc_automobile_engineering",
+      "category": "07_programmes_vocation",
+      "title": "B.Voc in Automobile Engineering",
+      "simulated_chunks_count": 6,
+      "chunks": [
+        {
+          "chunk_index": 0,
+          "section_heading": "Overview",
+          "has_table": false,
+          "table_header_preserved": true,
+          "entity_context_preserved": true,
+          "word_count": 33,
+          "status": "CHUNK_READY"
+        },
+        {
+          "chunk_index": 1,
+          "section_heading": "Scope",
+          "has_table": false,
+          "table_header_preserved": true,
+          "entity_context_preserved": true,
+          "word_count": 18,
+          "status": "CHUNK_READY"
+        },
+        {
+          "chunk_index": 2,
+          "section_heading": "1. Programme Specification",
+          "has_table": false,
+          "table_header_preserved": true,
+          "entity_context_preserved": true,
+          "word_count": 24,
+          "status": "CHUNK_READY"
+        },
+        {
+          "chunk_index": 3,
+          "section_heading": "2. Practical Focus",
+          "has_table": false,
+          "table_header_preserved": true,
+          "entity_context_preserved": true,
+          "word_count": 24,
+          "status": "CHUNK_READY"
+        },
+        {
+          "chunk_index": 4,
+          "section_heading": "Related Information",
+          "has_table": false,
+          "table_header_preserved": true,
+          "entity_context_preserved": true,
+          "word_count": 7,
+          "status": "CHUNK_READY"
+        },
+        {
+          "chunk_index": 5,
+          "section_heading": "Official Sources and Provenance",
+          "has_table": false,
+          "table_header_preserved": true,
+          "entity_context_preserved": true,
+          "word_count": 46,
+          "status": "CHUNK_READY"
+        }
+      ],
+      "document_readiness_status": "READY_FOR_RAG_INGESTION"
+    },
+    {
+      "document_id": "srgi_lucknow_admissions_enquiry_and_eligibility",
+      "category": "08_admissions_and_counselling",
+      "title": "SRGI Lucknow Admissions Procedure, Eligibility and Enquiry Channels",
+      "simulated_chunks_count": 7,
+      "chunks": [
+        {
+          "chunk_index": 0,
+          "section_heading": "Overview",
+          "has_table": false,
+          "table_header_preserved": true,
+          "entity_context_preserved": true,
+          "word_count": 45,
+          "status": "CHUNK_READY"
+        },
+        {
+          "chunk_index": 1,
+          "section_heading": "Scope",
+          "has_table": false,
+          "table_header_preserved": true,
+          "entity_context_preserved": true,
+          "word_count": 18,
+          "status": "CHUNK_READY"
+        },
+        {
+          "chunk_index": 2,
+          "section_heading": "1. Official Admission Routes",
+          "has_table": false,
+          "table_header_preserved": true,
+          "entity_context_preserved": true,
+          "word_count": 71,
+          "status": "CHUNK_READY"
+        },
+        {
+          "chunk_index": 3,
+          "section_heading": "2. Online Enquiry & Application Portal",
+          "has_table": false,
+          "table_header_preserved": true,
+          "entity_context_preserved": true,
+          "word_count": 42,
+          "status": "CHUNK_READY"
+        },
+        {
+          "chunk_index": 4,
+          "section_heading": "3. Mandatory Documents Required at Reporting",
+          "has_table": false,
+          "table_header_preserved": true,
+          "entity_context_preserved": true,
+          "word_count": 81,
+          "status": "CHUNK_READY"
+        },
+        {
+          "chunk_index": 5,
+          "section_heading": "Related Information",
+          "has_table": false,
+          "table_header_preserved": true,
+          "entity_context_preserved": true,
+          "word_count": 7,
+          "status": "CHUNK_READY"
+        },
+        {
+          "chunk_index": 6,
+          "section_heading": "Official Sources and Provenance",
+          "has_table": false,
+          "table_header_preserved": true,
+          "entity_context_preserved": true,
+          "word_count": 50,
+          "status": "CHUNK_READY"
+        }
+      ],
+      "document_readiness_status": "READY_FOR_RAG_INGESTION"
+    },
+    {
+      "document_id": "srgi_lucknow_career_pathfinder_simulator",
+      "category": "08_admissions_and_counselling",
+      "title": "SRGI Career Pathfinder and Course Selection Simulator",
+      "simulated_chunks_count": 6,
+      "chunks": [
+        {
+          "chunk_index": 0,
+          "section_heading": "Overview",
+          "has_table": false,
+          "table_header_preserved": true,
+          "entity_context_preserved": true,
+          "word_count": 39,
+          "status": "CHUNK_READY"
+        },
+        {
+          "chunk_index": 1,
+          "section_heading": "Scope",
+          "has_table": false,
+          "table_header_preserved": true,
+          "entity_context_preserved": true,
+          "word_count": 22,
+          "status": "CHUNK_READY"
+        },
+        {
+          "chunk_index": 2,
+          "section_heading": "1. Tool Overview",
+          "has_table": false,
+          "table_header_preserved": true,
+          "entity_context_preserved": true,
+          "word_count": 39,
+          "status": "CHUNK_READY"
+        },
+        {
+          "chunk_index": 3,
+          "section_heading": "2. Functional Domains",
+          "has_table": false,
+          "table_header_preserved": true,
+          "entity_context_preserved": true,
+          "word_count": 64,
+          "status": "CHUNK_READY"
+        },
+        {
+          "chunk_index": 4,
+          "section_heading": "Related Information",
+          "has_table": false,
+          "table_header_preserved": true,
+          "entity_context_preserved": true,
+          "word_count": 7,
+          "status": "CHUNK_READY"
+        },
+        {
+          "chunk_index": 5,
+          "section_heading": "Official Sources and Provenance",
+          "has_table": false,
+          "table_header_preserved": true,
+          "entity_context_preserved": true,
+          "word_count": 46,
+          "status": "CHUNK_READY"
+        }
+      ],
+      "document_readiness_status": "READY_FOR_RAG_INGESTION"
+    },
+    {
+      "document_id": "srgi_lucknow_hostel_accommodation",
+      "category": "09_campus_facilities_and_services",
+      "title": "Hostel Accommodation and Residential Life (2,000+ Capacity)",
+      "simulated_chunks_count": 7,
+      "chunks": [
+        {
+          "chunk_index": 0,
+          "section_heading": "Overview",
+          "has_table": false,
+          "table_header_preserved": true,
+          "entity_context_preserved": true,
+          "word_count": 39,
+          "status": "CHUNK_READY"
+        },
+        {
+          "chunk_index": 1,
+          "section_heading": "Scope",
+          "has_table": false,
+          "table_header_preserved": true,
+          "entity_context_preserved": true,
+          "word_count": 22,
+          "status": "CHUNK_READY"
+        },
+        {
+          "chunk_index": 2,
+          "section_heading": "1. Residential Overview",
+          "has_table": false,
+          "table_header_preserved": true,
+          "entity_context_preserved": true,
+          "word_count": 37,
+          "status": "CHUNK_READY"
+        },
+        {
+          "chunk_index": 3,
+          "section_heading": "2. Infrastructure & In-Room Amenities",
+          "has_table": false,
+          "table_header_preserved": true,
+          "entity_context_preserved": true,
+          "word_count": 87,
+          "status": "CHUNK_READY"
+        },
+        {
+          "chunk_index": 4,
+          "section_heading": "3. Lifestyle, Recreation & Health",
+          "has_table": false,
+          "table_header_preserved": true,
+          "entity_context_preserved": true,
+          "word_count": 77,
+          "status": "CHUNK_READY"
+        },
+        {
+          "chunk_index": 5,
+          "section_heading": "Related Information",
+          "has_table": false,
+          "table_header_preserved": true,
+          "entity_context_preserved": true,
+          "word_count": 7,
+          "status": "CHUNK_READY"
+        },
+        {
+          "chunk_index": 6,
+          "section_heading": "Official Sources and Provenance",
+          "has_table": false,
+          "table_header_preserved": true,
+          "entity_context_preserved": true,
+          "word_count": 46,
+          "status": "CHUNK_READY"
+        }
+      ],
+      "document_readiness_status": "READY_FOR_RAG_INGESTION"
+    },
+    {
+      "document_id": "srgi_lucknow_transport_facility",
+      "category": "09_campus_facilities_and_services",
+      "title": "Transport Fleet and Bus Connectivity Across Lucknow",
+      "simulated_chunks_count": 6,
+      "chunks": [
+        {
+          "chunk_index": 0,
+          "section_heading": "Overview",
+          "has_table": false,
+          "table_header_preserved": true,
+          "entity_context_preserved": true,
+          "word_count": 39,
+          "status": "CHUNK_READY"
+        },
+        {
+          "chunk_index": 1,
+          "section_heading": "Scope",
+          "has_table": false,
+          "table_header_preserved": true,
+          "entity_context_preserved": true,
+          "word_count": 21,
+          "status": "CHUNK_READY"
+        },
+        {
+          "chunk_index": 2,
+          "section_heading": "1. Transit Fleet Overview",
+          "has_table": false,
+          "table_header_preserved": true,
+          "entity_context_preserved": true,
+          "word_count": 30,
+          "status": "CHUNK_READY"
+        },
+        {
+          "chunk_index": 3,
+          "section_heading": "2. Operational Highlights & Safety Protocols",
+          "has_table": false,
+          "table_header_preserved": true,
+          "entity_context_preserved": true,
+          "word_count": 92,
+          "status": "CHUNK_READY"
+        },
+        {
+          "chunk_index": 4,
+          "section_heading": "Related Information",
+          "has_table": false,
+          "table_header_preserved": true,
+          "entity_context_preserved": true,
+          "word_count": 7,
+          "status": "CHUNK_READY"
+        },
+        {
+          "chunk_index": 5,
+          "section_heading": "Official Sources and Provenance",
+          "has_table": false,
+          "table_header_preserved": true,
+          "entity_context_preserved": true,
+          "word_count": 46,
+          "status": "CHUNK_READY"
+        }
+      ],
+      "document_readiness_status": "READY_FOR_RAG_INGESTION"
+    },
+    {
+      "document_id": "srgi_lucknow_central_library",
+      "category": "09_campus_facilities_and_services",
+      "title": "Central Library System and Digital Knowledge Repositories",
+      "simulated_chunks_count": 7,
+      "chunks": [
+        {
+          "chunk_index": 0,
+          "section_heading": "Overview",
+          "has_table": false,
+          "table_header_preserved": true,
+          "entity_context_preserved": true,
+          "word_count": 39,
+          "status": "CHUNK_READY"
+        },
+        {
+          "chunk_index": 1,
+          "section_heading": "Scope",
+          "has_table": false,
+          "table_header_preserved": true,
+          "entity_context_preserved": true,
+          "word_count": 23,
+          "status": "CHUNK_READY"
+        },
+        {
+          "chunk_index": 2,
+          "section_heading": "1. System Architecture",
+          "has_table": false,
+          "table_header_preserved": true,
+          "entity_context_preserved": true,
+          "word_count": 30,
+          "status": "CHUNK_READY"
+        },
+        {
+          "chunk_index": 3,
+          "section_heading": "2. Key Library Metrics",
+          "has_table": true,
+          "table_header_preserved": true,
+          "entity_context_preserved": true,
+          "word_count": 75,
+          "status": "CHUNK_READY"
+        },
+        {
+          "chunk_index": 4,
+          "section_heading": "3. Digital Consortia & Memberships",
+          "has_table": false,
+          "table_header_preserved": true,
+          "entity_context_preserved": true,
+          "word_count": 65,
+          "status": "CHUNK_READY"
+        },
+        {
+          "chunk_index": 5,
+          "section_heading": "Related Information",
+          "has_table": false,
+          "table_header_preserved": true,
+          "entity_context_preserved": true,
+          "word_count": 7,
+          "status": "CHUNK_READY"
+        },
+        {
+          "chunk_index": 6,
+          "section_heading": "Official Sources and Provenance",
+          "has_table": false,
+          "table_header_preserved": true,
+          "entity_context_preserved": true,
+          "word_count": 46,
+          "status": "CHUNK_READY"
+        }
+      ],
+      "document_readiness_status": "READY_FOR_RAG_INGESTION"
+    },
+    {
+      "document_id": "srgi_lucknow_cafeteria_and_dining",
+      "category": "09_campus_facilities_and_services",
+      "title": "Cafeteria and Campus Dining Services",
+      "simulated_chunks_count": 6,
+      "chunks": [
+        {
+          "chunk_index": 0,
+          "section_heading": "Overview",
+          "has_table": false,
+          "table_header_preserved": true,
+          "entity_context_preserved": true,
+          "word_count": 35,
+          "status": "CHUNK_READY"
+        },
+        {
+          "chunk_index": 1,
+          "section_heading": "Scope",
+          "has_table": false,
+          "table_header_preserved": true,
+          "entity_context_preserved": true,
+          "word_count": 16,
+          "status": "CHUNK_READY"
+        },
+        {
+          "chunk_index": 2,
+          "section_heading": "1. Dining Philosophy",
+          "has_table": false,
+          "table_header_preserved": true,
+          "entity_context_preserved": true,
+          "word_count": 30,
+          "status": "CHUNK_READY"
+        },
+        {
+          "chunk_index": 3,
+          "section_heading": "2. Operational Standards",
+          "has_table": false,
+          "table_header_preserved": true,
+          "entity_context_preserved": true,
+          "word_count": 52,
+          "status": "CHUNK_READY"
+        },
+        {
+          "chunk_index": 4,
+          "section_heading": "Related Information",
+          "has_table": false,
+          "table_header_preserved": true,
+          "entity_context_preserved": true,
+          "word_count": 7,
+          "status": "CHUNK_READY"
+        },
+        {
+          "chunk_index": 5,
+          "section_heading": "Official Sources and Provenance",
+          "has_table": false,
+          "table_header_preserved": true,
+          "entity_context_preserved": true,
+          "word_count": 46,
+          "status": "CHUNK_READY"
+        }
+      ],
+      "document_readiness_status": "READY_FOR_RAG_INGESTION"
+    },
+    {
+      "document_id": "srgi_lucknow_futuristic_labs",
+      "category": "09_campus_facilities_and_services",
+      "title": "Futuristic Laboratories and Technical Infrastructure",
+      "simulated_chunks_count": 6,
+      "chunks": [
+        {
+          "chunk_index": 0,
+          "section_heading": "Overview",
+          "has_table": false,
+          "table_header_preserved": true,
+          "entity_context_preserved": true,
+          "word_count": 35,
+          "status": "CHUNK_READY"
+        },
+        {
+          "chunk_index": 1,
+          "section_heading": "Scope",
+          "has_table": false,
+          "table_header_preserved": true,
+          "entity_context_preserved": true,
+          "word_count": 14,
+          "status": "CHUNK_READY"
+        },
+        {
+          "chunk_index": 2,
+          "section_heading": "1. Laboratory Mandate",
+          "has_table": false,
+          "table_header_preserved": true,
+          "entity_context_preserved": true,
+          "word_count": 24,
+          "status": "CHUNK_READY"
+        },
+        {
+          "chunk_index": 3,
+          "section_heading": "2. Key Laboratory Clusters",
+          "has_table": false,
+          "table_header_preserved": true,
+          "entity_context_preserved": true,
+          "word_count": 94,
+          "status": "CHUNK_READY"
+        },
+        {
+          "chunk_index": 4,
+          "section_heading": "Related Information",
+          "has_table": false,
+          "table_header_preserved": true,
+          "entity_context_preserved": true,
+          "word_count": 7,
+          "status": "CHUNK_READY"
+        },
+        {
+          "chunk_index": 5,
+          "section_heading": "Official Sources and Provenance",
+          "has_table": false,
+          "table_header_preserved": true,
+          "entity_context_preserved": true,
+          "word_count": 46,
+          "status": "CHUNK_READY"
+        }
+      ],
+      "document_readiness_status": "READY_FOR_RAG_INGESTION"
+    },
+    {
+      "document_id": "srgi_lucknow_smart_classrooms",
+      "category": "09_campus_facilities_and_services",
+      "title": "Smart Classrooms and Digital Learning Spaces",
+      "simulated_chunks_count": 6,
+      "chunks": [
+        {
+          "chunk_index": 0,
+          "section_heading": "Overview",
+          "has_table": false,
+          "table_header_preserved": true,
+          "entity_context_preserved": true,
+          "word_count": 37,
+          "status": "CHUNK_READY"
+        },
+        {
+          "chunk_index": 1,
+          "section_heading": "Scope",
+          "has_table": false,
+          "table_header_preserved": true,
+          "entity_context_preserved": true,
+          "word_count": 17,
+          "status": "CHUNK_READY"
+        },
+        {
+          "chunk_index": 2,
+          "section_heading": "1. Modern Pedagogical Spaces",
+          "has_table": false,
+          "table_header_preserved": true,
+          "entity_context_preserved": true,
+          "word_count": 29,
+          "status": "CHUNK_READY"
+        },
+        {
+          "chunk_index": 3,
+          "section_heading": "2. Technology Capabilities",
+          "has_table": false,
+          "table_header_preserved": true,
+          "entity_context_preserved": true,
+          "word_count": 33,
+          "status": "CHUNK_READY"
+        },
+        {
+          "chunk_index": 4,
+          "section_heading": "Related Information",
+          "has_table": false,
+          "table_header_preserved": true,
+          "entity_context_preserved": true,
+          "word_count": 7,
+          "status": "CHUNK_READY"
+        },
+        {
+          "chunk_index": 5,
+          "section_heading": "Official Sources and Provenance",
+          "has_table": false,
+          "table_header_preserved": true,
+          "entity_context_preserved": true,
+          "word_count": 46,
+          "status": "CHUNK_READY"
+        }
+      ],
+      "document_readiness_status": "READY_FOR_RAG_INGESTION"
+    },
+    {
+      "document_id": "srgi_lucknow_seminar_halls_and_conference",
+      "category": "09_campus_facilities_and_services",
+      "title": "Conference Rooms and Seminar Halls",
+      "simulated_chunks_count": 6,
+      "chunks": [
+        {
+          "chunk_index": 0,
+          "section_heading": "Overview",
+          "has_table": false,
+          "table_header_preserved": true,
+          "entity_context_preserved": true,
+          "word_count": 35,
+          "status": "CHUNK_READY"
+        },
+        {
+          "chunk_index": 1,
+          "section_heading": "Scope",
+          "has_table": false,
+          "table_header_preserved": true,
+          "entity_context_preserved": true,
+          "word_count": 19,
+          "status": "CHUNK_READY"
+        },
+        {
+          "chunk_index": 2,
+          "section_heading": "1. Event Venues",
+          "has_table": false,
+          "table_header_preserved": true,
+          "entity_context_preserved": true,
+          "word_count": 28,
+          "status": "CHUNK_READY"
+        },
+        {
+          "chunk_index": 3,
+          "section_heading": "2. Facilities",
+          "has_table": false,
+          "table_header_preserved": true,
+          "entity_context_preserved": true,
+          "word_count": 36,
+          "status": "CHUNK_READY"
+        },
+        {
+          "chunk_index": 4,
+          "section_heading": "Related Information",
+          "has_table": false,
+          "table_header_preserved": true,
+          "entity_context_preserved": true,
+          "word_count": 7,
+          "status": "CHUNK_READY"
+        },
+        {
+          "chunk_index": 5,
+          "section_heading": "Official Sources and Provenance",
+          "has_table": false,
+          "table_header_preserved": true,
+          "entity_context_preserved": true,
+          "word_count": 46,
+          "status": "CHUNK_READY"
+        }
+      ],
+      "document_readiness_status": "READY_FOR_RAG_INGESTION"
+    },
+    {
+      "document_id": "srgi_lucknow_indoor_swimming_pool",
+      "category": "09_campus_facilities_and_services",
+      "title": "Indoor Olympic-Standard Swimming Pool (6-Track)",
+      "simulated_chunks_count": 6,
+      "chunks": [
+        {
+          "chunk_index": 0,
+          "section_heading": "Overview",
+          "has_table": false,
+          "table_header_preserved": true,
+          "entity_context_preserved": true,
+          "word_count": 35,
+          "status": "CHUNK_READY"
+        },
+        {
+          "chunk_index": 1,
+          "section_heading": "Scope",
+          "has_table": false,
+          "table_header_preserved": true,
+          "entity_context_preserved": true,
+          "word_count": 17,
+          "status": "CHUNK_READY"
+        },
+        {
+          "chunk_index": 2,
+          "section_heading": "1. Aquatic Facility Overview",
+          "has_table": false,
+          "table_header_preserved": true,
+          "entity_context_preserved": true,
+          "word_count": 27,
+          "status": "CHUNK_READY"
+        },
+        {
+          "chunk_index": 3,
+          "section_heading": "2. Infrastructure & Hygiene Specifications",
+          "has_table": false,
+          "table_header_preserved": true,
+          "entity_context_preserved": true,
+          "word_count": 77,
+          "status": "CHUNK_READY"
+        },
+        {
+          "chunk_index": 4,
+          "section_heading": "Related Information",
+          "has_table": false,
+          "table_header_preserved": true,
+          "entity_context_preserved": true,
+          "word_count": 7,
+          "status": "CHUNK_READY"
+        },
+        {
+          "chunk_index": 5,
+          "section_heading": "Official Sources and Provenance",
+          "has_table": false,
+          "table_header_preserved": true,
+          "entity_context_preserved": true,
+          "word_count": 46,
+          "status": "CHUNK_READY"
+        }
+      ],
+      "document_readiness_status": "READY_FOR_RAG_INGESTION"
+    },
+    {
+      "document_id": "srgi_lucknow_sports_ground_and_complex",
+      "category": "09_campus_facilities_and_services",
+      "title": "65-Acre Sports Complex, Cricket Ground and Gymnasium",
+      "simulated_chunks_count": 6,
+      "chunks": [
+        {
+          "chunk_index": 0,
+          "section_heading": "Overview",
+          "has_table": false,
+          "table_header_preserved": true,
+          "entity_context_preserved": true,
+          "word_count": 39,
+          "status": "CHUNK_READY"
+        },
+        {
+          "chunk_index": 1,
+          "section_heading": "Scope",
+          "has_table": false,
+          "table_header_preserved": true,
+          "entity_context_preserved": true,
+          "word_count": 20,
+          "status": "CHUNK_READY"
+        },
+        {
+          "chunk_index": 2,
+          "section_heading": "1. 65-Acre Sports Infrastructure",
+          "has_table": false,
+          "table_header_preserved": true,
+          "entity_context_preserved": true,
+          "word_count": 28,
+          "status": "CHUNK_READY"
+        },
+        {
+          "chunk_index": 3,
+          "section_heading": "2. Key Sporting Arenas",
+          "has_table": false,
+          "table_header_preserved": true,
+          "entity_context_preserved": true,
+          "word_count": 81,
+          "status": "CHUNK_READY"
+        },
+        {
+          "chunk_index": 4,
+          "section_heading": "Related Information",
+          "has_table": false,
+          "table_header_preserved": true,
+          "entity_context_preserved": true,
+          "word_count": 7,
+          "status": "CHUNK_READY"
+        },
+        {
+          "chunk_index": 5,
+          "section_heading": "Official Sources and Provenance",
+          "has_table": false,
+          "table_header_preserved": true,
+          "entity_context_preserved": true,
+          "word_count": 46,
+          "status": "CHUNK_READY"
+        }
+      ],
+      "document_readiness_status": "READY_FOR_RAG_INGESTION"
+    },
+    {
+      "document_id": "srgi_lucknow_training_and_placement_cell",
+      "category": "10_placements_and_careers",
+      "title": "Training & Placement Cell \u2014 Structure, Training Programmes and Corporate Relations",
+      "simulated_chunks_count": 6,
+      "chunks": [
+        {
+          "chunk_index": 0,
+          "section_heading": "Overview",
+          "has_table": false,
+          "table_header_preserved": true,
+          "entity_context_preserved": true,
+          "word_count": 47,
+          "status": "CHUNK_READY"
+        },
+        {
+          "chunk_index": 1,
+          "section_heading": "Scope",
+          "has_table": false,
+          "table_header_preserved": true,
+          "entity_context_preserved": true,
+          "word_count": 20,
+          "status": "CHUNK_READY"
+        },
+        {
+          "chunk_index": 2,
+          "section_heading": "1. Cell Overview & Leadership",
+          "has_table": false,
+          "table_header_preserved": true,
+          "entity_context_preserved": true,
+          "word_count": 45,
+          "status": "CHUNK_READY"
+        },
+        {
+          "chunk_index": 3,
+          "section_heading": "2. Four-Pillar Training Architecture",
+          "has_table": false,
+          "table_header_preserved": true,
+          "entity_context_preserved": true,
+          "word_count": 72,
+          "status": "CHUNK_READY"
+        },
+        {
+          "chunk_index": 4,
+          "section_heading": "Related Information",
+          "has_table": false,
+          "table_header_preserved": true,
+          "entity_context_preserved": true,
+          "word_count": 7,
+          "status": "CHUNK_READY"
+        },
+        {
+          "chunk_index": 5,
+          "section_heading": "Official Sources and Provenance",
+          "has_table": false,
+          "table_header_preserved": true,
+          "entity_context_preserved": true,
+          "word_count": 46,
+          "status": "CHUNK_READY"
+        }
+      ],
+      "document_readiness_status": "READY_FOR_RAG_INGESTION"
+    },
+    {
+      "document_id": "srgi_lucknow_top_placements_and_recruiters",
+      "category": "10_placements_and_careers",
+      "title": "Placement Performance Dashboard and Top Recruiting Partners",
+      "simulated_chunks_count": 6,
+      "chunks": [
+        {
+          "chunk_index": 0,
+          "section_heading": "Overview",
+          "has_table": false,
+          "table_header_preserved": true,
+          "entity_context_preserved": true,
+          "word_count": 41,
+          "status": "CHUNK_READY"
+        },
+        {
+          "chunk_index": 1,
+          "section_heading": "Scope",
+          "has_table": false,
+          "table_header_preserved": true,
+          "entity_context_preserved": true,
+          "word_count": 21,
+          "status": "CHUNK_READY"
+        },
+        {
+          "chunk_index": 2,
+          "section_heading": "1. Placement Performance Dashboard",
+          "has_table": true,
+          "table_header_preserved": true,
+          "entity_context_preserved": true,
+          "word_count": 239,
+          "status": "CHUNK_READY"
+        },
+        {
+          "chunk_index": 3,
+          "section_heading": "2. Leading Corporate Recruiting Partners",
+          "has_table": false,
+          "table_header_preserved": true,
+          "entity_context_preserved": true,
+          "word_count": 83,
+          "status": "CHUNK_READY"
+        },
+        {
+          "chunk_index": 4,
+          "section_heading": "Related Information",
+          "has_table": false,
+          "table_header_preserved": true,
+          "entity_context_preserved": true,
+          "word_count": 7,
+          "status": "CHUNK_READY"
+        },
+        {
+          "chunk_index": 5,
+          "section_heading": "Official Sources and Provenance",
+          "has_table": false,
+          "table_header_preserved": true,
+          "entity_context_preserved": true,
+          "word_count": 48,
+          "status": "CHUNK_READY"
+        }
+      ],
+      "document_readiness_status": "READY_FOR_RAG_INGESTION"
+    },
+    {
+      "document_id": "srgi_lucknow_student_clubs_and_activities",
+      "category": "11_student_life_and_regulations",
+      "title": "Student Clubs, Societies and Cultural Extracurricular Life",
+      "simulated_chunks_count": 6,
+      "chunks": [
+        {
+          "chunk_index": 0,
+          "section_heading": "Overview",
+          "has_table": false,
+          "table_header_preserved": true,
+          "entity_context_preserved": true,
+          "word_count": 39,
+          "status": "CHUNK_READY"
+        },
+        {
+          "chunk_index": 1,
+          "section_heading": "Scope",
+          "has_table": false,
+          "table_header_preserved": true,
+          "entity_context_preserved": true,
+          "word_count": 31,
+          "status": "CHUNK_READY"
+        },
+        {
+          "chunk_index": 2,
+          "section_heading": "Co-Curricular Philosophy",
+          "has_table": false,
+          "table_header_preserved": true,
+          "entity_context_preserved": true,
+          "word_count": 62,
+          "status": "CHUNK_READY"
+        },
+        {
+          "chunk_index": 3,
+          "section_heading": "Official Student Clubs Directory",
+          "has_table": true,
+          "table_header_preserved": true,
+          "entity_context_preserved": true,
+          "word_count": 172,
+          "status": "CHUNK_READY"
+        },
+        {
+          "chunk_index": 4,
+          "section_heading": "Related Information",
+          "has_table": false,
+          "table_header_preserved": true,
+          "entity_context_preserved": true,
+          "word_count": 23,
+          "status": "CHUNK_READY"
+        },
+        {
+          "chunk_index": 5,
+          "section_heading": "Official Sources and Provenance",
+          "has_table": false,
+          "table_header_preserved": true,
+          "entity_context_preserved": true,
+          "word_count": 46,
+          "status": "CHUNK_READY"
+        }
+      ],
+      "document_readiness_status": "READY_FOR_RAG_INGESTION"
+    },
+    {
+      "document_id": "srgi_lucknow_student_grievance_redressal",
+      "category": "11_student_life_and_regulations",
+      "title": "Student Grievance Redressal Mechanism and Support Portal",
+      "simulated_chunks_count": 8,
+      "chunks": [
+        {
+          "chunk_index": 0,
+          "section_heading": "Overview",
+          "has_table": false,
+          "table_header_preserved": true,
+          "entity_context_preserved": true,
+          "word_count": 39,
+          "status": "CHUNK_READY"
+        },
+        {
+          "chunk_index": 1,
+          "section_heading": "Scope",
+          "has_table": false,
+          "table_header_preserved": true,
+          "entity_context_preserved": true,
+          "word_count": 38,
+          "status": "CHUNK_READY"
+        },
+        {
+          "chunk_index": 2,
+          "section_heading": "Official Grievance Redressal Portal",
+          "has_table": false,
+          "table_header_preserved": true,
+          "entity_context_preserved": true,
+          "word_count": 50,
+          "status": "CHUNK_READY"
+        },
+        {
+          "chunk_index": 3,
+          "section_heading": "Online Submission Form Specifications",
+          "has_table": true,
+          "table_header_preserved": true,
+          "entity_context_preserved": true,
+          "word_count": 131,
+          "status": "CHUNK_READY"
+        },
+        {
+          "chunk_index": 4,
+          "section_heading": "Official Grievance Categories",
+          "has_table": true,
+          "table_header_preserved": true,
+          "entity_context_preserved": true,
+          "word_count": 95,
+          "status": "CHUNK_READY"
+        },
+        {
+          "chunk_index": 5,
+          "section_heading": "Escalation and Disciplinary Contacts",
+          "has_table": false,
+          "table_header_preserved": true,
+          "entity_context_preserved": true,
+          "word_count": 47,
+          "status": "CHUNK_READY"
+        },
+        {
+          "chunk_index": 6,
+          "section_heading": "Related Information",
+          "has_table": false,
+          "table_header_preserved": true,
+          "entity_context_preserved": true,
+          "word_count": 15,
+          "status": "CHUNK_READY"
+        },
+        {
+          "chunk_index": 7,
+          "section_heading": "Official Sources and Provenance",
+          "has_table": false,
+          "table_header_preserved": true,
+          "entity_context_preserved": true,
+          "word_count": 46,
+          "status": "CHUNK_READY"
+        }
+      ],
+      "document_readiness_status": "READY_FOR_RAG_INGESTION"
+    },
+    {
+      "document_id": "srgi_lucknow_anti_ragging_regulations",
+      "category": "11_student_life_and_regulations",
+      "title": "Anti-Ragging Committee, Policies and Zero-Tolerance Mandate",
+      "simulated_chunks_count": 7,
+      "chunks": [
+        {
+          "chunk_index": 0,
+          "section_heading": "Overview",
+          "has_table": false,
+          "table_header_preserved": true,
+          "entity_context_preserved": true,
+          "word_count": 39,
+          "status": "CHUNK_READY"
+        },
+        {
+          "chunk_index": 1,
+          "section_heading": "Scope",
+          "has_table": false,
+          "table_header_preserved": true,
+          "entity_context_preserved": true,
+          "word_count": 32,
+          "status": "CHUNK_READY"
+        },
+        {
+          "chunk_index": 2,
+          "section_heading": "Statutory Zero-Tolerance Mandate",
+          "has_table": false,
+          "table_header_preserved": true,
+          "entity_context_preserved": true,
+          "word_count": 88,
+          "status": "CHUNK_READY"
+        },
+        {
+          "chunk_index": 3,
+          "section_heading": "Proctorial Disciplinary Authority & Contact Lines",
+          "has_table": false,
+          "table_header_preserved": true,
+          "entity_context_preserved": true,
+          "word_count": 62,
+          "status": "CHUNK_READY"
+        },
+        {
+          "chunk_index": 4,
+          "section_heading": "Documented Limitation & Evidence Status",
+          "has_table": false,
+          "table_header_preserved": true,
+          "entity_context_preserved": true,
+          "word_count": 94,
+          "status": "CHUNK_READY"
+        },
+        {
+          "chunk_index": 5,
+          "section_heading": "Related Information",
+          "has_table": false,
+          "table_header_preserved": true,
+          "entity_context_preserved": true,
+          "word_count": 20,
+          "status": "CHUNK_READY"
+        },
+        {
+          "chunk_index": 6,
+          "section_heading": "Official Sources and Provenance",
+          "has_table": false,
+          "table_header_preserved": true,
+          "entity_context_preserved": true,
+          "word_count": 54,
+          "status": "CHUNK_READY"
+        }
+      ],
+      "document_readiness_status": "READY_FOR_RAG_INGESTION"
+    },
+    {
+      "document_id": "srgi_lucknow_notices_and_announcements",
+      "category": "12_events_notices_and_speakers",
+      "title": "Academic Notices, Circulars and Institutional Announcements",
+      "simulated_chunks_count": 6,
+      "chunks": [
+        {
+          "chunk_index": 0,
+          "section_heading": "Overview",
+          "has_table": false,
+          "table_header_preserved": true,
+          "entity_context_preserved": true,
+          "word_count": 37,
+          "status": "CHUNK_READY"
+        },
+        {
+          "chunk_index": 1,
+          "section_heading": "Scope",
+          "has_table": false,
+          "table_header_preserved": true,
+          "entity_context_preserved": true,
+          "word_count": 18,
+          "status": "CHUNK_READY"
+        },
+        {
+          "chunk_index": 2,
+          "section_heading": "1. Notice Board Overview",
+          "has_table": false,
+          "table_header_preserved": true,
+          "entity_context_preserved": true,
+          "word_count": 23,
+          "status": "CHUNK_READY"
+        },
+        {
+          "chunk_index": 3,
+          "section_heading": "2. Key Verified Institutional Notices (2026 Academic Session)",
+          "has_table": true,
+          "table_header_preserved": true,
+          "entity_context_preserved": true,
+          "word_count": 126,
+          "status": "CHUNK_READY"
+        },
+        {
+          "chunk_index": 4,
+          "section_heading": "Related Information",
+          "has_table": false,
+          "table_header_preserved": true,
+          "entity_context_preserved": true,
+          "word_count": 7,
+          "status": "CHUNK_READY"
+        },
+        {
+          "chunk_index": 5,
+          "section_heading": "Official Sources and Provenance",
+          "has_table": false,
+          "table_header_preserved": true,
+          "entity_context_preserved": true,
+          "word_count": 46,
+          "status": "CHUNK_READY"
+        }
+      ],
+      "document_readiness_status": "READY_FOR_RAG_INGESTION"
+    },
+    {
+      "document_id": "srgi_lucknow_events_and_youth_manifesto",
+      "category": "12_events_notices_and_speakers",
+      "title": "Institutional Events and Uttar Pradesh Youth Manifesto",
+      "simulated_chunks_count": 6,
+      "chunks": [
+        {
+          "chunk_index": 0,
+          "section_heading": "Overview",
+          "has_table": false,
+          "table_header_preserved": true,
+          "entity_context_preserved": true,
+          "word_count": 39,
+          "status": "CHUNK_READY"
+        },
+        {
+          "chunk_index": 1,
+          "section_heading": "Scope",
+          "has_table": false,
+          "table_header_preserved": true,
+          "entity_context_preserved": true,
+          "word_count": 19,
+          "status": "CHUNK_READY"
+        },
+        {
+          "chunk_index": 2,
+          "section_heading": "1. Uttar Pradesh Youth Manifesto (December 2026)",
+          "has_table": false,
+          "table_header_preserved": true,
+          "entity_context_preserved": true,
+          "word_count": 79,
+          "status": "CHUNK_READY"
+        },
+        {
+          "chunk_index": 3,
+          "section_heading": "2. Annual Campus Festivals",
+          "has_table": false,
+          "table_header_preserved": true,
+          "entity_context_preserved": true,
+          "word_count": 30,
+          "status": "CHUNK_READY"
+        },
+        {
+          "chunk_index": 4,
+          "section_heading": "Related Information",
+          "has_table": false,
+          "table_header_preserved": true,
+          "entity_context_preserved": true,
+          "word_count": 7,
+          "status": "CHUNK_READY"
+        },
+        {
+          "chunk_index": 5,
+          "section_heading": "Official Sources and Provenance",
+          "has_table": false,
+          "table_header_preserved": true,
+          "entity_context_preserved": true,
+          "word_count": 46,
+          "status": "CHUNK_READY"
+        }
+      ],
+      "document_readiness_status": "READY_FOR_RAG_INGESTION"
+    },
+    {
+      "document_id": "srgi_lucknow_eminent_speakers",
+      "category": "12_events_notices_and_speakers",
+      "title": "Eminent Speakers and Distinguished Visitors",
+      "simulated_chunks_count": 5,
+      "chunks": [
+        {
+          "chunk_index": 0,
+          "section_heading": "Overview",
+          "has_table": false,
+          "table_header_preserved": true,
+          "entity_context_preserved": true,
+          "word_count": 35,
+          "status": "CHUNK_READY"
+        },
+        {
+          "chunk_index": 1,
+          "section_heading": "Scope",
+          "has_table": false,
+          "table_header_preserved": true,
+          "entity_context_preserved": true,
+          "word_count": 19,
+          "status": "CHUNK_READY"
+        },
+        {
+          "chunk_index": 2,
+          "section_heading": "1. Thought Leadership at SRGI",
+          "has_table": true,
+          "table_header_preserved": true,
+          "entity_context_preserved": true,
+          "word_count": 120,
+          "status": "CHUNK_READY"
+        },
+        {
+          "chunk_index": 3,
+          "section_heading": "Related Information",
+          "has_table": false,
+          "table_header_preserved": true,
+          "entity_context_preserved": true,
+          "word_count": 7,
+          "status": "CHUNK_READY"
+        },
+        {
+          "chunk_index": 4,
+          "section_heading": "Official Sources and Provenance",
+          "has_table": false,
+          "table_header_preserved": true,
+          "entity_context_preserved": true,
+          "word_count": 46,
+          "status": "CHUNK_READY"
+        }
+      ],
+      "document_readiness_status": "READY_FOR_RAG_INGESTION"
+    },
+    {
+      "document_id": "srgi_lucknow_frequently_asked_questions",
+      "category": "13_faqs",
+      "title": "Frequently Asked Questions (FAQ) \u2014 Admissions, Academics and Life at SRGI",
+      "simulated_chunks_count": 7,
+      "chunks": [
+        {
+          "chunk_index": 0,
+          "section_heading": "Overview",
+          "has_table": false,
+          "table_header_preserved": true,
+          "entity_context_preserved": true,
+          "word_count": 47,
+          "status": "CHUNK_READY"
+        },
+        {
+          "chunk_index": 1,
+          "section_heading": "Scope",
+          "has_table": false,
+          "table_header_preserved": true,
+          "entity_context_preserved": true,
+          "word_count": 21,
+          "status": "CHUNK_READY"
+        },
+        {
+          "chunk_index": 2,
+          "section_heading": "1. General & Institutional History",
+          "has_table": false,
+          "table_header_preserved": true,
+          "entity_context_preserved": true,
+          "word_count": 114,
+          "status": "CHUNK_READY"
+        },
+        {
+          "chunk_index": 3,
+          "section_heading": "2. Academics & Programmes",
+          "has_table": false,
+          "table_header_preserved": true,
+          "entity_context_preserved": true,
+          "word_count": 199,
+          "status": "CHUNK_READY"
+        },
+        {
+          "chunk_index": 4,
+          "section_heading": "3. Placements & Campus Life",
+          "has_table": false,
+          "table_header_preserved": true,
+          "entity_context_preserved": true,
+          "word_count": 104,
+          "status": "CHUNK_READY"
+        },
+        {
+          "chunk_index": 5,
+          "section_heading": "Related Information",
+          "has_table": false,
+          "table_header_preserved": true,
+          "entity_context_preserved": true,
+          "word_count": 7,
+          "status": "CHUNK_READY"
+        },
+        {
+          "chunk_index": 6,
+          "section_heading": "Official Sources and Provenance",
+          "has_table": false,
+          "table_header_preserved": true,
+          "entity_context_preserved": true,
+          "word_count": 46,
+          "status": "CHUNK_READY"
+        }
+      ],
+      "document_readiness_status": "READY_FOR_RAG_INGESTION"
+    },
+    {
+      "document_id": "srgi_lucknow_campus_contacts_and_directions",
+      "category": "14_contact_and_locations",
+      "title": "Campus Contacts, Location Directions and Official Helplines",
+      "simulated_chunks_count": 8,
+      "chunks": [
+        {
+          "chunk_index": 0,
+          "section_heading": "Overview",
+          "has_table": false,
+          "table_header_preserved": true,
+          "entity_context_preserved": true,
+          "word_count": 39,
+          "status": "CHUNK_READY"
+        },
+        {
+          "chunk_index": 1,
+          "section_heading": "Scope",
+          "has_table": false,
+          "table_header_preserved": true,
+          "entity_context_preserved": true,
+          "word_count": 18,
+          "status": "CHUNK_READY"
+        },
+        {
+          "chunk_index": 2,
+          "section_heading": "1. Campus Physical Address",
+          "has_table": false,
+          "table_header_preserved": true,
+          "entity_context_preserved": true,
+          "word_count": 34,
+          "status": "CHUNK_READY"
+        },
+        {
+          "chunk_index": 3,
+          "section_heading": "2. Institutional Helplines & Electronic Mail",
+          "has_table": true,
+          "table_header_preserved": true,
+          "entity_context_preserved": true,
+          "word_count": 99,
+          "status": "CHUNK_READY"
+        },
+        {
+          "chunk_index": 4,
+          "section_heading": "3. Key Administrative Phone Directory",
+          "has_table": false,
+          "table_header_preserved": true,
+          "entity_context_preserved": true,
+          "word_count": 53,
+          "status": "CHUNK_READY"
+        },
+        {
+          "chunk_index": 5,
+          "section_heading": "4. Directions & Reaching the Campus",
+          "has_table": false,
+          "table_header_preserved": true,
+          "entity_context_preserved": true,
+          "word_count": 67,
+          "status": "CHUNK_READY"
+        },
+        {
+          "chunk_index": 6,
+          "section_heading": "Related Information",
+          "has_table": false,
+          "table_header_preserved": true,
+          "entity_context_preserved": true,
+          "word_count": 7,
+          "status": "CHUNK_READY"
+        },
+        {
+          "chunk_index": 7,
+          "section_heading": "Official Sources and Provenance",
+          "has_table": false,
+          "table_header_preserved": true,
+          "entity_context_preserved": true,
+          "word_count": 46,
+          "status": "CHUNK_READY"
+        }
+      ],
+      "document_readiness_status": "READY_FOR_RAG_INGESTION"
+    },
+    {
+      "document_id": "srgi_lucknow_official_prospectus_extracts",
+      "category": "15_official_prospectus",
+      "title": "Official Institutional Prospectus \u2014 Summary and Documentary Index",
+      "simulated_chunks_count": 7,
+      "chunks": [
+        {
+          "chunk_index": 0,
+          "section_heading": "Overview",
+          "has_table": false,
+          "table_header_preserved": true,
+          "entity_context_preserved": true,
+          "word_count": 43,
+          "status": "CHUNK_READY"
+        },
+        {
+          "chunk_index": 1,
+          "section_heading": "Scope",
+          "has_table": false,
+          "table_header_preserved": true,
+          "entity_context_preserved": true,
+          "word_count": 30,
+          "status": "CHUNK_READY"
+        },
+        {
+          "chunk_index": 2,
+          "section_heading": "1. Prospectus Documentary Overview & File Records",
+          "has_table": false,
+          "table_header_preserved": true,
+          "entity_context_preserved": true,
+          "word_count": 52,
+          "status": "CHUNK_READY"
+        },
+        {
+          "chunk_index": 3,
+          "section_heading": "2. Prospectus Table of Contents Structure",
+          "has_table": false,
+          "table_header_preserved": true,
+          "entity_context_preserved": true,
+          "word_count": 140,
+          "status": "CHUNK_READY"
+        },
+        {
+          "chunk_index": 4,
+          "section_heading": "3. Significance for Downstream RAG Knowledge",
+          "has_table": false,
+          "table_header_preserved": true,
+          "entity_context_preserved": true,
+          "word_count": 34,
+          "status": "CHUNK_READY"
+        },
+        {
+          "chunk_index": 5,
+          "section_heading": "Related Information",
+          "has_table": false,
+          "table_header_preserved": true,
+          "entity_context_preserved": true,
+          "word_count": 17,
+          "status": "CHUNK_READY"
+        },
+        {
+          "chunk_index": 6,
+          "section_heading": "Official Sources and Provenance",
+          "has_table": false,
+          "table_header_preserved": true,
+          "entity_context_preserved": true,
+          "word_count": 48,
+          "status": "CHUNK_READY"
+        }
+      ],
+      "document_readiness_status": "READY_FOR_RAG_INGESTION"
+    }
+  ]
+}

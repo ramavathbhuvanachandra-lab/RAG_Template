@@ -1,0 +1,49 @@
+{
+  "schema_version": "2.0.0",
+  "institution_id": "srgi_lucknow",
+  "institution_name": "S. R. Group of Institutions (SRGI), Lucknow",
+  "document_id": "srgi_lucknow_btech_mechanical_engineering",
+  "title": "B.Tech in Mechanical Engineering (ME)",
+  "category": "04_programmes_engineering",
+  "subcategory": "undergraduate_engineering",
+  "document_type": "institutional_knowledge",
+  "language": "en",
+  "markdown_path": "documents/04_programmes_engineering/srgi_lucknow_btech_mechanical_engineering.md",
+  "docx_path": "documents/04_programmes_engineering/srgi_lucknow_btech_mechanical_engineering.docx",
+  "source_urls": [
+    "https://srgi.in/btech/me"
+  ],
+  "canonical_source_urls": [
+    "https://srgi.in/btech/me"
+  ],
+  "source_hashes": [
+    "a829d5408847d2031dc0b37c24261836a3d9731155f1090144a78f65992119e3"
+  ],
+  "markdown_hash": "73493b8197270a9b73f617b8c3274b01937ae61d739b5f8264ac0229a74e2e7e",
+  "docx_hash": "2dac726022310c8cc0417cd785b27bd4e07b8ff85046732218e882ae9fcb2d94",
+  "byte_size_md": 2022,
+  "byte_size_docx": 37832,
+  "word_count_md": 225,
+  "sections_count": 8,
+  "table_count": 0,
+  "content_quality_status": "PASS",
+  "conflict_status": "NO_UNRESOLVED_CONFLICTS",
+  "provenance_section_count": 1,
+  "docx_provenance_heading_count": 1,
+  "docx_leaked_syntax_count": 0,
+  "summary": "Mechanical Engineering programme structure, manufacturing technologies, CAD/CAM labs, thermal engineering, robotics, sanctioned intake of 60 seats.",
+  "keywords": [
+    "B.Tech ME",
+    "Mechanical Engineering",
+    "CAD CAM",
+    "Thermodynamics",
+    "Robotics",
+    "Intake 60"
+  ],
+  "related_documents": [
+    "srgi_lucknow_btech_civil_engineering",
+    "srgi_lucknow_mtech_programmes"
+  ],
+  "created_at": "2026-10-23T21:19:33.325636+00:00",
+  "pipeline_stage": "release_v3_production"
+}

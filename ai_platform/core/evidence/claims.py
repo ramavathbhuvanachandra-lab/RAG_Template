@@ -44,7 +44,7 @@ _NUMBER_WORDS = {
     "ten": "10", "eleven": "11", "twelve": "12",
 }
 
-_MONEY_RE = re.compile(r"(?:₹|rs\.?|inr)\s*\d[\d,]*(?:\.\d+)?", re.I)
+_MONEY_RE = re.compile(r"(?:₹|(?<![a-zA-Z])(?:rs\.?|inr))\s*\d[\d,]*(?:\.\d+)?", re.I)
 _BARE_CURRENCY_SUFFIX_RE = re.compile(r"(?:₹|rs\.?|inr)\s*[.:]?\s*$", re.I)
 _NUMERIC_ONLY_LINE_RE = re.compile(r"^\s*\d[\d,]*(?:\.\d+)?\s*(?:/-|/)?\s*$", re.I)
 _PERCENT_RE = re.compile(r"\b\d+(?:\.\d+)?\s*%")

@@ -1,0 +1,48 @@
+{
+  "schema_version": "2.0.0",
+  "institution_id": "srgi_lucknow",
+  "institution_name": "S. R. Group of Institutions (SRGI), Lucknow",
+  "document_id": "srgi_lucknow_seminar_halls_and_conference",
+  "title": "Conference Rooms and Seminar Halls",
+  "category": "09_campus_facilities_and_services",
+  "subcategory": "event_spaces",
+  "document_type": "institutional_knowledge",
+  "language": "en",
+  "markdown_path": "documents/09_campus_facilities_and_services/srgi_lucknow_seminar_halls_and_conference.md",
+  "docx_path": "documents/09_campus_facilities_and_services/srgi_lucknow_seminar_halls_and_conference.docx",
+  "source_urls": [
+    "https://srgi.in/seminar-hall"
+  ],
+  "canonical_source_urls": [
+    "https://srgi.in/seminar-hall"
+  ],
+  "source_hashes": [
+    "b3ef3ff16a2071fccadb25efc8f2e83e579cc5e93a3f5ff871d9a6114239d749"
+  ],
+  "markdown_hash": "c4535412eb31b56915ae124db33e1e1dab89d24e30b820134773dd14d0343f58",
+  "docx_hash": "f333606a83efed0f08060d0da1bf9642d35fa38449758b050d2e93ecbfb3682c",
+  "byte_size_md": 1627,
+  "byte_size_docx": 37612,
+  "word_count_md": 171,
+  "sections_count": 6,
+  "table_count": 0,
+  "content_quality_status": "PASS",
+  "conflict_status": "NO_UNRESOLVED_CONFLICTS",
+  "provenance_section_count": 1,
+  "docx_provenance_heading_count": 1,
+  "docx_leaked_syntax_count": 0,
+  "summary": "Central conference room, executive boardrooms, multi-seat air-conditioned seminar halls for academic symposia, corporate meetings, and guest lectures.",
+  "keywords": [
+    "Seminar Hall",
+    "Conference Room",
+    "Auditorium",
+    "Symposia",
+    "Guest Lectures"
+  ],
+  "related_documents": [
+    "srgi_lucknow_smart_classrooms",
+    "srgi_lucknow_eminent_speakers"
+  ],
+  "created_at": "2026-10-23T21:19:34.058975+00:00",
+  "pipeline_stage": "release_v3_production"
+}

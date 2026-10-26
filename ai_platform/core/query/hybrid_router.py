@@ -656,9 +656,13 @@ def run_hybrid_query_understanding(
     if guard_stop and guard_result:
         safe_response = guard_result.safe_response
         stop_reason = guard_result.reason
-    elif pipeline_stop and plan:
-        stop_reason = plan.domain_reason or "high_confidence_out_of_scope"
-        safe_response = "This is not an institutional request. I can only assist with academic, administrative, and campus information regarding IIT Jodhpur."
+        try:
+            from ai_platform.institutions.loader import get_institution_profile
+            _prof = get_institution_profile()
+            _inst_name = _prof.display_name if _prof and _prof.display_name else "the institution"
+        except Exception:
+            _inst_name = "the institution"
+        safe_response = f"This is not an institutional request. I can only assist with academic, administrative, and campus information regarding {_inst_name}."
 
     return HybridRouteExecution(
         plan=plan,

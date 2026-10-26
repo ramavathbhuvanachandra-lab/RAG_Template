@@ -1,0 +1,36 @@
+{
+  "institution_id": "srgi_lucknow",
+  "residential_capacity": 2000,
+  "wings": [
+    {
+      "type": "Boys' Hostel",
+      "features": [
+        "Spacious rooms",
+        "24/7 security",
+        "Wi-Fi connectivity",
+        "Mess"
+      ]
+    },
+    {
+      "type": "Girls' Hostel",
+      "features": [
+        "Secure enclosed wing",
+        "24/7 warden supervision",
+        "Gym",
+        "Mess"
+      ]
+    }
+  ],
+  "amenities": [
+    "Hygienic dining mess",
+    "Fitness gym",
+    "High-speed Wi-Fi",
+    "Power backup",
+    "Sports facilities"
+  ],
+  "chief_warden": {
+    "name": "Mr. K.M. Upadhyay",
+    "phone": "+91 9793000090"
+  },
+  "source_url": "https://srgi.in/hostel"
+}

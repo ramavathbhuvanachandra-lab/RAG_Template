@@ -1,0 +1,32 @@
+{
+  "institution_id": "srgi_lucknow",
+  "name": "S. R. Group of Institutions (SRGI), Lucknow",
+  "established": 2009,
+  "sponsoring_trust": "Subedar Raj Devi Educational Trust (Estd. 2008)",
+  "founder_chairman": "Mr. Pawan Singh Chauhan (MLC - Sitapur, U.P.)",
+  "campus_size_acres": 65,
+  "location": {
+    "address": "NH-24, Sitapur Road, Bakshi ka Talab (BKT), Lucknow - 226201, Uttar Pradesh, India",
+    "city": "Lucknow",
+    "state": "Uttar Pradesh",
+    "pincode": "226201",
+    "country": "India"
+  },
+  "motto": "Education Leads to Enlightenment",
+  "vision_pillars": [
+    "Shiksha",
+    "Sanskar",
+    "Rozgar"
+  ],
+  "key_metrics": {
+    "highest_package_lpa": 42.0,
+    "average_package_lpa": 4.0,
+    "placement_rate_pct": 95.6,
+    "job_opportunities_created": "24,888+",
+    "recruiters_visited": "900+",
+    "library_books": "53,760+",
+    "hostel_capacity": "2,000+"
+  },
+  "canonical_url": "https://srgi.in",
+  "source_url": "https://srgi.in/about"
+}

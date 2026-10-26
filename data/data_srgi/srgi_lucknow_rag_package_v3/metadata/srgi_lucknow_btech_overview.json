@@ -1,0 +1,50 @@
+{
+  "schema_version": "2.0.0",
+  "institution_id": "srgi_lucknow",
+  "institution_name": "S. R. Group of Institutions (SRGI), Lucknow",
+  "document_id": "srgi_lucknow_btech_overview",
+  "title": "Bachelor of Technology (B.Tech) Programmes \u2014 Comprehensive Overview",
+  "category": "04_programmes_engineering",
+  "subcategory": "undergraduate_engineering",
+  "document_type": "institutional_knowledge",
+  "language": "en",
+  "markdown_path": "documents/04_programmes_engineering/srgi_lucknow_btech_overview.md",
+  "docx_path": "documents/04_programmes_engineering/srgi_lucknow_btech_overview.docx",
+  "source_urls": [
+    "https://srgi.in/btech"
+  ],
+  "canonical_source_urls": [
+    "https://srgi.in/btech"
+  ],
+  "source_hashes": [
+    "2a4b7fec21ea89022afc56f3e14e264beca9abd9c66f48185f6bc3c955d31440"
+  ],
+  "markdown_hash": "686974828890c719cd2cd0e13a2cc5160595ac804c69a584e3350c0dc8025116",
+  "docx_hash": "29bf16578ae915277ea7abc02855fc0db297f75d53831f51cebb8904bda52e2b",
+  "byte_size_md": 4886,
+  "byte_size_docx": 39425,
+  "word_count_md": 638,
+  "sections_count": 7,
+  "table_count": 5,
+  "content_quality_status": "PASS",
+  "conflict_status": "DOCUMENTED_SOURCE_CONFLICT",
+  "provenance_section_count": 1,
+  "docx_provenance_heading_count": 1,
+  "docx_leaked_syntax_count": 0,
+  "summary": "Overview of B.Tech programmes, AICTE approvals, AKTU affiliation, available branches, duration, sanctioned intake numbers, and foundational engineering curriculum.",
+  "keywords": [
+    "B.Tech",
+    "Engineering",
+    "Intake",
+    "AICTE",
+    "AKTU",
+    "4 Years",
+    "Undergraduate"
+  ],
+  "related_documents": [
+    "srgi_lucknow_btech_computer_science_engineering",
+    "srgi_lucknow_mtech_programmes"
+  ],
+  "created_at": "2026-10-23T21:19:33.114007+00:00",
+  "pipeline_stage": "release_v3_production"
+}

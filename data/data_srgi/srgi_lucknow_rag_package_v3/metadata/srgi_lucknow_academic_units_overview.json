@@ -1,0 +1,52 @@
+{
+  "schema_version": "2.0.0",
+  "institution_id": "srgi_lucknow",
+  "institution_name": "S. R. Group of Institutions (SRGI), Lucknow",
+  "document_id": "srgi_lucknow_academic_units_overview",
+  "title": "SRGI Lucknow Constituent Academic Units and Institutional Network",
+  "category": "03_constituent_units",
+  "subcategory": "institutional_network",
+  "document_type": "institutional_knowledge",
+  "language": "en",
+  "markdown_path": "documents/03_constituent_units/srgi_lucknow_academic_units_overview.md",
+  "docx_path": "documents/03_constituent_units/srgi_lucknow_academic_units_overview.docx",
+  "source_urls": [
+    "https://srgi.in",
+    "https://srgi.in/about"
+  ],
+  "canonical_source_urls": [
+    "https://srgi.in",
+    "https://srgi.in/about"
+  ],
+  "source_hashes": [
+    "21b702eb95fbfcf1e3040a7c996f6ed261781ee8bcc71ff275a161f43964e6e9",
+    "199aea81a694f708e74cfadb5f24f9ef8aa1a11eb79293b57602acf5b14ea690"
+  ],
+  "markdown_hash": "36e779ca26c7dd756d9c41d2a4c5c097b13491ef3bc184e5503360baddc71b49",
+  "docx_hash": "9dbd07a3aae3079c0c3746e8e7f7f49b9f33c9f0927b717bc5465ba75ee1040e",
+  "byte_size_md": 2885,
+  "byte_size_docx": 38517,
+  "word_count_md": 343,
+  "sections_count": 6,
+  "table_count": 3,
+  "content_quality_status": "PASS",
+  "conflict_status": "NO_UNRESOLVED_CONFLICTS",
+  "provenance_section_count": 1,
+  "docx_provenance_heading_count": 1,
+  "docx_leaked_syntax_count": 0,
+  "summary": "Comprehensive directory of official academic units, specialized schools, affiliated colleges, and external domains operating under the SR Group of Institutions ecosystem.",
+  "keywords": [
+    "SRIMT",
+    "SRM Business School",
+    "SRM Ayush Institute",
+    "SR Global School",
+    "SRISA",
+    "Academic Units"
+  ],
+  "related_documents": [
+    "srgi_lucknow_overview",
+    "srgi_lucknow_btech_overview"
+  ],
+  "created_at": "2026-10-23T21:19:33.069632+00:00",
+  "pipeline_stage": "release_v3_production"
+}

@@ -1,0 +1,46 @@
+[
+  {
+    "id": "srgi_main_campus",
+    "name": "SRGI Main Campus",
+    "category": "Campus",
+    "description": "65-acre integrated campus on NH-24 Sitapur Road, Bakshi ka Talab (BKT), Lucknow - 226201.",
+    "timings": "Mon-Sat: 9:00 AM - 5:00 PM",
+    "google_maps": "https://maps.google.com/?q=SR+Group+of+Institutions+Bakshi+Ka+Talab+Lucknow",
+    "directions": "Located directly on NH-24 Sitapur Road near Bakshi ka Talab (BKT), Lucknow.",
+    "show_in_map": true,
+    "aliases": ["main campus", "srgi campus", "srimt campus", "bkt campus", "sitapur road campus"]
+  },
+  {
+    "id": "srgi_central_library",
+    "name": "Central Library",
+    "category": "Academic",
+    "description": "Central Library housing 53,760+ books and 448+ journals.",
+    "timings": "Mon-Sat: 8:30 AM - 7:00 PM",
+    "google_maps": "",
+    "directions": "Inside the main academic complex.",
+    "show_in_map": true,
+    "aliases": ["library", "central library", "library building", "reading room"]
+  },
+  {
+    "id": "srgi_boys_hostel",
+    "name": "Boys' Hostel",
+    "category": "Residential",
+    "description": "Spacious residential hostel for male students with Wi-Fi, mess, and 24/7 security.",
+    "timings": "24/7 Residential",
+    "google_maps": "",
+    "directions": "Inside the campus residential zone.",
+    "show_in_map": true,
+    "aliases": ["boys hostel", "boys residence"]
+  },
+  {
+    "id": "srgi_girls_hostel",
+    "name": "Girls' Hostel",
+    "category": "Residential",
+    "description": "Secure enclosed hostel wing for female students with 24/7 warden supervision, gym, and mess.",
+    "timings": "24/7 Residential",
+    "google_maps": "",
+    "directions": "Inside the secure campus residential zone.",
+    "show_in_map": true,
+    "aliases": ["girls hostel", "girls residence"]
+  }
+]

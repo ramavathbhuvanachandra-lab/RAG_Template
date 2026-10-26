@@ -7,7 +7,7 @@ Constraints:
 - Zero additional LLM invocations (preserves latency and compute budgets).
 - At most 3 distinct, concise suggestions.
 - Suppressed for safe refusals, errors, empty evidence, and off-topic queries.
-- Portable and institution-independent.
+- Strictly contextual: Never show academic programme suggestions after transport, library, or hostel queries.
 """
 
 from __future__ import annotations
@@ -17,75 +17,124 @@ from typing import Any, Sequence
 
 # Canonical educational degree / program markers
 _PROGRAM_PATTERNS: tuple[tuple[re.Pattern, str], ...] = (
-    (re.compile(r"\bm\.?\s*tech\b", re.I), "M.Tech."),
-    (re.compile(r"\bph\.?\s*d\.?\b|\bphd\b", re.I), "Ph.D."),
+    (re.compile(r"\bb\.?\s*tech\s*(?:in\s+)?cse\b|\bcse\b|\bcomputer\s+science\b", re.I), "B.Tech CSE"),
+    (re.compile(r"\bb\.?\s*tech\b", re.I), "B.Tech"),
     (re.compile(r"\bm\.?\s*b\.?\s*a\.?\b|\bmba\b", re.I), "MBA"),
-    (re.compile(r"\bm\.?\s*sc\.?\b", re.I), "M.Sc."),
-    (re.compile(r"\bb\.?\s*tech\b", re.I), "B.Tech."),
-    (re.compile(r"\bb\.?\s*sc\b", re.I), "B.Sc."),
+    (re.compile(r"\bm\.?\s*tech\b", re.I), "M.Tech"),
+    (re.compile(r"\bb\.?\s*pharm\b|\bd\.?\s*pharm\b|\bpharmacy\b", re.I), "Pharmacy"),
+    (re.compile(r"\bdiploma\b|\bpolytechnic\b", re.I), "Diploma / Polytechnic"),
+    (re.compile(r"\bbba\b|\bbca\b|\bmca\b", re.I), "Professional Courses"),
 )
 
 _FACILITY_PATTERNS: tuple[tuple[re.Pattern, str], ...] = (
-    (re.compile(r"\bhostel\b", re.I), "Hostel"),
-    (re.compile(r"\bmess\b", re.I), "Mess"),
-    (re.compile(r"\blibrary\b", re.I), "Library"),
-    (re.compile(r"\bgymkhana\b", re.I), "Gymkhana"),
-    (re.compile(r"\bplacement\b|\binternship\b", re.I), "Placements"),
+    (re.compile(r"\btransport\b|\bbus\b|\broutes?\b|\bcommute\b|\bfleet\b", re.I), "Transport"),
+    (re.compile(r"\bhostel\b|\baccommodation\b|\broom\b", re.I), "Hostel"),
+    (re.compile(r"\bmess\b|\bdining\b|\bcafeteria\b|\bfood\b", re.I), "Mess"),
+    (re.compile(r"\blibrary\b|\bbooks?\b|\breading\s+room\b|\bjournal\b", re.I), "Library"),
+    (re.compile(r"\blab(?:s|oratory|oratories)?\b|\binnovation\b", re.I), "Laboratories"),
+    (re.compile(r"\bemergency\b|\bhelpline\b|\bproctor\b|\bhospital\b|\bambulance\b", re.I), "Emergency"),
 )
 
 # Topic-oriented suggestion templates
 _TOPIC_TEMPLATES: dict[str, list[str]] = {
+    "transport": [
+        "What are the major bus pickup points across Lucknow?",
+        "Who is the transport in-charge or contact person for buses?",
+        "Are bus services available for day scholars across all semesters?",
+    ],
+    "hostel": [
+        "What facilities and amenities are provided in the hostels?",
+        "What are the mess and dining arrangements for hostellers?",
+        "Who can I contact for hostel room allotment details?",
+    ],
+    "library": [
+        "What are the central library working hours and reading room capacity?",
+        "What digital library or e-journal subscriptions are available?",
+        "Where is the Central Library located on the campus?",
+    ],
+    "emergency": [
+        "What are the main campus security and medical helpline numbers?",
+        "Who is the Chief Proctor at SRGI Lucknow?",
+        "Where is the campus dispensary or health center located?",
+    ],
+    "departments": [
+        "What undergraduate degrees are offered under the Faculty of Engineering?",
+        "What are the admission eligibility requirements for these departments?",
+        "Which institutes make up the S. R. Group of Institutions?",
+    ],
+    "btech": [
+        "What specializations are available under B.Tech CSE?",
+        "What is the sanctioned seat intake for B.Tech programmes?",
+        "What are the eligibility criteria for B.Tech admission?",
+    ],
+    "mba": [
+        "What dual specializations are offered in the MBA programme?",
+        "What is the sanctioned seat intake for MBA at SRGI?",
+        "What is the admission eligibility for MBA candidates?",
+    ],
+    "admissions": [
+        "What are the minimum eligibility marks required for admissions?",
+        "What is the sanctioned intake across various faculties?",
+        "Who can I contact at the SRGI admissions helpline?",
+    ],
     "fee": [
-        "What are the hostel and mess charges?",
-        "Are fee waivers or scholarships available for {entity}?",
-        "What is the fee structure for sponsored or part-time {entity}?",
+        "What are the hostel and transport charges?",
+        "What is the admission and counselling fee policy?",
+        "Who can I contact in the accounts or admissions office for fee queries?",
     ],
-    "eligibility": [
-        "What is the tuition fee for {entity}?",
-        "What financial assistance or fellowship is offered for {entity}?",
-        "What is the admission and selection procedure for {entity}?",
-    ],
-    "leave": [
-        "What are the fellowship and stipend rules for {entity}?",
-        "What are the academic progression rules for {entity}?",
-        "What is the policy for attending conferences during {entity}?",
-    ],
-    "facility": [
-        "What are the hostel room rent and mess fees?",
-        "Where is this facility located on campus?",
-        "What are the operating hours and rules?",
-    ],
-    "general": [
-        "What are the eligibility criteria for {entity}?",
-        "What is the fee structure for {entity}?",
-        "What financial assistance or stipend is available for {entity}?",
+    "general_academic": [
+        "What programmes and specializations are offered at SRGI?",
+        "What are the general admission eligibility criteria?",
+        "What campus facilities and student amenities are available?",
     ],
 }
 
 
 def _detect_entity(text: str) -> str:
     """Detect dominant degree, program, or campus entity from text."""
-    for pattern, name in _PROGRAM_PATTERNS:
+    for pattern, name in _FACILITY_PATTERNS:
         if pattern.search(text):
             return name
-    for pattern, name in _FACILITY_PATTERNS:
+    for pattern, name in _PROGRAM_PATTERNS:
         if pattern.search(text):
             return name
     return ""
 
 
-def _detect_topic(text: str) -> str:
-    """Identify query or answer topic focus."""
+def _detect_topic(text: str, combined: str = "") -> str:
+    """Identify query or answer topic focus strictly."""
     low = text.casefold()
-    if any(k in low for k in ("leave", "casual leave", "medical leave", "vacation")):
-        return "leave"
-    if any(k in low for k in ("fee", "fees", "tuition", "charges", "rent", "payment")):
+    comb_low = combined.casefold()
+    
+    # Check facility / non-academic first to avoid bleeding into academic degrees
+    if any(k in low for k in ("bus", "transport", "route", "routes", "transit", "fleet")):
+        return "transport"
+    if any(k in low for k in ("hostel", "accommodation", "hosteller", "boarding")):
+        return "hostel"
+    if any(k in low for k in ("library", "reading room", "books", "journal", "journals")):
+        return "library"
+    if any(k in low for k in ("emergency", "ambulance", "breakdown", "helpline", "proctor", "security guard")):
+        return "emergency"
+    if any(k in low for k in ("faculty", "faculties", "department", "departments", "institutes")):
+        return "departments"
+    if any(k in low for k in ("mba", "management")):
+        return "mba"
+    if any(k in low for k in ("btech", "b.tech", "cse", "computer science", "mechanical", "civil", "ec", "biotechnology")):
+        return "btech"
+    if any(k in low for k in ("eligibility", "admission", "admissions", "apply", "intake", "seats")):
+        return "admissions"
+    if any(k in low for k in ("fee", "fees", "tuition", "charges", "payment")):
         return "fee"
-    if any(k in low for k in ("eligibility", "criteria", "cutoff", "percentage", "cgpa", "qualification")):
-        return "eligibility"
-    if any(k in low for k in ("hostel", "mess", "library", "gymkhana", "dining")):
-        return "facility"
-    return "general"
+        
+    # Check combined context if query was very short
+    if any(k in comb_low for k in ("bus", "transport", "transit")):
+        return "transport"
+    if any(k in comb_low for k in ("hostel", "accommodation")):
+        return "hostel"
+    if any(k in comb_low for k in ("library", "reading room")):
+        return "library"
+        
+    return "general_academic"
 
 
 def _is_redundant(candidate: str, question: str, existing: Sequence[str]) -> bool:
@@ -95,8 +144,8 @@ def _is_redundant(candidate: str, question: str, existing: Sequence[str]) -> boo
     if c_clean == q_clean:
         return True
     # Word overlap check
-    c_words = set(c_clean.split()) - {"what", "is", "are", "the", "for", "in", "and", "or", "to", "how", "do"}
-    q_words = set(q_clean.split()) - {"what", "is", "are", "the", "for", "in", "and", "or", "to", "how", "do"}
+    c_words = set(c_clean.split()) - {"what", "is", "are", "the", "for", "in", "and", "or", "to", "how", "do", "at", "srgi"}
+    q_words = set(q_clean.split()) - {"what", "is", "are", "the", "for", "in", "and", "or", "to", "how", "do", "at", "srgi"}
     if c_words and q_words and (c_words == q_words or (len(c_words) >= 3 and len(c_words & q_words) >= len(c_words))):
         return True
     for item in existing:
@@ -129,36 +178,27 @@ def generate_follow_up_suggestions(
     if not clean_q or not clean_a or len(clean_a) < 15:
         return []
 
-    # Detect entity from question, answer, and sources
+    # Detect entity and topic from question, answer, and sources
     combined_context = f"{clean_q} {clean_a}"
     if sources:
         for s in sources[:3]:
             combined_context += f" {s.get('heading', '')} {s.get('source', '')}"
 
-    entity = _detect_entity(combined_context) or "this programme"
-    topic = _detect_topic(clean_q)
+    topic = _detect_topic(clean_q, combined_context)
 
     # Candidate suggestions from templates
-    templates = _TOPIC_TEMPLATES.get(topic, _TOPIC_TEMPLATES["general"])
+    templates = _TOPIC_TEMPLATES.get(topic, _TOPIC_TEMPLATES["general_academic"])
     results: list[str] = []
 
     for template in templates:
-        candidate = template.format(entity=entity)
+        candidate = template
         if not _is_redundant(candidate, clean_q, results):
             results.append(candidate)
         if len(results) >= max_suggestions:
             break
 
-    # If we need more, check other general templates
-    if len(results) < max_suggestions:
-        for template in _TOPIC_TEMPLATES["general"]:
-            candidate = template.format(entity=entity)
-            if not _is_redundant(candidate, clean_q, results):
-                results.append(candidate)
-            if len(results) >= max_suggestions:
-                break
-
     return results[:max_suggestions]
 
 
 __all__ = ["generate_follow_up_suggestions"]
+

@@ -1,0 +1,11 @@
+{
+  "institution_id": "srgi",
+  "release_id": "srgi_lucknow_rag_package_v3",
+  "package_root": "/Users/bhuvanachandra/Desktop/RAG_SRGI/data/data_srgi/srgi_lucknow_rag_package_v3",
+  "vectorstore_collection": "srgi_srgi_lucknow_rag_package_v3_staging",
+  "vectorstore_path": "/Users/bhuvanachandra/Desktop/RAG_SRGI/chroma_db",
+  "lexical_cache_path": "/Users/bhuvanachandra/Desktop/RAG_SRGI/data/data_srgi/.canonical_chunks_cache_srgi_lucknow_rag_package_v3_staging.json",
+  "staged_at": "2026-10-25T20:48:49.665681+00:00",
+  "evaluation_passed": false,
+  "status": "staged"
+}

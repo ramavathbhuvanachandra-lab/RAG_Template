@@ -1,0 +1,48 @@
+{
+  "schema_version": "2.0.0",
+  "institution_id": "srgi_lucknow",
+  "institution_name": "S. R. Group of Institutions (SRGI), Lucknow",
+  "document_id": "srgi_lucknow_nursing_programme",
+  "title": "Nursing Programme \u2014 Clinical Healthcare & Ayurvedic Nursing",
+  "category": "06_programmes_medical_healthcare",
+  "subcategory": "medical_and_allied_health",
+  "document_type": "institutional_knowledge",
+  "language": "en",
+  "markdown_path": "documents/06_programmes_medical_healthcare/srgi_lucknow_nursing_programme.md",
+  "docx_path": "documents/06_programmes_medical_healthcare/srgi_lucknow_nursing_programme.docx",
+  "source_urls": [
+    "https://srgi.in/medical/nursing"
+  ],
+  "canonical_source_urls": [
+    "https://srgi.in/medical/nursing"
+  ],
+  "source_hashes": [
+    "1cabb6ae6873792214174323470c8caecebe309e861302893c4f2854d37b1b91"
+  ],
+  "markdown_hash": "7dc28c23018ac315e3d4a378d81960aee70a681d4251fefccf7f2a320d56ef0e",
+  "docx_hash": "8c38e767e6cae28de6ada8a0fb42ae3f81f0fa06470bf73b63b5a0d2691eae83",
+  "byte_size_md": 1804,
+  "byte_size_docx": 37707,
+  "word_count_md": 195,
+  "sections_count": 6,
+  "table_count": 0,
+  "content_quality_status": "PASS",
+  "conflict_status": "NO_UNRESOLVED_CONFLICTS",
+  "provenance_section_count": 1,
+  "docx_provenance_heading_count": 1,
+  "docx_leaked_syntax_count": 0,
+  "summary": "Healthcare nursing training programme, 3.5-year duration, sanctioned intake of 100 seats, patient care protocols, hospital dispensary administration, and clinical skills.",
+  "keywords": [
+    "Nursing",
+    "Ayurvedic Nursing",
+    "Healthcare Training",
+    "Intake 100",
+    "Hospital Care"
+  ],
+  "related_documents": [
+    "srgi_lucknow_d_pharma_programme",
+    "srgi_lucknow_homeopathy_programme"
+  ],
+  "created_at": "2026-10-23T21:19:33.655600+00:00",
+  "pipeline_stage": "release_v3_production"
+}

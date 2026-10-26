@@ -1,0 +1,50 @@
+{
+  "schema_version": "2.0.0",
+  "institution_id": "srgi_lucknow",
+  "institution_name": "S. R. Group of Institutions (SRGI), Lucknow",
+  "document_id": "srgi_lucknow_administrative_heads",
+  "title": "SRGI Lucknow Administrative Heads and Core Operational Team",
+  "category": "02_governance_and_leadership",
+  "subcategory": "administration",
+  "document_type": "institutional_knowledge",
+  "language": "en",
+  "markdown_path": "documents/02_governance_and_leadership/srgi_lucknow_administrative_heads.md",
+  "docx_path": "documents/02_governance_and_leadership/srgi_lucknow_administrative_heads.docx",
+  "source_urls": [
+    "https://srgi.in/administrative-heads"
+  ],
+  "canonical_source_urls": [
+    "https://srgi.in/administrative-heads"
+  ],
+  "source_hashes": [
+    "a2b255afaa9a1df056e29d50aa9d55f7f4a023ae0cacb2345bf0daf81f02f2f8"
+  ],
+  "markdown_hash": "232b4fba5b348cbe4073c37dd2a947bc3975e3cddd40b6280e50b9d3c49167c9",
+  "docx_hash": "9b639a80a6ef0090ecfe4a262e7822e8f6c5c839a32aa658ef184d30517dd510",
+  "byte_size_md": 3976,
+  "byte_size_docx": 39024,
+  "word_count_md": 492,
+  "sections_count": 7,
+  "table_count": 4,
+  "content_quality_status": "PASS",
+  "conflict_status": "NO_UNRESOLVED_CONFLICTS",
+  "provenance_section_count": 1,
+  "docx_provenance_heading_count": 1,
+  "docx_leaked_syntax_count": 0,
+  "summary": "Key administrative officials, Chief Proctor, Training & Placement Director, Registrar, Chief Accounts Officer, and official telephone numbers.",
+  "keywords": [
+    "Administrative Heads",
+    "Dr. Shashank Singh",
+    "Kaushal Chandra",
+    "Devendra Srivastava",
+    "Jitendra Srivastava",
+    "Registrar",
+    "Proctor"
+  ],
+  "related_documents": [
+    "srgi_lucknow_board_of_directors",
+    "srgi_lucknow_campus_contacts_and_directions"
+  ],
+  "created_at": "2026-10-23T21:19:33.039854+00:00",
+  "pipeline_stage": "release_v3_production"
+}

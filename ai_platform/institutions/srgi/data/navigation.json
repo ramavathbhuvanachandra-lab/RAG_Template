@@ -1,0 +1,38 @@
+{
+    "version": 1,
+    "concepts": {
+        "directions": [
+            "where",
+            "directions",
+            "how do i reach",
+            "how to reach",
+            "route to",
+            "location of"
+        ],
+        "campus_transport": [
+            "campus transport",
+            "transportation",
+            "bus service",
+            "transport routes"
+        ],
+        "facility_location": [
+            "facility",
+            "facilities",
+            "where is",
+            "location of the"
+        ],
+        "emergency_location": [
+            "emergency",
+            "medical emergency",
+            "first aid",
+            "hospital"
+        ],
+        "building_location": [
+            "building",
+            "block",
+            "office",
+            "department",
+            "faculty"
+        ]
+    }
+}

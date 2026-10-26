@@ -1,0 +1,49 @@
+{
+  "schema_version": "2.0.0",
+  "institution_id": "srgi_lucknow",
+  "institution_name": "S. R. Group of Institutions (SRGI), Lucknow",
+  "document_id": "srgi_lucknow_frequently_asked_questions",
+  "title": "Frequently Asked Questions (FAQ) \u2014 Admissions, Academics and Life at SRGI",
+  "category": "13_faqs",
+  "subcategory": "faq_knowledge",
+  "document_type": "institutional_knowledge",
+  "language": "en",
+  "markdown_path": "documents/13_faqs/srgi_lucknow_frequently_asked_questions.md",
+  "docx_path": "documents/13_faqs/srgi_lucknow_frequently_asked_questions.docx",
+  "source_urls": [
+    "https://srgi.in/faq"
+  ],
+  "canonical_source_urls": [
+    "https://srgi.in/faq"
+  ],
+  "source_hashes": [
+    "eabd1ebd40a89df9c25ac92cc3a7dc74fd4d78e8adf9c2c01aa34aa84e5efdca"
+  ],
+  "markdown_hash": "c65d8cfff405887291d76a8187b88511cd45763335d4a1bd92ba90aacf845c58",
+  "docx_hash": "4d41ba7c1af695c9026249d189e3d20608c8242986f1d7f003b4fd9395980441",
+  "byte_size_md": 3957,
+  "byte_size_docx": 38807,
+  "word_count_md": 538,
+  "sections_count": 7,
+  "table_count": 0,
+  "content_quality_status": "PASS",
+  "conflict_status": "NO_UNRESOLVED_CONFLICTS",
+  "provenance_section_count": 1,
+  "docx_provenance_heading_count": 1,
+  "docx_leaked_syntax_count": 0,
+  "summary": "Comprehensive answers to the most common queries regarding college founding, approvals, engineering branches, fees, hostels, placements, and campus rules.",
+  "keywords": [
+    "FAQ",
+    "Frequently Asked Questions",
+    "Common Queries",
+    "Admission FAQ",
+    "Hostel FAQ",
+    "College Details"
+  ],
+  "related_documents": [
+    "srgi_lucknow_overview",
+    "srgi_lucknow_admissions_enquiry_and_eligibility"
+  ],
+  "created_at": "2026-10-23T21:19:34.410812+00:00",
+  "pipeline_stage": "release_v3_production"
+}

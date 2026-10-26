@@ -1,0 +1,50 @@
+{
+  "schema_version": "2.0.0",
+  "institution_id": "srgi_lucknow",
+  "institution_name": "S. R. Group of Institutions (SRGI), Lucknow",
+  "document_id": "srgi_lucknow_mba_programme",
+  "title": "Master of Business Administration (MBA) \u2014 2-Year Full-Time Programme",
+  "category": "05_programmes_management",
+  "subcategory": "management_studies",
+  "document_type": "institutional_knowledge",
+  "language": "en",
+  "markdown_path": "documents/05_programmes_management/srgi_lucknow_mba_programme.md",
+  "docx_path": "documents/05_programmes_management/srgi_lucknow_mba_programme.docx",
+  "source_urls": [
+    "https://srgi.in/management/mba"
+  ],
+  "canonical_source_urls": [
+    "https://srgi.in/management/mba"
+  ],
+  "source_hashes": [
+    "fbc8ef85fe6400ddc3a28504f6d7a5a4d5c398857ff3909768db7f585881761a"
+  ],
+  "markdown_hash": "8f29822788a3c241339b9492f7cf2093ab5a6c24f88bbe216b86fa13eeaac1c8",
+  "docx_hash": "15f25017b4d6ef93675cf1c2f3646b5821c24cb878ebdb76c22a7efb72f282f2",
+  "byte_size_md": 2509,
+  "byte_size_docx": 38143,
+  "word_count_md": 279,
+  "sections_count": 8,
+  "table_count": 0,
+  "content_quality_status": "PASS",
+  "conflict_status": "NO_UNRESOLVED_CONFLICTS",
+  "provenance_section_count": 1,
+  "docx_provenance_heading_count": 1,
+  "docx_leaked_syntax_count": 0,
+  "summary": "Full-time 2-year MBA programme, sanctioned intake of 240 seats, major specializations (Marketing, Finance, HR, IT, Operations), eligibility, and career outcomes.",
+  "keywords": [
+    "MBA",
+    "Master of Business Administration",
+    "Intake 240",
+    "Marketing",
+    "Finance",
+    "Human Resources",
+    "AKTU MBA"
+  ],
+  "related_documents": [
+    "srgi_lucknow_management_overview",
+    "srgi_lucknow_integrated_mba"
+  ],
+  "created_at": "2026-10-23T21:19:33.510977+00:00",
+  "pipeline_stage": "release_v3_production"
+}

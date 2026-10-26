@@ -1,0 +1,50 @@
+{
+  "schema_version": "2.0.0",
+  "institution_id": "srgi_lucknow",
+  "institution_name": "S. R. Group of Institutions (SRGI), Lucknow",
+  "document_id": "srgi_lucknow_sports_ground_and_complex",
+  "title": "65-Acre Sports Complex, Cricket Ground and Gymnasium",
+  "category": "09_campus_facilities_and_services",
+  "subcategory": "sports_and_recreation",
+  "document_type": "institutional_knowledge",
+  "language": "en",
+  "markdown_path": "documents/09_campus_facilities_and_services/srgi_lucknow_sports_ground_and_complex.md",
+  "docx_path": "documents/09_campus_facilities_and_services/srgi_lucknow_sports_ground_and_complex.docx",
+  "source_urls": [
+    "https://srgi.in/sports"
+  ],
+  "canonical_source_urls": [
+    "https://srgi.in/sports"
+  ],
+  "source_hashes": [
+    "4455aa91af838d6bd36134bd01600de60b421e4ed5837dded000ddc866a2c327"
+  ],
+  "markdown_hash": "dadd21194c030685b486e25a42b7943d0540eb34b99df7202fe2d22f9972f97d",
+  "docx_hash": "1e6f524224e655601cad046b3f8b1cca1725667fa04748c50093013ddac2f30a",
+  "byte_size_md": 2017,
+  "byte_size_docx": 37876,
+  "word_count_md": 221,
+  "sections_count": 6,
+  "table_count": 0,
+  "content_quality_status": "PASS",
+  "conflict_status": "NO_UNRESOLVED_CONFLICTS",
+  "provenance_section_count": 1,
+  "docx_provenance_heading_count": 1,
+  "docx_leaked_syntax_count": 0,
+  "summary": "Expansive 65-acre campus sporting complex, professional cricket arena, Hostels Sports League, annual Shaurya meetup, athletics, courts, and gym.",
+  "keywords": [
+    "Sports Ground",
+    "65-Acre Complex",
+    "Cricket Ground",
+    "Shaurya",
+    "Gymnasium",
+    "Athletics",
+    "Basketball"
+  ],
+  "related_documents": [
+    "srgi_lucknow_indoor_swimming_pool",
+    "srgi_lucknow_student_clubs_and_activities"
+  ],
+  "created_at": "2026-10-23T21:19:34.118660+00:00",
+  "pipeline_stage": "release_v3_production"
+}

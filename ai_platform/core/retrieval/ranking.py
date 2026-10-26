@@ -532,12 +532,15 @@ def _is_specialized_source(source: str, candidate: RetrievalCandidate | None = N
     norm = _normalize(source)
     if any(k in norm for k in ("/data/", "/datasets/")) and norm.endswith((".json", ".csv", ".tsv")):
         return False
-    if any(k in norm for k in ("/schools/", "/departments/", "/research_platforms/")):
+    if any(k in norm for k in ("/schools/", "/departments/", "/research_platforms/", "/programs/", "/programmes/")):
+        if any(g in norm for g in ("overview", "general", "catalog", "directory", "academic_programmes")):
+            return False
         return True
     stem = source.rsplit("/", 1)[-1]
     return not _is_generic_source(source) and any(
         marker in stem for marker in (
-            "program", "department", "special", "international", "school",
+            "program", "programme", "department", "special", "international", "school",
+            "btech_", "mtech_", "bvoc_", "d_pharma_", "mba_",
         )
     )
 
@@ -617,6 +620,7 @@ def _candidate_semantic_text(candidate: RetrievalCandidate) -> str:
 
 _GENERIC_INSTITUTION_TARGETS: frozenset[str] = frozenset({
     "iit jodhpur", "iitj", "iit", "indian institute of technology jodhpur",
+    "srgi", "sr group", "sr group of institutions", "srgi lucknow", "s.r. group of institutions",
     "the institute", "institute", "the institution", "institution", "campus",
     "college", "university",
 })

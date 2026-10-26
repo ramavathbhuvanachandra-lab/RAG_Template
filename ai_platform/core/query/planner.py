@@ -752,10 +752,10 @@ def _infer_target(original: str, candidate: Any = None) -> str | None:
             if score >= 0:
                 deg = _canonical_degree(live_degrees[0].group(0))
                 foll = original_text[live_degrees[0].end():]
-                spec_m = re.match(r"^(?:[.\s]+(?:programme|program|students?))?[\s]+in[\s]+([A-Za-z0-9\s&/-]+?)(?=[,?.!]|(?:\s+\b(?:why|how|when|what|where|which|who|does|is|are|from|with|combines?|offers?)\b)|$)", foll, re.I)
+                spec_m = re.match(r"^(?:[.\s]+(?:programme|program|students?))?[\s]*(?:in[\s]+)?(CSE|CS|IT|ECE|EEE|ME|CE|BT|AG|AI|DS|AI\s*&\s*ML|Data\s+Science|[A-Za-z0-9\s&/-]+?)(?=[,?.!]|(?:\s+\b(?:why|how|when|what|where|which|who|does|is|are|from|with|combines?|offers?)\b)|$)", foll, re.I)
                 if spec_m:
                     spec = spec_m.group(1).strip()
-                    if spec and len(spec) > 2 and spec.lower() not in {"the", "a", "an", "this", "that"}:
+                    if spec and len(spec) >= 2 and spec.lower() not in {"the", "a", "an", "this", "that"}:
                         return f"{deg} in {spec}" if deg else spec
                 return deg
         else:
@@ -765,10 +765,10 @@ def _infer_target(original: str, candidate: Any = None) -> str | None:
                 best_deg = scored[0][1]
                 m = scored[0][2]
                 foll = original_text[m.end():]
-                spec_m = re.match(r"^(?:[.\s]+(?:programme|program|students?))?[\s]+in[\s]+([A-Za-z0-9\s&/-]+?)(?=[,?.!]|(?:\s+\b(?:why|how|when|what|where|which|who|does|is|are|from|with|combines?|offers?)\b)|$)", foll, re.I)
+                spec_m = re.match(r"^(?:[.\s]+(?:programme|program|students?))?[\s]*(?:in[\s]+)?(CSE|CS|IT|ECE|EEE|ME|CE|BT|AG|AI|DS|AI\s*&\s*ML|Data\s+Science|[A-Za-z0-9\s&/-]+?)(?=[,?.!]|(?:\s+\b(?:why|how|when|what|where|which|who|does|is|are|from|with|combines?|offers?)\b)|$)", foll, re.I)
                 if spec_m:
                     spec = spec_m.group(1).strip()
-                    if spec and len(spec) > 2 and spec.lower() not in {"the", "a", "an", "this", "that"}:
+                    if spec and len(spec) >= 2 and spec.lower() not in {"the", "a", "an", "this", "that"}:
                         return f"{best_deg} in {spec}" if best_deg else spec
                 return best_deg
 
@@ -782,7 +782,8 @@ def _infer_target(original: str, candidate: Any = None) -> str | None:
         if c.lower() in {
             "null", "none", "n/a", "na", "unknown", "nil", "undefined",
             "not applicable", "the institution", "institution", "iit jodhpur",
-            "iitj", "iit", "the institute", "institute", "campus", "college", "university",
+            "iitj", "iit", "srgi", "sr group", "sr group of institutions", "srgi lucknow",
+            "the institute", "institute", "campus", "college", "university",
             "indian institute of technology jodhpur",
         }:
             return None
@@ -829,8 +830,14 @@ def _infer_target(original: str, candidate: Any = None) -> str | None:
         original_text,
         re.I,
     )
+    if re.search(r"\bproctor(?:ial)?\b", original_text, re.I) and re.search(r"\bragging\b", original_text, re.I):
+        return "Chief Proctor and Anti-Ragging"
+    if re.search(r"\bproctor(?:ial)?\b", original_text, re.I):
+        return "Chief Proctor"
     if re.search(r"\bragging\b", original_text, re.I):
         return "anti-ragging committee"
+    if re.search(r"\b(?:academic\s+)?(?:facult(?:y|ies)|departments?)\b", original_text, re.I):
+        return "Academic Departments"
 
     if facility_match:
         val = facility_match.group(0).strip()
@@ -875,6 +882,40 @@ def _infer_target(original: str, candidate: Any = None) -> str | None:
         if re.search(r"\b(?:first\s+semester|1st\s+semester|semester)\b|पहला\s+सेमेस्टर|सेमेस्टर", original_text, re.I):
             return "fees and finance"
         return "Fee"
+
+    # Engineering discipline / branch detection when requesting study/admission/eligibility
+    discipline_match = re.search(
+        r"\b(?:study|join|pursue|opt\s+for|admission\s+(?:in|to|for)|eligibility\s+(?:for|in)|intake\s+(?:of|for)|course\s+in|degree\s+in|branch\s+in|programme\s+in|program\s+in)\s+"
+        r"(CSE|CS|IT|ECE|EEE|ME|CE|BT|AG|Computer\s+Science(?:\s*&\s*Engineering)?|Information\s+Technology|"
+        r"Electronics\s*&\s*Communication|Mechanical(?:\s+Engineering)?|Civil(?:\s+Engineering)?|Biotechnology|Agricultural\s+Engineering|"
+        r"Pharmacy|Management|B\.?Pharm|D\.?Pharm|MBA|B\.?Voc)\b"
+        r"|"
+        r"\b(CSE|CS|IT|ECE|EEE|ME|CE|BT|AG)\s+(?:branch|discipline|department|programme|program|course|intake|eligibility|seats?)\b",
+        original_text,
+        re.I,
+    )
+    if discipline_match:
+        disc = (discipline_match.group(1) or discipline_match.group(2)).strip()
+        disc_norm = disc.upper()
+        disc_map = {
+            "CSE": "Computer Science & Engineering",
+            "CS": "Computer Science",
+            "IT": "Information Technology",
+            "ECE": "Electronics & Communication Engineering",
+            "EEE": "Electrical & Electronics Engineering",
+            "ME": "Mechanical Engineering",
+            "CE": "Civil Engineering",
+            "BT": "Biotechnology",
+            "AG": "Agricultural Engineering",
+        }
+        full_disc = disc_map.get(disc_norm, disc)
+        has_12th = bool(re.search(r"\b(?:10\+2|class\s*12|12th|pcm|pcb|intermediate|senior\s+secondary|after\s+12th)\b", original_text, re.I))
+        has_grad = bool(re.search(r"\b(?:gate|after\s+graduation|after\s+b\.?tech|bachelor'?s\s+degree)\b", original_text, re.I))
+        if has_12th:
+            return f"B.Tech in {full_disc}"
+        if has_grad:
+            return f"M.Tech in {full_disc}"
+        return f"B.Tech in {full_disc}" if full_disc in disc_map.values() else full_disc
 
     if re.search(r"\bundergrad(?:uate)?s?\b", original_text, re.I):
         return "B.Tech"
@@ -996,6 +1037,9 @@ def _explicit_process_requested(text: str) -> str | None:
     low = _cf(text)
     patterns = (
         (r"\badmission\s+process\b", "admission process"),
+        (r"\badmission\s+(?:steps?|procedure)\b", "admission process"),
+        (r"\bsteps?\s+(?:for|of)\s+admission\b", "admission process"),
+        (r"\b(?:how|steps?)\s+to\s+get\s+admission\b", "admission process"),
         (r"\bapplication\s+process\b", "application process"),
         (r"\b(?:admission|entry)\s+(?:avenues?|modes?|routes?|options?)\b", "admission process"),
         (r"\b(?:avenues?|modes?|routes?)\s+(?:for|of)\s+admission\b", "admission process"),
@@ -1290,8 +1334,16 @@ def _requested_attributes(text: str) -> list[str]:
 
     if re.search(r"\b(?:where is|where are|location of|located)\b", low, re.I):
         found.append("location")
-    if re.search(r"\b(?:contact|phone number|email address|email id|telephone)\b", low, re.I):
+    if re.search(r"\b(?:contact|phone number|email address|email id|telephone|helpline)\b", low, re.I):
         found.append("contact")
+    if re.search(r"\b(?:departments?|faculties|faculty|academic\s+units?)\b", low, re.I):
+        found.append("departments")
+    if re.search(r"\b(?:intake|seats?|capacity|sanctioned\s+intake)\b", low, re.I):
+        found.append("intake")
+    if re.search(r"\b(?:hostels?|accommodation|residential)\b", low, re.I):
+        found.append("hostel")
+    if re.search(r"\b(?:transport|bus(?:es)?|routes?|connectivity)\b", low, re.I):
+        found.append("transport")
     if re.search(r"\b(?:facility|facilities)\b", low, re.I):
         found.append("facility")
     if re.search(r"\b(?:attendance|attandance)\b", low, re.I):
@@ -1419,6 +1471,8 @@ def _constraints(text: str) -> list[str]:
         r"\b(?:qualified|cleared|passed|appeared|clear)\s+(?:GATE|CAT|JEE(?:\s+Main|\s+Advanced)?|NET(?:\s*\(JRF\))?|CEED|NBHM)\b",
         r"\b(?:GATE|CAT|JEE(?:\s+Main|\s+Advanced)?|NET|CEED|NBHM)\s+(?:qualified|clear|cleared|clear\s+hai|score|qualification)\b",
         r"\bvalid\s+(?:GATE|CAT|JEE|NET|CEED|NBHM)\s+score\b",
+        r"\b(?:completed\s+)?(?:Class\s*12|12th|10\+2|Intermediate)(?:\s+with\s+[A-Za-z\s,]+)?\b",
+        r"\b(?:PCM|PCB|PCMB)\b",
         r"\b(?:category-specific|category specific)\s+(?:relaxation|relaxations)\b",
         r"\b(?:relaxation|relaxations)\b",
         r"\b(?:final\s+semester|final\s+year)\b|अंतिम\s+सेमेस्टर|अंतिम\s+वर्ष",
@@ -1703,7 +1757,8 @@ def _safe_retrieval_query(
     for term in (
         "qualifying degree", "degree duration", "work experience", "interview", "entrance test",
         "assistantship", "fellowship", "financial assistance", "stipend", "scholarship",
-        "hostel", "hostel charges", "anti-ragging committee", "provisional admission",
+        "hostel", "hostel charges", "anti-ragging committee", "anti-ragging", "provisional admission",
+        "chief proctor", "proctorial board", "proctor",
         "senate", "cancellation", "academic probation", "credit limit", "maximum credits", "relaxation",
         "exemption", "exempted", "exempt", "deposit", "refundable", "non-graded", "attendance",
         "re-exam", "re-examination", "additional examination", "make-up examination",
@@ -3024,7 +3079,8 @@ def plan_to_frame(plan: QueryPlan, *, intent_index: int = 0) -> SemanticQueryFra
     if target_clean and _cf(target_clean) in {
         "null", "none", "n/a", "na", "unknown", "nil", "undefined",
         "not applicable", "the institution", "institution", "iit jodhpur",
-        "iitj", "iit", "the institute", "institute", "campus", "college", "university",
+        "iitj", "iit", "srgi", "sr group", "sr group of institutions", "srgi lucknow",
+        "the institute", "institute", "campus", "college", "university",
         "indian institute of technology jodhpur",
     }:
         target_clean = None
@@ -3077,7 +3133,14 @@ def plan_to_frame(plan: QueryPlan, *, intent_index: int = 0) -> SemanticQueryFra
 
         preserved_terms=tuple(local_preserved),
 
-        is_list_question=intent.request_type == "documents",
+        is_list_question=(
+            intent.request_type in ("documents", "list", "directory", "catalogue")
+            or any(lq in plan.original_query.casefold() for lq in (
+                "what faculties", "what departments", "list of departments", "which departments",
+                "what programmes", "what programs", "what b.tech", "what btech", "list all",
+                "specializations", "branches", "all programmes", "all departments", "directory"
+            ))
+        ),
 
         is_comparison_question=intent.request_type == "comparison" or bool(intent.comparison_targets),
 
@@ -3132,8 +3195,8 @@ def retrieval_queries_from_plan(plan: QueryPlan, *, limit: int = 5) -> tuple[str
     for term in getattr(plan, "preserved_terms", ()) or ():
         t_clean = str(term).strip()
         words = t_clean.split()
-        if 2 <= len(words) <= 6 and t_clean.casefold() not in {"iit jodhpur", orig_cf}:
-            if target_str and target_str.casefold() not in {"iit jodhpur"} and target_str.casefold() not in t_clean.casefold():
+        if 2 <= len(words) <= 6 and t_clean.casefold() not in {"iit jodhpur", "srgi", "srgi lucknow", "sr group", orig_cf}:
+            if target_str and target_str.casefold() not in {"iit jodhpur", "srgi", "srgi lucknow", "sr group"} and target_str.casefold() not in t_clean.casefold():
                 facet_q = f"{target_str} {t_clean}"
             else:
                 facet_q = t_clean

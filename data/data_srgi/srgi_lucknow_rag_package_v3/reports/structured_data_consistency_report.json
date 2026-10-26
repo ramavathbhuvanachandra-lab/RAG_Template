@@ -1,0 +1,90 @@
+{
+  "institution_id": "srgi_lucknow",
+  "entity_checks": [
+    {
+      "entity": "Chief Proctor Dr. Shashank Singh",
+      "matches_markdown": true,
+      "matches_json": true,
+      "phone": "+91 8417000011"
+    },
+    {
+      "entity": "Director T&P Mr. Kaushal Chandra",
+      "matches_markdown": true,
+      "matches_json": true,
+      "phone": "+91 9793000080"
+    },
+    {
+      "entity": "Chief Transport Officer Mr. Devesh Singh",
+      "matches_markdown": true,
+      "matches_json": true,
+      "phone": "+91 9793000099"
+    },
+    {
+      "entity": "Chief Warden Mr. K.M. Upadhyay",
+      "matches_markdown": true,
+      "matches_json": true,
+      "phone": "+91 9793000090"
+    },
+    {
+      "entity": "Librarian Kr. Abhishek Pratap",
+      "matches_markdown": true,
+      "matches_json": true,
+      "phone": "+91 9793000050"
+    },
+    {
+      "entity": "Executive Director Dr. S.S. Chauhan",
+      "matches_markdown": true,
+      "matches_json": true,
+      "phone": "+91 8417000008"
+    },
+    {
+      "entity": "Chief Administrative Officer Mr. Sonendra Singh Tomar",
+      "matches_markdown": true,
+      "matches_json": true,
+      "phone": "+91 9793000005"
+    },
+    {
+      "entity": "B.Tech CSE Core Intake",
+      "matches_markdown": true,
+      "matches_json": true,
+      "intake": 180
+    },
+    {
+      "entity": "B.Tech CSE AI/ML Track Intake",
+      "matches_markdown": true,
+      "matches_json": true,
+      "intake": 60
+    },
+    {
+      "entity": "B.Tech Biotechnology Intake",
+      "matches_markdown": true,
+      "matches_json": true,
+      "intake": 180
+    },
+    {
+      "entity": "Nursing Programme Duration",
+      "matches_markdown": true,
+      "matches_json": true,
+      "duration_years": 3.5
+    },
+    {
+      "entity": "DHP Portal Status",
+      "matches_markdown": true,
+      "matches_json": true,
+      "status": "* [Coming Soon]"
+    },
+    {
+      "entity": "MBA Intake",
+      "matches_markdown": true,
+      "matches_json": true,
+      "intake": 240
+    },
+    {
+      "entity": "Hostel Capacity",
+      "matches_markdown": true,
+      "matches_json": true,
+      "capacity": 2000
+    }
+  ],
+  "all_consistent": true
+}

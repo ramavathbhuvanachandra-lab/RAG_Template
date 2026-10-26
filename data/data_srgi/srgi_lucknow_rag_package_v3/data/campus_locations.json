@@ -1,0 +1,18 @@
+{
+  "institution_id": "srgi_lucknow",
+  "campus_name": "S. R. Group of Institutions Lucknow Main Campus",
+  "area_acres": 65,
+  "address": "NH-24, Sitapur Road, Bakshi ka Talab (BKT), Lucknow - 226201, Uttar Pradesh, India",
+  "landmarks": [
+    "Situated on National Highway 24 (NH-24)",
+    "Bakshi ka Talab (BKT) educational belt",
+    "Sitapur Road Highway Corridor"
+  ],
+  "geo": {
+    "city": "Lucknow",
+    "district": "Lucknow",
+    "state": "Uttar Pradesh",
+    "country": "India"
+  },
+  "source_url": "https://srgi.in/contact"
+}

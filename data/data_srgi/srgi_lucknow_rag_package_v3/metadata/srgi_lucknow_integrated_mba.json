@@ -1,0 +1,49 @@
+{
+  "schema_version": "2.0.0",
+  "institution_id": "srgi_lucknow",
+  "institution_name": "S. R. Group of Institutions (SRGI), Lucknow",
+  "document_id": "srgi_lucknow_integrated_mba",
+  "title": "Integrated MBA (IMBA) \u2014 5-Year Dual-Degree Management Programme",
+  "category": "05_programmes_management",
+  "subcategory": "management_studies",
+  "document_type": "institutional_knowledge",
+  "language": "en",
+  "markdown_path": "documents/05_programmes_management/srgi_lucknow_integrated_mba.md",
+  "docx_path": "documents/05_programmes_management/srgi_lucknow_integrated_mba.docx",
+  "source_urls": [
+    "https://srgi.in/management/imba"
+  ],
+  "canonical_source_urls": [
+    "https://srgi.in/management/imba"
+  ],
+  "source_hashes": [
+    "243d196ea5d8a7e096bb08173cd5a943ccc5bbfc96ca3c4ea6b1c713b8de398c"
+  ],
+  "markdown_hash": "bf142f285a14038e727e3197ec3ec4de7be91e5e76bfd843b944ec3a8774e5dd",
+  "docx_hash": "16ac7e9dc2b5049a6e5b01d020fdd3cf05c06559f42c3273c7febb1a46b43497",
+  "byte_size_md": 2116,
+  "byte_size_docx": 37914,
+  "word_count_md": 239,
+  "sections_count": 7,
+  "table_count": 0,
+  "content_quality_status": "PASS",
+  "conflict_status": "NO_UNRESOLVED_CONFLICTS",
+  "provenance_section_count": 1,
+  "docx_provenance_heading_count": 1,
+  "docx_leaked_syntax_count": 0,
+  "summary": "5-year post-10+2 Integrated MBA programme combining undergraduate foundation and postgraduate management degrees, sanctioned intake of 30 seats.",
+  "keywords": [
+    "Integrated MBA",
+    "IMBA",
+    "5 Years",
+    "BBA MBA",
+    "Intake 30",
+    "Post 12th Management"
+  ],
+  "related_documents": [
+    "srgi_lucknow_mba_programme",
+    "srgi_lucknow_applied_global_management"
+  ],
+  "created_at": "2026-10-23T21:19:33.540961+00:00",
+  "pipeline_stage": "release_v3_production"
+}

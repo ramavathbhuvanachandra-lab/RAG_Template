@@ -1,0 +1,502 @@
+{
+  "institution_id": "srgi_lucknow",
+  "total_sidecars_validated": 55,
+  "sidecars_pass_count": 55,
+  "documents": [
+    {
+      "document_id": "srgi_lucknow_overview",
+      "sidecar_exists": true,
+      "sidecar_valid_json": true,
+      "has_markdown_hash": true,
+      "has_docx_hash": true,
+      "hash_parity_verified": true,
+      "validation_status": "PASS"
+    },
+    {
+      "document_id": "srgi_lucknow_heritage_and_inspiration",
+      "sidecar_exists": true,
+      "sidecar_valid_json": true,
+      "has_markdown_hash": true,
+      "has_docx_hash": true,
+      "hash_parity_verified": true,
+      "validation_status": "PASS"
+    },
+    {
+      "document_id": "srgi_lucknow_chairman_message",
+      "sidecar_exists": true,
+      "sidecar_valid_json": true,
+      "has_markdown_hash": true,
+      "has_docx_hash": true,
+      "hash_parity_verified": true,
+      "validation_status": "PASS"
+    },
+    {
+      "document_id": "srgi_lucknow_chairperson_message",
+      "sidecar_exists": true,
+      "sidecar_valid_json": true,
+      "has_markdown_hash": true,
+      "has_docx_hash": true,
+      "hash_parity_verified": true,
+      "validation_status": "PASS"
+    },
+    {
+      "document_id": "srgi_lucknow_vice_chairman_message",
+      "sidecar_exists": true,
+      "sidecar_valid_json": true,
+      "has_markdown_hash": true,
+      "has_docx_hash": true,
+      "hash_parity_verified": true,
+      "validation_status": "PASS"
+    },
+    {
+      "document_id": "srgi_lucknow_vice_chairperson_message",
+      "sidecar_exists": true,
+      "sidecar_valid_json": true,
+      "has_markdown_hash": true,
+      "has_docx_hash": true,
+      "hash_parity_verified": true,
+      "validation_status": "PASS"
+    },
+    {
+      "document_id": "srgi_lucknow_board_of_governors",
+      "sidecar_exists": true,
+      "sidecar_valid_json": true,
+      "has_markdown_hash": true,
+      "has_docx_hash": true,
+      "hash_parity_verified": true,
+      "validation_status": "PASS"
+    },
+    {
+      "document_id": "srgi_lucknow_board_of_directors",
+      "sidecar_exists": true,
+      "sidecar_valid_json": true,
+      "has_markdown_hash": true,
+      "has_docx_hash": true,
+      "hash_parity_verified": true,
+      "validation_status": "PASS"
+    },
+    {
+      "document_id": "srgi_lucknow_administrative_heads",
+      "sidecar_exists": true,
+      "sidecar_valid_json": true,
+      "has_markdown_hash": true,
+      "has_docx_hash": true,
+      "hash_parity_verified": true,
+      "validation_status": "PASS"
+    },
+    {
+      "document_id": "srgi_lucknow_academic_units_overview",
+      "sidecar_exists": true,
+      "sidecar_valid_json": true,
+      "has_markdown_hash": true,
+      "has_docx_hash": true,
+      "hash_parity_verified": true,
+      "validation_status": "PASS"
+    },
+    {
+      "document_id": "srgi_lucknow_btech_overview",
+      "sidecar_exists": true,
+      "sidecar_valid_json": true,
+      "has_markdown_hash": true,
+      "has_docx_hash": true,
+      "hash_parity_verified": true,
+      "validation_status": "PASS"
+    },
+    {
+      "document_id": "srgi_lucknow_btech_computer_science_engineering",
+      "sidecar_exists": true,
+      "sidecar_valid_json": true,
+      "has_markdown_hash": true,
+      "has_docx_hash": true,
+      "hash_parity_verified": true,
+      "validation_status": "PASS"
+    },
+    {
+      "document_id": "srgi_lucknow_btech_computer_science",
+      "sidecar_exists": true,
+      "sidecar_valid_json": true,
+      "has_markdown_hash": true,
+      "has_docx_hash": true,
+      "hash_parity_verified": true,
+      "validation_status": "PASS"
+    },
+    {
+      "document_id": "srgi_lucknow_btech_information_technology",
+      "sidecar_exists": true,
+      "sidecar_valid_json": true,
+      "has_markdown_hash": true,
+      "has_docx_hash": true,
+      "hash_parity_verified": true,
+      "validation_status": "PASS"
+    },
+    {
+      "document_id": "srgi_lucknow_btech_electronics_communication",
+      "sidecar_exists": true,
+      "sidecar_valid_json": true,
+      "has_markdown_hash": true,
+      "has_docx_hash": true,
+      "hash_parity_verified": true,
+      "validation_status": "PASS"
+    },
+    {
+      "document_id": "srgi_lucknow_btech_electrical_electronics",
+      "sidecar_exists": true,
+      "sidecar_valid_json": true,
+      "has_markdown_hash": true,
+      "has_docx_hash": true,
+      "hash_parity_verified": true,
+      "validation_status": "PASS"
+    },
+    {
+      "document_id": "srgi_lucknow_btech_mechanical_engineering",
+      "sidecar_exists": true,
+      "sidecar_valid_json": true,
+      "has_markdown_hash": true,
+      "has_docx_hash": true,
+      "hash_parity_verified": true,
+      "validation_status": "PASS"
+    },
+    {
+      "document_id": "srgi_lucknow_btech_civil_engineering",
+      "sidecar_exists": true,
+      "sidecar_valid_json": true,
+      "has_markdown_hash": true,
+      "has_docx_hash": true,
+      "hash_parity_verified": true,
+      "validation_status": "PASS"
+    },
+    {
+      "document_id": "srgi_lucknow_btech_biotechnology",
+      "sidecar_exists": true,
+      "sidecar_valid_json": true,
+      "has_markdown_hash": true,
+      "has_docx_hash": true,
+      "hash_parity_verified": true,
+      "validation_status": "PASS"
+    },
+    {
+      "document_id": "srgi_lucknow_btech_agricultural_engineering",
+      "sidecar_exists": true,
+      "sidecar_valid_json": true,
+      "has_markdown_hash": true,
+      "has_docx_hash": true,
+      "hash_parity_verified": true,
+      "validation_status": "PASS"
+    },
+    {
+      "document_id": "srgi_lucknow_mtech_programmes",
+      "sidecar_exists": true,
+      "sidecar_valid_json": true,
+      "has_markdown_hash": true,
+      "has_docx_hash": true,
+      "hash_parity_verified": true,
+      "validation_status": "PASS"
+    },
+    {
+      "document_id": "srgi_lucknow_management_overview",
+      "sidecar_exists": true,
+      "sidecar_valid_json": true,
+      "has_markdown_hash": true,
+      "has_docx_hash": true,
+      "hash_parity_verified": true,
+      "validation_status": "PASS"
+    },
+    {
+      "document_id": "srgi_lucknow_mba_programme",
+      "sidecar_exists": true,
+      "sidecar_valid_json": true,
+      "has_markdown_hash": true,
+      "has_docx_hash": true,
+      "hash_parity_verified": true,
+      "validation_status": "PASS"
+    },
+    {
+      "document_id": "srgi_lucknow_integrated_mba",
+      "sidecar_exists": true,
+      "sidecar_valid_json": true,
+      "has_markdown_hash": true,
+      "has_docx_hash": true,
+      "hash_parity_verified": true,
+      "validation_status": "PASS"
+    },
+    {
+      "document_id": "srgi_lucknow_applied_global_management",
+      "sidecar_exists": true,
+      "sidecar_valid_json": true,
+      "has_markdown_hash": true,
+      "has_docx_hash": true,
+      "hash_parity_verified": true,
+      "validation_status": "PASS"
+    },
+    {
+      "document_id": "srgi_lucknow_medical_programmes_overview",
+      "sidecar_exists": true,
+      "sidecar_valid_json": true,
+      "has_markdown_hash": true,
+      "has_docx_hash": true,
+      "hash_parity_verified": true,
+      "validation_status": "PASS"
+    },
+    {
+      "document_id": "srgi_lucknow_d_pharma_programme",
+      "sidecar_exists": true,
+      "sidecar_valid_json": true,
+      "has_markdown_hash": true,
+      "has_docx_hash": true,
+      "hash_parity_verified": true,
+      "validation_status": "PASS"
+    },
+    {
+      "document_id": "srgi_lucknow_nursing_programme",
+      "sidecar_exists": true,
+      "sidecar_valid_json": true,
+      "has_markdown_hash": true,
+      "has_docx_hash": true,
+      "hash_parity_verified": true,
+      "validation_status": "PASS"
+    },
+    {
+      "document_id": "srgi_lucknow_homeopathy_programme",
+      "sidecar_exists": true,
+      "sidecar_valid_json": true,
+      "has_markdown_hash": true,
+      "has_docx_hash": true,
+      "hash_parity_verified": true,
+      "validation_status": "PASS"
+    },
+    {
+      "document_id": "srgi_lucknow_bvoc_overview",
+      "sidecar_exists": true,
+      "sidecar_valid_json": true,
+      "has_markdown_hash": true,
+      "has_docx_hash": true,
+      "hash_parity_verified": true,
+      "validation_status": "PASS"
+    },
+    {
+      "document_id": "srgi_lucknow_bvoc_software_development",
+      "sidecar_exists": true,
+      "sidecar_valid_json": true,
+      "has_markdown_hash": true,
+      "has_docx_hash": true,
+      "hash_parity_verified": true,
+      "validation_status": "PASS"
+    },
+    {
+      "document_id": "srgi_lucknow_bvoc_banking_financial_services",
+      "sidecar_exists": true,
+      "sidecar_valid_json": true,
+      "has_markdown_hash": true,
+      "has_docx_hash": true,
+      "hash_parity_verified": true,
+      "validation_status": "PASS"
+    },
+    {
+      "document_id": "srgi_lucknow_bvoc_automobile_engineering",
+      "sidecar_exists": true,
+      "sidecar_valid_json": true,
+      "has_markdown_hash": true,
+      "has_docx_hash": true,
+      "hash_parity_verified": true,
+      "validation_status": "PASS"
+    },
+    {
+      "document_id": "srgi_lucknow_admissions_enquiry_and_eligibility",
+      "sidecar_exists": true,
+      "sidecar_valid_json": true,
+      "has_markdown_hash": true,
+      "has_docx_hash": true,
+      "hash_parity_verified": true,
+      "validation_status": "PASS"
+    },
+    {
+      "document_id": "srgi_lucknow_career_pathfinder_simulator",
+      "sidecar_exists": true,
+      "sidecar_valid_json": true,
+      "has_markdown_hash": true,
+      "has_docx_hash": true,
+      "hash_parity_verified": true,
+      "validation_status": "PASS"
+    },
+    {
+      "document_id": "srgi_lucknow_hostel_accommodation",
+      "sidecar_exists": true,
+      "sidecar_valid_json": true,
+      "has_markdown_hash": true,
+      "has_docx_hash": true,
+      "hash_parity_verified": true,
+      "validation_status": "PASS"
+    },
+    {
+      "document_id": "srgi_lucknow_transport_facility",
+      "sidecar_exists": true,
+      "sidecar_valid_json": true,
+      "has_markdown_hash": true,
+      "has_docx_hash": true,
+      "hash_parity_verified": true,
+      "validation_status": "PASS"
+    },
+    {
+      "document_id": "srgi_lucknow_central_library",
+      "sidecar_exists": true,
+      "sidecar_valid_json": true,
+      "has_markdown_hash": true,
+      "has_docx_hash": true,
+      "hash_parity_verified": true,
+      "validation_status": "PASS"
+    },
+    {
+      "document_id": "srgi_lucknow_cafeteria_and_dining",
+      "sidecar_exists": true,
+      "sidecar_valid_json": true,
+      "has_markdown_hash": true,
+      "has_docx_hash": true,
+      "hash_parity_verified": true,
+      "validation_status": "PASS"
+    },
+    {
+      "document_id": "srgi_lucknow_futuristic_labs",
+      "sidecar_exists": true,
+      "sidecar_valid_json": true,
+      "has_markdown_hash": true,
+      "has_docx_hash": true,
+      "hash_parity_verified": true,
+      "validation_status": "PASS"
+    },
+    {
+      "document_id": "srgi_lucknow_smart_classrooms",
+      "sidecar_exists": true,
+      "sidecar_valid_json": true,
+      "has_markdown_hash": true,
+      "has_docx_hash": true,
+      "hash_parity_verified": true,
+      "validation_status": "PASS"
+    },
+    {
+      "document_id": "srgi_lucknow_seminar_halls_and_conference",
+      "sidecar_exists": true,
+      "sidecar_valid_json": true,
+      "has_markdown_hash": true,
+      "has_docx_hash": true,
+      "hash_parity_verified": true,
+      "validation_status": "PASS"
+    },
+    {
+      "document_id": "srgi_lucknow_indoor_swimming_pool",
+      "sidecar_exists": true,
+      "sidecar_valid_json": true,
+      "has_markdown_hash": true,
+      "has_docx_hash": true,
+      "hash_parity_verified": true,
+      "validation_status": "PASS"
+    },
+    {
+      "document_id": "srgi_lucknow_sports_ground_and_complex",
+      "sidecar_exists": true,
+      "sidecar_valid_json": true,
+      "has_markdown_hash": true,
+      "has_docx_hash": true,
+      "hash_parity_verified": true,
+      "validation_status": "PASS"
+    },
+    {
+      "document_id": "srgi_lucknow_training_and_placement_cell",
+      "sidecar_exists": true,
+      "sidecar_valid_json": true,
+      "has_markdown_hash": true,
+      "has_docx_hash": true,
+      "hash_parity_verified": true,
+      "validation_status": "PASS"
+    },
+    {
+      "document_id": "srgi_lucknow_top_placements_and_recruiters",
+      "sidecar_exists": true,
+      "sidecar_valid_json": true,
+      "has_markdown_hash": true,
+      "has_docx_hash": true,
+      "hash_parity_verified": true,
+      "validation_status": "PASS"
+    },
+    {
+      "document_id": "srgi_lucknow_student_clubs_and_activities",
+      "sidecar_exists": true,
+      "sidecar_valid_json": true,
+      "has_markdown_hash": true,
+      "has_docx_hash": true,
+      "hash_parity_verified": true,
+      "validation_status": "PASS"
+    },
+    {
+      "document_id": "srgi_lucknow_student_grievance_redressal",
+      "sidecar_exists": true,
+      "sidecar_valid_json": true,
+      "has_markdown_hash": true,
+      "has_docx_hash": true,
+      "hash_parity_verified": true,
+      "validation_status": "PASS"
+    },
+    {
+      "document_id": "srgi_lucknow_anti_ragging_regulations",
+      "sidecar_exists": true,
+      "sidecar_valid_json": true,
+      "has_markdown_hash": true,
+      "has_docx_hash": true,
+      "hash_parity_verified": true,
+      "validation_status": "PASS"
+    },
+    {
+      "document_id": "srgi_lucknow_notices_and_announcements",
+      "sidecar_exists": true,
+      "sidecar_valid_json": true,
+      "has_markdown_hash": true,
+      "has_docx_hash": true,
+      "hash_parity_verified": true,
+      "validation_status": "PASS"
+    },
+    {
+      "document_id": "srgi_lucknow_events_and_youth_manifesto",
+      "sidecar_exists": true,
+      "sidecar_valid_json": true,
+      "has_markdown_hash": true,
+      "has_docx_hash": true,
+      "hash_parity_verified": true,
+      "validation_status": "PASS"
+    },
+    {
+      "document_id": "srgi_lucknow_eminent_speakers",
+      "sidecar_exists": true,
+      "sidecar_valid_json": true,
+      "has_markdown_hash": true,
+      "has_docx_hash": true,
+      "hash_parity_verified": true,
+      "validation_status": "PASS"
+    },
+    {
+      "document_id": "srgi_lucknow_frequently_asked_questions",
+      "sidecar_exists": true,
+      "sidecar_valid_json": true,
+      "has_markdown_hash": true,
+      "has_docx_hash": true,
+      "hash_parity_verified": true,
+      "validation_status": "PASS"
+    },
+    {
+      "document_id": "srgi_lucknow_campus_contacts_and_directions",
+      "sidecar_exists": true,
+      "sidecar_valid_json": true,
+      "has_markdown_hash": true,
+      "has_docx_hash": true,
+      "hash_parity_verified": true,
+      "validation_status": "PASS"
+    },
+    {
+      "document_id": "srgi_lucknow_official_prospectus_extracts",
+      "sidecar_exists": true,
+      "sidecar_valid_json": true,
+      "has_markdown_hash": true,
+      "has_docx_hash": true,
+      "hash_parity_verified": true,
+      "validation_status": "PASS"
+    }
+  ]
+}

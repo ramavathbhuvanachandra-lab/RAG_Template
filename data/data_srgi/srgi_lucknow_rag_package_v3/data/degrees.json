@@ -1,0 +1,47 @@
+{
+  "institution_id": "srgi_lucknow",
+  "degrees": [
+    {
+      "code": "B.Tech",
+      "name": "Bachelor of Technology",
+      "level": "Undergraduate",
+      "duration_years": 4
+    },
+    {
+      "code": "M.Tech",
+      "name": "Master of Technology",
+      "level": "Postgraduate",
+      "duration_years": 2
+    },
+    {
+      "code": "MBA",
+      "name": "Master of Business Administration",
+      "level": "Postgraduate",
+      "duration_years": 2
+    },
+    {
+      "code": "IMBA",
+      "name": "Integrated Master of Business Administration",
+      "level": "Integrated Dual Degree",
+      "duration_years": 5
+    },
+    {
+      "code": "B.Voc",
+      "name": "Bachelor of Vocation",
+      "level": "Undergraduate Vocational",
+      "duration_years": 3
+    },
+    {
+      "code": "D.Pharm",
+      "name": "Diploma in Pharmacy",
+      "level": "Diploma",
+      "duration_years": 2
+    },
+    {
+      "code": "DHP",
+      "name": "Diploma in Homeopathic Pharmacy",
+      "level": "Diploma",
+      "duration_years": 2
+    }
+  ]
+}

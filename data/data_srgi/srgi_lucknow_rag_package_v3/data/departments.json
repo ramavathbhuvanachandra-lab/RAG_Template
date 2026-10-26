@@ -1,0 +1,43 @@
+{
+  "institution_id": "srgi_lucknow",
+  "faculties": [
+    {
+      "faculty_name": "Faculty of Engineering & Technology",
+      "departments": [
+        "Computer Science & Engineering",
+        "Information Technology",
+        "Electronics & Communication Engineering",
+        "Electrical & Electronics Engineering",
+        "Mechanical Engineering",
+        "Civil Engineering",
+        "Biotechnology",
+        "Agricultural Engineering"
+      ]
+    },
+    {
+      "faculty_name": "Faculty of Management Studies",
+      "departments": [
+        "Business Administration (MBA)",
+        "Integrated MBA (IMBA)",
+        "Applied Global Management Programme (AGMP)"
+      ]
+    },
+    {
+      "faculty_name": "Faculty of Skill & Vocational Studies",
+      "departments": [
+        "Software Development (SD)",
+        "Banking, Financial Services & Insurance (BFSI)",
+        "Automobile Engineering (AE)"
+      ]
+    },
+    {
+      "faculty_name": "Faculty of Medical & Allied Health Sciences",
+      "departments": [
+        "SRM Ayush Institute of Medical Sciences",
+        "Department of Pharmacy (D.Pharm)",
+        "Nursing & Paramedical Sciences",
+        "Department of Homeopathy (DHP)"
+      ]
+    }
+  ]
+}

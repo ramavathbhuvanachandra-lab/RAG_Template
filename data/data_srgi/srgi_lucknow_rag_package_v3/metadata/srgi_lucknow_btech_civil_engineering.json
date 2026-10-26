@@ -1,0 +1,49 @@
+{
+  "schema_version": "2.0.0",
+  "institution_id": "srgi_lucknow",
+  "institution_name": "S. R. Group of Institutions (SRGI), Lucknow",
+  "document_id": "srgi_lucknow_btech_civil_engineering",
+  "title": "B.Tech in Civil Engineering (CE)",
+  "category": "04_programmes_engineering",
+  "subcategory": "undergraduate_engineering",
+  "document_type": "institutional_knowledge",
+  "language": "en",
+  "markdown_path": "documents/04_programmes_engineering/srgi_lucknow_btech_civil_engineering.md",
+  "docx_path": "documents/04_programmes_engineering/srgi_lucknow_btech_civil_engineering.docx",
+  "source_urls": [
+    "https://srgi.in/btech/ce"
+  ],
+  "canonical_source_urls": [
+    "https://srgi.in/btech/ce"
+  ],
+  "source_hashes": [
+    "4576ebdd5b1888a0bcd11429df302621d7b1004a31d9f0e59682cbdbccee1a20"
+  ],
+  "markdown_hash": "e3d46da1bdbd555a1c49b27e4bd49b3dcd5f54ba0ea2eb252e6580bd37c2fb36",
+  "docx_hash": "7e3c7da620526d1fca450f3770ec030c6723325828d108e08b43dfee3a9797e3",
+  "byte_size_md": 1965,
+  "byte_size_docx": 37785,
+  "word_count_md": 215,
+  "sections_count": 8,
+  "table_count": 0,
+  "content_quality_status": "PASS",
+  "conflict_status": "NO_UNRESOLVED_CONFLICTS",
+  "provenance_section_count": 1,
+  "docx_provenance_heading_count": 1,
+  "docx_leaked_syntax_count": 0,
+  "summary": "Civil Engineering overview, structural engineering, environmental infrastructure, surveying, transportation engineering, sanctioned intake of 60 seats.",
+  "keywords": [
+    "B.Tech CE",
+    "Civil Engineering",
+    "Structures",
+    "Surveying",
+    "Geotechnical",
+    "Intake 60"
+  ],
+  "related_documents": [
+    "srgi_lucknow_btech_mechanical_engineering",
+    "srgi_lucknow_btech_overview"
+  ],
+  "created_at": "2026-10-23T21:19:33.356262+00:00",
+  "pipeline_stage": "release_v3_production"
+}

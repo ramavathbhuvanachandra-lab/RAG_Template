@@ -1,0 +1,48 @@
+{
+  "schema_version": "2.0.0",
+  "institution_id": "srgi_lucknow",
+  "institution_name": "S. R. Group of Institutions (SRGI), Lucknow",
+  "document_id": "srgi_lucknow_smart_classrooms",
+  "title": "Smart Classrooms and Digital Learning Spaces",
+  "category": "09_campus_facilities_and_services",
+  "subcategory": "learning_spaces",
+  "document_type": "institutional_knowledge",
+  "language": "en",
+  "markdown_path": "documents/09_campus_facilities_and_services/srgi_lucknow_smart_classrooms.md",
+  "docx_path": "documents/09_campus_facilities_and_services/srgi_lucknow_smart_classrooms.docx",
+  "source_urls": [
+    "https://srgi.in/smart-classroom"
+  ],
+  "canonical_source_urls": [
+    "https://srgi.in/smart-classroom"
+  ],
+  "source_hashes": [
+    "280253bca88407f3e4b13a61582eb812019d48ce32fb194b10bca6f3d7f691c4"
+  ],
+  "markdown_hash": "a4d0f44e7fa764a621932cb634739ef91e103bf520085c891dc0407d240b8a4a",
+  "docx_hash": "7b83d51a840ee02221457df95865715c041aa80882f1b2f5f1b63e3f122f2641",
+  "byte_size_md": 1657,
+  "byte_size_docx": 37666,
+  "word_count_md": 169,
+  "sections_count": 6,
+  "table_count": 0,
+  "content_quality_status": "PASS",
+  "conflict_status": "NO_UNRESOLVED_CONFLICTS",
+  "provenance_section_count": 1,
+  "docx_provenance_heading_count": 1,
+  "docx_leaked_syntax_count": 0,
+  "summary": "Audio-visual smart classrooms, interactive digital touch panels, acoustic architecture, hybrid lecture capabilities across academic blocks.",
+  "keywords": [
+    "Smart Classroom",
+    "Digital Learning",
+    "Audio Visual",
+    "Interactive Panels",
+    "Lecture Halls"
+  ],
+  "related_documents": [
+    "srgi_lucknow_seminar_halls_and_conference",
+    "srgi_lucknow_central_library"
+  ],
+  "created_at": "2026-10-23T21:19:34.032066+00:00",
+  "pipeline_stage": "release_v3_production"
+}

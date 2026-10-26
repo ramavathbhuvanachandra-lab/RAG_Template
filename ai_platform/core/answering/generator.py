@@ -86,25 +86,26 @@ _DEFAULT_SYSTEM_INSTRUCTIONS = (
     "3. EXACT FIDELITY TO DETAILS, TABLES & CATEGORIES:\n"
     "   - Preserve exact course codes, amounts, percentages, CGPA scales, dates, units, and category-specific rules (GEN, OBC, SC, ST, EWS).\n"
     "   - Do not mix or interchange rules across different academic programmes, degrees (B.Tech, M.Tech, M.Sc, Ph.D), or departments.\n"
-    "   - For tabular data, preserve exact row-column associations without conflating values. When rates or charges depend on occupancy (single vs double), bedding (with vs without bedding), user status (students vs visitors/guests), or duration (daily vs long-term), present these distinct categories clearly instead of choosing one arbitrarily or claiming a conflict.\n"
-    "   - For fee queries and fee structures (e.g. general semester fees, B.Tech fee structure), present all documented fee components and amounts. ALWAYS include the baseline Tuition Fee (e.g. ₹50,000/- per semester) alongside the Semester Fee (e.g. ₹32,250/-) and other one-time/recurring deposits, and clearly state category waivers (such as 100% tuition waiver for SC/ST/PwD). Do not substitute, combine, or mix school-specific program fees (e.g. MBA) into general institute fee answers unless specifically asked for that school or program.\n"
-    "   - For hostel accommodation booking rates, accurately distinguish duration tiers: daily rates for short stays (1–10 days); lump-sum flat rates for intermediate stays (exceeding 11 days but less than a month: ₹2,175 flat, excluding GST); and monthly rates for long-term stays (duration exceeding a month: ₹2,175 per month, excluding GST). Never describe a monthly or lump-sum rate as a daily charge.\n"
+    "   - For tabular data, preserve exact row-column associations without conflating values. When rates or charges depend on occupancy (single vs double), bedding, user status, or duration (daily vs long-term), present these distinct categories clearly instead of choosing one arbitrarily or claiming a conflict.\n"
+    "   - For fee queries and fee structures, present all documented fee components and amounts. ALWAYS include baseline tuition fees alongside applicable semester charges and deposits, and clearly state category waivers where documented. Do not substitute or mix different program fees into general fee answers unless specifically requested.\n"
+    "   - For accommodation booking rates, accurately distinguish duration tiers (such as short-term daily rates vs monthly rates) and occupancy tiers. Never describe a monthly rate as a daily charge.\n"
     "4. COMPLETE INVENTORIES & DEGREE PROGRAMME LISTS:\n"
-    "   - When asked for a complete list of programmes offered for a degree (such as B.Tech programmes offered by the institute) or academic departments/schools, synthesize across ALL verified evidence chunks. Do not truncate to a partial list from a branch-change or course-structure clause.\n"
-    "   - When an undergraduate overview or degree catalogue table is provided, include all documented streams (e.g. for B.Tech: Bioscience & Bioengineering, Chemical Engineering, Civil & Infrastructure Engineering, Computer Science & Engineering, Electrical Engineering, Mechanical Engineering, Materials Engineering, AI & Data Science, Electronics Engineering, Aerospace Engineering).\n"
-    "   - For institutional department queries, list the full set of academic departments (and schools/centres where documented). Do not replace the institute-wide department catalogue with a detailed description of only one department.\n"
+    "   - When asked for a complete list of programmes offered for a degree (such as B.Tech programmes offered by the institute) or academic departments/faculties, synthesize across ALL verified evidence chunks. Do not truncate to a partial list from a branch-change or course-structure clause.\n"
+    "   - When an undergraduate overview or degree catalogue table is provided, include all documented academic disciplines and specializations.\n"
+    "   - For institutional department queries, list the full set of academic departments and faculties documented in official records. Do not replace the institute-wide catalogue with only one department.\n"
     "5. INSTITUTIONAL VS SPECIALIZED RESEARCH SCOPE:\n"
-    "   - For institute-wide research queries ('main research areas at [Institution]'), present the documented interdisciplinary research platforms (e.g. IoT & Applications, Quantum Information & Computation, Digital Humanities), centres of excellence (such as Arts & Digital Immersion, CETE), and primary departmental domains (Engineering, Sciences, Humanities/Management). Clearly attribute specialized or centre-specific research themes (such as AI & Creative Arts or Mixed-Media Art at the Centre of Excellence on Arts & Digital Immersion) to their respective centres rather than portraying them as the sole research of the entire institute.\n"
+    "   - For institute-wide research queries, present the documented interdisciplinary research platforms, centres of excellence, and primary departmental domains. Clearly attribute specialized or centre-specific research themes to their respective centres rather than portraying them as the sole research of the entire institute.\n"
     "6. QUALIFICATIONS, DISJUNCTIONS & ARITHMETIC:\n"
     "   - Strictly preserve alternative qualifying routes (e.g. 'OR first-class', alternative degrees). Never deny an eligibility route explicitly listed as an alternative.\n"
-    "   - For curriculum credit requirements, distinguish between graded course credits and non-graded/audit credits (e.g. 141 graded credits + 12 non-graded audit credits = 153 total). Verify that listed components constitute the expected category before asserting a mismatch.\n"
+    "   - For curriculum credit requirements, distinguish between graded course credits and non-graded/audit credits. Verify that listed components constitute the expected category before asserting a mismatch.\n"
     "7. PARTIAL EVIDENCE, CALIBRATED ANSWERS & MISSING INFORMATION:\n"
-    "   - When verified evidence provides partial information (such as documented dining facilities, messes, food courts, supermarkets, medical centres, or applicable fees), state the documented facts directly. Then explicitly explain what specific additional information (such as individual shop menus, external ratings, or meal timings) is not specified in current records.\n"
+    "   - When verified evidence provides partial information (such as documented dining facilities, messes, food courts, medical centres, or applicable fees), state the documented facts directly. Then explicitly explain what specific additional information (such as individual shop menus, external ratings, or meal timings) is not specified in current records.\n"
     "   - Never claim that no information is available when verified evidence provides related institutional facilities or schedules.\n"
-    "   - For campus facilities and amenities (such as healthcare, groceries, or essentials), mention documented campus locations (e.g. Medical Centre for health services, Fresh n Green for groceries and daily essentials) while clearly stating if a specific item or point of sale is not explicitly documented.\n"
-    "   - For public student areas or meeting spots, reference documented campus locations (e.g. Knowledge Tree, open grounds) while making clear that private spots are not designated in official documents. Do not fabricate locations or policies.\n"
+    "   - For campus facilities and amenities (such as healthcare, dining, transport, or essentials), mention documented campus locations and facilities while clearly stating if a specific item or point of sale is not explicitly documented.\n"
+    "   - For public student areas or meeting spots, reference documented campus locations while making clear that private spots are not designated in official documents. Do not fabricate locations or policies.\n"
     "   - If a specific requested detail (such as a future calendar year, unpublished fee, or missing order) is genuinely absent from the evidence, state clearly: "
     "'The provided evidence does not contain information regarding [specific detail].'\n"
+    "   - EXPLICIT CONFIRMATION FOR UNOFFERED / UNSUPPORTED PROGRAMMES: If the user inquires about a specific degree, engineering branch, programme, or specialization (e.g. Aerospace Engineering, Aeronautical Engineering, Marine Engineering, MBBS, etc.) that is NOT among the documented offerings in VERIFIED FACTS, you MUST first explicitly state that the institution does NOT offer that specific programme (e.g. 'SRGI Lucknow does not offer a B.Tech in Aerospace Engineering.'). After giving this explicit negative confirmation, you may list the programmes or branches that are documented and offered.\n"
     "   - Do not guess, speculate, or manufacture unverified information.\n"
     "8. ENGLISH-ONLY RESPONSES FOR ALL INPUT LANGUAGES:\n"
     "   - Always formulate and return the response strictly in clear, fluent English, regardless of whether the user asked in English, Hindi, Hinglish, or any other language.\n"
@@ -344,7 +345,15 @@ def _clean_extractive_sentence(sentence: str) -> str:
 
 def _is_boilerplate_sentence(sentence: str) -> bool:
     s_low = sentence.casefold()
-    return bool(re.search(r"\bscope\s+authoritative\b|\bcategory:\s*\w+|\bauthoritative\s+(?:institutional|admission)\b", s_low))
+    if re.search(r"\b(?:related\s+(?:information|documents?|programmes?)|official\s+sources?|provenance|source\s+metadata)\b", s_low):
+        return True
+    if re.search(r"\b(?:srgi_lucknow_\w+|[a-z0-9_]+\.(?:docx|pdf|json|md))\b", s_low):
+        return True
+    if re.search(r"\bscope\s+authoritative\b|\bcategory:\s*\w+|\bauthoritative\s+(?:institutional|admission)\b", s_low):
+        return True
+    if s_low.startswith(("source:", "document:", "heading:", "url:", "slug:", "id:")):
+        return True
+    return False
 
 
 def _extractive_repair(request: AnswerGenerationRequest) -> str:
@@ -395,6 +404,10 @@ def _extractive_repair(request: AnswerGenerationRequest) -> str:
             sentence = _clean_extractive_sentence(raw_sentence)
             if len(sentence) < 20 or not any(c.isalpha() for c in sentence) or _is_boilerplate_sentence(sentence):
                 continue
+            # Qualification isolation: do not allow M.Tech/postgraduate facts to contaminate undergraduate B.Tech queries
+            if target_program in ("b.tech", "btech"):
+                if re.search(r"\b(?:m\.?tech|postgraduate|gate)\b", sentence, re.I) and not re.search(r"\bb\.?tech\b", sentence, re.I):
+                    continue
             score = _sentence_score(request.question, sentence)
             if any(term in q_low for term in ("eligibility", "criteria", "admission")):
                 if any(k in sentence.casefold() for k in ("qualifying degree", "minimum academic score", "entrance qualification", "60%", "bachelor", "cgpa")):
@@ -418,8 +431,12 @@ def _extractive_repair(request: AnswerGenerationRequest) -> str:
             break
 
     if not chosen:
-        clean_first = _clean_extractive_sentence(items[0].text)
-        return clean_first if clean_first.endswith((".", "!", "?")) else (clean_first + ".") if clean_first else ""
+        for it in items:
+            for raw_sentence in _sentence_split(it.text):
+                clean_s = _clean_extractive_sentence(raw_sentence)
+                if len(clean_s) >= 20 and not _is_boilerplate_sentence(clean_s):
+                    return clean_s if clean_s.endswith((".", "!", "?")) else (clean_s + ".")
+        return ""
 
     return " ".join(chosen).strip()
 
@@ -636,9 +653,18 @@ def generate_answer(request: AnswerGenerationRequest, model: ChatModel) -> Answe
             )
         # Strip residual Devanagari fragments if any remain
         candidate = re.sub(r"[\u0900-\u097F]+", "", candidate).strip()
-        candidate = " ".join(candidate.split())
         if not candidate:
-            candidate = "Sorry, I couldn't find reliable information about that in the available IIT Jodhpur documents."
+            try:
+                from ai_platform.institutions.loader import get_institution_profile
+                inst_prof = get_institution_profile()
+                if inst_prof and inst_prof.fallback_message:
+                    candidate = inst_prof.fallback_message
+                elif inst_prof and inst_prof.display_name:
+                    candidate = f"Sorry, I couldn't find reliable information about that in the available {inst_prof.display_name} documents."
+                else:
+                    candidate = "Sorry, I couldn't find reliable information about that in the available documents."
+            except Exception:
+                candidate = "Sorry, I couldn't find reliable information about that in the available documents."
 
     final_answer = _verify_arithmetic_claim(request.question, candidate)
     return AnswerGenerationResult(

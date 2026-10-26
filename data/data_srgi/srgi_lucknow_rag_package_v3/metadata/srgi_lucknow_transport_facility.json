@@ -1,0 +1,49 @@
+{
+  "schema_version": "2.0.0",
+  "institution_id": "srgi_lucknow",
+  "institution_name": "S. R. Group of Institutions (SRGI), Lucknow",
+  "document_id": "srgi_lucknow_transport_facility",
+  "title": "Transport Fleet and Bus Connectivity Across Lucknow",
+  "category": "09_campus_facilities_and_services",
+  "subcategory": "transit_services",
+  "document_type": "institutional_knowledge",
+  "language": "en",
+  "markdown_path": "documents/09_campus_facilities_and_services/srgi_lucknow_transport_facility.md",
+  "docx_path": "documents/09_campus_facilities_and_services/srgi_lucknow_transport_facility.docx",
+  "source_urls": [
+    "https://srgi.in/transport"
+  ],
+  "canonical_source_urls": [
+    "https://srgi.in/transport"
+  ],
+  "source_hashes": [
+    "ec7ba6a34bb44f0272b2134ab39ccf94045aea0e8fa1f20006e40bffc0d5738b"
+  ],
+  "markdown_hash": "0bc4ac4303435adce30e8b0ea3ea0532b3e3e5fca76a8ed879b9b01a5541afeb",
+  "docx_hash": "5aefe214253d7a6cb5386d14a9e5a48a819cfdf5a672fa3064f10c576b5a11b0",
+  "byte_size_md": 2088,
+  "byte_size_docx": 37909,
+  "word_count_md": 235,
+  "sections_count": 6,
+  "table_count": 0,
+  "content_quality_status": "PASS",
+  "conflict_status": "NO_UNRESOLVED_CONFLICTS",
+  "provenance_section_count": 1,
+  "docx_provenance_heading_count": 1,
+  "docx_leaked_syntax_count": 0,
+  "summary": "Extensive institutional bus transit network connecting major Lucknow city nodes and surrounding suburbs, GPS tracking, security protocols, route coordinators.",
+  "keywords": [
+    "Transport",
+    "Bus Facility",
+    "Lucknow Connectivity",
+    "GPS Tracking",
+    "Routes",
+    "Student Safety"
+  ],
+  "related_documents": [
+    "srgi_lucknow_campus_contacts_and_directions",
+    "srgi_lucknow_overview"
+  ],
+  "created_at": "2026-10-23T21:19:33.917832+00:00",
+  "pipeline_stage": "release_v3_production"
+}

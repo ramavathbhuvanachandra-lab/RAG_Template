@@ -1,0 +1,10 @@
+{
+  "institution_id": "srgi_lucknow",
+  "release_version": "v3.0.0",
+  "created_at": "2026-10-23T21:19:34.486632+00:00",
+  "total_markdown_documents": 55,
+  "total_docx_companions": 55,
+  "total_metadata_sidecars": 55,
+  "total_institutional_json_files": 19,
+  "status": "PRODUCTION_VALIDATED"
+}

@@ -94,7 +94,19 @@ INFORMATION_KEYWORDS: tuple[str, ...] = (
     "facility",
     "facilities",
     "department",
+    "departments",
     "course",
+    "courses",
+    "programme",
+    "programmes",
+    "program",
+    "programs",
+    "degree",
+    "degrees",
+    "btech",
+    "mtech",
+    "mba",
+    "bvoc",
     "syllabus",
     "process",
     "procedure",
@@ -102,16 +114,104 @@ INFORMATION_KEYWORDS: tuple[str, ...] = (
     "eligibility",
     "contact",
     "email",
+    "phone",
+    "number",
     "what",
     "when",
     "why",
     "who",
     "which",
+    "how",
     "explain",
     "tell me",
     "provide",
     "information",
     "details",
+    "list",
+    "describe",
+    "route",
+    "routes",
+    "bus",
+    "transport",
+    "travel",
+    "fleet",
+    "connectivity",
+    "service",
+    "services",
+    "room",
+    "rooms",
+    "ac",
+    "non-ac",
+    "warden",
+    "gym",
+    "mess",
+    "food",
+    "dining",
+    "wifi",
+    "internet",
+    "security",
+    "books",
+    "journal",
+    "journals",
+    "volume",
+    "volumes",
+    "capacity",
+    "charges",
+    "charge",
+    "rate",
+    "cost",
+    "seats",
+    "seat",
+    "intake",
+    "branch",
+    "branches",
+    "specialization",
+    "specializations",
+    "faculty",
+    "faculties",
+    "school",
+    "schools",
+    "placement",
+    "placements",
+    "scholarship",
+    "scholarships",
+    "curriculum",
+    "exam",
+    "examination",
+    "apply",
+    "application",
+    "criteria",
+    "overview",
+    "about",
+)
+
+EMERGENCY_KEYWORDS: tuple[str, ...] = (
+    "emergency",
+    "breakdown",
+    "break down",
+    "broke down",
+    "accident",
+    "urgent",
+    "sos",
+    "helpline",
+    "ambulance",
+    "anti-ragging",
+    "anti ragging",
+    "ragging",
+    "police",
+    "who should i call",
+    "who to call",
+    "who should i contact",
+    "who to contact",
+    "whom to contact",
+    "whom should i contact",
+    "whom to call",
+    "contact number for emergency",
+    "call if a bus breaks down",
+    "call if bus breaks down",
+    "transit breakdown",
+    "bus breakdown",
+    "medical emergency",
 )
 
 
@@ -167,6 +267,12 @@ def render_structured_blocks(structured_content: list[dict[str, Any]]) -> str:
             desc = data.get("description")
             if desc:
                 lines.append(f"{desc}\n")
+            phone = data.get("phone")
+            if phone:
+                lines.append(f"📞 **Helpline/Phone:** {phone}\n")
+            help_text = data.get("help_text")
+            if help_text:
+                lines.append(f"ℹ️ {help_text}\n")
             timings = data.get("timings")
             if timings:
                 lines.append(f"🕒 **Timings:** {timings}\n")
@@ -190,13 +296,19 @@ def is_navigation_intent(question: str) -> bool:
     return any(keyword in normalized for keyword in NAVIGATION_KEYWORDS)
 
 
+def is_emergency_intent(question: str) -> bool:
+    """Detect whether query phrasing expresses an urgent emergency, helpline, or breakdown intent."""
+    normalized = question.casefold()
+    return any(keyword in normalized for keyword in EMERGENCY_KEYWORDS)
+
+
 def needs_rag_answering(question: str, has_structured_match: bool) -> bool:
     """Determine whether the canonical RAG engine must run.
 
     Contract:
     - If no structured handler matched, RAG is always invoked.
     - If a structured handler matched, RAG is only invoked if the query also
-      expresses an informational ask (e.g., fee, timing, rules, explanation).
+      expresses an informational ask (e.g., fee, timing, rules, explanation, facilities, routes).
     """
     if not has_structured_match:
         return True
@@ -280,25 +392,32 @@ def handle_chat_turn(
     # 2. Query structured institution handlers (navigation, emergency)
     structured_content: list[dict[str, Any]] = []
 
-    # Check navigation handler if query indicates navigation intent or matches an entity
-    nav_handler = get_institution_handler(active_inst_id, "navigation")
-    if callable(nav_handler):
-        try:
-            location = nav_handler(resolved_question) or nav_handler(clean_question)
-            if location and isinstance(location, dict):
-                structured_content.append({"type": "navigation", "data": location})
-        except Exception as exc:
-            logger.exception("Structured navigation handler failed for %s: %s", active_inst_id, exc)
+    # Check navigation handler ONLY if query indicates navigation intent or is a direct short location lookup
+    nav_match_eligible = (
+        is_navigation_intent(resolved_question)
+        or is_navigation_intent(clean_question)
+        or len(clean_question.split()) <= 3
+    )
+    if nav_match_eligible:
+        nav_handler = get_institution_handler(active_inst_id, "navigation")
+        if callable(nav_handler):
+            try:
+                location = nav_handler(resolved_question) or nav_handler(clean_question)
+                if location and isinstance(location, dict):
+                    structured_content.append({"type": "navigation", "data": location})
+            except Exception as exc:
+                logger.exception("Structured navigation handler failed for %s: %s", active_inst_id, exc)
 
-    # Check emergency handler
-    emergency_handler = get_institution_handler(active_inst_id, "emergency")
-    if callable(emergency_handler):
-        try:
-            emergency = emergency_handler(resolved_question) or emergency_handler(clean_question)
-            if emergency and isinstance(emergency, dict):
-                structured_content.append({"type": "emergency", "data": emergency})
-        except Exception as exc:
-            logger.exception("Structured emergency handler failed for %s: %s", active_inst_id, exc)
+    # Check emergency handler ONLY if query expresses an emergency, helpline, breakdown, or urgent contact intent
+    if is_emergency_intent(resolved_question) or is_emergency_intent(clean_question):
+        emergency_handler = get_institution_handler(active_inst_id, "emergency")
+        if callable(emergency_handler):
+            try:
+                emergency = emergency_handler(resolved_question) or emergency_handler(clean_question)
+                if emergency and isinstance(emergency, dict):
+                    structured_content.append({"type": "emergency", "data": emergency})
+            except Exception as exc:
+                logger.exception("Structured emergency handler failed for %s: %s", active_inst_id, exc)
 
     structured_text = render_structured_blocks(structured_content)
     has_structured = bool(structured_content)
@@ -445,6 +564,22 @@ def handle_chat_turn(
                 # Keep only distinct sources that actually substantiate substantive claims in the answer
                 for s in sorted_sources:
                     if s["score"] >= threshold and s["overlap"] >= 2:
+                        src_l = s["source"].lower()
+                        heading_l = s["heading"].lower()
+                        is_unrelated_branch = False
+                        for br, br_keys in (
+                            ("mechanical", ("mechanical", "production")),
+                            ("biotechnology", ("biotechnology", "bt")),
+                            ("civil", ("civil",)),
+                            ("automobile", ("automobile",)),
+                            ("mtech", ("m.tech", "mtech", "postgraduate", "gate")),
+                        ):
+                            if (br in src_l or any(k in heading_l for k in br_keys)) and not any(k in ans_lower or k in clean_question.lower() for k in br_keys):
+                                is_unrelated_branch = True
+                                break
+                        if is_unrelated_branch:
+                            continue
+
                         sources.append({
                             "evidence_id": s["evidence_id"],
                             "source": s["source"],

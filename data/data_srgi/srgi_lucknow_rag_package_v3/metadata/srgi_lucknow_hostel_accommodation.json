@@ -1,0 +1,51 @@
+{
+  "schema_version": "2.0.0",
+  "institution_id": "srgi_lucknow",
+  "institution_name": "S. R. Group of Institutions (SRGI), Lucknow",
+  "document_id": "srgi_lucknow_hostel_accommodation",
+  "title": "Hostel Accommodation and Residential Life (2,000+ Capacity)",
+  "category": "09_campus_facilities_and_services",
+  "subcategory": "residential_services",
+  "document_type": "institutional_knowledge",
+  "language": "en",
+  "markdown_path": "documents/09_campus_facilities_and_services/srgi_lucknow_hostel_accommodation.md",
+  "docx_path": "documents/09_campus_facilities_and_services/srgi_lucknow_hostel_accommodation.docx",
+  "source_urls": [
+    "https://srgi.in/hostel"
+  ],
+  "canonical_source_urls": [
+    "https://srgi.in/hostel"
+  ],
+  "source_hashes": [
+    "49b6f878bbfa7000bc1e11d4fe01eaa3b1af3155bc99859d4af02b093ebe55bd"
+  ],
+  "markdown_hash": "23665bb266bb0a1c9f52f9048546db382977fc65811e5c49dcd8747a108d6952",
+  "docx_hash": "769680a97286a66c52dbd935d93bdb022a0c7e4ccc9ede1b5ef80afd5acbce21",
+  "byte_size_md": 2724,
+  "byte_size_docx": 38256,
+  "word_count_md": 315,
+  "sections_count": 7,
+  "table_count": 0,
+  "content_quality_status": "PASS",
+  "conflict_status": "NO_UNRESOLVED_CONFLICTS",
+  "provenance_section_count": 1,
+  "docx_provenance_heading_count": 1,
+  "docx_leaked_syntax_count": 0,
+  "summary": "Details of student hostels, separate boys and girls wings, 2000+ capacity, room furnishings, 24-hour security, gym, Wi-Fi, dining, and amphitheatre.",
+  "keywords": [
+    "Hostel",
+    "Accommodation",
+    "Boys Hostel",
+    "Girls Hostel",
+    "2000 Students",
+    "Gym",
+    "Dining",
+    "Residential"
+  ],
+  "related_documents": [
+    "srgi_lucknow_cafeteria_and_dining",
+    "srgi_lucknow_sports_ground_and_complex"
+  ],
+  "created_at": "2026-10-23T21:19:33.891495+00:00",
+  "pipeline_stage": "release_v3_production"
+}

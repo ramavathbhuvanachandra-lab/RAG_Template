@@ -1,0 +1,557 @@
+{
+  "institution_id": "srgi_lucknow",
+  "total_docx_validated": 55,
+  "docx_pass_count": 55,
+  "documents": [
+    {
+      "document_id": "srgi_lucknow_overview",
+      "title": "SRGI Lucknow Institutional Overview, Campus Profile and History",
+      "docx_exists": true,
+      "docx_bytes": 39755,
+      "table_style": "Table Grid",
+      "provenance_heading_count": 1,
+      "leaked_syntax_count": 0,
+      "validation_status": "PASS"
+    },
+    {
+      "document_id": "srgi_lucknow_heritage_and_inspiration",
+      "title": "SRGI Lucknow Heritage, Sponsoring Trust and Foundational Inspiration",
+      "docx_exists": true,
+      "docx_bytes": 39148,
+      "table_style": "Table Grid",
+      "provenance_heading_count": 1,
+      "leaked_syntax_count": 0,
+      "validation_status": "PASS"
+    },
+    {
+      "document_id": "srgi_lucknow_chairman_message",
+      "title": "Message from the Chairman \u2014 Mr. Pawan Singh Chauhan",
+      "docx_exists": true,
+      "docx_bytes": 38640,
+      "table_style": "Table Grid",
+      "provenance_heading_count": 1,
+      "leaked_syntax_count": 0,
+      "validation_status": "PASS"
+    },
+    {
+      "document_id": "srgi_lucknow_chairperson_message",
+      "title": "Message from the Chairperson \u2014 Mrs. Nirmala Singh Chauhan",
+      "docx_exists": true,
+      "docx_bytes": 38167,
+      "table_style": "Table Grid",
+      "provenance_heading_count": 1,
+      "leaked_syntax_count": 0,
+      "validation_status": "PASS"
+    },
+    {
+      "document_id": "srgi_lucknow_vice_chairman_message",
+      "title": "Message from the Vice-Chairman \u2014 Mr. Piyush Singh Chauhan",
+      "docx_exists": true,
+      "docx_bytes": 38213,
+      "table_style": "Table Grid",
+      "provenance_heading_count": 1,
+      "leaked_syntax_count": 0,
+      "validation_status": "PASS"
+    },
+    {
+      "document_id": "srgi_lucknow_vice_chairperson_message",
+      "title": "Message from the Vice-Chairperson \u2014 Dr. Sushmita Singh",
+      "docx_exists": true,
+      "docx_bytes": 38195,
+      "table_style": "Table Grid",
+      "provenance_heading_count": 1,
+      "leaked_syntax_count": 0,
+      "validation_status": "PASS"
+    },
+    {
+      "document_id": "srgi_lucknow_board_of_governors",
+      "title": "SRGI Lucknow Board of Governors \u2014 Composition and Strategic Counsel",
+      "docx_exists": true,
+      "docx_bytes": 38192,
+      "table_style": "Table Grid",
+      "provenance_heading_count": 1,
+      "leaked_syntax_count": 0,
+      "validation_status": "PASS"
+    },
+    {
+      "document_id": "srgi_lucknow_board_of_directors",
+      "title": "SRGI Lucknow Board of Directors \u2014 Institutional Execution and Oversight",
+      "docx_exists": true,
+      "docx_bytes": 39219,
+      "table_style": "Table Grid",
+      "provenance_heading_count": 1,
+      "leaked_syntax_count": 0,
+      "validation_status": "PASS"
+    },
+    {
+      "document_id": "srgi_lucknow_administrative_heads",
+      "title": "SRGI Lucknow Administrative Heads and Core Operational Team",
+      "docx_exists": true,
+      "docx_bytes": 39024,
+      "table_style": "Table Grid",
+      "provenance_heading_count": 1,
+      "leaked_syntax_count": 0,
+      "validation_status": "PASS"
+    },
+    {
+      "document_id": "srgi_lucknow_academic_units_overview",
+      "title": "SRGI Lucknow Constituent Academic Units and Institutional Network",
+      "docx_exists": true,
+      "docx_bytes": 38517,
+      "table_style": "Table Grid",
+      "provenance_heading_count": 1,
+      "leaked_syntax_count": 0,
+      "validation_status": "PASS"
+    },
+    {
+      "document_id": "srgi_lucknow_btech_overview",
+      "title": "Bachelor of Technology (B.Tech) Programmes \u2014 Comprehensive Overview",
+      "docx_exists": true,
+      "docx_bytes": 39425,
+      "table_style": "Table Grid",
+      "provenance_heading_count": 1,
+      "leaked_syntax_count": 0,
+      "validation_status": "PASS"
+    },
+    {
+      "document_id": "srgi_lucknow_btech_computer_science_engineering",
+      "title": "B.Tech in Computer Science & Engineering (AI & ML, AI & DS Specializations)",
+      "docx_exists": true,
+      "docx_bytes": 38479,
+      "table_style": "Table Grid",
+      "provenance_heading_count": 1,
+      "leaked_syntax_count": 0,
+      "validation_status": "PASS"
+    },
+    {
+      "document_id": "srgi_lucknow_btech_computer_science",
+      "title": "B.Tech in Computer Science (CS)",
+      "docx_exists": true,
+      "docx_bytes": 38152,
+      "table_style": "Table Grid",
+      "provenance_heading_count": 1,
+      "leaked_syntax_count": 0,
+      "validation_status": "PASS"
+    },
+    {
+      "document_id": "srgi_lucknow_btech_information_technology",
+      "title": "B.Tech in Information Technology (IT)",
+      "docx_exists": true,
+      "docx_bytes": 37824,
+      "table_style": "Table Grid",
+      "provenance_heading_count": 1,
+      "leaked_syntax_count": 0,
+      "validation_status": "PASS"
+    },
+    {
+      "document_id": "srgi_lucknow_btech_electronics_communication",
+      "title": "B.Tech in Electronics & Communication Engineering (ECE)",
+      "docx_exists": true,
+      "docx_bytes": 37848,
+      "table_style": "Table Grid",
+      "provenance_heading_count": 1,
+      "leaked_syntax_count": 0,
+      "validation_status": "PASS"
+    },
+    {
+      "document_id": "srgi_lucknow_btech_electrical_electronics",
+      "title": "B.Tech in Electrical & Electronics Engineering (EEE / EN)",
+      "docx_exists": true,
+      "docx_bytes": 37845,
+      "table_style": "Table Grid",
+      "provenance_heading_count": 1,
+      "leaked_syntax_count": 0,
+      "validation_status": "PASS"
+    },
+    {
+      "document_id": "srgi_lucknow_btech_mechanical_engineering",
+      "title": "B.Tech in Mechanical Engineering (ME)",
+      "docx_exists": true,
+      "docx_bytes": 37832,
+      "table_style": "Table Grid",
+      "provenance_heading_count": 1,
+      "leaked_syntax_count": 0,
+      "validation_status": "PASS"
+    },
+    {
+      "document_id": "srgi_lucknow_btech_civil_engineering",
+      "title": "B.Tech in Civil Engineering (CE)",
+      "docx_exists": true,
+      "docx_bytes": 37785,
+      "table_style": "Table Grid",
+      "provenance_heading_count": 1,
+      "leaked_syntax_count": 0,
+      "validation_status": "PASS"
+    },
+    {
+      "document_id": "srgi_lucknow_btech_biotechnology",
+      "title": "B.Tech in Biotechnology (BT)",
+      "docx_exists": true,
+      "docx_bytes": 37819,
+      "table_style": "Table Grid",
+      "provenance_heading_count": 1,
+      "leaked_syntax_count": 0,
+      "validation_status": "PASS"
+    },
+    {
+      "document_id": "srgi_lucknow_btech_agricultural_engineering",
+      "title": "B.Tech in Agricultural Engineering (AG)",
+      "docx_exists": true,
+      "docx_bytes": 37779,
+      "table_style": "Table Grid",
+      "provenance_heading_count": 1,
+      "leaked_syntax_count": 0,
+      "validation_status": "PASS"
+    },
+    {
+      "document_id": "srgi_lucknow_mtech_programmes",
+      "title": "Master of Technology (M.Tech) Postgraduate Programmes",
+      "docx_exists": true,
+      "docx_bytes": 38317,
+      "table_style": "Table Grid",
+      "provenance_heading_count": 1,
+      "leaked_syntax_count": 0,
+      "validation_status": "PASS"
+    },
+    {
+      "document_id": "srgi_lucknow_management_overview",
+      "title": "Faculty of Management Studies \u2014 Academic Framework and Programmes",
+      "docx_exists": true,
+      "docx_bytes": 38295,
+      "table_style": "Table Grid",
+      "provenance_heading_count": 1,
+      "leaked_syntax_count": 0,
+      "validation_status": "PASS"
+    },
+    {
+      "document_id": "srgi_lucknow_mba_programme",
+      "title": "Master of Business Administration (MBA) \u2014 2-Year Full-Time Programme",
+      "docx_exists": true,
+      "docx_bytes": 38143,
+      "table_style": "Table Grid",
+      "provenance_heading_count": 1,
+      "leaked_syntax_count": 0,
+      "validation_status": "PASS"
+    },
+    {
+      "document_id": "srgi_lucknow_integrated_mba",
+      "title": "Integrated MBA (IMBA) \u2014 5-Year Dual-Degree Management Programme",
+      "docx_exists": true,
+      "docx_bytes": 37914,
+      "table_style": "Table Grid",
+      "provenance_heading_count": 1,
+      "leaked_syntax_count": 0,
+      "validation_status": "PASS"
+    },
+    {
+      "document_id": "srgi_lucknow_applied_global_management",
+      "title": "Applied Global Management Programme (AGMP)",
+      "docx_exists": true,
+      "docx_bytes": 37653,
+      "table_style": "Table Grid",
+      "provenance_heading_count": 1,
+      "leaked_syntax_count": 0,
+      "validation_status": "PASS"
+    },
+    {
+      "document_id": "srgi_lucknow_medical_programmes_overview",
+      "title": "Faculty of Medical & Allied Health Sciences \u2014 Overview",
+      "docx_exists": true,
+      "docx_bytes": 38139,
+      "table_style": "Table Grid",
+      "provenance_heading_count": 1,
+      "leaked_syntax_count": 0,
+      "validation_status": "PASS"
+    },
+    {
+      "document_id": "srgi_lucknow_d_pharma_programme",
+      "title": "Diploma in Pharmacy (D.Pharm) \u2014 2-Year Entry-Level Pharmacy Programme",
+      "docx_exists": true,
+      "docx_bytes": 37819,
+      "table_style": "Table Grid",
+      "provenance_heading_count": 1,
+      "leaked_syntax_count": 0,
+      "validation_status": "PASS"
+    },
+    {
+      "document_id": "srgi_lucknow_nursing_programme",
+      "title": "Nursing Programme \u2014 Clinical Healthcare & Ayurvedic Nursing",
+      "docx_exists": true,
+      "docx_bytes": 37707,
+      "table_style": "Table Grid",
+      "provenance_heading_count": 1,
+      "leaked_syntax_count": 0,
+      "validation_status": "PASS"
+    },
+    {
+      "document_id": "srgi_lucknow_homeopathy_programme",
+      "title": "Diploma in Homeopathic Pharmacy (DHP)",
+      "docx_exists": true,
+      "docx_bytes": 37667,
+      "table_style": "Table Grid",
+      "provenance_heading_count": 1,
+      "leaked_syntax_count": 0,
+      "validation_status": "PASS"
+    },
+    {
+      "document_id": "srgi_lucknow_bvoc_overview",
+      "title": "Bachelor of Vocation (B.Voc) Programmes \u2014 UGC Skill Education Framework",
+      "docx_exists": true,
+      "docx_bytes": 38280,
+      "table_style": "Table Grid",
+      "provenance_heading_count": 1,
+      "leaked_syntax_count": 0,
+      "validation_status": "PASS"
+    },
+    {
+      "document_id": "srgi_lucknow_bvoc_software_development",
+      "title": "B.Voc in Software Development",
+      "docx_exists": true,
+      "docx_bytes": 37684,
+      "table_style": "Table Grid",
+      "provenance_heading_count": 1,
+      "leaked_syntax_count": 0,
+      "validation_status": "PASS"
+    },
+    {
+      "document_id": "srgi_lucknow_bvoc_banking_financial_services",
+      "title": "B.Voc in Banking, Financial Services and Insurance (BFSI)",
+      "docx_exists": true,
+      "docx_bytes": 37668,
+      "table_style": "Table Grid",
+      "provenance_heading_count": 1,
+      "leaked_syntax_count": 0,
+      "validation_status": "PASS"
+    },
+    {
+      "document_id": "srgi_lucknow_bvoc_automobile_engineering",
+      "title": "B.Voc in Automobile Engineering",
+      "docx_exists": true,
+      "docx_bytes": 37556,
+      "table_style": "Table Grid",
+      "provenance_heading_count": 1,
+      "leaked_syntax_count": 0,
+      "validation_status": "PASS"
+    },
+    {
+      "document_id": "srgi_lucknow_admissions_enquiry_and_eligibility",
+      "title": "SRGI Lucknow Admissions Procedure, Eligibility and Enquiry Channels",
+      "docx_exists": true,
+      "docx_bytes": 38173,
+      "table_style": "Table Grid",
+      "provenance_heading_count": 1,
+      "leaked_syntax_count": 0,
+      "validation_status": "PASS"
+    },
+    {
+      "document_id": "srgi_lucknow_career_pathfinder_simulator",
+      "title": "SRGI Career Pathfinder and Course Selection Simulator",
+      "docx_exists": true,
+      "docx_bytes": 37808,
+      "table_style": "Table Grid",
+      "provenance_heading_count": 1,
+      "leaked_syntax_count": 0,
+      "validation_status": "PASS"
+    },
+    {
+      "document_id": "srgi_lucknow_hostel_accommodation",
+      "title": "Hostel Accommodation and Residential Life (2,000+ Capacity)",
+      "docx_exists": true,
+      "docx_bytes": 38256,
+      "table_style": "Table Grid",
+      "provenance_heading_count": 1,
+      "leaked_syntax_count": 0,
+      "validation_status": "PASS"
+    },
+    {
+      "document_id": "srgi_lucknow_transport_facility",
+      "title": "Transport Fleet and Bus Connectivity Across Lucknow",
+      "docx_exists": true,
+      "docx_bytes": 37909,
+      "table_style": "Table Grid",
+      "provenance_heading_count": 1,
+      "leaked_syntax_count": 0,
+      "validation_status": "PASS"
+    },
+    {
+      "document_id": "srgi_lucknow_central_library",
+      "title": "Central Library System and Digital Knowledge Repositories",
+      "docx_exists": true,
+      "docx_bytes": 38355,
+      "table_style": "Table Grid",
+      "provenance_heading_count": 1,
+      "leaked_syntax_count": 0,
+      "validation_status": "PASS"
+    },
+    {
+      "document_id": "srgi_lucknow_cafeteria_and_dining",
+      "title": "Cafeteria and Campus Dining Services",
+      "docx_exists": true,
+      "docx_bytes": 37721,
+      "table_style": "Table Grid",
+      "provenance_heading_count": 1,
+      "leaked_syntax_count": 0,
+      "validation_status": "PASS"
+    },
+    {
+      "document_id": "srgi_lucknow_futuristic_labs",
+      "title": "Futuristic Laboratories and Technical Infrastructure",
+      "docx_exists": true,
+      "docx_bytes": 37922,
+      "table_style": "Table Grid",
+      "provenance_heading_count": 1,
+      "leaked_syntax_count": 0,
+      "validation_status": "PASS"
+    },
+    {
+      "document_id": "srgi_lucknow_smart_classrooms",
+      "title": "Smart Classrooms and Digital Learning Spaces",
+      "docx_exists": true,
+      "docx_bytes": 37666,
+      "table_style": "Table Grid",
+      "provenance_heading_count": 1,
+      "leaked_syntax_count": 0,
+      "validation_status": "PASS"
+    },
+    {
+      "document_id": "srgi_lucknow_seminar_halls_and_conference",
+      "title": "Conference Rooms and Seminar Halls",
+      "docx_exists": true,
+      "docx_bytes": 37612,
+      "table_style": "Table Grid",
+      "provenance_heading_count": 1,
+      "leaked_syntax_count": 0,
+      "validation_status": "PASS"
+    },
+    {
+      "document_id": "srgi_lucknow_indoor_swimming_pool",
+      "title": "Indoor Olympic-Standard Swimming Pool (6-Track)",
+      "docx_exists": true,
+      "docx_bytes": 37800,
+      "table_style": "Table Grid",
+      "provenance_heading_count": 1,
+      "leaked_syntax_count": 0,
+      "validation_status": "PASS"
+    },
+    {
+      "document_id": "srgi_lucknow_sports_ground_and_complex",
+      "title": "65-Acre Sports Complex, Cricket Ground and Gymnasium",
+      "docx_exists": true,
+      "docx_bytes": 37876,
+      "table_style": "Table Grid",
+      "provenance_heading_count": 1,
+      "leaked_syntax_count": 0,
+      "validation_status": "PASS"
+    },
+    {
+      "document_id": "srgi_lucknow_training_and_placement_cell",
+      "title": "Training & Placement Cell \u2014 Structure, Training Programmes and Corporate Relations",
+      "docx_exists": true,
+      "docx_bytes": 37942,
+      "table_style": "Table Grid",
+      "provenance_heading_count": 1,
+      "leaked_syntax_count": 0,
+      "validation_status": "PASS"
+    },
+    {
+      "document_id": "srgi_lucknow_top_placements_and_recruiters",
+      "title": "Placement Performance Dashboard and Top Recruiting Partners",
+      "docx_exists": true,
+      "docx_bytes": 38936,
+      "table_style": "Table Grid",
+      "provenance_heading_count": 1,
+      "leaked_syntax_count": 0,
+      "validation_status": "PASS"
+    },
+    {
+      "document_id": "srgi_lucknow_student_clubs_and_activities",
+      "title": "Student Clubs, Societies and Cultural Extracurricular Life",
+      "docx_exists": true,
+      "docx_bytes": 38651,
+      "table_style": "Table Grid",
+      "provenance_heading_count": 1,
+      "leaked_syntax_count": 0,
+      "validation_status": "PASS"
+    },
+    {
+      "document_id": "srgi_lucknow_student_grievance_redressal",
+      "title": "Student Grievance Redressal Mechanism and Support Portal",
+      "docx_exists": true,
+      "docx_bytes": 39012,
+      "table_style": "Table Grid",
+      "provenance_heading_count": 1,
+      "leaked_syntax_count": 0,
+      "validation_status": "PASS"
+    },
+    {
+      "document_id": "srgi_lucknow_anti_ragging_regulations",
+      "title": "Anti-Ragging Committee, Policies and Zero-Tolerance Mandate",
+      "docx_exists": true,
+      "docx_bytes": 38427,
+      "table_style": "Table Grid",
+      "provenance_heading_count": 1,
+      "leaked_syntax_count": 0,
+      "validation_status": "PASS"
+    },
+    {
+      "document_id": "srgi_lucknow_notices_and_announcements",
+      "title": "Academic Notices, Circulars and Institutional Announcements",
+      "docx_exists": true,
+      "docx_bytes": 38127,
+      "table_style": "Table Grid",
+      "provenance_heading_count": 1,
+      "leaked_syntax_count": 0,
+      "validation_status": "PASS"
+    },
+    {
+      "document_id": "srgi_lucknow_events_and_youth_manifesto",
+      "title": "Institutional Events and Uttar Pradesh Youth Manifesto",
+      "docx_exists": true,
+      "docx_bytes": 37815,
+      "table_style": "Table Grid",
+      "provenance_heading_count": 1,
+      "leaked_syntax_count": 0,
+      "validation_status": "PASS"
+    },
+    {
+      "document_id": "srgi_lucknow_eminent_speakers",
+      "title": "Eminent Speakers and Distinguished Visitors",
+      "docx_exists": true,
+      "docx_bytes": 38107,
+      "table_style": "Table Grid",
+      "provenance_heading_count": 1,
+      "leaked_syntax_count": 0,
+      "validation_status": "PASS"
+    },
+    {
+      "document_id": "srgi_lucknow_frequently_asked_questions",
+      "title": "Frequently Asked Questions (FAQ) \u2014 Admissions, Academics and Life at SRGI",
+      "docx_exists": true,
+      "docx_bytes": 38807,
+      "table_style": "Table Grid",
+      "provenance_heading_count": 1,
+      "leaked_syntax_count": 0,
+      "validation_status": "PASS"
+    },
+    {
+      "document_id": "srgi_lucknow_campus_contacts_and_directions",
+      "title": "Campus Contacts, Location Directions and Official Helplines",
+      "docx_exists": true,
+      "docx_bytes": 38512,
+      "table_style": "Table Grid",
+      "provenance_heading_count": 1,
+      "leaked_syntax_count": 0,
+      "validation_status": "PASS"
+    },
+    {
+      "document_id": "srgi_lucknow_official_prospectus_extracts",
+      "title": "Official Institutional Prospectus \u2014 Summary and Documentary Index",
+      "docx_exists": true,
+      "docx_bytes": 38383,
+      "table_style": "Table Grid",
+      "provenance_heading_count": 1,
+      "leaked_syntax_count": 0,
+      "validation_status": "PASS"
+    }
+  ]
+}

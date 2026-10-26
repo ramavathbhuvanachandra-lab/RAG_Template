@@ -1,0 +1,34 @@
+[
+  {
+    "id": "security_anti_ragging",
+    "name": "Campus Security & Anti-Ragging Helpline",
+    "phone": "+91 8417000011",
+    "description": "24/7 Security and Anti-Ragging Cell",
+    "help_text": "Contact Dr. Shashank Singh (Chief Proctor) for campus safety, discipline, and anti-ragging assistance.",
+    "aliases": ["security helpline", "anti-ragging helpline", "anti ragging", "campus security helpline", "proctor helpline", "emergency guard"]
+  },
+  {
+    "id": "transit_emergency",
+    "name": "Campus Transit Dispatch Emergency",
+    "phone": "+91 9793000099",
+    "description": "Bus dispatch and transit emergency",
+    "help_text": "Contact Mr. Devesh Singh (Chief Transport Officer) for transit breakdowns or bus route emergencies.",
+    "aliases": ["bus emergency", "transit emergency", "bus breakdown", "transport breakdown", "transit breakdown", "transport emergency", "bus breakdown contact", "transit breakdown contact"]
+  },
+  {
+    "id": "hostel_emergency",
+    "name": "Hostel Residential Emergency",
+    "phone": "+91 9793000090",
+    "description": "Residential hostel emergency",
+    "help_text": "Contact Mr. K.M. Upadhyay (Chief Warden) for medical or residential hostel emergencies.",
+    "aliases": ["hostel emergency", "warden helpline", "warden emergency", "residential emergency", "hostel warden contact"]
+  },
+  {
+    "id": "admissions_helpline",
+    "name": "Admissions Helpline",
+    "phone": "+91 9793000005",
+    "description": "Primary admissions and enquiry helpline",
+    "help_text": "Contact admissions team (+91 9793000005 / 06 / 07) or email info@srgi.in.",
+    "aliases": ["admissions helpline", "admission helpline", "admission phone number", "admission enquiry contact", "admission cell phone"]
+  }
+]

@@ -127,9 +127,10 @@ def inspect_context(
             "evidence_coverage_status": "insufficient",
             "ready_for_generation": False,
             "will_abstain": True,
-            "abstention_reason": stop_reason,
-            "fallback_response": safe_resp or "Sorry, I couldn't find reliable information about that in the available IIT Jodhpur documents.",
-            "final_evidence_context": "",
+            "fallback_response": safe_resp or (
+                getattr(institution_profile, "fallback_message", None)
+                if institution_profile else "Sorry, I couldn't find reliable information about that in the available documents."
+            ),
             "context_character_count": 0,
             "estimated_token_count": 0,
             "evidence_units": [],

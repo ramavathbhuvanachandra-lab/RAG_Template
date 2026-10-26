@@ -1,0 +1,49 @@
+{
+  "schema_version": "2.0.0",
+  "institution_id": "srgi_lucknow",
+  "institution_name": "S. R. Group of Institutions (SRGI), Lucknow",
+  "document_id": "srgi_lucknow_btech_agricultural_engineering",
+  "title": "B.Tech in Agricultural Engineering (AG)",
+  "category": "04_programmes_engineering",
+  "subcategory": "undergraduate_engineering",
+  "document_type": "institutional_knowledge",
+  "language": "en",
+  "markdown_path": "documents/04_programmes_engineering/srgi_lucknow_btech_agricultural_engineering.md",
+  "docx_path": "documents/04_programmes_engineering/srgi_lucknow_btech_agricultural_engineering.docx",
+  "source_urls": [
+    "https://srgi.in/btech/ag"
+  ],
+  "canonical_source_urls": [
+    "https://srgi.in/btech/ag"
+  ],
+  "source_hashes": [
+    "b67740c172499bf93f0ddba40f2c175b4ac2e0f14bd79ba908477aeae041cd2a"
+  ],
+  "markdown_hash": "6ac6eaeeb9517a8eb58207417eefbcf2e98e7e0fb7224cd6efe6a7359933e381",
+  "docx_hash": "8344ec662cab8d9535852015c874fb2207171bf44ebdb376e67201025bbc4fbc",
+  "byte_size_md": 2008,
+  "byte_size_docx": 37779,
+  "word_count_md": 220,
+  "sections_count": 8,
+  "table_count": 0,
+  "content_quality_status": "PASS",
+  "conflict_status": "NO_UNRESOLVED_CONFLICTS",
+  "provenance_section_count": 1,
+  "docx_provenance_heading_count": 1,
+  "docx_leaked_syntax_count": 0,
+  "summary": "Agricultural Engineering degree details, farm mechanization, soil and water conservation, food process engineering, sanctioned intake of 60 seats.",
+  "keywords": [
+    "B.Tech AG",
+    "Agricultural Engineering",
+    "Farm Machinery",
+    "Irrigation",
+    "Agro-Processing",
+    "Intake 60"
+  ],
+  "related_documents": [
+    "srgi_lucknow_btech_biotechnology",
+    "srgi_lucknow_btech_overview"
+  ],
+  "created_at": "2026-10-23T21:19:33.416466+00:00",
+  "pipeline_stage": "release_v3_production"
+}

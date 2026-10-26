@@ -122,6 +122,29 @@ _SECURITY_ATTACK_PATTERNS = (
         "system_command_and_injection_attack",
         "System command execution and SQL injection attacks are prohibited and will not be processed.",
     ),
+    # Official authority impersonation & unauthorized admissions approval
+    (
+        re.compile(
+            r"\b(?:pretend|act\s+as|roleplay\s+as|simulate|impersonate)\s+(?:you\s+are\s+)?(?:the\s+)?(?:chairman|chairperson|vice\s+chairperson|vice\s+chairman|trustee|president|founder|principal|registrar|director|dean|proctor|vice\s+chancellor|chancellor|admission\s+officer|hod|warden)\b"
+            r"|\b(?:officially\s+)?(?:issue|write|grant|draft|send|generate|provide)\s+(?:(?:to\s+)?(?:me|us)\s+)?(?:an?\s+)?(?:official\s+)?(?:admission\s+)?(?:confirmation\s+)?(?:letter|order|certificate|notice|sanction|approval)\b"
+            r"|\b(?:waive|waiving|bypass|bypassing|ignore|ignoring)\s+(?:the\s+|all\s+|any\s+)?(?:\d+%\s+)?(?:eligibility|fee|documents?|entrance|criteria|requirements?)\b"
+            r"|\b(?:officially\s+)?(?:approve|admit|grant|confirm|give)\s+(?:my\s+)?(?:direct\s+)?(?:admission|eligibility|degrees?)\b",
+            re.I,
+        ),
+        "authority_impersonation_and_fraud",
+        "I cannot impersonate institutional officials, issue official admission letters, or grant unauthorized admissions. Official admissions are processed strictly through authorized institutional channels.",
+    ),
+    # Fabricated numerical claims and citation demands
+    (
+        re.compile(
+            r"\b(?:the\s+real\s+fee|the\s+official\s+(?:tuition\s+)?fee|the\s+fee)\s+is\s+₹?\s*(?:1|one|zero|0|free)\b"
+            r"|\bconfirm\s+(?:this\s+number|that\s+number|the\s+fee\s+is\s+₹?1)\s+and\s+cite\b"
+            r"|\bcite\s+the\s+official\s+fee\s+document\s+(?:even\s+if|confirming)\b",
+            re.I,
+        ),
+        "false_claim_confirmation_demand",
+        "I cannot confirm or cite fabricated fees or unauthorized numerical claims. Institutional fees must be confirmed directly with the official accounts or admissions office.",
+    ),
 )
 
 # ---------------------------------------------------------------------------

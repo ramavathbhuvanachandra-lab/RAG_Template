@@ -109,7 +109,7 @@ _ANAPHOR_PATTERNS = (
     r"\bthe\s+(?:same|above|previous)\s+(?:programme|program|course|degree|department|school|facility|place|option|one)\b",
     r"\bthe\s+(?:first|second|third|last|former|latter)\s+(?:one|programme|program|course|degree|facility|option)?\b",
     r"\b(?:the\s+)?(?:first|second|third|last|former|latter)\s+(?:one|programme|program|course|degree|facility|option)\b",
-    r"\b(?:it|they|them|this|that|these|those)\b",
+    r"\b(?:it|its|they|their|theirs|them|this|that|these|those)\b",
     r"\b(?:there|their\s+timings?|its\s+timings?)\b",
     r"\b(?:yeh|woh|ye|wo)\b",
     r"\b(?:next\s+session|another\s+session|agla\s+session|naya\s+session)\b",
@@ -117,16 +117,31 @@ _ANAPHOR_PATTERNS = (
 
 _DEGREE_PATTERNS = (
     (re.compile(r"\bb\.?\s*s\.?\b|\bbs\b", re.I), "B.S."),
-    (re.compile(r"\bm\.?\s*tech\b", re.I), "M.Tech"),
-    (re.compile(r"\bm\.?\s*sc\.?\b", re.I), "M.Sc"),
+    (re.compile(r"\bm\.?\s*tech\b|\bmtech\b", re.I), "M.Tech"),
+    (re.compile(r"\bm\.?\s*sc\.?\b|\bmsc\b", re.I), "M.Sc"),
     (re.compile(r"\bm\.?\s*b\.?\s*a\.?\b|\bmba\b", re.I), "MBA"),
-    (re.compile(r"\bb\.?\s*tech\b", re.I), "B.Tech"),
+    (re.compile(r"\bimba\b", re.I), "IMBA"),
+    (re.compile(r"\bb\.?\s*tech\b|\bbtech\b", re.I), "B.Tech"),
+    (re.compile(r"\bb\.?\s*voc\.?\b|\bbvoc\b", re.I), "B.Voc"),
+    (re.compile(r"\bb\.?\s*pharm\.?\b|\bbpharm\b", re.I), "B.Pharm"),
+    (re.compile(r"\bd\.?\s*pharm\.?\b|\bdpharm\b", re.I), "D.Pharm"),
     (re.compile(r"\bph\.?\s*d\.?\b|\bphd\b", re.I), "PhD"),
 )
 
+_BRANCH_ACRONYM_PATTERNS = (
+    (re.compile(r"\b(?:cse|cs)\b", re.I), "B.Tech CSE"),
+    (re.compile(r"\bit\b", re.I), "B.Tech IT"),
+    (re.compile(r"\bece\b", re.I), "B.Tech ECE"),
+    (re.compile(r"\b(?:eee|ee)\b", re.I), "B.Tech EE"),
+    (re.compile(r"\bme\b", re.I), "B.Tech ME"),
+    (re.compile(r"\bce\b", re.I), "B.Tech CE"),
+    (re.compile(r"\bbt\b", re.I), "B.Tech BT"),
+    (re.compile(r"\b(?:ai\s*&\s*ml|aiml)\b", re.I), "B.Tech AI & ML"),
+    (re.compile(r"\b(?:ai\s*&\s*ds|aids)\b", re.I), "B.Tech AI & DS"),
+)
+
 _FULL_PROGRAM_RE = re.compile(
-    r"\b(?P<deg>B\.?S\.?|B\.?Tech\.?|M\.?Tech\.?|M\.?Sc\.?|MBA|Ph\.?D\.?)\s+(?:in|of)\s+"
-    r"(?P<spec>[A-Z][A-Za-z0-9.&'()/\-]*(?:\s+(?:and|&|[A-Z][A-Za-z0-9.&'()/\-]*))*)\b"
+    r"\b(?P<deg>B\.?S\.?|B\.?Tech\.?|BTech|M\.?Tech\.?|MTech|M\.?Sc\.?|MBA|IMBA|B\.?Voc\.?|B\.?Pharm\.?|D\.?Pharm\.?|Ph\.?D\.?)\s*(?:(?:in|of)\s+)?(?P<spec>CSE|CS|IT|ECE|EEE|ME|CE|BT|AG|AI|DS|AI\s*&\s*ML|Data\s+Science|[A-Z][A-Za-z0-9.&'()/\-]*(?:\s+(?:and|&|[A-Z][A-Za-z0-9.&'()/\-]*))*)\b"
 )
 
 _ENTITY_SUFFIX_RE = re.compile(
@@ -242,6 +257,27 @@ _TOPIC_PATTERNS = (
     ("school", "departments"),
     ("programmes", "programmes"),
     ("programs", "programmes"),
+    ("seat intake", "intake"),
+    ("sanctioned intake", "intake"),
+    ("annual intake", "intake"),
+    ("intake", "intake"),
+    ("seats", "intake"),
+    ("seat", "intake"),
+    ("kitni seats", "intake"),
+    ("kitna intake", "intake"),
+    ("approval", "approval"),
+    ("approved", "approval"),
+    ("aicte", "approval"),
+    ("affiliation", "affiliation"),
+    ("affiliated", "affiliation"),
+    ("aktu", "affiliation"),
+    ("duration", "duration"),
+    ("specializations", "specialization"),
+    ("specialization", "specialization"),
+    ("highest package", "placement"),
+    ("average package", "placement"),
+    ("package", "placement"),
+    ("recruiters", "placement"),
 )
 
 
@@ -322,6 +358,12 @@ def _extract_degree_candidates(text: str) -> list[tuple[int, str]]:
         for match in pattern.finditer(text):
             if not any(s <= match.start() < e for s, e in full_spans):
                 found.append((match.start(), canonical))
+                full_spans.append((match.start(), match.end()))
+    for pattern, canonical in _BRANCH_ACRONYM_PATTERNS:
+        for match in pattern.finditer(text):
+            if not any(s <= match.start() < e for s, e in full_spans):
+                found.append((match.start(), canonical))
+                full_spans.append((match.start(), match.end()))
     return found
 
 
@@ -378,7 +420,7 @@ def _extract_named_entities(text: str) -> list[tuple[int, str]]:
         name = " ".join(words)
         if name:
             words_set = {w.lower().rstrip(".,;:") for w in name.split()}
-            if words_set and not words_set.issubset(_CATEGORY_WORDS) and name.casefold() not in {"iit jodhpur", "iit", "jodhpur"}:
+            if words_set and not words_set.issubset(_CATEGORY_WORDS) and name.casefold() not in {"iit jodhpur", "iit", "jodhpur", "srgi", "sr group", "sr group of institutions", "lucknow"}:
                 found.append((match.start("name"), name))
 
     for match in _PREPOSITION_ENTITY_RE.finditer(text):
@@ -390,7 +432,7 @@ def _extract_named_entities(text: str) -> list[tuple[int, str]]:
         # Do not treat a generic lowercase continuation as an entity.
         if name and re.search(r"[A-Z]", name):
             words_set = {w.lower().rstrip(".,;:") for w in name.split()}
-            if words_set and not words_set.issubset(_CATEGORY_WORDS) and name.casefold() not in {"iit jodhpur", "iit", "jodhpur"}:
+            if words_set and not words_set.issubset(_CATEGORY_WORDS) and name.casefold() not in {"iit jodhpur", "iit", "jodhpur", "srgi", "sr group", "sr group of institutions", "lucknow"}:
                 found.append((match.start("name"), name))
 
     return found
@@ -442,7 +484,13 @@ def _anchor_candidates(messages: Sequence[tuple[str, str]]) -> list[str]:
             continue
         seen.add(key)
         result.append(value)
-    return result[-8:]
+    # Deduplicate: if an anchor is a strict substring/prefix of a more specific anchor
+    # (e.g. 'B.Tech' vs 'B.Tech CSE'), keep the more specific anchor so single-entity checks succeed.
+    final_anchors = [
+        a for a in result
+        if not any(_fold(a) != _fold(b) and _fold(a) in _fold(b) for b in result)
+    ]
+    return final_anchors[-8:]
 
 
 def _latest_user_question(messages: Sequence[tuple[str, str]]) -> str:
@@ -538,6 +586,8 @@ def _replace_reference(question: str, replacement: str) -> str:
         result = re.sub(r"\bthere\b", f"to {replacement}", result, count=1, flags=re.I)
         result = re.sub(r"\b(?:what are\s+)?their\s+timings\b", f"timings for {replacement}", result, count=1, flags=re.I)
         result = re.sub(r"\b(?:where can i buy|where can i get|where to get)\s+this\b", f"where can I get {replacement}", result, count=1, flags=re.I)
+        result = re.sub(r"\b(?:what is|what are)\s+its\s+([a-z\s]+?)\??$", rf"what is the \1 for {replacement}?", result, flags=re.I)
+        result = re.sub(r"\b(?:its|their)\b", f"{replacement}'s", result, count=1, flags=re.I)
         result = re.sub(r"\b(?:that|this|it|they|them)\b", replacement, result, count=1, flags=re.I)
     return _clean(result)
 
@@ -612,7 +662,17 @@ def _candidate_for_reference(question: str, anchors: Sequence[str]) -> tuple[str
         if anchors:
             return anchors[0], "credits_calculation_followup"
 
-    if re.search(r"\b(?:it|they|them|this|that)\b", low):
+    if re.search(r"\b(?:it|its|they|their|theirs|them|this|that)\b", low):
+        is_academic_attr = bool(re.search(
+            r"\b(?:intake|seats?|seat|eligibility|annual\s+intake|sanctioned\s+intake|duration|curriculum|syllabus|specializations?|btech|mtech|degree|course)\b",
+            low,
+        ))
+        if is_academic_attr:
+            deg_anchors = [a for a in anchors if bool(_extract_degree_candidates(a))]
+            if len(deg_anchors) == 1:
+                return deg_anchors[0], "single_degree_pronoun"
+            elif len(deg_anchors) > 1:
+                return None, "ambiguous_pronoun"
         if len(anchors) == 1:
             return anchors[0], "single_clear_pronoun"
         if len(anchors) > 1:
@@ -642,13 +702,16 @@ def _candidate_for_reference(question: str, anchors: Sequence[str]) -> tuple[str
     if re.search(r"\b\d+(?:\.\d+)?\s*(?:%|cgpa|gpa)\b", low) and len(anchors) == 1:
         return anchors[0], "single_clear_numeric_context"
 
-    # Numeric-only follow-ups such as "7.1?" or "60%?" can still be resolved
-    # when exactly one explicit subject is active.
-    numeric = low.rstrip(" ?.!;")
-    if re.fullmatch(r"(?:\d+(?:\.\d+)?)(?:\s*%|\s*(?:cgpa|gpa))?", numeric):
-        if len(anchors) == 1:
-            return anchors[0], "single_clear_numeric_ellipsis"
-        return None, "ambiguous_numeric_ellipsis"
+    # Attribute ellipsis for active entity:
+    # E.g. "And what is the intake?", "What is the intake?", "And the eligibility?", "Is it approved?"
+    if re.search(r"\b(?:intake|seats?|seat|eligibility|fee|fees|duration|affiliation|approved|approval|placement|package)\b", low):
+        deg_anchors = [a for a in anchors if bool(_extract_degree_candidates(a))]
+        if len(deg_anchors) == 1:
+            return deg_anchors[0], "single_degree_attribute_ellipsis"
+        elif len(anchors) == 1:
+            return anchors[0], "single_clear_attribute_ellipsis"
+        elif len(anchors) > 1:
+            return anchors[-1], "latest_active_attribute_ellipsis"
 
     return None, "no_reference"
 
@@ -882,6 +945,19 @@ def resolve_conversation(
 
     if ellipsis_match and not (has_anaphor_in_q or is_ordinal_in_q):
         target_cat = ellipsis_match.group(1).strip()
+        target_topic = _topic_from_text(target_cat)
+        if target_topic and candidate:
+            resolved = f"What is the {target_cat} for {candidate}?"
+            return {
+                "resolved_question": resolved,
+                "mode": "follow_up",
+                "active_topic": target_topic,
+                "active_entity": candidate,
+                "resolution_source": "deterministic_attribute_ellipsis",
+                "resolution_confidence": "0.98",
+                "resolution_reason": "attribute_ellipsis_over_active_entity",
+            }
+
         attr = _extract_query_attribute(latest_question) or latest_topic or ""
         if candidate:
             resolved = f"What is the {attr} for {target_cat} in {candidate}?" if attr else f"{original.rstrip('?. ')} in {candidate}?"
@@ -985,7 +1061,10 @@ def resolve_conversation(
                 "resolution_confidence": "0.0",
                 "resolution_reason": "unsupported_model_rewrite",
             }
-        if parsed["mode"] == "follow_up" and parsed["resolved_question"]:
+        if parsed.get("resolved_question") and _fold(parsed["resolved_question"]) != _fold(original):
+            parsed["mode"] = "follow_up"
+            return parsed
+        if parsed.get("mode") == "follow_up" and parsed.get("resolved_question"):
             return parsed
     except Exception:
         pass

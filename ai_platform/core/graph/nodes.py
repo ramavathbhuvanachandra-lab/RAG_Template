@@ -573,6 +573,16 @@ def _v41_prioritize_evidence_units(query: Any, units: Sequence[Any], audit: Any)
     q_text = str(getattr(query, "original_query", "") or getattr(query, "search_query", "") or "").casefold()
     if any(ft in q_text for ft in ("fee", "fees", "tuition", "charges", "mess advance", "cost")):
         req_tokens.update({"fee", "fees", "tuition", "finance"})
+    elif any(tt in q_text for tt in ("transport", "bus", "buses", "transit", "route", "routes", "fleet")):
+        req_tokens.update({"transport", "transit", "bus", "route", "routes", "fleet"})
+    elif any(dt in q_text for dt in ("department", "departments", "faculty", "faculties", "institute", "institutes", "academic unit")):
+        req_tokens.update({"department", "departments", "faculty", "faculties", "institute", "institutes"})
+    elif any(ht in q_text for ht in ("hostel", "hostels", "residence", "residential", "accommodation")):
+        req_tokens.update({"hostel", "hostels", "accommodation", "residence", "residential"})
+    elif any(lt in q_text for lt in ("library", "libraries", "book", "books", "journal", "journals")):
+        req_tokens.update({"library", "books", "journals", "reading"})
+    elif any(at in q_text for at in ("admission", "admissions", "eligibility", "counselling", "apply")):
+        req_tokens.update({"admission", "admissions", "eligibility", "counselling"})
     elif any(rt in q_text for rt in ("research", "thrust", "areas")):
         req_tokens.update({"research"})
     elif any(dt in q_text for dt in ("mess", "dining", "food", "canteen")):
@@ -660,22 +670,53 @@ def _v41_prioritize_evidence_units(query: Any, units: Sequence[Any], audit: Any)
         # Fee schedule boost: prioritize authoritative fee tables and avoid unhelpful curriculum chunks
         fee_bonus = 0.0
         if any(ft in q_text for ft in ("fee", "fees", "tuition", "cost", "charge", "charges")):
-            if "fees_and_finance" in unit_src or "/finance/" in unit_src:
+            if "fees_and_finance" in unit_src or "/finance/" in unit_src or "fee" in unit_src:
                 fee_bonus = 4.0
                 if any(fm in body.casefold() for fm in ("50,000", "50000", "tuition fee", "fee structure", "32,250", "32250")):
                     fee_bonus += 2.5
             elif "academic_progression" in unit_src or ("curriculum" in unit_src and "/departments/" in unit_src):
                 fee_bonus = -4.0
 
+        # Transport domain boost: prioritize transport routes and fleet; penalize crowding by labs/sports
+        transport_bonus = 0.0
+        if any(tt in q_text for tt in ("transport", "bus", "buses", "transit", "route", "routes", "fleet")):
+            if any(tw in unit_src or tw in unit_heading for tw in ("transport", "transit", "bus")):
+                transport_bonus = 5.0
+            elif any(tw in unit_src for tw in ("futuristic_labs", "sports_ground", "indoor_swimming", "smart_classrooms", "seminar_halls")):
+                transport_bonus = -4.0
+
+        # Departments and faculties boost: prioritize departments directory and academic units
+        department_bonus = 0.0
+        if any(dt in q_text for dt in ("department", "departments", "faculty", "faculties", "academic unit", "institutes")):
+            if any(dw in unit_src or dw in unit_heading for dw in ("departments.json", "department", "faculty", "academic_units", "overview")):
+                department_bonus = 4.5
+            elif any(gw in unit_src for gw in ("administrative_heads", "board_of_governors", "board_of_directors", "chairperson_message")):
+                department_bonus = -2.5
+
         # Catalogue / complete listing queries boost
         catalogue_bonus = 0.0
-        if any(cat in q_text for cat in ("what b.tech", "what btech", "list all", "programmes offered", "programs offered", "programmes does", "programs does", "what departments", "list of departments", "which departments")):
-            if any(ov in unit_src for ov in ("programs/btech/overview", "office_of_academics/programs", "programs/general_information")):
-                catalogue_bonus = 2.5
+        if any(cat in q_text for cat in ("what b.tech", "what btech", "list all", "programmes offered", "programs offered", "programmes does", "programs does", "what departments", "list of departments", "which departments", "specialization", "specializations", "branches", "what courses")):
+            if any(ov in unit_src or ov in unit_heading for ov in (
+                "academic_programmes.json", "departments.json", "btech_overview", "complete list of b.tech",
+                "programs/btech/overview", "office_of_academics/programs", "programs/general_information", "degrees.json"
+            )):
+                catalogue_bonus = 4.0
             elif "academic_progression" in unit_src or "branch change" in body.casefold():
                 catalogue_bonus = -2.0
             elif any(s in unit_src for s in ("/schools/", "/departments/")) and "curriculum" in unit_src:
                 catalogue_bonus = -3.0
+
+        # Library boost: prioritize library facilities and resources
+        library_bonus = 0.0
+        if any(lt in q_text for lt in ("library", "libraries", "books", "journals")):
+            if any(lw in unit_src or lw in unit_heading for lw in ("library", "central_library")):
+                library_bonus = 4.5
+
+        # Hostel boost: prioritize hostel accommodation
+        hostel_bonus = 0.0
+        if any(ht in q_text for ht in ("hostel", "hostels", "residence", "residential", "accommodation")):
+            if any(hw in unit_src or hw in unit_heading for hw in ("hostel", "accommodation")):
+                hostel_bonus = 4.0
 
         score = (
             0.35 * claim_overlap
@@ -694,6 +735,10 @@ def _v41_prioritize_evidence_units(query: Any, units: Sequence[Any], audit: Any)
             + credit_bonus
             + fee_bonus
             + catalogue_bonus
+            + transport_bonus
+            + department_bonus
+            + library_bonus
+            + hostel_bonus
             - (index * 0.02)
         )
         scored.append((-score, index, unit))
@@ -1320,16 +1365,16 @@ class CoreNodes:
         if "query_planning_llm" not in existing_timings:
             existing_timings["query_planning_llm"] = 0.0
         existing_timings["qu_llm_calls"] = exec_res.qu_llm_calls
-        existing_timings["lossless_query_and_frame"] = t_lsqc
         existing_timings["understand_query"] = time.perf_counter() - t0
-
+        institution = self.deps.institution_provider(state)
+        display_name = getattr(institution, "display_name", "the institution")
         safe_resp = exec_res.safe_response or (
             (
-                "The available official sources do not substantiate or contain information regarding any Supreme Court order to cancel degrees awarded by IIT Jodhpur. "
+                f"The available official sources do not substantiate or contain information regarding any Supreme Court order to cancel degrees awarded by {display_name}. "
                 "I cannot verify this claim from the available institutional documents."
             )
             if (re.search(r"\b(?:supreme\s+court|high\s+court|court\s+order)\b", question, re.I) and re.search(r"\b(?:cancel|cancellation|degree|degrees)\b", question, re.I))
-            else ("This is not an institutional request. I can only assist with academic, administrative, and campus information regarding IIT Jodhpur." if pipeline_stop else None)
+            else (f"This is not an institutional request. I can only assist with academic, administrative, and campus information regarding {display_name}." if pipeline_stop else None)
         )
 
         qu_diag = {
@@ -1907,11 +1952,26 @@ class CoreNodes:
         if not evidence_candidates:
             units = ()
 
+        # Adaptive evidence sizing: complete-list and multi-attribute requests receive full budget (22),
+        # while focused single-topic requests are budgeted to prevent context flooding and reduce prefill latency.
+        frame = state.get("query_frame")
+        q_text = str(state.get("question", "")).casefold()
+        is_catalogue = any(m in q_text for m in ("all ", "departments", "branches", "programmes", "programs", "every "))
+        is_multi = bool(state.get("is_multi_intent", False) or getattr(frame, "is_multi_part", False))
+        is_list = bool(getattr(frame, "is_list_question", False))
+
+        if is_catalogue:
+            adaptive_max_units = 22
+        elif is_multi or is_list:
+            adaptive_max_units = 14
+        else:
+            adaptive_max_units = 10
+
         package = self.deps.build_evidence_package(
             units,
             claim_audit=audit,
-            max_units=22,
-            max_units_per_source=12,
+            max_units=adaptive_max_units,
+            max_units_per_source=8,
             include_partial=True,
             verified_evidence=True,
         )
@@ -1941,9 +2001,11 @@ class CoreNodes:
     # ------------------------------------------------------------------
 
     def answer_node(self, state: State) -> State:
+        institution = self.deps.institution_provider(state)
+        display_name = getattr(institution, "display_name", "the institution")
         if bool(state.get("pipeline_stop")):
             safe_resp = state.get("safe_response")
-            fallback = safe_resp or "Sorry, I couldn't find reliable information about that in the available IIT Jodhpur documents."
+            fallback = safe_resp or self.deps.fallback_provider(state, institution)
             return {
                 "answer": fallback,
                 "answer_generation": None,
@@ -1959,7 +2021,6 @@ class CoreNodes:
                 "prompt_messages": [],
             }
 
-        institution = self.deps.institution_provider(state)
         fallback = self.deps.fallback_provider(
             state,
             institution,
@@ -1996,7 +2057,7 @@ class CoreNodes:
                 temporal_fallback = f"The provided evidence does not contain information regarding the requested year ({', '.join(unsupported_years)})."
             elif re.search(r"\b(?:supreme\s+court|high\s+court|court\s+order)\b", raw_q, re.I) and re.search(r"\b(?:cancel|cancellation|degree|degrees)\b", raw_q, re.I):
                 temporal_fallback = (
-                    "The available official sources do not substantiate or contain information regarding any Supreme Court order to cancel degrees awarded by IIT Jodhpur. "
+                    f"The available official sources do not substantiate or contain information regarding any Supreme Court order to cancel degrees awarded by {display_name}. "
                     "I cannot verify this claim from the available institutional documents."
                 )
             else:

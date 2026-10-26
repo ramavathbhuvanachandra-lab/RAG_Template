@@ -1,0 +1,17 @@
+{
+  "institution_id": "srgi",
+  "dimensions": {
+    "degree_level": {
+      "undergraduate": ["b.tech", "btech", "b.voc", "bvoc", "ug", "undergraduate"],
+      "postgraduate": ["m.tech", "mtech", "mba", "pg", "postgraduate"],
+      "integrated": ["imba", "integrated mba", "5-year"],
+      "diploma": ["d.pharm", "dpharm", "dhp", "diploma"]
+    },
+    "faculty": {
+      "engineering": ["engineering", "technology", "cse", "mechanical", "civil", "electrical", "electronics", "biotechnology", "agricultural"],
+      "management": ["management", "business administration", "mba", "imba", "agmp"],
+      "vocational": ["vocational", "b.voc", "software development", "bfsi", "automobile"],
+      "medical": ["medical", "ayush", "pharmacy", "d.pharm", "nursing", "homeopathy", "dhp"]
+    }
+  }
+}

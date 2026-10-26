@@ -1,0 +1,51 @@
+{
+  "schema_version": "2.0.0",
+  "institution_id": "srgi_lucknow",
+  "institution_name": "S. R. Group of Institutions (SRGI), Lucknow",
+  "document_id": "srgi_lucknow_campus_contacts_and_directions",
+  "title": "Campus Contacts, Location Directions and Official Helplines",
+  "category": "14_contact_and_locations",
+  "subcategory": "contact_directory",
+  "document_type": "institutional_knowledge",
+  "language": "en",
+  "markdown_path": "documents/14_contact_and_locations/srgi_lucknow_campus_contacts_and_directions.md",
+  "docx_path": "documents/14_contact_and_locations/srgi_lucknow_campus_contacts_and_directions.docx",
+  "source_urls": [
+    "https://srgi.in/contact"
+  ],
+  "canonical_source_urls": [
+    "https://srgi.in/contact"
+  ],
+  "source_hashes": [
+    "0b06ebff0bd4349637372b4dedcba87cb3f01ea594a50eefb2728ff5a7512b64"
+  ],
+  "markdown_hash": "cebb854e100a8a7f4c37edd1cf62b43a25f3fdeda6bd611ab7941303b2ed9c50",
+  "docx_hash": "63b68e61c579a797aadce8581bc7438a711eacf26fad85f4af1eaf9d3054baea",
+  "byte_size_md": 2789,
+  "byte_size_docx": 38512,
+  "word_count_md": 363,
+  "sections_count": 8,
+  "table_count": 3,
+  "content_quality_status": "PASS",
+  "conflict_status": "NO_UNRESOLVED_CONFLICTS",
+  "provenance_section_count": 1,
+  "docx_provenance_heading_count": 1,
+  "docx_leaked_syntax_count": 0,
+  "summary": "Verified institutional directory, official addresses, telephone extensions, media lines, WhatsApp support, email contacts, and transit directions.",
+  "keywords": [
+    "Contact",
+    "Address",
+    "Phone",
+    "Email",
+    "Bakshi ka Talab",
+    "Sitapur Road",
+    "Directions",
+    "Helpline"
+  ],
+  "related_documents": [
+    "srgi_lucknow_overview",
+    "srgi_lucknow_administrative_heads"
+  ],
+  "created_at": "2026-10-23T21:19:34.446312+00:00",
+  "pipeline_stage": "release_v3_production"
+}

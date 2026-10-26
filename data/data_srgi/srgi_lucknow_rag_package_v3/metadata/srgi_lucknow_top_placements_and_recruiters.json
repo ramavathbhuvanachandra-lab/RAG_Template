@@ -1,0 +1,52 @@
+{
+  "schema_version": "2.0.0",
+  "institution_id": "srgi_lucknow",
+  "institution_name": "S. R. Group of Institutions (SRGI), Lucknow",
+  "document_id": "srgi_lucknow_top_placements_and_recruiters",
+  "title": "Placement Performance Dashboard and Top Recruiting Partners",
+  "category": "10_placements_and_careers",
+  "subcategory": "placement_statistics",
+  "document_type": "institutional_knowledge",
+  "language": "en",
+  "markdown_path": "documents/10_placements_and_careers/srgi_lucknow_top_placements_and_recruiters.md",
+  "docx_path": "documents/10_placements_and_careers/srgi_lucknow_top_placements_and_recruiters.docx",
+  "source_urls": [
+    "https://srgi.in/top-placements",
+    "https://srgi.in"
+  ],
+  "canonical_source_urls": [
+    "https://srgi.in/top-placements",
+    "https://srgi.in"
+  ],
+  "source_hashes": [
+    "3124f5a3ad260956bb0e38309c8a2c745bad91342f6142ad0a4dd6b91a9a239a",
+    "21b702eb95fbfcf1e3040a7c996f6ed261781ee8bcc71ff275a161f43964e6e9"
+  ],
+  "markdown_hash": "53ff88298c13daf610ad323ff5eacf4ec87faac50674e2313d2f1d17546946f7",
+  "docx_hash": "2c221214696a9b05e48abe14259296297a6f8414be5eb10d571318334a581419",
+  "byte_size_md": 3644,
+  "byte_size_docx": 38936,
+  "word_count_md": 439,
+  "sections_count": 7,
+  "table_count": 3,
+  "content_quality_status": "PASS",
+  "conflict_status": "NO_UNRESOLVED_CONFLICTS",
+  "provenance_section_count": 1,
+  "docx_provenance_heading_count": 1,
+  "docx_leaked_syntax_count": 0,
+  "summary": "Verified placement metrics: 42 LPA highest package, 4 LPA average package, 24,888+ cumulative job opportunities, 900+ visiting corporate recruiters, and 95.6% placement rate.",
+  "keywords": [
+    "42 LPA Highest Package",
+    "900+ Companies",
+    "Placement Rate 95.6%",
+    "Top Placements",
+    "Recruiters",
+    "Job Offers"
+  ],
+  "related_documents": [
+    "srgi_lucknow_training_and_placement_cell",
+    "srgi_lucknow_overview"
+  ],
+  "created_at": "2026-10-23T21:19:34.189992+00:00",
+  "pipeline_stage": "release_v3_production"
+}
